@@ -2495,8 +2495,8 @@ int value)
 
 	*p = 0;
 	if(strlen(segname) > sizeof(s.segname)){
-	    as_bad("segment-name: %s too long (maximum %ld characters)",
-		    segname, sizeof(s.segname));
+	    as_bad("segment-name: %s too long (maximum %d characters)",
+		   segname, (int)sizeof(s.segname));
 	    ignore_rest_of_line();
 	    *p = c;
 	    return;
@@ -2504,8 +2504,8 @@ int value)
 
 	*q = 0;
 	if(strlen(sectname) > sizeof(s.sectname)){
-	    as_bad("section-name: %s too long (maximum %ld characters)",
-		    sectname, sizeof(s.sectname));
+	    as_bad("section-name: %s too long (maximum %d characters)",
+		   sectname, (int)sizeof(s.sectname));
 	    ignore_rest_of_line();
 	    return;
 	}
@@ -2654,8 +2654,8 @@ int value)
 
 	*p = 0;
 	if(strlen(segname) > sizeof(s.segname)){
-	    as_bad("segment-name: %s too long (maximum %ld characters)",
-		    segname, sizeof(s.segname));
+	    as_bad("segment-name: %s too long (maximum %d characters)",
+		   segname, (int)sizeof(s.segname));
 	    ignore_rest_of_line();
 	    *p = c;
 	    return;
@@ -2663,8 +2663,8 @@ int value)
 
 	*q = 0;
 	if(strlen(sectname) > sizeof(s.sectname)){
-	    as_bad("section-name: %s too long (maximum %ld characters)",
-		    sectname, sizeof(s.sectname));
+	    as_bad("section-name: %s too long (maximum %d characters)",
+		   sectname, (int)sizeof(s.sectname));
 	    ignore_rest_of_line();
 	    *p = c;
 	    *q = d;
