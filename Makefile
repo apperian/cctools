@@ -1,5 +1,5 @@
 export CC=gcc
-export CFLAGS=-std=gnu99 -Wall -I../include -Werror -D_LARGEFILE64_SOURCE -DEMULATED_HOST_CPU_TYPE=CPU_TYPE_I386 -DEMULATED_HOST_CPU_SUBTYPE='CPU_SUBTYPE_INTEL(12, 1)'
+export CFLAGS=-std=gnu99 -Wall -I../include -D_LARGEFILE64_SOURCE -DEMULATED_HOST_CPU_TYPE=CPU_TYPE_I386 -DEMULATED_HOST_CPU_SUBTYPE='CPU_SUBTYPE_INTEL(12, 1)'
 
 GIT_VERSION=$(shell if ( git tag 2>&1 ) > /dev/null; then git tag | tail -n 1; else echo unknown; fi)
 ROOT_DIRECTORY_NAME=$(shell basename $${PWD})
