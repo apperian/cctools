@@ -1,0 +1,20 @@
+Source: cctools
+Section: devel
+Priority: extra
+Maintainer: Fabian Renn <fabian.renn@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://github.com/hogliux/cctools
+Vcs-Git: https://github.com/hogliux/cctools.git
+
+Package: cctools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: The Apple binary toolchain ported to linux
+ cctools is part of the Apple binary toolchain to produce, edit and
+ investigate Apple mach-o binaries on linux. This is useful if you
+ want to cross-compile binaries targeted for Mac OS X on a linux
+ machine. You will also need the Apple Mac OS X SDK files and
+ a compatibale compiler (see the osxcross's osxcross-gcc package) 
+ and a linker (see the osxcross's ld64 package) to be able to 
+ generate any Mac OS X programs.
