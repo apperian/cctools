@@ -66,21 +66,6 @@ typedef unsigned int		__darwin_natural_t;
  */
 
 typedef int			__darwin_ct_rune_t;	/* ct_rune_t */
-
-/*
- * mbstate_t is an opaque object to keep conversion state, during multibyte
- * stream conversions.  The content must not be referenced by user programs.
- */
-#ifndef __mbstate_t_defined
-#define __mbstate_t_defined 1
-typedef union {
-	char		__mbstate8[128];
-	long long	_mbstateL;			/* for alignment */
-} __mbstate_t;
-
-typedef __mbstate_t		__darwin_mbstate_t;	/* mbstate_t */
-#endif
-
 #if defined(__GNUC__) && defined(__PTRDIFF_TYPE__)
 typedef __PTRDIFF_TYPE__	__darwin_ptrdiff_t;	/* ptr1 - ptr2 */
 #else
