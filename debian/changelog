@@ -1,3 +1,9 @@
+cctools (698.2-1) saucy; urgency=low
+
+  * New upstream version
+
+ -- Fabian Renn <fabian.renn@gmail.com>  Sat, 24 May 2014 14:14:56 +0000
+
 cctools (698.1-5) saucy; urgency=low
 
   * Initial release following upstream source
