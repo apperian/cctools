@@ -64,6 +64,7 @@ nmedit.o : strip.c
 install : $(TARGETS) ranlib_launcher
 	install -d $(DESTDIR)/Developer/usr/bin
 	install -m 0755 $(TARGETS) $(DESTDIR)/Developer/usr/bin
+	ln -sf libtool $(DESTDIR)/Developer/usr/bin/ranlib
 	install -m 0755 -T ranlib_launcher $(DESTDIR)/Developer/usr/bin/i686-apple-darwin9-ranlib
 	install -m 0755 -T ranlib_launcher $(DESTDIR)/Developer/usr/bin/powerpc-apple-darwin9-ranlib
 	ln -sf ar $(DESTDIR)/Developer/usr/bin/i686-apple-darwin9-ar
