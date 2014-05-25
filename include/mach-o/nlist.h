@@ -75,9 +75,9 @@
  */
 struct nlist {
 	union {
-	  //#ifndef __LP64__
+#ifndef __LP64__
 		char *n_name;	/* for use when in-core */
-	  //#endif
+#endif
 		int32_t n_strx;	/* index into the string table */
 	} n_un;
 	uint8_t n_type;		/* type flag, see below */
