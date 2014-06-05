@@ -3,6 +3,8 @@ cctools
 
 *This is the Apple toolchain ported to linux forming a portion of a cross toolchain able to produce Mac OS X binaries on linux.
 
+cctools is *experimental* and will produce *invalid* when run on 64-bit linux systems.
+
 cctools includes the following programs as, ar, lipo, strip, nm, ranlib, otool
 
 See my ld64 (linker) and bomutils (installer creator) github projects for more cross-compiling tools.
