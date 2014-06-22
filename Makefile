@@ -15,9 +15,6 @@ $(DIRS) : force libstuff/libstuff.a
 libstuff/libstuff.a : force
 	make -C libstuff
 
-test : force
-	make -C test
-
 install : 
 	make -C ar install
 	make -C as install
@@ -33,4 +30,3 @@ clean :
 	make -C misc clean
 	make -C otool clean
 	make -C libstuff clean
-	make -C test clean
