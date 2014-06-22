@@ -40,6 +40,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <ar.h>
 #ifndef AR_EFMT1
 #define	AR_EFMT1	"#1/"		/* extended format #1 */
@@ -82,7 +83,7 @@ struct input_file {
     enum bool is_thin;
 };
 static struct input_file *input_files = NULL;
-static unsigned long ninput_files = 0;
+static uint32_t ninput_files = 0;
 
 /* Thin files from the input files to operate on */
 struct thin_file {
@@ -95,11 +96,11 @@ struct thin_file {
     enum bool replace;
 };
 static struct thin_file *thin_files = NULL;
-static unsigned long nthin_files = 0;
+static uint32_t nthin_files = 0;
 
 /* The specified output file */
 static char *output_file = NULL;
-static unsigned long output_filemode = 0;
+static uint32_t output_filemode = 0;
 #ifndef __OPENSTEP__
 static struct utimbuf output_timep = { 0 };
 #else
@@ -117,11 +118,11 @@ static struct arch_flag thin_arch_flag = { 0 };
 
 static enum bool remove_flag = FALSE;
 static struct arch_flag *remove_arch_flags = NULL;
-static unsigned long nremove_arch_flags = 0;
+static uint32_t nremove_arch_flags = 0;
 
 static enum bool extract_flag = FALSE;
 static struct arch_flag *extract_arch_flags = NULL;
-static unsigned long nextract_arch_flags = 0;
+static uint32_t nextract_arch_flags = 0;
 static enum bool extract_family_flag = FALSE;
 
 static enum bool replace_flag = FALSE;
@@ -130,14 +131,14 @@ struct replace {
     struct thin_file thin_file;
 };
 static struct replace *replaces = NULL;
-static unsigned long nreplaces = 0;
+static uint32_t nreplaces = 0;
 
 struct segalign {
     struct arch_flag arch_flag;
-    unsigned long align;
+    uint32_t align;
 };
 static struct segalign *segaligns = NULL;
-static unsigned long nsegaligns = 0;
+static uint32_t nsegaligns = 0;
 
 static enum bool arch_blank_flag = FALSE;
 
@@ -145,7 +146,7 @@ static struct fat_header fat_header = { 0 };
 
 static enum bool verify_flag = FALSE;
 static struct arch_flag *verify_archs = NULL;
-static unsigned long nverify_archs = 0;
+static uint32_t nverify_archs = 0;
 
 static void create_fat(
     void);
@@ -156,28 +157,28 @@ static void process_replace_file(
 static void check_archive(
     char *name,
     char *addr,
-    unsigned long size,
+    uint32_t size,
     cpu_type_t *cputype,
     cpu_subtype_t *cpusubtype);
 static void check_extend_format_1(
     char *name,
     struct ar_hdr *ar_hdr,
-    unsigned long size_left,
-    unsigned long *member_name_size);
-static unsigned long get_align(
+    uint32_t size_left,
+    uint32_t *member_name_size);
+static uint32_t get_align(
     struct mach_header *mhp,
     struct load_command *load_commands,
-    unsigned long size,
+    uint32_t size,
     char *name,
     enum bool swapped);
-static unsigned long get_align_64(
+static uint32_t get_align_64(
     struct mach_header_64 *mhp64,
     struct load_command *load_commands,
-    unsigned long size,
+    uint32_t size,
     char *name,
     enum bool swapped);
-static unsigned long guess_align(
-    unsigned long vmaddr);
+static uint32_t guess_align(
+    uint32_t vmaddr);
 static void print_arch(
     struct fat_arch *fat_arch);
 static void print_cputype(
@@ -191,7 +192,7 @@ static struct thin_file *new_thin(
     void);
 static struct arch_flag *new_arch_flag(
     struct arch_flag **arch_flags,
-    unsigned long *narch_flags);
+    uint32_t *narch_flags);
 static struct replace *new_replace(
     void);
 static struct segalign *new_segalign(
@@ -199,11 +200,11 @@ static struct segalign *new_segalign(
 static int cmp_qsort(
     const struct thin_file *thin1,
     const struct thin_file *thin2);
-static unsigned long stuff_round(
-    unsigned long v,
-    unsigned long r);
+static uint32_t stuff_round(
+    uint32_t v,
+    uint32_t r);
 static enum bool ispoweroftwo(
-    unsigned long x);
+    uint32_t x);
 static void check_arch(
     struct input_file *input,
     struct thin_file *thin);
@@ -219,7 +220,7 @@ char *argv[],
 char *envp[])
 {
     int fd, a;
-    unsigned long i, j, k, value;
+    uint32_t i, j, k, value;
     char *p, *endp;
     struct input_file *input;
     struct arch_flag *arch_flag;
@@ -395,11 +396,11 @@ char *envp[])
 				  "proper hexadecimal number", argv[a+2]);
 			if(!ispoweroftwo(value) || value == 0)
 			    fatal("argument to -segalign <arch_type> %lx (hex) "
-				  "must be a non-zero power of two", value);
+				  "must be a non-zero power of two", (unsigned long)value);
 			if(value > (1 << MAXSECTALIGN))
 			    fatal("argument to -segalign <arch_type> %lx (hex) "
 				  "must equal to or less than %x (hex)",
-				  value, (unsigned int)(1 << MAXSECTALIGN));
+				  (unsigned long)value, (unsigned int)(1 << MAXSECTALIGN));
 			segalign->align = 0;
 			while((value & 0x1) != 1){
 			    value >>= 1;
@@ -817,7 +818,7 @@ static
 void
 create_fat(void)
 {
-    unsigned long i, j, offset;
+    uint32_t i, j, offset;
     int fd;
 
 	/* fold in specified segment alignments */
@@ -937,7 +938,7 @@ struct input_file *input)
 {
     int fd;
     struct stat stat_buf;
-    unsigned long size, i, j;
+    uint32_t size, i, j;
     kern_return_t r;
     char *addr;
     struct thin_file *thin;
@@ -986,10 +987,10 @@ struct input_file *input)
 	/* see if this file is a fat file */
 	if(size >= sizeof(struct fat_header) &&
 #ifdef __BIG_ENDIAN__
-	   *((unsigned long *)addr) == FAT_MAGIC)
+	   *((uint32_t *)addr) == FAT_MAGIC)
 #endif /* __BIG_ENDIAN__ */
 #ifdef __LITTLE_ENDIAN__
-	   *((unsigned long *)addr) == SWAP_LONG(FAT_MAGIC))
+	   *((uint32_t *)addr) == SWAP_LONG(FAT_MAGIC))
 #endif /* __LITTLE_ENDIAN__ */
 	{
 
@@ -1065,8 +1066,8 @@ struct input_file *input)
 	}
 	/* see if this file is Mach-O file for 32-bit architectures */
 	else if(size >= sizeof(struct mach_header) &&
-	        (*((unsigned long *)addr) == MH_MAGIC ||
-	         *((unsigned long *)addr) == SWAP_LONG(MH_MAGIC))){
+	        (*((uint32_t *)addr) == MH_MAGIC ||
+	         *((uint32_t *)addr) == SWAP_LONG(MH_MAGIC))){
 
 	    /* this is a Mach-O file so create a thin file struct for it */
 	    thin = new_thin();
@@ -1097,8 +1098,8 @@ struct input_file *input)
 	}
 	/* see if this file is Mach-O file for 64-bit architectures */
 	else if(size >= sizeof(struct mach_header_64) &&
-	        (*((unsigned long *)addr) == MH_MAGIC_64 ||
-	         *((unsigned long *)addr) == SWAP_LONG(MH_MAGIC_64))){
+	        (*((uint32_t *)addr) == MH_MAGIC_64 ||
+	         *((uint32_t *)addr) == SWAP_LONG(MH_MAGIC_64))){
 
 	    /* this is a Mach-O file so create a thin file struct for it */
 	    thin = new_thin();
@@ -1190,7 +1191,7 @@ struct replace *replace)
 {
     int fd;
     struct stat stat_buf;
-    unsigned long size;
+    uint32_t size;
     kern_return_t r;
     char *addr;
     struct mach_header *mhp, mh;
@@ -1218,15 +1219,15 @@ struct replace *replace)
 
 	/* see if this file is a fat file */
 	if(size >= sizeof(struct fat_header) &&
-	   *((unsigned long *)addr) == FAT_MAGIC){
+	   *((uint32_t *)addr) == FAT_MAGIC){
 
 	    fatal("replacement file: %s is a fat file (must be a thin file)",
 		  replace->thin_file.name);
 	}
 	/* see if this file is Mach-O file for 32-bit architectures */
 	else if(size >= sizeof(struct mach_header) &&
-	        (*((unsigned long *)addr) == MH_MAGIC ||
-	         *((unsigned long *)addr) == SWAP_LONG(MH_MAGIC))){
+	        (*((uint32_t *)addr) == MH_MAGIC ||
+	         *((uint32_t *)addr) == SWAP_LONG(MH_MAGIC))){
 
 	    /* this is a Mach-O file so fill in the thin file struct for it */
 	    replace->thin_file.addr = addr;
@@ -1250,8 +1251,8 @@ struct replace *replace)
 	}
 	/* see if this file is Mach-O file for 64-bit architectures */
 	else if(size >= sizeof(struct mach_header_64) &&
-	        (*((unsigned long *)addr) == MH_MAGIC_64 ||
-	         *((unsigned long *)addr) == SWAP_LONG(MH_MAGIC_64))){
+	        (*((uint32_t *)addr) == MH_MAGIC_64 ||
+	         *((uint32_t *)addr) == SWAP_LONG(MH_MAGIC_64))){
 
 	    /* this is a Mach-O file so fill in the thin file struct for it */
 	    replace->thin_file.addr = addr;
@@ -1316,11 +1317,11 @@ void
 check_archive(
 char *name,
 char *addr,
-unsigned long size,
+uint32_t size,
 cpu_type_t *cputype,
 cpu_subtype_t *cpusubtype)
 {
-    unsigned long offset, magic, i, ar_name_size;
+    uint32_t offset, magic, i, ar_name_size;
     struct mach_header mh;
     struct mach_header_64 mh64;
     struct ar_hdr *ar_hdr;
@@ -1353,9 +1354,9 @@ cpu_subtype_t *cpusubtype)
 		ar_name = ar_hdr->ar_name;
 		ar_name_size = 0;
 	    }
-	    if(size + ar_name_size - offset > sizeof(unsigned long)){
+	    if(size + ar_name_size - offset > sizeof(uint32_t)){
 		memcpy(&magic, addr + offset + ar_name_size,
-		       sizeof(unsigned long));
+		       sizeof(uint32_t));
 		if(magic == FAT_MAGIC)
 		    fatal("archive member %s(%.*s) is a fat file (not "
 			  "allowed in an archive)", name, (int)i, ar_name);
@@ -1414,11 +1415,11 @@ void
 check_extend_format_1(
 char *name,
 struct ar_hdr *ar_hdr,
-unsigned long size_left,
-unsigned long *member_name_size)
+uint32_t size_left,
+uint32_t *member_name_size)
 {
     char *p, *endp, buf[sizeof(ar_hdr->ar_name)+1];
-    unsigned long ar_name_size;
+    uint32_t ar_name_size;
 
 	*member_name_size = 0;
 
@@ -1432,7 +1433,7 @@ unsigned long *member_name_size)
 	ar_name_size = strtoul(p, &endp, 10);
 	if(ar_name_size == ULONG_MAX && errno == ERANGE)
 	    fatal("archive: %s malformed (size in ar_name: %.*s for archive "
-		  "extend format #1 overflows unsigned long)", name,
+		  "extend format #1 overflows uint32_t)", name,
 		  (int)sizeof(ar_hdr->ar_name), ar_hdr->ar_name);
 	while(*endp == ' ' && *endp != '\0')
 	    endp++;
@@ -1455,15 +1456,15 @@ unsigned long *member_name_size)
  * appears in a mach object files (2^2 worst case for all current machines).
  */
 static
-unsigned long
+uint32_t
 get_align(
 struct mach_header *mhp,
 struct load_command *load_commands,
-unsigned long size,
+uint32_t size,
 char *name,
 enum bool swapped)
 {
-    unsigned long i, j, cur_align, align;
+    uint32_t i, j, cur_align, align;
     struct load_command *lcp, l;
     struct segment_command *sgp, sg;
     struct section *sp, s;
@@ -1494,14 +1495,14 @@ enum bool swapped)
 		swap_load_command(&l, host_byte_sex);
 	    if(l.cmdsize % sizeof(long) != 0)
 		error("load command %lu size not a multiple of "
-		      "sizeof(long) in: %s", i, name);
+		      "sizeof(long) in: %s", (unsigned long)i, name);
 	    if(l.cmdsize <= 0)
 		fatal("load command %lu size is less than or equal to zero "
-		      "in: %s", i, name);
+		      "in: %s", (unsigned long)i, name);
 	    if((char *)lcp + l.cmdsize >
 	       (char *)load_commands + mhp->sizeofcmds)
 		fatal("load command %lu extends past end of all load "
-		      "commands in: %s", i, name);
+		      "commands in: %s", (unsigned long)i, name);
 	    if(l.cmd == LC_SEGMENT){
 		sgp = (struct segment_command *)lcp;
 		sg = *sgp;
@@ -1544,15 +1545,15 @@ enum bool swapped)
  * machines).
  */
 static
-unsigned long
+uint32_t
 get_align_64(
 struct mach_header_64 *mhp64,
 struct load_command *load_commands,
-unsigned long size,
+uint32_t size,
 char *name,
 enum bool swapped)
 {
-    unsigned long i, j, cur_align, align;
+    uint32_t i, j, cur_align, align;
     struct load_command *lcp, l;
     struct segment_command_64 *sgp, sg;
     struct section_64 *sp, s;
@@ -1583,14 +1584,14 @@ enum bool swapped)
 		swap_load_command(&l, host_byte_sex);
 	    if(l.cmdsize % sizeof(long long) != 0)
 		error("load command %lu size not a multiple of "
-		      "sizeof(long long) in: %s", i, name);
+		      "sizeof(long long) in: %s", (unsigned long)i, name);
 	    if(l.cmdsize <= 0)
 		fatal("load command %lu size is less than or equal to zero "
-		      "in: %s", i, name);
+		      "in: %s", (unsigned long)i, name);
 	    if((char *)lcp + l.cmdsize >
 	       (char *)load_commands + mhp64->sizeofcmds)
 		fatal("load command %lu extends past end of all load "
-		      "commands in: %s", i, name);
+		      "commands in: %s", (unsigned long)i, name);
 	    if(l.cmd == LC_SEGMENT_64){
 		sgp = (struct segment_command_64 *)lcp;
 		sg = *sgp;
@@ -1630,11 +1631,11 @@ enum bool swapped)
  * alignment that the link editor uses.
  */
 static
-unsigned long
+uint32_t
 guess_align(
-unsigned long vmaddr)
+uint32_t vmaddr)
 {
-    unsigned long align, segalign;
+    uint32_t align, segalign;
 
 	if(vmaddr == 0)
 	    return(MAXSECTALIGN);
@@ -2139,7 +2140,7 @@ int
 size_ar_name(
 char *ar_name)
 {
-    unsigned long j;
+    uint32_t j;
     struct ar_hdr ar_hdr;
 
 	for(j = 0; j < sizeof(ar_hdr.ar_name); j++){
@@ -2190,7 +2191,7 @@ static
 struct arch_flag *
 new_arch_flag(
 struct arch_flag **arch_flags,
-unsigned long *narch_flags)
+uint32_t *narch_flags)
 {
     struct arch_flag *arch_flag;
 
@@ -2252,10 +2253,10 @@ const struct thin_file *thin2)
  * stuff_round() rounds v to a multiple of r.
  */
 static
-unsigned long
+uint32_t
 stuff_round(
-unsigned long v,
-unsigned long r)
+uint32_t v,
+uint32_t r)
 {
 	r--;
 	v += r;
@@ -2270,7 +2271,7 @@ static
 enum
 bool
 ispoweroftwo(
-unsigned long x)
+uint32_t x)
 {
 	if(x == 0)
 	    return(TRUE);
