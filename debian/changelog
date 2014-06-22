@@ -1,3 +1,9 @@
+cctools (698.4-1) saucy; urgency=low
+
+  * Follow upstream version 698.4
+
+ -- Fabian Renn <fabian.renn@gmail.com>  Sun, 22 Jun 2014 22:47:31 +0100
+
 cctools (698.3-1) saucy; urgency=low
 
   * New upstream version 698.3 
