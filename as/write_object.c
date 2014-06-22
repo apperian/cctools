@@ -287,7 +287,7 @@ char *out_file_name)
 	    reloc_segment.vmsize = frchainP->frch_section.addr +
 				   frchainP->frch_section.size;
 	}
-	offset = stuff_round(offset, sizeof(long));
+	offset = stuff_round(offset, sizeof(uint32_t));
 
 	/*
 	 * Count the number of relocation entries for each section.
@@ -302,7 +302,7 @@ char *out_file_name)
 	/*
 	 * Fill in the offset to the relocation entries of the sections.
 	 */
-	offset = stuff_round(offset, sizeof(long));
+	offset = stuff_round(offset, sizeof(uint32_t));
 	reloff = offset;
 	nrelocs = 0;
 	for(frchainP = frchain_root; frchainP; frchainP = frchainP->frch_next){
@@ -334,7 +334,7 @@ char *out_file_name)
 	    else{
 		dynamic_symbol_table.nindirectsyms = nindirectsyms;
 		dynamic_symbol_table.indirectsymoff = offset;
-		offset += nindirectsyms * sizeof(unsigned long);
+		offset += nindirectsyms * sizeof(uint32_t);
 	    }
 
 	    dynamic_symbol_table.tocoff = 0;
@@ -364,8 +364,8 @@ char *out_file_name)
 	    symbol_table.stroff = 0;
 	else
 	    symbol_table.stroff = offset;
-	symbol_table.strsize = stuff_round(strsize, sizeof(unsigned long));
-	offset += stuff_round(strsize, sizeof(unsigned long));
+	symbol_table.strsize = stuff_round(strsize, sizeof(uint32_t));
+	offset += stuff_round(strsize, sizeof(uint32_t));
 
 	/*
 	 * The second group of things to do is now with the size of everything
@@ -564,14 +564,14 @@ char *out_file_name)
 				N_TYPE) == N_ABS)
 				local |= INDIRECT_SYMBOL_ABS;
 			    memcpy(output_addr + offset, (char *)(&local),
-	   			   sizeof(unsigned long));
+	   			   sizeof(uint32_t));
 			}
 			else{
 			    memcpy(output_addr + offset,
 				   (char *)(&isymbolP->isy_symbol->sy_number),
-				   sizeof(unsigned long));
+				   sizeof(uint32_t));
 			}
-			offset += sizeof(unsigned long);
+			offset += sizeof(uint32_t);
 		    }
 		}
 	    }

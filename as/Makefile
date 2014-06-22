@@ -6,7 +6,7 @@ ARCH_DIR := libexec/gcc/darwin
 ARCHS=i386 x86_64 ppc ppc64
 
 ARCH_TARGETS=$(foreach ARCH,$(ARCHS),$(ARCH_DIR)/$(ARCH)/as)
-TARGETS := as $(ARCH_TARGETS)
+TARGETS := bin/as $(ARCH_TARGETS)
 
 SRC_COMMON := app.c as.c atof-generic.c atof-ieee.c expr.c fixes.c flonum-const.c flonum-copy.c flonum-mult.c frags.c hash.c hex-value.c input-file.c input-scrub.c layout.c messages.c obstack.c read.c sections.c symbols.c write_object.c xmalloc.c
 
@@ -38,7 +38,8 @@ include $(ALLSRC:.c=.d)
 	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
 	rm -f $@.$$$$
 
-as: $(OBJ_driver)
+bin/as: $(OBJ_driver)
+	mkdir -p bin
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
 
 $(OBJ_driver) : %.o : %.c
@@ -78,7 +79,7 @@ install : $(TARGETS)
 	install -d $(DESTDIR)/Developer/usr/libexec/gcc/darwin/x86_64
 	install -d $(DESTDIR)/Developer/usr/libexec/gcc/darwin/ppc
 	install -d $(DESTDIR)/Developer/usr/libexec/gcc/darwin/ppc64
-	install -m 0755 as $(DESTDIR)/Developer/usr/bin
+	install -m 0755 bin/as $(DESTDIR)/Developer/usr/bin
 	install -m 0755 $(ARCH_DIR)/i386/as $(DESTDIR)/Developer/usr/libexec/gcc/darwin/i386
 	install -m 0755 $(ARCH_DIR)/x86_64/as $(DESTDIR)/Developer/usr/libexec/gcc/darwin/x86_64
 	install -m 0755 $(ARCH_DIR)/ppc/as $(DESTDIR)/Developer/usr/libexec/gcc/darwin/ppc
@@ -88,6 +89,7 @@ install : $(TARGETS)
 
 clean:
 	rm -rf $(TARGETS)
+	rm -rf bin
 	rm -rf libexec
 	rm -rf *.o
 	rm -rf *.d

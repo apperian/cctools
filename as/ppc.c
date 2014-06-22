@@ -2027,7 +2027,7 @@ unsigned long parcnt)
 
 	if (parcnt == 3 && *param == '\0')
 	  {
-	    unsigned long uval, mask;
+	    uint32_t uval, mask;
 	    int mb, me, mx, count, last;
 
 	    uval = val;

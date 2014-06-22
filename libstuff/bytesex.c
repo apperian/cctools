@@ -1995,13 +1995,13 @@ enum byte_sex target_byte_sex)
     struct swapped_err_code {
 	union {
 	    struct err_code_normal {
-		unsigned int		:16,
+		uint32_t		:16,
 				index	:13,
 				tbl	:2,
 				ext	:1;
 	    } normal;
 	    struct err_code_pgfault {
-		unsigned int		:29,
+		uint32_t		:29,
 				user	:1,
 				wrtflt	:1,
 				prot	:1;
@@ -2601,10 +2601,10 @@ enum byte_sex target_byte_sex)
     enum bool to_host_byte_sex, scattered;
 
     struct swapped_relocation_info {
-	long	r_address;
+	int32_t	r_address;
 	union {
 	    struct {
-		unsigned int
+		uint32_t
 		    r_type:4,
 		    r_extern:1,
 		    r_length:2,
@@ -2617,7 +2617,7 @@ enum byte_sex target_byte_sex)
 
     struct swapped_scattered_relocation_info {
 	uint32_t word;
-	long	r_value;
+	int32_t	r_value;
     } *ssr;
 
 	host_byte_sex = get_host_byte_sex();

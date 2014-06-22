@@ -33,7 +33,7 @@ the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 struct symbol			/* our version of an nlist node */
 {
   nlist_t	sy_nlist;	/* what we write in .o file (if permitted) */
-#ifdef ARCH64
+#ifdef __LP64__
   char		*sy_name;	/* symbol name */
 #endif
   long unsigned sy_name_offset;	/* 1-origin position of sy_name in symbols */
@@ -57,7 +57,7 @@ struct symbol			/* our version of an nlist node */
 
 typedef struct symbol symbolS;
 
-#ifndef ARCH64
+#ifndef __LP64__
 #define sy_name		sy_nlist .n_un. n_name
 				/* Name field always points to a string. */
 				/* 0 means .stabd-like anonymous symbol. */
