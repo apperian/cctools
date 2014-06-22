@@ -1,0 +1,23496 @@
+	.section __TEXT,__text,regular,pure_instructions
+	.section __TEXT,__picsymbolstub1,symbol_stubs,pure_instructions,32
+	.machine ppc64
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.section __DATA, __objc_classrefs, regular, no_dead_strip
+	.section __DATA, __objc_classlist, regular, no_dead_strip
+	.section __DATA, __objc_catlist, regular, no_dead_strip
+	.section __DATA, __objc_selrefs, literal_pointers, no_dead_strip
+	.section __DATA, __objc_nlclslist, regular, no_dead_strip
+	.section __DATA, __objc_nlcatlist, regular, no_dead_strip
+	.section __DATA, __objc_protolist, regular, no_dead_strip
+	.section __DATA, __objc_protorefs, regular, no_dead_strip
+	.section __DATA, __objc_superrefs, regular, no_dead_strip
+	.section __DATA, __objc_imageinfo, regular, no_dead_strip
+	.section __DATA, __objc_stringobj, regular, no_dead_strip
+	.section __DATA, __objc_imageinfo, regular, no_dead_strip
+	.align 2
+L_OBJC_IMAGE_INFO:
+	.long	0
+	.long	16
+	.mod_init_func
+	.align 3
+	.quad	__GLOBAL__I__ZN12_GLOBAL__N_12_1E
+	.cstring
+	.align 3
+LC0:
+	.ascii "boost::lock_error\0"
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost10lock_error4whatEv
+	.weak_definition __ZNK5boost10lock_error4whatEv
+__ZNK5boost10lock_error4whatEv:
+LFB4406:
+	mflr r0
+	bcl 20,31,"L00000000001$pb"
+"L00000000001$pb":
+	mflr r10
+	addis r3,r10,ha16(LC0-"L00000000001$pb")
+	mtlr r0
+	la r3,lo16(LC0-"L00000000001$pb")(r3)
+	blr
+LFE4406:
+	.cstring
+	.align 3
+LC1:
+	.ascii "boost::thread_resource_error\0"
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost21thread_resource_error4whatEv
+	.weak_definition __ZNK5boost21thread_resource_error4whatEv
+__ZNK5boost21thread_resource_error4whatEv:
+LFB4417:
+	mflr r0
+	bcl 20,31,"L00000000002$pb"
+"L00000000002$pb":
+	mflr r10
+	addis r3,r10,ha16(LC1-"L00000000002$pb")
+	mtlr r0
+	la r3,lo16(LC1-"L00000000002$pb")(r3)
+	blr
+LFE4417:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail15sp_counted_base7destroyEv
+	.weak_definition __ZN5boost6detail15sp_counted_base7destroyEv
+	.private_extern __ZN5boost6detail15sp_counted_base7destroyEv
+__ZN5boost6detail15sp_counted_base7destroyEv:
+LFB4515:
+	mr. r2,r3
+	beq cr0,L8
+	ld r2,0(r2)
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+	bctr
+	.p2align 4,,15
+L8:
+	blr
+LFE4515:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail26sp_enable_shared_from_thisEz
+	.weak_definition __ZN5boost6detail26sp_enable_shared_from_thisEz
+	.private_extern __ZN5boost6detail26sp_enable_shared_from_thisEz
+__ZN5boost6detail26sp_enable_shared_from_thisEz:
+LFB4616:
+	blr
+LFE4616:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance19viewDidMoveToWindowEv
+	.weak_definition __ZN17CocoaViewInstance19viewDidMoveToWindowEv
+	.private_extern __ZN17CocoaViewInstance19viewDidMoveToWindowEv
+__ZN17CocoaViewInstance19viewDidMoveToWindowEv:
+LFB8790:
+	blr
+LFE8790:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv
+	.weak_definition __ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv
+	.private_extern __ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv
+__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv:
+LFB8806:
+	ld r3,16(r4)
+	ld r2,0(r3)
+	ld r12,88(r2)
+	mtctr r12
+	bctr
+LFE8806:
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa11GetRootViewEv
+	.private_extern __ZN8Fielding13HostViewCocoa11GetRootViewEv
+__ZN8Fielding13HostViewCocoa11GetRootViewEv:
+LFB8821:
+	blr
+LFE8821:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa16hostMouseCaptureEv
+	.private_extern __ZN8Fielding13HostViewCocoa16hostMouseCaptureEv
+__ZN8Fielding13HostViewCocoa16hostMouseCaptureEv:
+LFB8823:
+	ld r2,160(r3)
+	cmpdi cr7,r2,0
+	beqlr cr7
+	li r0,1
+	stb r0,104(r2)
+	blr
+LFE8823:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa16hostMouseReleaseEv
+	.private_extern __ZN8Fielding13HostViewCocoa16hostMouseReleaseEv
+__ZN8Fielding13HostViewCocoa16hostMouseReleaseEv:
+LFB8824:
+	ld r2,160(r3)
+	cmpdi cr7,r2,0
+	beqlr cr7
+	li r0,0
+	stb r0,104(r2)
+	blr
+LFE8824:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa14GetNSViewFrameEP6NSView
+	.private_extern __ZN8Fielding13HostViewCocoa14GetNSViewFrameEP6NSView
+__ZN8Fielding13HostViewCocoa14GetNSViewFrameEP6NSView:
+LFB8825:
+	mflr r0
+LCFI0:
+	std r30,-16(r1)
+LCFI1:
+	std r31,-8(r1)
+LCFI2:
+	std r0,16(r1)
+LCFI3:
+	stdu r1,-208(r1)
+LCFI4:
+	mfspr r0,256
+	stw r0,188(r1)
+	oris r0,r0,0xc000
+	mtspr 256,r0
+	bcl 20,31,"L00000000003$pb"
+"L00000000003$pb":
+	mflr r31
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_0-"L00000000003$pb")
+	mr r30,r3
+	mr r3,r4
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_0-"L00000000003$pb")(r2)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_0-"L00000000003$pb")(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	li r0,0
+	li r2,144
+	stfd f1,144(r1)
+	stfd f2,152(r1)
+	stfd f3,160(r1)
+	stfd f4,168(r1)
+	stw r0,12(r30)
+	stw r0,0(r30)
+	stw r0,4(r30)
+	stw r0,8(r30)
+	li r0,160
+	lvx v0,r1,r2
+	lvx v1,r1,r0
+	li r2,112
+	li r0,128
+	stvx v0,r1,r2
+	stvx v1,r1,r0
+	lfd f12,112(r1)
+	lfd f11,120(r1)
+	lfd f0,128(r1)
+	lfd f13,136(r1)
+	frsp f10,f12
+	frsp f9,f11
+	fadd f12,f12,f0
+	fadd f11,f11,f13
+	fmr f13,f10
+	frsp f12,f12
+	frsp f11,f11
+	fcmpu cr7,f10,f12
+	bng cr7,L30
+	fmr f13,f12
+	fmr f12,f10
+L30:
+	fcmpu cr7,f9,f11
+	fmr f0,f9
+	bng cr7,L34
+	fmr f0,f11
+	fmr f11,f9
+L34:
+	stfs f13,0(r30)
+	stfs f12,4(r30)
+	mr r3,r30
+	stfs f0,8(r30)
+	stfs f11,12(r30)
+	lwz r12,188(r1)
+	mtspr 256,r12
+	addi r1,r1,208
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE8825:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	.weak_definition __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	.private_extern __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+__ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_:
+LFB9804:
+	ld r3,16(r3)
+	blr
+LFE9804:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	.weak_definition __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	.private_extern __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+__ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_:
+LFB9805:
+	ld r3,8(r3)
+	blr
+LFE9805:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+__ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE:
+LFB9837:
+	li r2,0
+	lwz r0,0(r5)
+	stw r2,4(r3)
+	stw r2,0(r3)
+	sldi r0,r0,3
+	add r2,r0,r4
+	lfsx f0,r4,r0
+	stfs f0,0(r3)
+	lfs f13,4(r2)
+	stfs f13,4(r3)
+	blr
+LFE9837:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	.weak_definition __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	.private_extern __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+__ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_:
+LFB10533:
+	blr
+LFE10533:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_
+	.weak_definition __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_
+	.private_extern __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_
+__ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_:
+LFB10555:
+	blr
+LFE10555:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+	.weak_definition __ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+	.private_extern __ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+__ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_:
+LFB10574:
+	li r0,0
+	stw r0,4(r3)
+	stw r0,0(r3)
+	lfs f0,8(r4)
+	stfs f0,0(r3)
+	lfs f13,12(r4)
+	stfs f13,4(r3)
+	blr
+LFE10574:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+	.weak_definition __ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+	.private_extern __ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+__ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_:
+LFB10577:
+	li r0,0
+	stw r0,4(r3)
+	stw r0,0(r3)
+	lfs f0,0(r4)
+	stfs f0,0(r3)
+	lfs f13,4(r4)
+	stfs f13,4(r3)
+	blr
+LFE10577:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_:
+LFB10591:
+	blr
+LFE10591:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	.weak_definition __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	.private_extern __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+__ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_:
+LFB10821:
+	blr
+LFE10821:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_
+	.weak_definition __ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_
+	.private_extern __ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_
+__ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_:
+LFB10831:
+	lwz r0,0(r4)
+	stw r0,0(r3)
+	blr
+LFE10831:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE:
+LFB11168:
+	ld r0,0(r4)
+	std r0,16(r3)
+	blr
+LFE11168:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE:
+LFB11169:
+	ld r0,0(r4)
+	std r0,24(r3)
+	blr
+LFE11169:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE:
+LFB11170:
+	lwz r0,0(r4)
+	stw r0,32(r3)
+	blr
+LFE11170:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE:
+LFB11174:
+	ld r0,0(r4)
+	std r0,16(r3)
+	blr
+LFE11174:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE:
+LFB11175:
+	ld r0,0(r4)
+	std r0,24(r3)
+	blr
+LFE11175:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE:
+LFB11176:
+	lwz r0,0(r4)
+	stw r0,32(r3)
+	blr
+LFE11176:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+__ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE:
+LFB11357:
+	lwz r0,0(r4)
+	sldi r0,r0,2
+	lfsx f1,r3,r0
+	blr
+LFE11357:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+__ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE:
+LFB10883:
+	mflr r0
+LCFI5:
+	li r5,0
+	std r0,16(r1)
+LCFI6:
+	stdu r1,-144(r1)
+LCFI7:
+	li r0,0
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	addi r1,r1,144
+	ld r0,16(r1)
+	mtlr r0
+	blr
+LFE10883:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE
+	.weak_definition __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE
+	.private_extern __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE
+__ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE:
+LFB10512:
+	mflr r0
+LCFI8:
+	mr r9,r3
+	std r0,16(r1)
+LCFI9:
+	stdu r1,-144(r1)
+LCFI10:
+	nop
+	nop
+	lwz r0,0(r4)
+	addi r3,r1,116
+	addi r4,r1,112
+	sldi r0,r0,3
+	add r2,r0,r9
+	lfsx f0,r9,r0
+	lfs f13,4(r2)
+	stfs f0,116(r1)
+	stfs f13,120(r1)
+	lwz r0,0(r5)
+	li r5,0
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	addi r1,r1,144
+	ld r0,16(r1)
+	mtlr r0
+	blr
+LFE10512:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+	.weak_definition __ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+	.private_extern __ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+__ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_:
+LFB9625:
+	mflr r0
+LCFI11:
+	li r2,0
+	std r0,16(r1)
+LCFI12:
+	stdu r1,-144(r1)
+LCFI13:
+	li r0,1
+	addi r4,r1,112
+	addi r5,r1,116
+	stw r0,112(r1)
+	stw r2,116(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE
+	addi r1,r1,144
+	ld r0,16(r1)
+	mtlr r0
+	blr
+LFE9625:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+	.weak_definition __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+	.private_extern __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+__ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_:
+LFB9624:
+	mflr r0
+LCFI14:
+	std r0,16(r1)
+LCFI15:
+	stdu r1,-144(r1)
+LCFI16:
+	li r0,0
+	addi r4,r1,112
+	addi r5,r1,116
+	stw r0,116(r1)
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE
+	addi r1,r1,144
+	ld r0,16(r1)
+	mtlr r0
+	blr
+LFE9624:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+__ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE:
+LFB11358:
+	mflr r0
+LCFI17:
+	li r5,0
+	std r0,16(r1)
+LCFI18:
+	stdu r1,-144(r1)
+LCFI19:
+	li r0,1
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	addi r1,r1,144
+	ld r0,16(r1)
+	mtlr r0
+	blr
+LFE11358:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb
+	.weak_definition __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb
+	.private_extern __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb
+__ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb:
+LFB10576:
+	mflr r0
+LCFI20:
+	cmpdi cr7,r5,0
+	stfd f31,-8(r1)
+LCFI21:
+	std r30,-24(r1)
+LCFI22:
+	fmr f31,f1
+	mr r30,r3
+	std r0,16(r1)
+LCFI23:
+	stdu r1,-144(r1)
+LCFI24:
+	beq cr7,L81
+	li r4,0
+	bl __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	li r3,0
+	fcmpu cr7,f1,f31
+	cror 30,31,28
+	beq cr7,L86
+	mr r3,r30
+	li r4,0
+	bl __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	fcmpu cr7,f1,f31
+	cror 30,28,30
+	mfcr r3
+	rlwinm r3,r3,31,1
+	b L86
+	.p2align 4,,15
+L81:
+	li r4,0
+	bl __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	li r3,0
+	fcmpu cr7,f1,f31
+	bng cr7,L86
+	mr r3,r30
+	li r4,0
+	bl __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	fcmpu cr7,f1,f31
+	mfcr r3
+	rlwinm r3,r3,29,1
+	.p2align 4,,15
+L86:
+	addi r1,r1,144
+	ld r0,16(r1)
+	ld r30,-24(r1)
+	lfd f31,-8(r1)
+	mtlr r0
+	blr
+LFE10576:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+__ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE:
+LFB10513:
+	mflr r0
+LCFI25:
+	stfd f31,-8(r1)
+LCFI26:
+	std r29,-32(r1)
+LCFI27:
+	li r4,0
+	mr r29,r3
+	std r0,16(r1)
+LCFI28:
+	stdu r1,-144(r1)
+LCFI29:
+	bl __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	mr r3,r29
+	li r4,0
+	fmr f31,f1
+	bl __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	addi r1,r1,144
+	ld r0,16(r1)
+	ld r29,-32(r1)
+	fsubs f1,f31,f1
+	lfd f31,-8(r1)
+	mtlr r0
+	blr
+LFE10513:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	.weak_definition __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	.private_extern __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+__ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE:
+LFB9626:
+	mflr r0
+LCFI30:
+	std r29,-24(r1)
+LCFI31:
+	li r6,0
+	std r0,16(r1)
+LCFI32:
+	stdu r1,-160(r1)
+LCFI33:
+	nop
+	nop
+	lwz r0,0(r4)
+	addi r29,r1,116
+	mr r4,r3
+	addi r5,r1,112
+	mr r3,r29
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	li r4,0
+	bl __ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE
+	addi r1,r1,160
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	blr
+LFE9626:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+__ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE:
+LFB11399:
+	lwz r0,0(r4)
+	sldi r0,r0,2
+	lfsx f1,r3,r0
+	blr
+LFE11399:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+	.weak_definition __ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+	.private_extern __ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+__ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_:
+LFB10578:
+	mflr r0
+LCFI34:
+	li r5,0
+	std r0,16(r1)
+LCFI35:
+	stdu r1,-144(r1)
+LCFI36:
+	li r0,0
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	addi r1,r1,144
+	ld r0,16(r1)
+	mtlr r0
+	blr
+LFE10578:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+	.weak_definition __ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+	.private_extern __ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+__ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_:
+LFB10575:
+	mflr r0
+LCFI37:
+	li r5,0
+	std r0,16(r1)
+LCFI38:
+	stdu r1,-144(r1)
+LCFI39:
+	li r0,1
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	addi r1,r1,144
+	ld r0,16(r1)
+	mtlr r0
+	blr
+LFE10575:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b
+	.weak_definition __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b
+	.private_extern __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b
+__ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b:
+LFB9673:
+	mflr r0
+LCFI40:
+	std r27,-40(r1)
+LCFI41:
+	std r28,-32(r1)
+LCFI42:
+	std r29,-24(r1)
+LCFI43:
+	std r30,-16(r1)
+LCFI44:
+	std r0,16(r1)
+LCFI45:
+	stdu r1,-176(r1)
+LCFI46:
+	mr r30,r3
+	mr r28,r4
+	mr r4,r30
+	mr r27,r5
+	addi r29,r1,120
+	mr r3,r29
+	bl __ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+	mr r3,r28
+	bl __ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+	mr r3,r29
+	mr r5,r27
+	bl __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb
+	li r0,0
+	cmpdi cr7,r3,0
+	beq cr7,L104
+	addi r29,r1,112
+	mr r4,r30
+	mr r3,r29
+	bl __ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_
+	mr r3,r28
+	bl __ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_
+	mr r3,r29
+	mr r5,r27
+	bl __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb
+	mr r0,r3
+L104:
+	addi r1,r1,176
+	mr r3,r0
+	ld r0,16(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE9673:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_:
+LFB11415:
+	blr
+LFE11415:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_
+	.weak_definition __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_
+	.private_extern __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_
+__ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_:
+LFB12321:
+	blr
+LFE12321:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE
+__ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE:
+LFB12555:
+	mflr r0
+LCFI47:
+	std r28,-32(r1)
+LCFI48:
+	std r29,-24(r1)
+LCFI49:
+	std r30,-16(r1)
+LCFI50:
+	mr r30,r4
+	std r0,16(r1)
+LCFI51:
+	stdu r1,-160(r1)
+LCFI52:
+	li r0,0
+	mr r29,r3
+	mr r28,r5
+	mr r3,r30
+	li r5,0
+	addi r4,r1,116
+	stw r0,116(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r5,r28
+	bl __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb
+	li r0,0
+	cmpdi cr7,r3,0
+	beq cr7,L113
+	li r0,1
+	mr r3,r30
+	addi r4,r1,112
+	li r5,0
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r5,r28
+	bl __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb
+	mr r0,r3
+L113:
+	addi r1,r1,160
+	mr r3,r0
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE12555:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_:
+LFB12946:
+	blr
+LFE12946:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_
+	.weak_definition __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_
+	.private_extern __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_
+__ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_:
+LFB10595:
+	mflr r0
+LCFI53:
+	std r28,-32(r1)
+LCFI54:
+	std r29,-24(r1)
+LCFI55:
+	std r30,-16(r1)
+LCFI56:
+	mr r28,r3
+	std r0,16(r1)
+LCFI57:
+	stdu r1,-160(r1)
+LCFI58:
+	mr r29,r5
+	mr r30,r4
+	ld r2,8(r3)
+	mr r3,r4
+	subf r0,r5,r2
+	sradi. r10,r0,4
+	ble cr0,L118
+	mtctr r10
+	mr r11,r5
+	mr r9,r4
+	.p2align 4,,15
+L120:
+	lwz r0,8(r11)
+	ld r2,0(r11)
+	stw r0,8(r9)
+	std r2,0(r9)
+	lwz r0,12(r11)
+	addi r11,r11,16
+	stw r0,12(r9)
+	addi r9,r9,16
+	bdnz L120
+	sldi r0,r10,4
+	ld r2,8(r28)
+	add r3,r30,r0
+L118:
+	mr r4,r2
+	addi r5,r1,112
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_
+	subf r0,r30,r29
+	ld r2,8(r28)
+	addi r1,r1,160
+	mr r3,r30
+	rldicr r0,r0,0,59
+	subf r2,r0,r2
+	std r2,8(r28)
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE10595:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_:
+LFB13411:
+	ld r0,16(r3)
+	addi r3,r3,8
+	cmpdi cr7,r0,0
+	beqlr cr7
+	lfs f13,0(r4)
+	mr r2,r0
+	.p2align 4,,15
+L128:
+	lfs f0,32(r2)
+	fcmpu cr7,f0,f13
+	blt cr7,L129
+	mr r3,r2
+	ld r2,16(r2)
+	b L132
+	.p2align 4,,15
+L129:
+	ld r2,24(r2)
+L132:
+	cmpdi cr7,r2,0
+	bne cr7,L128
+	blr
+LFE13411:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE
+__ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE:
+LFB13505:
+	fcmpu cr7,f1,f2
+	mr r2,r3
+	bng cr7,L136
+	fmr f0,f2
+	fmr f2,f1
+	fmr f1,f0
+L136:
+	stfs f2,4(r2)
+	stfs f1,0(r2)
+	blr
+LFE13505:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE
+__ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE:
+LFB13039:
+	mflr r0
+LCFI59:
+	stfd f31,-8(r1)
+LCFI60:
+	std r28,-40(r1)
+LCFI61:
+	std r29,-32(r1)
+LCFI62:
+	mr r29,r4
+	mr r28,r3
+	std r0,16(r1)
+LCFI63:
+	stdu r1,-176(r1)
+LCFI64:
+	mr r3,r29
+	li r0,0
+	li r5,0
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	li r0,1
+	mr r3,r29
+	fmr f31,f1
+	addi r4,r1,116
+	li r5,0
+	stw r0,116(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r28
+	li r6,0
+	fmr f2,f1
+	fmr f1,f31
+	bl __ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE
+	addi r1,r1,176
+	mr r3,r28
+	ld r0,16(r1)
+	ld r28,-40(r1)
+	ld r29,-32(r1)
+	lfd f31,-8(r1)
+	mtlr r0
+	blr
+LFE13039:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	.weak_definition __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	.private_extern __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+__ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE:
+LFB12396:
+	mflr r0
+LCFI65:
+	std r29,-24(r1)
+LCFI66:
+	li r5,0
+	mr r29,r3
+	std r0,16(r1)
+LCFI67:
+	stdu r1,-160(r1)
+LCFI68:
+	addi r3,r1,112
+	bl __ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE
+	lfs f13,116(r1)
+	lfs f0,112(r1)
+	addi r1,r1,160
+	mr r3,r29
+	stfs f0,0(r29)
+	stfs f13,4(r29)
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	blr
+LFE12396:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_
+	.weak_definition __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_
+	.private_extern __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_
+__ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_:
+LFB9842:
+	lwz r0,0(r4)
+	mr r4,r5
+	li r5,0
+	sldi r0,r0,3
+	add r3,r3,r0
+	b __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+LFE9842:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+	.weak_definition __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+	.private_extern __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+__ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_:
+LFB11943:
+	mflr r0
+LCFI69:
+	std r27,-40(r1)
+LCFI70:
+	std r28,-32(r1)
+LCFI71:
+	std r29,-24(r1)
+LCFI72:
+	li r6,0
+	std r0,16(r1)
+LCFI73:
+	stdu r1,-192(r1)
+LCFI74:
+	mr r29,r3
+	li r0,0
+	mr r28,r4
+	addi r27,r1,128
+	addi r5,r1,112
+	stw r0,112(r1)
+	stw r0,116(r1)
+	mr r3,r27
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r5,r27
+	addi r4,r1,116
+	addi r27,r1,136
+	bl __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_
+	li r0,1
+	mr r4,r28
+	addi r5,r1,120
+	mr r3,r27
+	li r6,0
+	stw r0,120(r1)
+	stw r0,124(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r5,r27
+	addi r4,r1,124
+	bl __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_
+	addi r1,r1,192
+	mr r3,r29
+	ld r0,16(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	blr
+LFE11943:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_:
+LFB13568:
+	blr
+LFE13568:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_
+	.weak_definition __ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_
+	.private_extern __ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_
+__ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_:
+LFB13754:
+	ld r0,72(r1)
+	sradi r6,r6,32
+	stfs f1,64(r1)
+	mr r8,r3
+	stfs f2,68(r1)
+	rldimi r0,r6,32,0
+	std r0,72(r1)
+	lwa r10,72(r1)
+L152:
+	mr r3,r8
+	b L153
+	.p2align 4,,15
+L154:
+	addi r3,r3,12
+L153:
+	lfs f0,0(r3)
+	fcmpu cr7,f0,f1
+	blt cr7,L154
+	bgt cr7,L156
+	lfs f0,4(r3)
+	fcmpu cr7,f0,f2
+	blt cr7,L154
+	bgt cr7,L156
+	lwz r0,8(r3)
+	cmpw cr7,r0,r10
+	blt cr7,L154
+L156:
+	addi r11,r4,-12
+	b L160
+	.p2align 4,,15
+L161:
+	addi r11,r11,-12
+L160:
+	lfs f0,0(r11)
+	mr r4,r11
+	fcmpu cr7,f0,f1
+	bgt cr7,L161
+	blt cr7,L163
+	lfs f0,4(r11)
+	fcmpu cr7,f0,f2
+	bgt cr7,L161
+	blt cr7,L163
+	lwz r0,8(r11)
+	cmpw cr7,r0,r10
+	bgt cr7,L161
+L163:
+	cmpld cr7,r11,r3
+	ble cr7,L170
+	lfs f13,4(r3)
+	lfs f0,0(r3)
+	addi r8,r3,12
+	lwa r9,8(r3)
+	ld r0,0(r11)
+	lwz r2,8(r11)
+	std r0,0(r3)
+	stw r2,8(r3)
+	stfs f0,0(r11)
+	stw r9,8(r11)
+	stfs f13,4(r11)
+	b L152
+L170:
+	blr
+LFE13754:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_
+	.weak_definition __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_
+	.private_extern __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_
+__ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_:
+LFB14037:
+	ld r0,64(r1)
+	sradi r5,r5,32
+	addi r9,r3,-12
+	stfs f1,56(r1)
+	stfs f2,60(r1)
+	rldimi r0,r5,32,0
+	std r0,64(r1)
+	lwa r10,64(r1)
+	b L172
+	.p2align 4,,15
+L173:
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	addi r9,r9,-12
+	std r0,0(r3)
+	stw r2,8(r3)
+	mr r3,r11
+L172:
+	lfs f0,0(r9)
+	mr r11,r9
+	fcmpu cr7,f0,f1
+	bgt cr7,L173
+	blt cr7,L175
+	lfs f0,4(r9)
+	fcmpu cr7,f0,f2
+	bgt cr7,L173
+	blt cr7,L175
+	lwz r0,8(r9)
+	cmpw cr7,r0,r10
+	bgt cr7,L173
+L175:
+	stfs f1,0(r3)
+	stw r10,8(r3)
+	stfs f2,4(r3)
+	blr
+LFE14037:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_
+	.weak_definition __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_
+	.private_extern __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_
+__ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_:
+LFB12327:
+	mflr r0
+LCFI75:
+	std r28,-32(r1)
+LCFI76:
+	std r29,-24(r1)
+LCFI77:
+	std r30,-16(r1)
+LCFI78:
+	mr r28,r3
+	std r0,16(r1)
+LCFI79:
+	stdu r1,-160(r1)
+LCFI80:
+	lis r0,0xaaaa
+	ori r0,r0,43690
+	mr r29,r5
+	mr r30,r4
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	ld r9,8(r3)
+	mr r3,r4
+	subf r2,r5,r9
+	sradi r2,r2,2
+	mulld. r2,r2,r0
+	ble cr0,L181
+	mtctr r2
+	mr r11,r4
+	mr r9,r5
+	.p2align 4,,15
+L183:
+	lfs f0,0(r9)
+	lwz r0,8(r9)
+	stw r0,8(r11)
+	stfs f0,0(r11)
+	lfs f0,4(r9)
+	addi r9,r9,12
+	stfs f0,4(r11)
+	addi r11,r11,12
+	bdnz L183
+	mulli r0,r2,12
+	ld r9,8(r28)
+	add r3,r30,r0
+L181:
+	addi r5,r1,112
+	mr r4,r9
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_
+	subf r0,r30,r29
+	ld r2,8(r28)
+	addi r1,r1,160
+	mr r3,r30
+	rldicr r0,r0,0,61
+	subf r2,r0,r2
+	std r2,8(r28)
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE12327:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+	.weak_definition __ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+	.private_extern __ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+__ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_:
+LFB14358:
+	ld r0,80(r1)
+	sradi r7,r7,32
+	cmpd cr7,r4,r5
+	mr r11,r4
+	stfs f1,72(r1)
+	stfs f2,76(r1)
+	rldimi r0,r7,32,0
+	std r0,80(r1)
+	lwa r8,80(r1)
+	ble cr7,L205
+	addi r0,r4,-1
+	sradi r10,r0,1
+	addze r10,r10
+	b L191
+	.p2align 4,,15
+L193:
+	mulli r11,r11,12
+	cmpd cr7,r10,r5
+	ld r0,0(r4)
+	lwz r9,8(r4)
+	add r2,r3,r11
+	stdx r0,r3,r11
+	stw r9,8(r2)
+	ble cr7,L192
+	addi r0,r10,-1
+	mr r11,r10
+	sradi r10,r0,1
+	addze r10,r10
+L191:
+	mulli r2,r10,12
+	lfsx f0,r3,r2
+	add r4,r3,r2
+	fcmpu cr7,f1,f0
+	bgt cr7,L193
+	blt cr7,L205
+	lfs f0,4(r4)
+	fcmpu cr7,f2,f0
+	bgt cr7,L193
+	blt cr7,L205
+	lwz r0,8(r4)
+	cmpw cr7,r0,r8
+	blt cr7,L193
+L205:
+	mulli r0,r11,12
+	add r4,r3,r0
+L192:
+	stfs f1,0(r4)
+	stw r8,8(r4)
+	stfs f2,4(r4)
+	blr
+LFE14358:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+	.weak_definition __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+	.private_extern __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+__ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_:
+LFB14223:
+	addi r0,r4,1
+	ld r2,80(r1)
+	sradi r7,r7,32
+	stfs f1,72(r1)
+	mr r12,r4
+	mr r6,r4
+	stfs f2,76(r1)
+	sldi r8,r0,1
+	cmpd cr7,r8,r5
+	rldimi r2,r7,32,0
+	std r2,80(r1)
+	bge cr7,L209
+	.p2align 4,,15
+L227:
+	addi r10,r8,-1
+	mulli r2,r8,12
+	mr r4,r8
+	mulli r9,r10,12
+	lfsx f13,r3,r2
+	add r11,r3,r2
+	lfsx f0,r3,r9
+	add r7,r3,r9
+	fcmpu cr7,f13,f0
+	blt cr7,L211
+	bgt cr7,L229
+	lfs f13,4(r11)
+	lfs f0,4(r7)
+	fcmpu cr7,f13,f0
+	blt cr7,L211
+	bgt cr7,L229
+	lwz r0,8(r11)
+	lwz r2,8(r7)
+	cmpw cr7,r0,r2
+	blt cr7,L211
+	.p2align 4,,15
+L229:
+	mr r7,r11
+	b L216
+	.p2align 4,,15
+L211:
+	mr r4,r10
+L216:
+	addi r0,r4,1
+	mulli r9,r6,12
+	lwz r11,8(r7)
+	mr r6,r4
+	sldi r8,r0,1
+	ld r0,0(r7)
+	cmpd cr7,r5,r8
+	add r2,r3,r9
+	stdx r0,r3,r9
+	stw r11,8(r2)
+	bgt cr7,L227
+	cmpd cr7,r8,r5
+L209:
+	bne cr7,L224
+	addi r0,r8,-1
+	mulli r10,r4,12
+	mulli r11,r0,12
+	mr r4,r0
+	add r8,r3,r10
+	add r2,r3,r11
+	ldx r0,r3,r11
+	lwz r9,8(r2)
+	stdx r0,r3,r10
+	stw r9,8(r8)
+L224:
+	lwz r7,80(r1)
+	lfs f1,72(r1)
+	mr r5,r12
+	lfs f2,76(r1)
+	sldi r7,r7,32
+	b __ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+LFE14223:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.weak_definition __ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.private_extern __ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+__ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_:
+LFB14029:
+	mflr r0
+LCFI81:
+	subf r4,r3,r4
+	std r28,-32(r1)
+LCFI82:
+	std r27,-40(r1)
+LCFI83:
+	std r29,-24(r1)
+LCFI84:
+	std r30,-16(r1)
+LCFI85:
+	std r0,16(r1)
+LCFI86:
+	lis r0,0xaaaa
+	sradi r4,r4,2
+	stdu r1,-176(r1)
+LCFI87:
+	mr r27,r3
+	ori r0,r0,43690
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld r28,r4,r0
+	cmpdi cr7,r28,1
+	ble cr7,L235
+	addi r0,r28,-2
+	sradi r29,r0,1
+	addze r29,r29
+	mulli r2,r29,12
+	add r30,r3,r2
+	.p2align 4,,15
+L233:
+	ld r0,0(r30)
+	lwz r2,8(r30)
+	mr r3,r27
+	mr r4,r29
+	mr r5,r28
+	addi r30,r30,-12
+	std r0,112(r1)
+	rldicl r7,r2,0,32
+	stw r2,120(r1)
+	sldi r7,r7,32
+	lfs f1,112(r1)
+	lfs f2,116(r1)
+	bl __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+	cmpdi cr7,r29,0
+	beq cr7,L235
+	addi r29,r29,-1
+	b L233
+	.p2align 4,,15
+L235:
+	addi r1,r1,176
+	ld r0,16(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE14029:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info:
+LFB14525:
+	li r3,0
+	blr
+LFE14525:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info:
+LFB14527:
+	li r3,0
+	blr
+LFE14527:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E:
+LFB12300:
+	mflr r0
+LCFI88:
+	std r30,-16(r1)
+LCFI89:
+	mr. r30,r4
+	std r28,-32(r1)
+LCFI90:
+	std r29,-24(r1)
+LCFI91:
+	std r0,16(r1)
+LCFI92:
+	mr r28,r3
+	stdu r1,-144(r1)
+LCFI93:
+	beq cr0,L243
+	.p2align 4,,15
+L244:
+	ld r4,24(r30)
+	mr r3,r28
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E
+	ld r29,16(r30)
+	mr r3,r30
+	bl __ZdlPv
+	cmpdi cr7,r29,0
+	mr r30,r29
+	bne cr7,L244
+L243:
+	addi r1,r1,144
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE12300:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E:
+LFB11947:
+	mflr r0
+LCFI94:
+	std r30,-16(r1)
+LCFI95:
+	mr. r30,r4
+	std r28,-32(r1)
+LCFI96:
+	std r29,-24(r1)
+LCFI97:
+	std r0,16(r1)
+LCFI98:
+	mr r28,r3
+	stdu r1,-144(r1)
+LCFI99:
+	beq cr0,L249
+	.p2align 4,,15
+L250:
+	ld r4,24(r30)
+	mr r3,r28
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+	ld r29,16(r30)
+	mr r3,r30
+	bl __ZdlPv
+	cmpdi cr7,r29,0
+	mr r30,r29
+	bne cr7,L250
+L249:
+	addi r1,r1,144
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE11947:
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN18CocoaViewInterfaceD0Ev
+	.private_extern __ZN18CocoaViewInterfaceD0Ev
+__ZN18CocoaViewInterfaceD0Ev:
+LFB8779:
+	mflr r0
+	bcl 20,31,"L00000000004$pb"
+"L00000000004$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTV18CocoaViewInterface-"L00000000004$pb")
+	mtlr r0
+	la r2,lo16(__ZTV18CocoaViewInterface-"L00000000004$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	b __ZdlPv
+LFE8779:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN18CocoaViewInterfaceD2Ev
+	.private_extern __ZN18CocoaViewInterfaceD2Ev
+__ZN18CocoaViewInterfaceD2Ev:
+LFB8777:
+	mflr r0
+	bcl 20,31,"L00000000005$pb"
+"L00000000005$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTV18CocoaViewInterface-"L00000000005$pb")
+	mtlr r0
+	la r2,lo16(__ZTV18CocoaViewInterface-"L00000000005$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	blr
+LFE8777:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN18CocoaViewInterfaceD1Ev
+	.private_extern __ZN18CocoaViewInterfaceD1Ev
+__ZN18CocoaViewInterfaceD1Ev:
+LFB8778:
+	b __ZN18CocoaViewInterfaceD2Ev
+LFE8778:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail15sp_counted_baseD0Ev
+	.weak_definition __ZN5boost6detail15sp_counted_baseD0Ev
+	.private_extern __ZN5boost6detail15sp_counted_baseD0Ev
+__ZN5boost6detail15sp_counted_baseD0Ev:
+LFB4514:
+	mflr r0
+	bcl 20,31,"L00000000006$pb"
+"L00000000006$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000006$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000006$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	b __ZdlPv
+LFE4514:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev:
+LFB14489:
+	mflr r0
+	bcl 20,31,"L00000000007$pb"
+"L00000000007$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000007$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000007$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	b __ZdlPv
+LFE14489:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_baseD0Ev
+	.weak_definition __ZN5boost16exception_detail10clone_baseD0Ev
+	.private_extern __ZN5boost16exception_detail10clone_baseD0Ev
+__ZN5boost16exception_detail10clone_baseD0Ev:
+LFB4493:
+	mflr r0
+	bcl 20,31,"L00000000008$pb"
+"L00000000008$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000008$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000008$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	b __ZdlPv
+LFE4493:
+	.text
+	.align 2
+	.p2align 4,,15
+___tcf_2:
+LFB14479:
+	mflr r0
+	bcl 20,31,"L00000000009$pb"
+"L00000000009$pb":
+	mflr r10
+	addis r3,r10,ha16(__ZStL8__ioinit-"L00000000009$pb")
+	mtlr r0
+	la r3,lo16(__ZStL8__ioinit-"L00000000009$pb")(r3)
+	b __ZNSt8ios_base4InitD1Ev
+LFE14479:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj
+	.private_extern __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj
+__ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj:
+LFB8826:
+	b __ZN8Fielding8HostView12setModifiersERNS_4ViewEj
+LFE8826:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_:
+LFB13776:
+	mflr r0
+LCFI100:
+	std r26,-48(r1)
+LCFI101:
+	std r27,-40(r1)
+LCFI102:
+	std r28,-32(r1)
+LCFI103:
+	std r29,-24(r1)
+LCFI104:
+	std r30,-16(r1)
+LCFI105:
+	std r0,16(r1)
+LCFI106:
+	stdu r1,-160(r1)
+LCFI107:
+	mr r29,r3
+	li r3,40
+	mr r27,r4
+	mr r28,r5
+	mr r26,r6
+	bl __Znwm
+	cmpdi cr7,r3,-32
+	mr r30,r3
+	beq cr7,L274
+	ld r0,0(r26)
+	std r0,32(r3)
+L274:
+	cmpdi cr7,r27,0
+	addi r6,r29,8
+	bne cr7,L276
+	cmpd cr7,r6,r28
+	beq cr7,L276
+	lfs f0,0(r26)
+	lfs f13,32(r28)
+	fcmpu cr7,f0,f13
+	mfcr r3
+	rlwinm r3,r3,29,1
+	b L279
+	.p2align 4,,15
+L276:
+	li r3,1
+L279:
+	mr r5,r28
+	mr r4,r30
+	bl __ZSt29_Rb_tree_insert_and_rebalancebPSt18_Rb_tree_node_baseS0_RS_
+	ld r2,40(r29)
+	addi r1,r1,160
+	mr r3,r30
+	addi r2,r2,1
+	std r2,40(r29)
+	ld r0,16(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE13776:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16thread_exceptionD0Ev
+	.weak_definition __ZN5boost16thread_exceptionD0Ev
+__ZN5boost16thread_exceptionD0Ev:
+LFB4393:
+	mflr r0
+LCFI108:
+	std r31,-8(r1)
+LCFI109:
+	std r29,-24(r1)
+LCFI110:
+	bcl 20,31,"L00000000010$pb"
+"L00000000010$pb":
+	mr r29,r3
+	mflr r31
+	addis r2,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000010$pb")
+	std r0,16(r1)
+LCFI111:
+	stdu r1,-144(r1)
+LCFI112:
+	ld r2,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000010$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	bl __ZNSt9exceptionD2Ev
+	addi r1,r1,144
+	mr r3,r29
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	b __ZdlPv
+LFE4393:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16thread_exceptionD1Ev
+	.weak_definition __ZN5boost16thread_exceptionD1Ev
+__ZN5boost16thread_exceptionD1Ev:
+LFB4392:
+	mflr r0
+	bcl 20,31,"L00000000011$pb"
+"L00000000011$pb":
+	mflr r10
+	addis r2,r10,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000011$pb")
+	mtlr r0
+	ld r2,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000011$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	b __ZNSt9exceptionD2Ev
+LFE4392:
+	.cstring
+	.align 3
+LC2:
+	.ascii "/Developer/SDKs/MacOSX10.5.modified.sdk/usr/include/boost/thread/pthread/mutex.hpp\0"
+	.align 3
+LC3:
+	.ascii "!ret\0"
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost5mutex6unlockEv
+	.weak_definition __ZN5boost5mutex6unlockEv
+	.private_extern __ZN5boost5mutex6unlockEv
+__ZN5boost5mutex6unlockEv:
+LFB5643:
+	mflr r0
+LCFI113:
+	std r30,-16(r1)
+LCFI114:
+	std r31,-8(r1)
+LCFI115:
+	bcl 20,31,"L00000000012$pb"
+"L00000000012$pb":
+	mr r30,r3
+	mflr r31
+	std r0,16(r1)
+LCFI116:
+	stdu r1,-128(r1)
+LCFI117:
+	.p2align 4,,15
+L290:
+	mr r3,r30
+	bl _pthread_mutex_unlock
+	cmpwi cr7,r3,4
+	beq cr7,L290
+	cmpdi cr7,r3,0
+	beq+ cr7,L294
+	addis r3,r31,ha16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000012$pb")
+	addis r4,r31,ha16(LC2-"L00000000012$pb")
+	addis r6,r31,ha16(LC3-"L00000000012$pb")
+	li r5,74
+	la r3,lo16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000012$pb")(r3)
+	la r4,lo16(LC2-"L00000000012$pb")(r4)
+	la r6,lo16(LC3-"L00000000012$pb")(r6)
+	bl ___assert_rtn
+	.p2align 4,,15
+L294:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE5643:
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoaD0Ev
+	.private_extern __ZN8Fielding13HostViewCocoaD0Ev
+__ZN8Fielding13HostViewCocoaD0Ev:
+LFB8817:
+	mflr r0
+LCFI118:
+	std r30,-16(r1)
+LCFI119:
+	std r31,-8(r1)
+LCFI120:
+	std r29,-24(r1)
+LCFI121:
+	bcl 20,31,"L00000000013$pb"
+"L00000000013$pb":
+	mr r30,r3
+	mflr r31
+	std r0,16(r1)
+LCFI122:
+	addis r2,r31,ha16(__ZTVN8Fielding13HostViewCocoaE-"L00000000013$pb")
+	stdu r1,-144(r1)
+LCFI123:
+	la r2,lo16(__ZTVN8Fielding13HostViewCocoaE-"L00000000013$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r30)
+	ld r3,160(r3)
+	cmpdi cr7,r3,0
+	beq cr7,L298
+	ld r2,0(r3)
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+LEHB0:
+	bctrl
+LEHE0:
+	li r0,0
+	std r0,160(r30)
+	b L298
+L304:
+L301:
+	mr r29,r3
+	mr r3,r30
+	bl __ZN8Fielding8HostViewD2Ev
+	mr r3,r29
+LEHB1:
+	bl __Unwind_Resume
+	.p2align 4,,15
+L298:
+	mr r3,r30
+	bl __ZN8Fielding8HostViewD2Ev
+LEHE1:
+	addi r1,r1,144
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+LFE8817:
+	.section __DATA,__gcc_except_tab
+GCC_except_table0:
+LLSDA8817:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$0,LEHB0-LFB8817
+	.long L$set$0
+	.set L$set$1,LEHE0-LEHB0
+	.long L$set$1
+	.set L$set$2,L304-LFB8817
+	.long L$set$2
+	.byte	0x0
+	.set L$set$3,LEHB1-LFB8817
+	.long L$set$3
+	.set L$set$4,LEHE1-LEHB1
+	.long L$set$4
+	.long	0x0
+	.byte	0x0
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoaD2Ev
+	.private_extern __ZN8Fielding13HostViewCocoaD2Ev
+__ZN8Fielding13HostViewCocoaD2Ev:
+LFB8815:
+	mflr r0
+LCFI124:
+	std r30,-16(r1)
+LCFI125:
+	std r31,-8(r1)
+LCFI126:
+	std r29,-24(r1)
+LCFI127:
+	bcl 20,31,"L00000000014$pb"
+"L00000000014$pb":
+	mr r30,r3
+	mflr r31
+	std r0,16(r1)
+LCFI128:
+	addis r2,r31,ha16(__ZTVN8Fielding13HostViewCocoaE-"L00000000014$pb")
+	stdu r1,-144(r1)
+LCFI129:
+	la r2,lo16(__ZTVN8Fielding13HostViewCocoaE-"L00000000014$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r30)
+	ld r3,160(r3)
+	cmpdi cr7,r3,0
+	beq cr7,L306
+	ld r2,0(r3)
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+LEHB2:
+	bctrl
+LEHE2:
+	li r0,0
+	std r0,160(r30)
+	b L306
+L312:
+L309:
+	mr r29,r3
+	mr r3,r30
+	bl __ZN8Fielding8HostViewD2Ev
+	mr r3,r29
+LEHB3:
+	bl __Unwind_Resume
+	.p2align 4,,15
+L306:
+	addi r1,r1,144
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZN8Fielding8HostViewD2Ev
+LEHE3:
+LFE8815:
+	.section __DATA,__gcc_except_tab
+GCC_except_table1:
+LLSDA8815:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$5,LEHB2-LFB8815
+	.long L$set$5
+	.set L$set$6,LEHE2-LEHB2
+	.long L$set$6
+	.set L$set$7,L312-LFB8815
+	.long L$set$7
+	.byte	0x0
+	.set L$set$8,LEHB3-LFB8815
+	.long L$set$8
+	.set L$set$9,LEHE3-LEHB3
+	.long L$set$9
+	.long	0x0
+	.byte	0x0
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoaD1Ev
+	.private_extern __ZN8Fielding13HostViewCocoaD1Ev
+__ZN8Fielding13HostViewCocoaD1Ev:
+LFB8816:
+	b __ZN8Fielding13HostViewCocoaD2Ev
+LFE8816:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoaC2EP6NSView
+	.private_extern __ZN8Fielding13HostViewCocoaC2EP6NSView
+__ZN8Fielding13HostViewCocoaC2EP6NSView:
+LFB8812:
+	mflr r0
+LCFI130:
+	std r27,-40(r1)
+LCFI131:
+	std r28,-32(r1)
+LCFI132:
+	std r29,-24(r1)
+LCFI133:
+	std r31,-8(r1)
+LCFI134:
+	bcl 20,31,"L00000000015$pb"
+"L00000000015$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI135:
+	mr r29,r3
+	mr r27,r4
+	stdu r1,-176(r1)
+LCFI136:
+	addi r28,r1,112
+	mr r3,r28
+	bl __ZN8Fielding13HostViewCocoa14GetNSViewFrameEP6NSView
+	mr r3,r29
+	mr r4,r28
+	bl __ZN8Fielding8HostViewC2ERKN5boost7polygon14rectangle_dataIfEE
+	li r0,0
+	addis r2,r31,ha16(__ZTVN8Fielding13HostViewCocoaE-"L00000000015$pb")
+	std r27,168(r29)
+	addis r9,r31,ha16(LC4-"L00000000015$pb")
+	stb r0,176(r29)
+	la r2,lo16(__ZTVN8Fielding13HostViewCocoaE-"L00000000015$pb")(r2)
+	std r0,160(r29)
+	addi r1,r1,176
+	lfd f0,lo16(LC4-"L00000000015$pb")(r9)
+	addi r2,r2,16
+	std r2,0(r29)
+	stfd f0,184(r29)
+	ld r0,16(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE8812:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoaC1EP6NSView
+	.private_extern __ZN8Fielding13HostViewCocoaC1EP6NSView
+__ZN8Fielding13HostViewCocoaC1EP6NSView:
+LFB8813:
+	b __ZN8Fielding13HostViewCocoaC2EP6NSView
+LFE8813:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance7hitTestER7CGPoint
+	.weak_definition __ZN17CocoaViewInstance7hitTestER7CGPoint
+	.private_extern __ZN17CocoaViewInstance7hitTestER7CGPoint
+__ZN17CocoaViewInstance7hitTestER7CGPoint:
+LFB8794:
+	mflr r0
+LCFI137:
+	std r26,-48(r1)
+LCFI138:
+	std r28,-32(r1)
+LCFI139:
+	std r29,-24(r1)
+LCFI140:
+	std r30,-16(r1)
+LCFI141:
+	bcl 20,31,"L00000000016$pb"
+"L00000000016$pb":
+	std r31,-8(r1)
+LCFI142:
+	std r24,-64(r1)
+LCFI143:
+	mflr r31
+	std r0,16(r1)
+LCFI144:
+	std r25,-56(r1)
+LCFI145:
+	std r27,-40(r1)
+LCFI146:
+	stdu r1,-192(r1)
+LCFI147:
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_7-"L00000000016$pb")
+	mr r28,r4
+	mr r30,r3
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_7-"L00000000016$pb")(r2)
+	addis r29,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000016$pb")
+	ld r26,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000016$pb")(r29)
+	la r29,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000016$pb")(r29)
+	mtctr r0
+	mr r12,r0
+	ld r27,24(r3)
+	ld r25,8(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_7-"L00000000016$pb")(r2)
+	ld r24,0(r28)
+	mr r3,r27
+	bctrl
+	mtctr r26
+	mr r5,r24
+	mr r6,r25
+	mr r7,r3
+	mr r12,r26
+	mr r3,r27
+	mr r4,r29
+	bctrl
+	li r0,1
+	std r3,0(r28)
+	std r4,8(r28)
+	addi r3,r30,32
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	lfd f13,8(r28)
+	lfd f0,0(r28)
+	addi r4,r1,116
+	fsub f1,f1,f13
+	frsp f0,f0
+	stfd f1,8(r28)
+	frsp f1,f1
+	ld r3,16(r30)
+	ld r2,0(r3)
+	ld r0,40(r2)
+	stfs f0,116(r1)
+	stfs f1,120(r1)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	li r0,0
+	cmpdi cr7,r3,0
+	beq cr7,L322
+	ld r0,24(r30)
+L322:
+	addi r1,r1,192
+	mr r3,r0
+	ld r0,16(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	ld r31,-8(r1)
+	blr
+LFE8794:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance9mouseDownEP7NSEvent
+	.weak_definition __ZN17CocoaViewInstance9mouseDownEP7NSEvent
+	.private_extern __ZN17CocoaViewInstance9mouseDownEP7NSEvent
+__ZN17CocoaViewInstance9mouseDownEP7NSEvent:
+LFB8797:
+	mflr r0
+LCFI148:
+	std r31,-24(r1)
+LCFI149:
+	std r26,-64(r1)
+LCFI150:
+	bcl 20,31,"L00000000017$pb"
+"L00000000017$pb":
+	mr r26,r4
+	stfd f30,-16(r1)
+LCFI151:
+	stfd f31,-8(r1)
+LCFI152:
+	mflr r31
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000017$pb")
+	std r0,16(r1)
+LCFI153:
+	std r28,-48(r1)
+LCFI154:
+	std r29,-40(r1)
+LCFI155:
+	std r30,-32(r1)
+LCFI156:
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000017$pb")(r2)
+	std r27,-56(r1)
+LCFI157:
+	mr r30,r3
+	stdu r1,-224(r1)
+LCFI158:
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000017$pb")(r2)
+	mr r3,r26
+	mtctr r0
+	mr r12,r0
+	addi r29,r30,32
+	bctrl
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000017$pb")
+	li r7,0
+	mr r0,r3
+	mr r28,r4
+	ld r3,24(r30)
+	ld r11,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000017$pb")(r2)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000017$pb")(r2)
+	mr r5,r0
+	mr r6,r28
+	mtctr r11
+	mr r12,r11
+	bctrl
+	li r0,1
+	mr r9,r3
+	mr r10,r4
+	mr r3,r29
+	addi r4,r1,112
+	stw r0,112(r1)
+	std r9,144(r1)
+	nop
+	lfd f31,144(r1)
+	std r10,144(r1)
+	frsp f31,f31
+	nop
+	lfd f30,144(r1)
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	mr r3,r29
+	addi r4,r1,116
+	stfs f31,116(r1)
+	li r5,1
+	fsub f1,f1,f30
+	frsp f30,f1
+	stfs f30,120(r1)
+	bl __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b
+	cmpdi cr7,r3,0
+	bne cr7,L325
+	lbz r0,104(r30)
+	cmpwi cr7,r0,0
+	beq cr7,L339
+L325:
+	addis r4,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000017$pb")
+	mr r3,r26
+	ld r28,8(r30)
+	ld r29,16(r30)
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000017$pb")(r4)
+	la r4,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000017$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	mr r4,r29
+	rldicl r0,r3,0,32
+	mr r3,r28
+	rldicl r2,r0,44,63
+	rldicl r5,r0,46,63
+	rldicl r9,r0,47,63
+	rldicl r0,r0,45,63
+	sldi r2,r2,2
+	sldi r9,r9,3
+	sldi r0,r0,1
+	or r5,r5,r2
+	or r5,r5,r9
+	or r5,r5,r0
+	rldicl r5,r5,0,60
+	bl __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj
+	addis r4,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_11-"L00000000017$pb")
+	mr r3,r26
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_11-"L00000000017$pb")(r4)
+	la r4,lo16(L_ZL20_OBJC_MESSAGE_REF_11-"L00000000017$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	cmpdi cr7,r3,2
+	bne cr7,L337
+	ld r3,16(r30)
+	addi r4,r1,124
+	ld r2,0(r3)
+	ld r0,80(r2)
+	stfs f31,124(r1)
+	stfs f30,128(r1)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L339
+	.p2align 4,,15
+L337:
+	ld r3,16(r30)
+	addi r4,r1,132
+	ld r2,0(r3)
+	ld r0,56(r2)
+	stfs f31,132(r1)
+	stfs f30,136(r1)
+	mtctr r0
+	mr r12,r0
+	bctrl
+L339:
+	addi r1,r1,224
+	ld r0,16(r1)
+	ld r26,-64(r1)
+	ld r27,-56(r1)
+	ld r28,-48(r1)
+	ld r29,-40(r1)
+	ld r30,-32(r1)
+	ld r31,-24(r1)
+	lfd f30,-16(r1)
+	mtlr r0
+	lfd f31,-8(r1)
+	blr
+LFE8797:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance11scrollWheelEP7NSEvent
+	.weak_definition __ZN17CocoaViewInstance11scrollWheelEP7NSEvent
+	.private_extern __ZN17CocoaViewInstance11scrollWheelEP7NSEvent
+__ZN17CocoaViewInstance11scrollWheelEP7NSEvent:
+LFB8800:
+	mflr r0
+LCFI159:
+	std r26,-64(r1)
+LCFI160:
+	std r31,-24(r1)
+LCFI161:
+	bcl 20,31,"L00000000018$pb"
+"L00000000018$pb":
+	std r24,-80(r1)
+LCFI162:
+	std r25,-72(r1)
+LCFI163:
+	mr r25,r4
+	mflr r31
+	std r0,16(r1)
+LCFI164:
+	std r30,-32(r1)
+LCFI165:
+	stfd f30,-16(r1)
+LCFI166:
+	stfd f31,-8(r1)
+LCFI167:
+	addis r26,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_12-"L00000000018$pb")
+	std r27,-56(r1)
+LCFI168:
+	std r28,-48(r1)
+LCFI169:
+	std r29,-40(r1)
+LCFI170:
+	stdu r1,-240(r1)
+LCFI171:
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_12-"L00000000018$pb")(r26)
+	la r24,lo16(L_ZL20_OBJC_MESSAGE_REF_12-"L00000000018$pb")(r26)
+	mr r30,r3
+	mr r3,r25
+	mr r4,r24
+	mtctr r0
+	mr r12,r0
+	bctrl
+	addis r2,r31,ha16(LC4-"L00000000018$pb")
+	lfd f0,lo16(LC4-"L00000000018$pb")(r2)
+	fcmpu cr7,f1,f0
+	beq cr7,L355
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000018$pb")
+	mr r3,r25
+	addi r29,r30,32
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000018$pb")(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000018$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000018$pb")
+	li r7,0
+	mr r0,r3
+	mr r28,r4
+	ld r3,24(r30)
+	ld r11,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000018$pb")(r2)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000018$pb")(r2)
+	mr r5,r0
+	mr r6,r28
+	mtctr r11
+	mr r12,r11
+	bctrl
+	li r0,1
+	mr r9,r3
+	mr r10,r4
+	mr r3,r29
+	addi r4,r1,112
+	stw r0,112(r1)
+	std r9,144(r1)
+	nop
+	lfd f31,144(r1)
+	std r10,144(r1)
+	frsp f31,f31
+	nop
+	lfd f30,144(r1)
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	mr r3,r29
+	addi r4,r1,116
+	stfs f31,116(r1)
+	li r5,1
+	fsub f1,f1,f30
+	frsp f30,f1
+	stfs f30,120(r1)
+	bl __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b
+	cmpdi cr7,r3,0
+	bne cr7,L344
+	lbz r0,104(r30)
+	cmpwi cr7,r0,0
+	beq cr7,L355
+L344:
+	addis r4,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000018$pb")
+	mr r3,r25
+	ld r28,8(r30)
+	ld r29,16(r30)
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000018$pb")(r4)
+	la r4,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000018$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	mr r4,r29
+	rldicl r0,r3,0,32
+	mr r3,r28
+	rldicl r2,r0,44,63
+	rldicl r5,r0,46,63
+	rldicl r9,r0,47,63
+	rldicl r0,r0,45,63
+	sldi r2,r2,2
+	sldi r9,r9,3
+	sldi r0,r0,1
+	or r5,r5,r2
+	or r5,r5,r9
+	or r5,r5,r0
+	rldicl r5,r5,0,60
+	bl __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj
+	ld r28,16(r30)
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_12-"L00000000018$pb")(r26)
+	mr r4,r24
+	mr r3,r25
+	mtctr r0
+	ld r2,0(r28)
+	mr r12,r0
+	ld r29,48(r2)
+	stfs f31,124(r1)
+	stfs f30,128(r1)
+	bctrl
+	mtctr r29
+	mr r3,r28
+	addi r4,r1,124
+	frsp f1,f1
+	mr r12,r29
+	bctrl
+L355:
+	addi r1,r1,240
+	ld r0,16(r1)
+	ld r24,-80(r1)
+	ld r25,-72(r1)
+	ld r26,-64(r1)
+	ld r27,-56(r1)
+	ld r28,-48(r1)
+	ld r29,-40(r1)
+	ld r30,-32(r1)
+	mtlr r0
+	ld r31,-24(r1)
+	lfd f30,-16(r1)
+	lfd f31,-8(r1)
+	blr
+LFE8800:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance12mouseDraggedEP7NSEvent
+	.weak_definition __ZN17CocoaViewInstance12mouseDraggedEP7NSEvent
+	.private_extern __ZN17CocoaViewInstance12mouseDraggedEP7NSEvent
+__ZN17CocoaViewInstance12mouseDraggedEP7NSEvent:
+LFB8799:
+	mflr r0
+LCFI172:
+	std r27,-64(r1)
+LCFI173:
+	std r30,-40(r1)
+LCFI174:
+	std r31,-32(r1)
+LCFI175:
+	stfd f29,-24(r1)
+LCFI176:
+	bcl 20,31,"L00000000019$pb"
+"L00000000019$pb":
+	stfd f30,-16(r1)
+LCFI177:
+	stfd f31,-8(r1)
+LCFI178:
+	mr r30,r3
+	mflr r31
+	std r28,-56(r1)
+LCFI179:
+	std r29,-48(r1)
+LCFI180:
+	std r0,16(r1)
+LCFI181:
+	stdu r1,-208(r1)
+LCFI182:
+	mr r27,r4
+	nop
+	lbz r0,104(r3)
+	cmpwi cr7,r0,0
+	beq cr7,L368
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000019$pb")
+	mr r3,r27
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000019$pb")(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000019$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000019$pb")
+	li r7,0
+	mr r0,r3
+	mr r29,r4
+	ld r3,24(r30)
+	ld r11,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000019$pb")(r2)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000019$pb")(r2)
+	mr r5,r0
+	mr r6,r29
+	mtctr r11
+	mr r12,r11
+	bctrl
+	li r0,1
+	mr r9,r3
+	mr r10,r4
+	addi r3,r30,32
+	addi r4,r1,112
+	stw r0,112(r1)
+	std r9,128(r1)
+	nop
+	lfd f30,128(r1)
+	std r10,128(r1)
+	frsp f30,f30
+	nop
+	lfd f29,128(r1)
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	addis r4,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000019$pb")
+	mr r3,r27
+	ld r28,8(r30)
+	ld r29,16(r30)
+	fmr f31,f1
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000019$pb")(r4)
+	la r4,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000019$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	fsub f31,f31,f29
+	bctrl
+	mr r4,r29
+	rldicl r0,r3,0,32
+	mr r3,r28
+	frsp f31,f31
+	rldicl r2,r0,44,63
+	rldicl r5,r0,46,63
+	rldicl r9,r0,47,63
+	rldicl r0,r0,45,63
+	sldi r2,r2,2
+	sldi r9,r9,3
+	sldi r0,r0,1
+	or r5,r5,r2
+	or r5,r5,r9
+	or r5,r5,r0
+	rldicl r5,r5,0,60
+	bl __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj
+	ld r3,16(r30)
+	addi r4,r1,116
+	ld r2,0(r3)
+	ld r0,72(r2)
+	stfs f30,116(r1)
+	stfs f31,120(r1)
+	mtctr r0
+	mr r12,r0
+	bctrl
+L368:
+	addi r1,r1,208
+	ld r0,16(r1)
+	ld r27,-64(r1)
+	ld r28,-56(r1)
+	ld r29,-48(r1)
+	ld r30,-40(r1)
+	ld r31,-32(r1)
+	lfd f29,-24(r1)
+	lfd f30,-16(r1)
+	mtlr r0
+	lfd f31,-8(r1)
+	blr
+LFE8799:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance7mouseUpEP7NSEvent
+	.weak_definition __ZN17CocoaViewInstance7mouseUpEP7NSEvent
+	.private_extern __ZN17CocoaViewInstance7mouseUpEP7NSEvent
+__ZN17CocoaViewInstance7mouseUpEP7NSEvent:
+LFB8798:
+	mflr r0
+LCFI183:
+	std r31,-24(r1)
+LCFI184:
+	std r26,-64(r1)
+LCFI185:
+	bcl 20,31,"L00000000020$pb"
+"L00000000020$pb":
+	mr r26,r4
+	stfd f30,-16(r1)
+LCFI186:
+	stfd f31,-8(r1)
+LCFI187:
+	mflr r31
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000020$pb")
+	std r0,16(r1)
+LCFI188:
+	std r28,-48(r1)
+LCFI189:
+	std r29,-40(r1)
+LCFI190:
+	std r30,-32(r1)
+LCFI191:
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000020$pb")(r2)
+	std r27,-56(r1)
+LCFI192:
+	mr r30,r3
+	stdu r1,-224(r1)
+LCFI193:
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_9-"L00000000020$pb")(r2)
+	mr r3,r26
+	mtctr r0
+	mr r12,r0
+	addi r29,r30,32
+	bctrl
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000020$pb")
+	li r7,0
+	mr r0,r3
+	mr r28,r4
+	ld r3,24(r30)
+	ld r11,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000020$pb")(r2)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_8-"L00000000020$pb")(r2)
+	mr r5,r0
+	mr r6,r28
+	mtctr r11
+	mr r12,r11
+	bctrl
+	li r0,1
+	mr r9,r3
+	mr r10,r4
+	mr r3,r29
+	addi r4,r1,112
+	stw r0,112(r1)
+	std r9,144(r1)
+	nop
+	lfd f31,144(r1)
+	std r10,144(r1)
+	frsp f31,f31
+	nop
+	lfd f30,144(r1)
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	mr r3,r29
+	addi r4,r1,116
+	stfs f31,116(r1)
+	li r5,1
+	fsub f1,f1,f30
+	frsp f30,f1
+	stfs f30,120(r1)
+	bl __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b
+	cmpdi cr7,r3,0
+	bne cr7,L370
+	lbz r0,104(r30)
+	cmpwi cr7,r0,0
+	beq cr7,L382
+L370:
+	addis r4,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000020$pb")
+	mr r3,r26
+	ld r28,8(r30)
+	ld r29,16(r30)
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000020$pb")(r4)
+	la r4,lo16(L_ZL20_OBJC_MESSAGE_REF_10-"L00000000020$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	mr r4,r29
+	rldicl r0,r3,0,32
+	mr r3,r28
+	rldicl r2,r0,44,63
+	rldicl r5,r0,46,63
+	rldicl r9,r0,47,63
+	rldicl r0,r0,45,63
+	sldi r2,r2,2
+	sldi r9,r9,3
+	sldi r0,r0,1
+	or r5,r5,r2
+	or r5,r5,r9
+	or r5,r5,r0
+	rldicl r5,r5,0,60
+	bl __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj
+	ld r3,16(r30)
+	addi r4,r1,124
+	ld r2,0(r3)
+	ld r0,64(r2)
+	stfs f31,124(r1)
+	stfs f30,128(r1)
+	mtctr r0
+	mr r12,r0
+	bctrl
+L382:
+	addi r1,r1,224
+	ld r0,16(r1)
+	ld r26,-64(r1)
+	ld r27,-56(r1)
+	ld r28,-48(r1)
+	ld r29,-40(r1)
+	ld r30,-32(r1)
+	ld r31,-24(r1)
+	lfd f30,-16(r1)
+	mtlr r0
+	lfd f31,-8(r1)
+	blr
+LFE8798:
+	.cstring
+	.align 3
+LC5:
+	.ascii "vector::_M_insert_aux\0"
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+	.weak_definition __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+	.private_extern __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+__ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_:
+LFB13126:
+	mflr r0
+LCFI194:
+	std r27,-40(r1)
+LCFI195:
+	std r28,-32(r1)
+LCFI196:
+	std r29,-24(r1)
+LCFI197:
+	std r30,-16(r1)
+LCFI198:
+	bcl 20,31,"L00000000021$pb"
+"L00000000021$pb":
+	std r31,-8(r1)
+LCFI199:
+	std r25,-56(r1)
+LCFI200:
+	mflr r31
+	std r26,-48(r1)
+LCFI201:
+	std r0,16(r1)
+LCFI202:
+	stdu r1,-208(r1)
+LCFI203:
+	mr r30,r4
+	mr r28,r3
+	mr r29,r5
+	mr r27,r30
+	ld r4,8(r3)
+	ld r0,16(r3)
+	cmpd cr7,r4,r0
+	beq cr7,L384
+	cmpdi cr7,r4,0
+	beq cr7,L386
+	lfs f0,-16(r4)
+	li r0,0
+	addi r2,r4,-16
+	stw r0,12(r4)
+	stw r0,4(r4)
+	stw r0,8(r4)
+	stfs f0,0(r4)
+	lfs f0,4(r2)
+	stfs f0,4(r4)
+	lfs f13,8(r2)
+	stfs f13,8(r4)
+	lfs f0,12(r2)
+	stfs f0,12(r4)
+	ld r4,8(r3)
+L386:
+	mr r2,r4
+	addi r4,r4,16
+	std r4,8(r28)
+	addi r9,r2,-16
+	subf r0,r27,r9
+	sradi. r11,r0,4
+	mtctr r11
+	lfs f0,12(r29)
+	lfs f13,0(r29)
+	lfs f12,4(r29)
+	lfs f11,8(r29)
+	stfs f0,128(r1)
+	stfs f13,116(r1)
+	stfs f12,120(r1)
+	stfs f11,124(r1)
+	ble cr0,L388
+	.p2align 4,,15
+L419:
+	addi r9,r9,-16
+	addi r2,r2,-16
+	lfs f0,0(r9)
+	stfs f0,0(r2)
+	lfs f13,4(r9)
+	stfs f13,4(r2)
+	lfs f0,8(r9)
+	stfs f0,8(r2)
+	lfs f13,12(r9)
+	stfs f13,12(r2)
+	bdnz L419
+L388:
+	lfs f13,116(r1)
+	lfs f0,120(r1)
+	stfs f13,0(r30)
+	stfs f0,4(r30)
+	lfs f0,124(r1)
+	stfs f0,8(r30)
+	lfs f13,128(r1)
+	stfs f13,12(r30)
+	b L415
+L384:
+	ld r0,0(r3)
+	li r2,-1
+	rldicl r2,r2,0,4
+	subf r0,r0,r4
+	sradi r0,r0,4
+	cmpd cr7,r0,r2
+	bne+ cr7,L391
+	addis r3,r31,ha16(LC5-"L00000000021$pb")
+	la r3,lo16(LC5-"L00000000021$pb")(r3)
+	bl __ZSt20__throw_length_errorPKc
+	.p2align 4,,15
+L391:
+	cmpdi cr7,r0,0
+	li r2,1
+	beq cr7,L417
+	sldi r2,r0,1
+	li r25,-16
+	cmpld cr7,r2,r0
+	blt cr7,L400
+L417:
+	li r0,-1
+	sldi r25,r2,4
+	rldicl r0,r0,0,4
+	cmpld cr7,r2,r0
+	ble cr7,L400
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L400:
+	mr r3,r25
+	bl __Znwm
+	ld r9,0(r28)
+	mr r26,r3
+	mr r2,r3
+	cmpd cr7,r30,r9
+	beq cr7,L401
+	li r0,0
+	.p2align 4,,15
+L418:
+	cmpdi cr7,r2,0
+	beq cr7,L403
+	stw r0,0(r2)
+	stw r0,4(r2)
+	stw r0,8(r2)
+	stw r0,12(r2)
+	lfs f0,0(r9)
+	stfs f0,0(r2)
+	lfs f13,4(r9)
+	stfs f13,4(r2)
+	lfs f0,8(r9)
+	stfs f0,8(r2)
+	lfs f13,12(r9)
+	stfs f13,12(r2)
+L403:
+	addi r9,r9,16
+	addi r2,r2,16
+	cmpd cr7,r30,r9
+	bne cr7,L418
+L401:
+	cmpdi cr7,r2,0
+	mr r9,r2
+	beq cr7,L405
+	li r0,0
+	stw r0,12(r2)
+	stw r0,0(r2)
+	stw r0,4(r2)
+	stw r0,8(r2)
+	lfs f0,0(r29)
+	stfs f0,0(r2)
+	lfs f13,4(r29)
+	stfs f13,4(r2)
+	lfs f0,8(r29)
+	stfs f0,8(r2)
+	lfs f13,12(r29)
+	stfs f13,12(r2)
+L405:
+	ld r4,8(r28)
+	mr r2,r27
+	addi r30,r9,16
+	cmpd cr7,r4,r27
+	beq cr7,L407
+	mr r9,r27
+	li r0,0
+	.p2align 4,,15
+L409:
+	cmpdi cr7,r30,0
+	beq cr7,L410
+	stw r0,0(r30)
+	stw r0,4(r30)
+	stw r0,8(r30)
+	stw r0,12(r30)
+	lfs f0,0(r2)
+	stfs f0,0(r30)
+	lfs f13,4(r2)
+	stfs f13,4(r30)
+	lfs f0,8(r2)
+	stfs f0,8(r30)
+	lfs f13,12(r2)
+	stfs f13,12(r30)
+L410:
+	addi r9,r9,16
+	addi r30,r30,16
+	cmpd cr7,r4,r9
+	beq cr7,L416
+	mr r2,r9
+	b L409
+L416:
+	ld r4,8(r28)
+L407:
+	ld r3,0(r28)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_
+	ld r3,0(r28)
+	cmpdi cr7,r3,0
+	beq cr7,L413
+	bl __ZdlPv
+L413:
+	add r0,r26,r25
+	std r30,8(r28)
+	std r26,0(r28)
+	std r0,16(r28)
+	.p2align 4,,15
+L415:
+	addi r1,r1,208
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE13126:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+	.weak_definition __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+	.private_extern __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+__ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_:
+LFB12557:
+	mflr r0
+LCFI204:
+	std r28,-32(r1)
+LCFI205:
+	std r29,-24(r1)
+LCFI206:
+	std r30,-16(r1)
+LCFI207:
+	mr r29,r3
+	std r0,16(r1)
+LCFI208:
+	stdu r1,-144(r1)
+LCFI209:
+	mr r30,r4
+	ld r2,8(r3)
+	ld r0,16(r3)
+	ld r9,0(r3)
+	cmpd cr7,r2,r0
+	mr r28,r9
+	beq cr7,L423
+	cmpd cr7,r2,r4
+	bne cr7,L423
+	cmpdi cr7,r4,0
+	beq cr7,L426
+	li r0,0
+	stw r0,12(r4)
+	stw r0,0(r4)
+	stw r0,4(r4)
+	stw r0,8(r4)
+	lfs f0,0(r5)
+	stfs f0,0(r4)
+	lfs f13,4(r5)
+	stfs f13,4(r4)
+	lfs f0,8(r5)
+	stfs f0,8(r4)
+	lfs f13,12(r5)
+	stfs f13,12(r4)
+	ld r9,0(r3)
+	ld r2,8(r3)
+L426:
+	addi r0,r2,16
+	std r0,8(r29)
+	b L428
+	.p2align 4,,15
+L423:
+	mr r3,r29
+	mr r4,r30
+	bl __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+	ld r9,0(r29)
+L428:
+	addi r1,r1,144
+	subf r3,r28,r30
+	ld r0,16(r1)
+	rldicr r3,r3,0,59
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	add r3,r9,r3
+	mtlr r0
+	blr
+LFE12557:
+	.text
+	.align 2
+	.p2align 4,,15
+___tcf_1:
+LFB9382:
+	mflr r0
+LCFI210:
+	std r31,-8(r1)
+LCFI211:
+	std r30,-16(r1)
+LCFI212:
+	bcl 20,31,"L00000000022$pb"
+"L00000000022$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI213:
+	addis r2,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000022$pb")
+	stdu r1,-128(r1)
+LCFI214:
+	la r2,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000022$pb")(r2)
+	nop
+	ld r30,8(r2)
+	cmpdi cr7,r30,0
+	beq cr7,L435
+	sync
+	addi r2,r30,8
+L437:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L437
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L435
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,16(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	sync
+	addi r2,r30,12
+L436:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L436
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L435
+	ld r2,0(r30)
+	addi r1,r1,128
+	mr r3,r30
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	ld r0,16(r1)
+	mtlr r0
+	bctr
+	.p2align 4,,15
+L435:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE9382:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv:
+LFB14524:
+	ld r3,16(r3)
+	cmpdi cr7,r3,0
+	beq cr7,L441
+	ld r2,0(r3)
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+	bctr
+	.p2align 4,,15
+L441:
+	blr
+LFE14524:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv:
+LFB14526:
+	ld r3,16(r3)
+	cmpdi cr7,r3,0
+	beqlr cr7
+	ld r2,0(r3)
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+	bctr
+LFE14526:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_:
+LFB13777:
+	mflr r0
+LCFI215:
+	std r28,-32(r1)
+LCFI216:
+	std r29,-24(r1)
+LCFI217:
+	std r30,-16(r1)
+LCFI218:
+	mr r29,r3
+	std r0,16(r1)
+LCFI219:
+	stdu r1,-144(r1)
+LCFI220:
+	mr r28,r4
+	addi r30,r3,8
+	ld r0,16(r3)
+	cmpdi cr7,r0,0
+	beq cr7,L447
+	lfs f13,0(r4)
+	.p2align 4,,15
+L464:
+	mr r3,r0
+	lfs f0,32(r3)
+	fcmpu cr7,f0,f13
+	mfcr r0
+	rlwinm r0,r0,30,1
+	cmpdi cr6,r0,0
+	beq cr6,L450
+	ld r0,16(r3)
+	b L452
+	.p2align 4,,15
+L450:
+	ld r0,24(r3)
+L452:
+	cmpdi cr7,r0,0
+	bne cr7,L464
+	mr r30,r3
+	beq cr6,L456
+L447:
+	ld r0,24(r29)
+	cmpd cr7,r30,r0
+	beq cr7,L465
+	mr r3,r30
+	bl __ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+	lfs f13,0(r28)
+L456:
+	lfs f0,32(r3)
+	li r0,0
+	fcmpu cr7,f13,f0
+	bng cr7,L459
+L465:
+	mr r3,r29
+	mr r5,r30
+	mr r6,r28
+	li r4,0
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_
+	li r0,1
+L459:
+	addi r1,r1,144
+	rldimi r30,r0,56,0
+	ld r0,16(r1)
+	mr r4,r30
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE13777:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_:
+LFB13412:
+	mflr r0
+LCFI221:
+	std r28,-32(r1)
+LCFI222:
+	std r29,-24(r1)
+LCFI223:
+	std r30,-16(r1)
+LCFI224:
+	mr r29,r4
+	std r0,16(r1)
+LCFI225:
+	addi r0,r3,8
+	stdu r1,-144(r1)
+LCFI226:
+	cmpd cr7,r0,r4
+	mr r30,r3
+	mr r28,r5
+	beq cr7,L467
+	ld r0,32(r3)
+	cmpd cr7,r0,r4
+	bne cr7,L469
+L467:
+	ld r0,40(r30)
+	cmpdi cr7,r0,0
+	beq cr7,L475
+	ld r5,32(r30)
+	lfs f0,0(r28)
+	lfs f13,32(r5)
+	fcmpu cr7,f13,f0
+	bnl cr7,L475
+	b L481
+	.p2align 4,,15
+L480:
+	lfs f0,32(r3)
+	fcmpu cr7,f13,f0
+	bnl cr7,L475
+	ld r0,24(r29)
+	cmpdi cr7,r0,0
+	bne cr7,L477
+	mr r3,r30
+	mr r5,r29
+	.p2align 4,,15
+L481:
+	mr r6,r28
+	li r4,0
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_
+	b L473
+	.p2align 4,,15
+L477:
+	mr r4,r3
+	mr r6,r28
+	mr r3,r30
+	mr r5,r4
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_
+	b L473
+	.p2align 4,,15
+L469:
+	mr r3,r4
+	bl __ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+	lfs f13,0(r28)
+	lfs f0,32(r29)
+	fcmpu cr7,f0,f13
+	blt cr7,L480
+	.p2align 4,,15
+L475:
+	mr r3,r30
+	mr r4,r28
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_
+L473:
+	addi r1,r1,144
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE13412:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_:
+LFB12349:
+	mflr r0
+LCFI227:
+	std r28,-32(r1)
+LCFI228:
+	std r29,-24(r1)
+LCFI229:
+	std r30,-16(r1)
+LCFI230:
+	mr r28,r3
+	std r0,16(r1)
+LCFI231:
+	stdu r1,-160(r1)
+LCFI232:
+	lis r0,0xaaaa
+	ori r0,r0,43690
+	mr r29,r5
+	mr r30,r4
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	ld r9,8(r3)
+	mr r3,r4
+	subf r2,r5,r9
+	sradi r2,r2,2
+	mulld. r10,r2,r0
+	ble cr0,L483
+	mtctr r10
+	mr r11,r4
+	mr r9,r5
+	.p2align 4,,15
+L485:
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	addi r9,r9,12
+	std r0,0(r11)
+	stw r2,8(r11)
+	addi r11,r11,12
+	bdnz L485
+	mulli r0,r10,12
+	ld r9,8(r28)
+	add r3,r30,r0
+L483:
+	addi r5,r1,112
+	mr r4,r9
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_
+	subf r0,r30,r29
+	ld r2,8(r28)
+	addi r1,r1,160
+	mr r3,r30
+	rldicr r0,r0,0,61
+	subf r2,r0,r2
+	std r2,8(r28)
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE12349:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.weak_definition __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.private_extern __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+__ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_:
+LFB13755:
+	mflr r0
+LCFI233:
+	cmpd cr7,r3,r4
+	std r26,-48(r1)
+LCFI234:
+	std r30,-16(r1)
+LCFI235:
+	std r27,-40(r1)
+LCFI236:
+	std r28,-32(r1)
+LCFI237:
+	std r29,-24(r1)
+LCFI238:
+	std r0,16(r1)
+LCFI239:
+	mr r26,r4
+	stdu r1,-176(r1)
+LCFI240:
+	mr r30,r3
+	beq cr7,L505
+	addi r2,r3,12
+	cmpd cr7,r2,r4
+	beq cr7,L505
+	lis r27,0xaaaa
+	addi r28,r3,24
+	ori r27,r27,43690
+	sldi r27,r27,32
+	oris r27,r27,0xaaaa
+	ori r27,r27,43691
+	.p2align 4,,15
+L494:
+	lfs f12,0(r2)
+	lfs f0,0(r30)
+	mr r29,r28
+	addi r3,r28,-12
+	lwa r11,8(r2)
+	lfs f13,4(r2)
+	fcmpu cr7,f0,f12
+	bgt cr7,L495
+	blt cr7,L497
+	lfs f0,4(r30)
+	fcmpu cr7,f0,f13
+	bgt cr7,L495
+	blt cr7,L497
+	lwz r0,8(r30)
+	cmpw cr7,r0,r11
+	ble cr7,L497
+	.p2align 4,,15
+L495:
+	subf r0,r30,r3
+	mr r9,r28
+	sradi r0,r0,2
+	mulld. r2,r0,r27
+	mtctr r2
+	ble cr0,L501
+	.p2align 4,,15
+L506:
+	ldu r0,-12(r3)
+	lwz r2,8(r3)
+	stdu r0,-12(r9)
+	stw r2,8(r9)
+	bdnz L506
+L501:
+	stw r11,8(r30)
+	stfs f13,4(r30)
+	stfs f12,0(r30)
+	b L503
+L497:
+	fmr f1,f12
+	fmr f2,f13
+	rldicl r5,r11,0,32
+	stw r11,120(r1)
+	stfs f13,116(r1)
+	stfs f12,112(r1)
+	sldi r5,r5,32
+	bl __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_
+	.p2align 4,,15
+L503:
+	cmpd cr7,r26,r29
+	addi r28,r28,12
+	beq cr7,L505
+	mr r2,r29
+	b L494
+L505:
+	addi r1,r1,176
+	ld r0,16(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE13755:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.weak_definition __ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.private_extern __ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+__ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_:
+LFB13380:
+	mflr r0
+LCFI241:
+	subf r2,r3,r4
+	std r29,-24(r1)
+LCFI242:
+	std r30,-16(r1)
+LCFI243:
+	sradi r2,r2,2
+	mr r29,r4
+	std r0,16(r1)
+LCFI244:
+	lis r0,0xaaaa
+	stdu r1,-160(r1)
+LCFI245:
+	ori r0,r0,43690
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld r2,r2,r0
+	cmpdi cr7,r2,16
+	ble cr7,L509
+	addi r4,r3,192
+	mr r30,r4
+	bl __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	cmpd cr7,r30,r29
+	beq cr7,L513
+	.p2align 4,,15
+L514:
+	ld r0,0(r30)
+	lwz r2,8(r30)
+	mr r3,r30
+	addi r30,r30,12
+	std r0,112(r1)
+	rldicl r5,r2,0,32
+	stw r2,120(r1)
+	sldi r5,r5,32
+	lfs f1,112(r1)
+	lfs f2,116(r1)
+	bl __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_
+	cmpd cr7,r30,r29
+	bne cr7,L514
+	b L513
+L509:
+	addi r1,r1,160
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+L513:
+	addi r1,r1,160
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE13380:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev:
+LFB14488:
+	mflr r0
+	bcl 20,31,"L00000000023$pb"
+"L00000000023$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000023$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000023$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	blr
+LFE14488:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail15sp_counted_baseD1Ev
+	.weak_definition __ZN5boost6detail15sp_counted_baseD1Ev
+	.private_extern __ZN5boost6detail15sp_counted_baseD1Ev
+__ZN5boost6detail15sp_counted_baseD1Ev:
+LFB4513:
+	mflr r0
+	bcl 20,31,"L00000000024$pb"
+"L00000000024$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000024$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000024$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	blr
+LFE4513:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+	.weak_definition __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+	.private_extern __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+__ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_:
+LFB13421:
+	mflr r0
+LCFI246:
+	std r26,-48(r1)
+LCFI247:
+	std r28,-32(r1)
+LCFI248:
+	std r29,-24(r1)
+LCFI249:
+	std r30,-16(r1)
+LCFI250:
+	bcl 20,31,"L00000000025$pb"
+"L00000000025$pb":
+	std r31,-8(r1)
+LCFI251:
+	std r25,-56(r1)
+LCFI252:
+	mflr r31
+	std r27,-40(r1)
+LCFI253:
+	std r0,16(r1)
+LCFI254:
+	stdu r1,-192(r1)
+LCFI255:
+	mr r30,r4
+	mr r29,r3
+	mr r28,r5
+	mr r26,r30
+	ld r4,8(r3)
+	ld r0,16(r3)
+	cmpd cr7,r4,r0
+	beq cr7,L523
+	cmpdi cr7,r4,0
+	bne cr7,L525
+L526:
+	lis r0,0xaaaa
+	addi r11,r4,-12
+	mr r9,r4
+	addi r4,r4,12
+	ori r0,r0,43690
+	subf r2,r30,r11
+	std r4,8(r29)
+	sldi r0,r0,32
+	sradi r2,r2,2
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld. r10,r2,r0
+	lfs f13,0(r28)
+	lwa r2,8(r28)
+	lfs f12,4(r28)
+	mtctr r10
+	ble cr0,L527
+	.p2align 4,,15
+L557:
+	addi r11,r11,-12
+	addi r9,r9,-12
+	lfs f0,0(r11)
+	lwz r0,8(r11)
+	stw r0,8(r9)
+	stfs f0,0(r9)
+	lfs f0,4(r11)
+	stfs f0,4(r9)
+	bdnz L557
+L527:
+	stw r2,8(r30)
+	stfs f13,0(r30)
+	stfs f12,4(r30)
+	b L554
+L523:
+	lis r0,0xaaaa
+	ld r9,0(r3)
+	lis r2,0x1555
+	ori r0,r0,43690
+	ori r2,r2,21845
+	sldi r0,r0,32
+	subf r9,r9,r4
+	sldi r2,r2,32
+	oris r0,r0,0xaaaa
+	sradi r9,r9,2
+	oris r2,r2,0x5555
+	ori r0,r0,43691
+	ori r2,r2,21845
+	mulld r4,r9,r0
+	cmpd cr7,r4,r2
+	bne+ cr7,L530
+	addis r3,r31,ha16(LC5-"L00000000025$pb")
+	la r3,lo16(LC5-"L00000000025$pb")(r3)
+	bl __ZSt20__throw_length_errorPKc
+	.p2align 4,,15
+L530:
+	cmpdi cr7,r4,0
+	li r2,1
+	beq cr7,L555
+	sldi r2,r4,1
+	li r25,-4
+	cmpld cr7,r2,r4
+	blt cr7,L539
+L555:
+	lis r0,0x1555
+	ori r0,r0,21845
+	sldi r0,r0,32
+	oris r0,r0,0x5555
+	ori r0,r0,21845
+	cmpld cr7,r2,r0
+	bgt cr7,L537
+	mulli r25,r2,12
+	b L539
+L537:
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L539:
+	mr r3,r25
+	bl __Znwm
+	ld r2,0(r29)
+	mr r27,r3
+	mr r9,r3
+	cmpd cr7,r30,r2
+	beq cr7,L540
+	mr r11,r2
+	li r10,0
+	.p2align 4,,15
+L542:
+	cmpdi cr7,r9,0
+	bne cr7,L543
+	.p2align 4,,15
+L544:
+	addi r11,r11,12
+	addi r9,r9,12
+	cmpd cr7,r30,r11
+	beq cr7,L540
+	mr r2,r11
+	b L542
+L540:
+	cmpdi cr7,r9,0
+	bne cr7,L546
+L547:
+	ld r4,8(r29)
+	mr r2,r26
+	addi r30,r9,12
+	cmpd cr7,r26,r4
+	beq cr7,L548
+	li r9,0
+	.p2align 4,,15
+L556:
+	cmpdi cr7,r30,0
+	bne cr7,L550
+	.p2align 4,,15
+L551:
+	addi r2,r2,12
+	addi r30,r30,12
+	cmpd cr7,r2,r4
+	bne cr7,L556
+	ld r4,8(r29)
+L548:
+	ld r3,0(r29)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_
+	ld r3,0(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L552
+	bl __ZdlPv
+L552:
+	add r0,r27,r25
+	std r30,8(r29)
+	std r27,0(r29)
+	std r0,16(r29)
+	b L554
+L525:
+	lfs f0,-12(r4)
+	li r0,0
+	addi r2,r4,-12
+	stw r0,4(r4)
+	lwz r0,8(r2)
+	stfs f0,0(r4)
+	stw r0,8(r4)
+	lfs f0,4(r2)
+	stfs f0,4(r4)
+	ld r4,8(r3)
+	b L526
+	.p2align 4,,15
+L543:
+	stw r10,0(r9)
+	stw r10,4(r9)
+	lwz r0,8(r2)
+	stw r0,8(r9)
+	lfs f0,0(r2)
+	stfs f0,0(r9)
+	lfs f13,4(r2)
+	stfs f13,4(r9)
+	b L544
+L546:
+	li r0,0
+	lwz r2,8(r28)
+	stw r0,4(r9)
+	stw r0,0(r9)
+	stw r2,8(r9)
+	lfs f0,0(r28)
+	stfs f0,0(r9)
+	lfs f13,4(r28)
+	stfs f13,4(r9)
+	b L547
+	.p2align 4,,15
+L550:
+	stw r9,0(r30)
+	stw r9,4(r30)
+	lwz r0,8(r2)
+	stw r0,8(r30)
+	lfs f0,0(r2)
+	stfs f0,0(r30)
+	lfs f13,4(r2)
+	stfs f13,4(r30)
+	b L551
+	.p2align 4,,15
+L554:
+	addi r1,r1,192
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE13421:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+	.weak_definition __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+	.private_extern __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+__ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_:
+LFB12956:
+	mflr r0
+LCFI256:
+	std r28,-32(r1)
+LCFI257:
+	std r29,-24(r1)
+LCFI258:
+	std r30,-16(r1)
+LCFI259:
+	mr r29,r4
+	std r0,16(r1)
+LCFI260:
+	stdu r1,-144(r1)
+LCFI261:
+	mr r30,r3
+	ld r2,8(r3)
+	ld r0,16(r3)
+	ld r9,0(r3)
+	cmpd cr7,r2,r0
+	mr r28,r9
+	beq cr7,L562
+	cmpd cr7,r2,r4
+	bne cr7,L562
+	cmpdi cr7,r4,0
+	bne cr7,L565
+	.p2align 4,,15
+L566:
+	addi r2,r2,12
+	std r2,8(r30)
+	b L567
+	.p2align 4,,15
+L562:
+	mr r3,r30
+	mr r4,r29
+	bl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+	ld r9,0(r30)
+	b L567
+	.p2align 4,,15
+L565:
+	li r0,0
+	lwz r2,8(r5)
+	stw r0,4(r4)
+	stw r0,0(r4)
+	stw r2,8(r4)
+	lfs f0,0(r5)
+	stfs f0,0(r4)
+	lfs f13,4(r5)
+	stfs f13,4(r4)
+	ld r9,0(r3)
+	ld r2,8(r3)
+	b L566
+	.p2align 4,,15
+L567:
+	addi r1,r1,144
+	subf r3,r28,r29
+	ld r0,16(r1)
+	rldicr r3,r3,0,61
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	add r3,r3,r9
+	mtlr r0
+	blr
+LFE12956:
+	.text
+	.align 2
+	.p2align 4,,15
+___tcf_4:
+LFB14481:
+	mflr r0
+LCFI262:
+	std r31,-8(r1)
+LCFI263:
+	std r30,-16(r1)
+LCFI264:
+	bcl 20,31,"L00000000026$pb"
+"L00000000026$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI265:
+	addis r2,r31,ha16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE-"L00000000026$pb")
+	stdu r1,-128(r1)
+LCFI266:
+	la r2,lo16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE-"L00000000026$pb")(r2)
+	nop
+	ld r30,8(r2)
+	cmpdi cr7,r30,0
+	beq cr7,L574
+	sync
+	addi r2,r30,8
+L576:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L576
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L574
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,16(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	sync
+	addi r2,r30,12
+L575:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L575
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L574
+	ld r2,0(r30)
+	addi r1,r1,128
+	mr r3,r30
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	ld r0,16(r1)
+	mtlr r0
+	bctr
+	.p2align 4,,15
+L574:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE14481:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev:
+LFB14493:
+	mflr r0
+	bcl 20,31,"L00000000027$pb"
+"L00000000027$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000027$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000027$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	b __ZdlPv
+LFE14493:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev:
+LFB14492:
+	mflr r0
+	bcl 20,31,"L00000000028$pb"
+"L00000000028$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000028$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost6detail15sp_counted_baseE-"L00000000028$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	blr
+LFE14492:
+	.text
+	.align 2
+	.p2align 4,,15
+___tcf_0:
+LFB9368:
+	mflr r0
+LCFI267:
+	std r31,-8(r1)
+LCFI268:
+	std r30,-16(r1)
+LCFI269:
+	bcl 20,31,"L00000000029$pb"
+"L00000000029$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI270:
+	addis r2,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000029$pb")
+	stdu r1,-128(r1)
+LCFI271:
+	la r2,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000029$pb")(r2)
+	nop
+	ld r30,8(r2)
+	cmpdi cr7,r30,0
+	beq cr7,L588
+	sync
+	addi r2,r30,8
+L590:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L590
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L588
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,16(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	sync
+	addi r2,r30,12
+L589:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L589
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L588
+	ld r2,0(r30)
+	addi r1,r1,128
+	mr r3,r30
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	ld r0,16(r1)
+	mtlr r0
+	bctr
+	.p2align 4,,15
+L588:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE9368:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.weak_definition __ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	.private_extern __ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+__ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_:
+LFB14033:
+	mflr r0
+LCFI272:
+	lis r2,0xaaaa
+	std r30,-16(r1)
+LCFI273:
+	std r27,-40(r1)
+LCFI274:
+	std r28,-32(r1)
+LCFI275:
+	std r29,-24(r1)
+LCFI276:
+	ori r2,r2,43690
+	std r0,16(r1)
+LCFI277:
+	subf r0,r3,r4
+	stdu r1,-176(r1)
+LCFI278:
+	mr r30,r3
+	sldi r2,r2,32
+	sradi r0,r0,2
+	oris r2,r2,0xaaaa
+	ori r2,r2,43691
+	mulld r0,r0,r2
+	cmpdi cr7,r0,1
+	ble cr7,L595
+	addi r0,r4,-12
+	mr r9,r4
+	mr r27,r2
+	subf r28,r3,r0
+	.p2align 4,,15
+L594:
+	addi r29,r9,-12
+	lfs f0,-12(r9)
+	mr r3,r30
+	li r4,0
+	lfs f13,4(r29)
+	lwa r0,8(r29)
+	subf r5,r30,r29
+	sradi r5,r5,2
+	stfs f0,112(r1)
+	mulld r5,r5,r27
+	stw r0,120(r1)
+	stfs f13,116(r1)
+	lwz r2,8(r30)
+	ld r0,0(r30)
+	std r0,-12(r9)
+	stw r2,8(r29)
+	lwz r7,120(r1)
+	lfs f1,112(r1)
+	lfs f2,116(r1)
+	sldi r7,r7,32
+	bl __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+	sradi r0,r28,2
+	mr r9,r29
+	addi r28,r28,-12
+	mulld r0,r0,r27
+	cmpdi cr7,r0,1
+	bgt cr7,L594
+L595:
+	addi r1,r1,176
+	ld r0,16(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE14033:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_
+	.weak_definition __ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_
+	.private_extern __ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_
+__ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_:
+LFB13751:
+	mflr r0
+LCFI279:
+	std r27,-40(r1)
+LCFI280:
+	std r28,-32(r1)
+LCFI281:
+	std r30,-16(r1)
+LCFI282:
+	std r26,-48(r1)
+LCFI283:
+	std r29,-24(r1)
+LCFI284:
+	std r0,16(r1)
+LCFI285:
+	stdu r1,-176(r1)
+LCFI286:
+	mr r27,r5
+	mr r28,r4
+	mr r30,r3
+	bl __ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+	cmpld cr7,r28,r27
+	bge cr7,L598
+	lis r0,0xaaaa
+	subf r2,r30,r28
+	mr r9,r28
+	mr r29,r28
+	ori r0,r0,43690
+	sradi r2,r2,2
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld r26,r2,r0
+	.p2align 4,,15
+L600:
+	lfs f12,0(r9)
+	lfs f0,0(r30)
+	fcmpu cr7,f12,f0
+	blt cr7,L609
+	bgt cr7,L603
+	lfs f13,4(r9)
+	lfs f0,4(r30)
+	fcmpu cr7,f13,f0
+	blt cr7,L610
+	bgt cr7,L603
+	lwz r2,8(r9)
+	lwz r0,8(r30)
+	cmpw cr7,r2,r0
+	bge cr7,L603
+	b L601
+	.p2align 4,,15
+L609:
+	lfs f13,4(r9)
+	lwz r2,8(r9)
+	b L601
+	.p2align 4,,15
+L610:
+	lwz r2,8(r9)
+L601:
+	stw r2,120(r1)
+	stfs f13,116(r1)
+	mr r3,r30
+	li r4,0
+	stfs f12,112(r1)
+	mr r5,r26
+	lwz r2,8(r30)
+	ld r0,0(r30)
+	stw r2,8(r29)
+	std r0,0(r29)
+	lwz r7,120(r1)
+	lfs f1,112(r1)
+	lfs f2,116(r1)
+	sldi r7,r7,32
+	bl __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_
+L603:
+	addi r9,r29,12
+	cmpld cr7,r27,r9
+	ble cr7,L598
+	mr r29,r9
+	b L600
+L598:
+	addi r1,r1,176
+	mr r3,r30
+	mr r4,r28
+	ld r0,16(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+LFE13751:
+	.align 2
+	.p2align 4,,15
+	.globl __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_
+	.weak_definition __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_
+	.private_extern __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_
+__ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_:
+LFB13379:
+	mflr r0
+LCFI287:
+	lis r9,0xaaaa
+	std r25,-56(r1)
+LCFI288:
+	std r27,-40(r1)
+LCFI289:
+	std r28,-32(r1)
+LCFI290:
+	std r29,-24(r1)
+LCFI291:
+	std r26,-48(r1)
+LCFI292:
+	std r30,-16(r1)
+LCFI293:
+	std r0,16(r1)
+LCFI294:
+	stdu r1,-192(r1)
+LCFI295:
+	ori r9,r9,43690
+	subf r0,r3,r4
+	mr r29,r3
+	sldi r9,r9,32
+	mr r28,r4
+	sradi r0,r0,2
+	mr r25,r3
+	oris r9,r9,0xaaaa
+	mr r27,r5
+	ori r9,r9,43691
+	mulld r0,r0,r9
+	cmpdi cr7,r0,16
+	ble cr7,L645
+	cmpdi cr7,r5,0
+	mr r26,r9
+	bne cr7,L646
+	b L614
+	.p2align 4,,15
+L616:
+	cmpdi cr7,r27,0
+	mr r28,r30
+	bne cr7,L646
+L614:
+	addi r1,r1,192
+	mr r4,r28
+	mr r3,r29
+	mr r5,r28
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_
+	.p2align 4,,15
+L646:
+	sradi r2,r0,1
+	lfs f11,0(r29)
+	addi r27,r27,-1
+	addi r11,r28,-12
+	mr r9,r29
+	mulli r2,r2,12
+	lfsx f12,r29,r2
+	add r10,r29,r2
+	fcmpu cr7,f11,f12
+	blt cr7,L618
+	bgt cr7,L620
+	lfs f13,4(r29)
+	lfs f0,4(r10)
+	fcmpu cr7,f13,f0
+	blt cr7,L618
+	bgt cr7,L620
+	lwz r0,8(r29)
+	lwz r2,8(r10)
+	cmpw cr7,r0,r2
+	bge cr7,L620
+	.p2align 4,,15
+L618:
+	lfs f10,0(r11)
+	fcmpu cr7,f12,f10
+	blt cr7,L624
+	bgt cr7,L626
+	lfs f13,4(r10)
+	lfs f0,4(r11)
+	fcmpu cr7,f13,f0
+	blt cr7,L624
+	bgt cr7,L626
+	lwz r0,8(r10)
+	lwz r2,8(r11)
+	cmpw cr7,r0,r2
+	blt cr7,L624
+	.p2align 4,,15
+L626:
+	fcmpu cr7,f11,f10
+	blt cr7,L630
+	bgt cr7,L632
+	lfs f13,4(r29)
+	lfs f0,4(r11)
+	fcmpu cr7,f13,f0
+	blt cr7,L630
+	bgt cr7,L632
+	lwz r0,8(r29)
+	lwz r2,8(r11)
+	cmpw cr7,r0,r2
+	blt cr7,L630
+	b L632
+	.p2align 4,,15
+L620:
+	lfs f10,0(r11)
+	fcmpu cr7,f11,f10
+	blt cr7,L632
+	bgt cr7,L637
+	lfs f13,4(r29)
+	lfs f0,4(r11)
+	fcmpu cr7,f13,f0
+	blt cr7,L632
+	bgt cr7,L637
+	lwz r0,8(r29)
+	lwz r2,8(r11)
+	cmpw cr7,r0,r2
+	blt cr7,L632
+	.p2align 4,,15
+L637:
+	fcmpu cr7,f12,f10
+	blt cr7,L630
+	bgt cr7,L624
+	lfs f13,4(r10)
+	lfs f0,4(r11)
+	fcmpu cr7,f13,f0
+	blt cr7,L630
+	bgt cr7,L624
+	lwz r0,8(r10)
+	lwz r2,8(r11)
+	cmpw cr7,r0,r2
+	blt cr7,L630
+	.p2align 4,,15
+L624:
+	mr r9,r10
+	b L632
+	.p2align 4,,15
+L630:
+	mr r9,r11
+	.p2align 4,,15
+L632:
+	ld r2,0(r9)
+	lwz r0,8(r9)
+	mr r4,r28
+	mr r3,r29
+	std r2,112(r1)
+	rldicl r6,r0,0,32
+	stw r0,120(r1)
+	sldi r6,r6,32
+	lfs f1,112(r1)
+	lfs f2,116(r1)
+	bl __ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_
+	mr r4,r28
+	mr r5,r27
+	mr r30,r3
+	bl __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_
+	subf r0,r25,r30
+	sradi r0,r0,2
+	mulld r0,r0,r26
+	cmpdi cr7,r0,16
+	bgt cr7,L616
+L645:
+	addi r1,r1,192
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE13379:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_
+	.weak_definition __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_
+	.private_extern __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_
+__ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_:
+LFB11643:
+	mflr r0
+LCFI296:
+	cmpd cr7,r3,r4
+	std r29,-24(r1)
+LCFI297:
+	std r30,-16(r1)
+LCFI298:
+	mr r29,r4
+	mr r30,r3
+	std r0,16(r1)
+LCFI299:
+	stdu r1,-144(r1)
+LCFI300:
+	beq cr7,L656
+	lis r0,0xaaaa
+	subf r2,r3,r4
+	li r5,0
+	ori r0,r0,43690
+	sradi r2,r2,2
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld r2,r2,r0
+	cmpdi cr7,r2,1
+	beq cr7,L653
+	.p2align 4,,15
+L654:
+	sradi r2,r2,1
+	addi r5,r5,1
+	cmpdi cr7,r2,1
+	bne cr7,L654
+	sldi r5,r5,1
+L653:
+	mr r3,r30
+	mr r4,r29
+	bl __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_
+	addi r1,r1,144
+	mr r3,r30
+	mr r4,r29
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_
+L656:
+	addi r1,r1,144
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE11643:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+__ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv:
+LFB14608:
+	addi r3,r3,-48
+	b __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+LFE14608:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+__ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv:
+LFB14571:
+	mflr r0
+LCFI301:
+	std r29,-24(r1)
+LCFI302:
+	std r30,-16(r1)
+LCFI303:
+	std r31,-8(r1)
+LCFI304:
+	bcl 20,31,"L00000000030$pb"
+"L00000000030$pb":
+	mr r29,r3
+	mflr r31
+	std r0,16(r1)
+LCFI305:
+	li r3,56
+	stdu r1,-144(r1)
+LCFI306:
+	bl ___cxa_allocate_exception
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000030$pb")
+	mr r30,r3
+	ld r3,8(r29)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000030$pb")(r2)
+	cmpdi cr7,r3,0
+	std r3,8(r30)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq- cr7,L660
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB4:
+	bctrl
+LEHE4:
+L660:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000030$pb")
+	lwz r8,32(r29)
+	ld r0,16(r29)
+	ld r9,24(r29)
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev$non_lazy_ptr-"L00000000030$pb")
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000030$pb")
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000030$pb")(r2)
+	mr r3,r30
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev$non_lazy_ptr-"L00000000030$pb")(r5)
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000030$pb")(r4)
+	addi r10,r2,104
+	addi r11,r2,16
+	std r0,16(r30)
+	stw r8,32(r30)
+	std r9,24(r30)
+	addi r2,r2,64
+	std r11,0(r30)
+	std r10,48(r30)
+	std r2,40(r30)
+LEHB5:
+	bl ___cxa_throw
+L665:
+	cmpdi cr7,r4,-1
+	beq cr7,L662
+	bl __Unwind_Resume
+LEHE5:
+L662:
+	bl __ZSt9terminatev
+LFE14571:
+	.section __DATA,__gcc_except_tab
+GCC_except_table2:
+	.align 3
+LLSDA14571:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$10,LEHB4-LFB14571
+	.long L$set$10
+	.set L$set$11,LEHE4-LEHB4
+	.long L$set$11
+	.set L$set$12,L665-LFB14571
+	.long L$set$12
+	.byte	0x1
+	.set L$set$13,LEHB5-LFB14571
+	.long L$set$13
+	.set L$set$14,LEHE5-LEHB5
+	.long L$set$14
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.text
+	.align 2
+	.p2align 4,,15
+___tcf_3:
+LFB14480:
+	mflr r0
+LCFI307:
+	std r31,-8(r1)
+LCFI308:
+	std r30,-16(r1)
+LCFI309:
+	bcl 20,31,"L00000000031$pb"
+"L00000000031$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI310:
+	addis r2,r31,ha16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE-"L00000000031$pb")
+	stdu r1,-128(r1)
+LCFI311:
+	la r2,lo16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE-"L00000000031$pb")(r2)
+	nop
+	ld r30,8(r2)
+	cmpdi cr7,r30,0
+	beq cr7,L671
+	sync
+	addi r2,r30,8
+L673:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L673
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L671
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,16(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	sync
+	addi r2,r30,12
+L672:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L672
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L671
+	ld r2,0(r30)
+	addi r1,r1,128
+	mr r3,r30
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	ld r0,16(r1)
+	mtlr r0
+	bctr
+	.p2align 4,,15
+L671:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE14480:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+__ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv:
+LFB14609:
+	addi r3,r3,-48
+	b __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+LFE14609:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+__ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv:
+LFB14569:
+	mflr r0
+LCFI312:
+	std r29,-24(r1)
+LCFI313:
+	std r30,-16(r1)
+LCFI314:
+	std r31,-8(r1)
+LCFI315:
+	bcl 20,31,"L00000000032$pb"
+"L00000000032$pb":
+	mr r29,r3
+	mflr r31
+	std r0,16(r1)
+LCFI316:
+	li r3,56
+	stdu r1,-144(r1)
+LCFI317:
+	bl ___cxa_allocate_exception
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000032$pb")
+	mr r30,r3
+	ld r3,8(r29)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000032$pb")(r2)
+	cmpdi cr7,r3,0
+	std r3,8(r30)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq- cr7,L675
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB6:
+	bctrl
+LEHE6:
+L675:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000032$pb")
+	lwz r8,32(r29)
+	ld r0,16(r29)
+	ld r9,24(r29)
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev$non_lazy_ptr-"L00000000032$pb")
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000032$pb")
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000032$pb")(r2)
+	mr r3,r30
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev$non_lazy_ptr-"L00000000032$pb")(r5)
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000032$pb")(r4)
+	addi r10,r2,104
+	addi r11,r2,16
+	std r0,16(r30)
+	stw r8,32(r30)
+	std r9,24(r30)
+	addi r2,r2,64
+	std r11,0(r30)
+	std r10,48(r30)
+	std r2,40(r30)
+LEHB7:
+	bl ___cxa_throw
+L680:
+	cmpdi cr7,r4,-1
+	beq cr7,L677
+	bl __Unwind_Resume
+LEHE7:
+L677:
+	bl __ZSt9terminatev
+LFE14569:
+	.section __DATA,__gcc_except_tab
+GCC_except_table3:
+	.align 3
+LLSDA14569:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$15,LEHB6-LFB14569
+	.long L$set$15
+	.set L$set$16,LEHE6-LEHB6
+	.long L$set$16
+	.set L$set$17,L680-LFB14569
+	.long L$set$17
+	.byte	0x1
+	.set L$set$18,LEHB7-LFB14569
+	.long L$set$18
+	.set L$set$19,LEHE7-LEHB7
+	.long L$set$19
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_baseD1Ev
+	.weak_definition __ZN5boost16exception_detail10clone_baseD1Ev
+	.private_extern __ZN5boost16exception_detail10clone_baseD1Ev
+__ZN5boost16exception_detail10clone_baseD1Ev:
+LFB4492:
+	mflr r0
+	bcl 20,31,"L00000000033$pb"
+"L00000000033$pb":
+	mflr r10
+	addis r2,r10,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000033$pb")
+	mtlr r0
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000033$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	blr
+LFE4492:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_
+	.weak_definition __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_
+	.private_extern __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_
+__ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_:
+LFB10535:
+	mflr r0
+LCFI318:
+	std r27,-40(r1)
+LCFI319:
+	std r28,-32(r1)
+LCFI320:
+	std r29,-24(r1)
+LCFI321:
+	std r30,-16(r1)
+LCFI322:
+	bcl 20,31,"L00000000034$pb"
+"L00000000034$pb":
+	std r31,-8(r1)
+LCFI323:
+	std r25,-56(r1)
+LCFI324:
+	mflr r31
+	std r26,-48(r1)
+LCFI325:
+	std r0,16(r1)
+LCFI326:
+	stdu r1,-192(r1)
+LCFI327:
+	mr r30,r4
+	mr r29,r3
+	mr r28,r5
+	mr r27,r30
+	ld r4,8(r3)
+	ld r0,16(r3)
+	cmpd cr7,r4,r0
+	beq cr7,L685
+	cmpdi cr7,r4,0
+	beq cr7,L687
+	ld r0,-16(r4)
+	ld r2,-8(r4)
+	std r0,0(r4)
+	std r2,8(r4)
+	ld r4,8(r3)
+L687:
+	mr r2,r4
+	addi r4,r4,16
+	std r4,8(r29)
+	addi r11,r2,-16
+	mr r9,r2
+	subf r0,r27,r11
+	sradi. r2,r0,4
+	mtctr r2
+	ld r10,0(r28)
+	ld r5,8(r28)
+	ble cr0,L689
+	.p2align 4,,15
+L718:
+	ldu r0,-16(r11)
+	addi r9,r9,-16
+	lwz r2,8(r11)
+	std r0,0(r9)
+	stw r2,8(r9)
+	lwz r0,12(r11)
+	stw r0,12(r9)
+	bdnz L718
+L689:
+	std r10,0(r30)
+	std r5,8(r30)
+	b L714
+L685:
+	ld r0,0(r3)
+	li r2,-1
+	rldicl r2,r2,0,4
+	subf r0,r0,r4
+	sradi r0,r0,4
+	cmpd cr7,r0,r2
+	bne+ cr7,L692
+	addis r3,r31,ha16(LC5-"L00000000034$pb")
+	la r3,lo16(LC5-"L00000000034$pb")(r3)
+	bl __ZSt20__throw_length_errorPKc
+	.p2align 4,,15
+L692:
+	cmpdi cr7,r0,0
+	li r2,1
+	beq cr7,L715
+	sldi r2,r0,1
+	li r25,-16
+	cmpld cr7,r2,r0
+	blt cr7,L701
+L715:
+	li r0,-1
+	sldi r25,r2,4
+	rldicl r0,r0,0,4
+	cmpld cr7,r2,r0
+	ble cr7,L701
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L701:
+	mr r3,r25
+	bl __Znwm
+	ld r11,0(r29)
+	mr r26,r3
+	mr r9,r3
+	cmpd cr7,r30,r11
+	beq cr7,L702
+	.p2align 4,,15
+L716:
+	cmpdi cr7,r9,0
+	beq cr7,L704
+	lwz r0,8(r11)
+	ld r2,0(r11)
+	stw r0,8(r9)
+	std r2,0(r9)
+	lwz r0,12(r11)
+	stw r0,12(r9)
+L704:
+	addi r11,r11,16
+	addi r9,r9,16
+	cmpd cr7,r30,r11
+	bne cr7,L716
+L702:
+	cmpdi cr7,r9,0
+	mr r11,r9
+	beq cr7,L706
+	ld r0,8(r28)
+	ld r2,0(r28)
+	std r0,8(r9)
+	std r2,0(r9)
+L706:
+	ld r4,8(r29)
+	mr r9,r27
+	addi r30,r11,16
+	cmpd cr7,r27,r4
+	beq cr7,L708
+	.p2align 4,,15
+L717:
+	cmpdi cr7,r30,0
+	beq cr7,L710
+	lwz r0,8(r9)
+	ld r2,0(r9)
+	stw r0,8(r30)
+	std r2,0(r30)
+	lwz r0,12(r9)
+	stw r0,12(r30)
+L710:
+	addi r9,r9,16
+	addi r30,r30,16
+	cmpd cr7,r9,r4
+	bne cr7,L717
+	ld r4,8(r29)
+L708:
+	ld r3,0(r29)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_
+	ld r3,0(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L712
+	bl __ZdlPv
+L712:
+	add r0,r26,r25
+	std r30,8(r29)
+	std r26,0(r29)
+	std r0,16(r29)
+	.p2align 4,,15
+L714:
+	addi r1,r1,192
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE10535:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_
+	.weak_definition __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_
+	.private_extern __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_
+__ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_:
+LFB9677:
+	mflr r0
+LCFI328:
+	cmpd cr7,r4,r3
+	std r28,-32(r1)
+LCFI329:
+	std r26,-48(r1)
+LCFI330:
+	std r27,-40(r1)
+LCFI331:
+	std r29,-24(r1)
+LCFI332:
+	std r30,-16(r1)
+LCFI333:
+	std r0,16(r1)
+LCFI334:
+	mr r28,r3
+	stdu r1,-176(r1)
+LCFI335:
+	mr r6,r4
+	beq cr7,L724
+	ld r8,0(r3)
+	ld r29,8(r4)
+	ld r30,0(r4)
+	ld r0,16(r3)
+	mr r10,r8
+	subf r2,r30,r29
+	subf r0,r8,r0
+	sradi r7,r2,4
+	sradi r0,r0,4
+	cmpld cr7,r7,r0
+	ble cr7,L726
+	li r0,-1
+	rldicl r0,r0,0,4
+	cmpld cr7,r7,r0
+	ble+ cr7,L728
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L728:
+	sldi r26,r7,4
+	mr r3,r26
+	bl __Znwm
+	cmpd cr7,r29,r30
+	mr r11,r30
+	mr r27,r3
+	beq cr7,L730
+	mr r10,r30
+	mr r9,r3
+	.p2align 4,,15
+L732:
+	cmpdi cr7,r9,0
+	beq cr7,L733
+	lwz r0,8(r11)
+	ld r2,0(r11)
+	stw r0,8(r9)
+	std r2,0(r9)
+	lwz r0,12(r11)
+	stw r0,12(r9)
+L733:
+	addi r11,r10,16
+	cmpd cr7,r11,r29
+	beq cr7,L730
+	addi r9,r9,16
+	mr r10,r11
+	b L732
+L730:
+	ld r3,0(r28)
+	ld r4,8(r28)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,0(r28)
+	cmpdi cr7,r3,0
+	beq cr7,L736
+	bl __ZdlPv
+L736:
+	add r0,r27,r26
+	mr r8,r27
+	std r27,0(r28)
+	mr r3,r26
+	std r0,16(r28)
+	b L738
+	.p2align 4,,15
+L726:
+	ld r4,8(r3)
+	subf r0,r8,r4
+	mr r11,r4
+	sradi r2,r0,4
+	cmpld cr7,r7,r2
+	bgt cr7,L739
+	cmpdi cr7,r7,0
+	mr r3,r8
+	sldi r29,r7,4
+	ble cr7,L741
+	mtctr r7
+	mr r11,r30
+	mr r9,r8
+	.p2align 4,,15
+L743:
+	lwz r0,8(r11)
+	ld r2,0(r11)
+	stw r0,8(r9)
+	std r2,0(r9)
+	lwz r0,12(r11)
+	addi r11,r11,16
+	stw r0,12(r9)
+	addi r9,r9,16
+	bdnz L743
+	sldi r29,r7,4
+	ld r4,8(r28)
+	add r3,r8,r29
+L741:
+	addi r5,r1,113
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_
+	ld r8,0(r28)
+	mr r3,r29
+	b L738
+L739:
+	mtctr r2
+	cmpdi cr7,r2,0
+	ble cr7,L745
+	mr r9,r30
+	.p2align 4,,15
+L747:
+	lwz r0,8(r9)
+	ld r2,0(r9)
+	stw r0,8(r10)
+	std r2,0(r10)
+	lwz r0,12(r9)
+	addi r9,r9,16
+	stw r0,12(r10)
+	addi r10,r10,16
+	bdnz L747
+	ld r11,8(r28)
+	ld r8,0(r28)
+	ld r29,8(r6)
+	ld r30,0(r6)
+	subf r0,r8,r11
+L745:
+	rldicr r0,r0,0,59
+	sldi r3,r7,4
+	add r9,r0,r30
+	cmpd cr7,r9,r29
+	beq cr7,L738
+	.p2align 4,,15
+L762:
+	cmpdi cr7,r11,0
+	beq cr7,L752
+	lwz r0,8(r9)
+	ld r2,0(r9)
+	stw r0,8(r11)
+	std r2,0(r11)
+	lwz r0,12(r9)
+	stw r0,12(r11)
+L752:
+	addi r9,r9,16
+	cmpd cr7,r9,r29
+	beq cr7,L754
+	addi r11,r11,16
+	b L762
+L754:
+	ld r8,0(r28)
+	sldi r3,r7,4
+	.p2align 4,,15
+L738:
+	add r0,r3,r8
+	std r0,8(r28)
+L724:
+	addi r1,r1,176
+	mr r3,r28
+	ld r0,16(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE9677:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+__ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv:
+LFB14610:
+	addi r3,r3,-48
+	b __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+LFE14610:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+__ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv:
+LFB14570:
+	mflr r0
+LCFI336:
+	std r29,-24(r1)
+LCFI337:
+	std r30,-16(r1)
+LCFI338:
+	std r31,-8(r1)
+LCFI339:
+	bcl 20,31,"L00000000035$pb"
+"L00000000035$pb":
+	mr r29,r3
+	mflr r31
+	std r0,16(r1)
+LCFI340:
+	li r3,56
+	stdu r1,-144(r1)
+LCFI341:
+LEHB8:
+	bl __Znwm
+LEHE8:
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000035$pb")
+	mr r30,r3
+	ld r3,8(r29)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000035$pb")(r2)
+	cmpdi cr7,r3,0
+	std r3,8(r30)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L764
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB9:
+	bctrl
+LEHE9:
+	b L764
+L768:
+L766:
+	mr r29,r3
+	mr r3,r30
+	bl __ZdlPv
+	mr r3,r29
+LEHB10:
+	bl __Unwind_Resume
+LEHE10:
+	.p2align 4,,15
+L764:
+	lwz r8,32(r29)
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000035$pb")
+	ld r0,16(r29)
+	addi r1,r1,144
+	ld r9,24(r29)
+	addi r3,r30,48
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000035$pb")(r2)
+	stw r8,32(r30)
+	addi r10,r2,104
+	addi r11,r2,16
+	addi r2,r2,64
+	std r0,16(r30)
+	std r9,24(r30)
+	std r11,0(r30)
+	std r10,48(r30)
+	std r2,40(r30)
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE14570:
+	.section __DATA,__gcc_except_tab
+GCC_except_table4:
+LLSDA14570:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x27
+	.set L$set$20,LEHB8-LFB14570
+	.long L$set$20
+	.set L$set$21,LEHE8-LEHB8
+	.long L$set$21
+	.long	0x0
+	.byte	0x0
+	.set L$set$22,LEHB9-LFB14570
+	.long L$set$22
+	.set L$set$23,LEHE9-LEHB9
+	.long L$set$23
+	.set L$set$24,L768-LFB14570
+	.long L$set$24
+	.byte	0x0
+	.set L$set$25,LEHB10-LFB14570
+	.long L$set$25
+	.set L$set$26,LEHE10-LEHB10
+	.long L$set$26
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+__ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv:
+LFB14611:
+	addi r3,r3,-48
+	b __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+LFE14611:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+__ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv:
+LFB14568:
+	mflr r0
+LCFI342:
+	std r29,-24(r1)
+LCFI343:
+	std r30,-16(r1)
+LCFI344:
+	std r31,-8(r1)
+LCFI345:
+	bcl 20,31,"L00000000036$pb"
+"L00000000036$pb":
+	mr r29,r3
+	mflr r31
+	std r0,16(r1)
+LCFI346:
+	li r3,56
+	stdu r1,-144(r1)
+LCFI347:
+LEHB11:
+	bl __Znwm
+LEHE11:
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000036$pb")
+	mr r30,r3
+	ld r3,8(r29)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000036$pb")(r2)
+	cmpdi cr7,r3,0
+	std r3,8(r30)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L770
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB12:
+	bctrl
+LEHE12:
+	b L770
+L774:
+L772:
+	mr r29,r3
+	mr r3,r30
+	bl __ZdlPv
+	mr r3,r29
+LEHB13:
+	bl __Unwind_Resume
+LEHE13:
+	.p2align 4,,15
+L770:
+	lwz r8,32(r29)
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000036$pb")
+	ld r0,16(r29)
+	addi r1,r1,144
+	ld r9,24(r29)
+	addi r3,r30,48
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000036$pb")(r2)
+	stw r8,32(r30)
+	addi r10,r2,104
+	addi r11,r2,16
+	addi r2,r2,64
+	std r0,16(r30)
+	std r9,24(r30)
+	std r11,0(r30)
+	std r10,48(r30)
+	std r2,40(r30)
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE14568:
+	.section __DATA,__gcc_except_tab
+GCC_except_table5:
+LLSDA14568:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x27
+	.set L$set$27,LEHB11-LFB14568
+	.long L$set$27
+	.set L$set$28,LEHE11-LEHB11
+	.long L$set$28
+	.long	0x0
+	.byte	0x0
+	.set L$set$29,LEHB12-LFB14568
+	.long L$set$29
+	.set L$set$30,LEHE12-LEHB12
+	.long L$set$30
+	.set L$set$31,L774-LFB14568
+	.long L$set$31
+	.byte	0x0
+	.set L$set$32,LEHB13-LFB14568
+	.long L$set$32
+	.set L$set$33,LEHE13-LEHB13
+	.long L$set$33
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost10lock_errorD0Ev
+	.weak_definition __ZN5boost10lock_errorD0Ev
+__ZN5boost10lock_errorD0Ev:
+LFB4405:
+	mflr r0
+LCFI348:
+	std r31,-8(r1)
+LCFI349:
+	std r29,-24(r1)
+LCFI350:
+	bcl 20,31,"L00000000037$pb"
+"L00000000037$pb":
+	mr r29,r3
+	mflr r31
+	addis r2,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000037$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000037$pb")
+	std r0,16(r1)
+LCFI351:
+	stdu r1,-144(r1)
+LCFI352:
+	ld r2,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000037$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000037$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r3)
+	std r9,0(r3)
+	bl __ZNSt9exceptionD2Ev
+	addi r1,r1,144
+	mr r3,r29
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	b __ZdlPv
+LFE4405:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost21thread_resource_errorD0Ev
+	.weak_definition __ZN5boost21thread_resource_errorD0Ev
+__ZN5boost21thread_resource_errorD0Ev:
+LFB4416:
+	mflr r0
+LCFI353:
+	std r31,-8(r1)
+LCFI354:
+	std r29,-24(r1)
+LCFI355:
+	bcl 20,31,"L00000000038$pb"
+"L00000000038$pb":
+	mr r29,r3
+	mflr r31
+	addis r2,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000038$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000038$pb")
+	std r0,16(r1)
+LCFI356:
+	stdu r1,-144(r1)
+LCFI357:
+	ld r2,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000038$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000038$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r3)
+	std r9,0(r3)
+	bl __ZNSt9exceptionD2Ev
+	addi r1,r1,144
+	mr r3,r29
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	b __ZdlPv
+LFE4416:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv:
+LFB14612:
+	addi r3,r3,-56
+	b __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+LFE14612:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv:
+LFB14579:
+	mflr r0
+LCFI358:
+	std r28,-32(r1)
+LCFI359:
+	std r29,-24(r1)
+LCFI360:
+	std r30,-16(r1)
+LCFI361:
+	std r31,-8(r1)
+LCFI362:
+	bcl 20,31,"L00000000039$pb"
+"L00000000039$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI363:
+	mr r29,r3
+	li r3,64
+	stdu r1,-144(r1)
+LCFI364:
+	bl ___cxa_allocate_exception
+	addis r2,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000039$pb")
+	addis r9,r31,ha16(L__ZTVSt9exception$non_lazy_ptr-"L00000000039$pb")
+	lwz r0,8(r29)
+	mr r30,r3
+	ld r3,24(r29)
+	ld r2,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000039$pb")(r2)
+	ld r9,lo16(L__ZTVSt9exception$non_lazy_ptr-"L00000000039$pb")(r9)
+	stw r0,8(r30)
+	cmpdi cr7,r3,0
+	std r3,24(r30)
+	addi r28,r2,16
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000039$pb")
+	addi r9,r9,16
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000039$pb")(r2)
+	std r9,0(r30)
+	std r28,0(r30)
+	addi r2,r2,16
+	std r2,16(r30)
+	addis r2,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000039$pb")
+	ld r2,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000039$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq- cr7,L782
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB14:
+	bctrl
+LEHE14:
+L782:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000039$pb")
+	lwz r8,48(r29)
+	ld r0,32(r29)
+	ld r9,40(r29)
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000039$pb")
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000039$pb")
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000039$pb")(r2)
+	mr r3,r30
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000039$pb")(r5)
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000039$pb")(r4)
+	addi r10,r2,104
+	addi r11,r2,16
+	std r0,32(r30)
+	stw r8,48(r30)
+	std r9,40(r30)
+	addi r2,r2,72
+	std r11,0(r30)
+	std r10,56(r30)
+	std r2,16(r30)
+LEHB15:
+	bl ___cxa_throw
+L789:
+L784:
+L790:
+	std r28,0(r30)
+	mr r29,r4
+	mr r28,r3
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+	cmpdi cr7,r29,-1
+	beq cr7,L786
+	mr r3,r28
+	bl __Unwind_Resume
+LEHE15:
+L786:
+	bl __ZSt9terminatev
+LFE14579:
+	.section __DATA,__gcc_except_tab
+GCC_except_table6:
+	.align 3
+LLSDA14579:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$34,LEHB14-LFB14579
+	.long L$set$34
+	.set L$set$35,LEHE14-LEHB14
+	.long L$set$35
+	.set L$set$36,L789-LFB14579
+	.long L$set$36
+	.byte	0x3
+	.set L$set$37,LEHB15-LFB14579
+	.long L$set$37
+	.set L$set$38,LEHE15-LEHB15
+	.long L$set$38
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.byte	0x0
+	.byte	0x7d
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost10lock_errorD1Ev
+	.weak_definition __ZN5boost10lock_errorD1Ev
+__ZN5boost10lock_errorD1Ev:
+LFB4404:
+	mflr r0
+	bcl 20,31,"L00000000040$pb"
+"L00000000040$pb":
+	mflr r10
+	addis r9,r10,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000040$pb")
+	addis r11,r10,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000040$pb")
+	mtlr r0
+	ld r9,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000040$pb")(r9)
+	ld r11,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000040$pb")(r11)
+	addi r9,r9,16
+	addi r11,r11,16
+	std r9,0(r3)
+	std r11,0(r3)
+	b __ZNSt9exceptionD2Ev
+LFE4404:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv:
+LFB14613:
+	addi r3,r3,-56
+	b __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+LFE14613:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv:
+LFB14581:
+	mflr r0
+LCFI365:
+	std r28,-32(r1)
+LCFI366:
+	std r29,-24(r1)
+LCFI367:
+	std r30,-16(r1)
+LCFI368:
+	std r31,-8(r1)
+LCFI369:
+	bcl 20,31,"L00000000041$pb"
+"L00000000041$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI370:
+	mr r29,r3
+	li r3,64
+	stdu r1,-144(r1)
+LCFI371:
+	bl ___cxa_allocate_exception
+	addis r2,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000041$pb")
+	addis r9,r31,ha16(L__ZTVSt9exception$non_lazy_ptr-"L00000000041$pb")
+	lwz r0,8(r29)
+	mr r30,r3
+	ld r3,24(r29)
+	ld r2,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000041$pb")(r2)
+	ld r9,lo16(L__ZTVSt9exception$non_lazy_ptr-"L00000000041$pb")(r9)
+	stw r0,8(r30)
+	cmpdi cr7,r3,0
+	std r3,24(r30)
+	addi r28,r2,16
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000041$pb")
+	addi r9,r9,16
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000041$pb")(r2)
+	std r9,0(r30)
+	std r28,0(r30)
+	addi r2,r2,16
+	std r2,16(r30)
+	addis r2,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000041$pb")
+	ld r2,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000041$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq- cr7,L795
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB16:
+	bctrl
+LEHE16:
+L795:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000041$pb")
+	lwz r8,48(r29)
+	ld r0,32(r29)
+	ld r9,40(r29)
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev$non_lazy_ptr-"L00000000041$pb")
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000041$pb")
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000041$pb")(r2)
+	mr r3,r30
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev$non_lazy_ptr-"L00000000041$pb")(r5)
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000041$pb")(r4)
+	addi r10,r2,104
+	addi r11,r2,16
+	std r0,32(r30)
+	stw r8,48(r30)
+	std r9,40(r30)
+	addi r2,r2,72
+	std r11,0(r30)
+	std r10,56(r30)
+	std r2,16(r30)
+LEHB17:
+	bl ___cxa_throw
+L802:
+L797:
+L803:
+	std r28,0(r30)
+	mr r29,r4
+	mr r28,r3
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+	cmpdi cr7,r29,-1
+	beq cr7,L799
+	mr r3,r28
+	bl __Unwind_Resume
+LEHE17:
+L799:
+	bl __ZSt9terminatev
+LFE14581:
+	.section __DATA,__gcc_except_tab
+GCC_except_table7:
+	.align 3
+LLSDA14581:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$39,LEHB16-LFB14581
+	.long L$set$39
+	.set L$set$40,LEHE16-LEHB16
+	.long L$set$40
+	.set L$set$41,L802-LFB14581
+	.long L$set$41
+	.byte	0x3
+	.set L$set$42,LEHB17-LFB14581
+	.long L$set$42
+	.set L$set$43,LEHE17-LEHB17
+	.long L$set$43
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.byte	0x0
+	.byte	0x7d
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost21thread_resource_errorD1Ev
+	.weak_definition __ZN5boost21thread_resource_errorD1Ev
+__ZN5boost21thread_resource_errorD1Ev:
+LFB4415:
+	mflr r0
+	bcl 20,31,"L00000000042$pb"
+"L00000000042$pb":
+	mflr r10
+	addis r9,r10,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000042$pb")
+	addis r11,r10,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000042$pb")
+	mtlr r0
+	ld r9,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000042$pb")(r9)
+	ld r11,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000042$pb")(r11)
+	addi r9,r9,16
+	addi r11,r11,16
+	std r9,0(r3)
+	std r11,0(r3)
+	b __ZNSt9exceptionD2Ev
+LFE4415:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_:
+LFB12348:
+	mflr r0
+LCFI372:
+	std r26,-48(r1)
+LCFI373:
+	std r28,-32(r1)
+LCFI374:
+	std r29,-24(r1)
+LCFI375:
+	std r30,-16(r1)
+LCFI376:
+	bcl 20,31,"L00000000043$pb"
+"L00000000043$pb":
+	std r31,-8(r1)
+LCFI377:
+	std r25,-56(r1)
+LCFI378:
+	mflr r31
+	std r27,-40(r1)
+LCFI379:
+	std r0,16(r1)
+LCFI380:
+	stdu r1,-192(r1)
+LCFI381:
+	mr r30,r4
+	mr r29,r3
+	mr r28,r5
+	mr r26,r30
+	ld r4,8(r3)
+	ld r0,16(r3)
+	cmpd cr7,r4,r0
+	beq cr7,L808
+	cmpdi cr7,r4,0
+	beq cr7,L810
+	lwz r0,-4(r4)
+	ld r2,-12(r4)
+	stw r0,8(r4)
+	std r2,0(r4)
+	ld r4,8(r3)
+L810:
+	lis r0,0xaaaa
+	addi r11,r4,-12
+	mr r9,r4
+	addi r4,r4,12
+	ori r0,r0,43690
+	subf r2,r26,r11
+	std r4,8(r29)
+	sldi r0,r0,32
+	sradi r2,r2,2
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld. r10,r2,r0
+	lfs f13,0(r28)
+	lfs f0,4(r28)
+	mtctr r10
+	lwa r10,8(r28)
+	ble cr0,L812
+	.p2align 4,,15
+L841:
+	ldu r0,-12(r11)
+	lwz r2,8(r11)
+	stdu r0,-12(r9)
+	stw r2,8(r9)
+	bdnz L841
+L812:
+	stfs f13,0(r30)
+	stw r10,8(r30)
+	stfs f0,4(r30)
+	b L837
+L808:
+	lis r0,0xaaaa
+	ld r9,0(r3)
+	lis r2,0x1555
+	ori r0,r0,43690
+	ori r2,r2,21845
+	sldi r0,r0,32
+	subf r9,r9,r4
+	sldi r2,r2,32
+	oris r0,r0,0xaaaa
+	sradi r9,r9,2
+	oris r2,r2,0x5555
+	ori r0,r0,43691
+	ori r2,r2,21845
+	mulld r4,r9,r0
+	cmpd cr7,r4,r2
+	bne+ cr7,L815
+	addis r3,r31,ha16(LC5-"L00000000043$pb")
+	la r3,lo16(LC5-"L00000000043$pb")(r3)
+	bl __ZSt20__throw_length_errorPKc
+	.p2align 4,,15
+L815:
+	cmpdi cr7,r4,0
+	li r2,1
+	beq cr7,L838
+	sldi r2,r4,1
+	li r25,-4
+	cmpld cr7,r2,r4
+	blt cr7,L824
+L838:
+	lis r0,0x1555
+	ori r0,r0,21845
+	sldi r0,r0,32
+	oris r0,r0,0x5555
+	ori r0,r0,21845
+	cmpld cr7,r2,r0
+	bgt cr7,L822
+	mulli r25,r2,12
+	b L824
+L822:
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L824:
+	mr r3,r25
+	bl __Znwm
+	ld r11,0(r29)
+	mr r27,r3
+	mr r9,r3
+	cmpd cr7,r30,r11
+	beq cr7,L825
+	.p2align 4,,15
+L839:
+	cmpdi cr7,r9,0
+	beq cr7,L827
+	ld r0,0(r11)
+	lwz r2,8(r11)
+	std r0,0(r9)
+	stw r2,8(r9)
+L827:
+	addi r11,r11,12
+	addi r9,r9,12
+	cmpd cr7,r30,r11
+	bne cr7,L839
+L825:
+	cmpdi cr7,r9,0
+	mr r11,r9
+	beq cr7,L829
+	lwz r0,8(r28)
+	ld r2,0(r28)
+	stw r0,8(r9)
+	std r2,0(r9)
+L829:
+	ld r4,8(r29)
+	mr r9,r26
+	addi r30,r11,12
+	cmpd cr7,r26,r4
+	beq cr7,L831
+	.p2align 4,,15
+L840:
+	cmpdi cr7,r30,0
+	beq cr7,L833
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	std r0,0(r30)
+	stw r2,8(r30)
+L833:
+	addi r9,r9,12
+	addi r30,r30,12
+	cmpd cr7,r9,r4
+	bne cr7,L840
+	ld r4,8(r29)
+L831:
+	ld r3,0(r29)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_
+	ld r3,0(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L835
+	bl __ZdlPv
+L835:
+	add r0,r27,r25
+	std r30,8(r29)
+	std r27,0(r29)
+	std r0,16(r29)
+	.p2align 4,,15
+L837:
+	addi r1,r1,192
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE12348:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_
+	.weak_definition __ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_
+	.private_extern __ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_
+__ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_:
+LFB8871:
+	mflr r0
+LCFI382:
+	std r26,-48(r1)
+LCFI383:
+	addi r26,r4,16
+	std r21,-88(r1)
+LCFI384:
+	std r28,-32(r1)
+LCFI385:
+	std r30,-16(r1)
+LCFI386:
+	std r14,-144(r1)
+LCFI387:
+	std r15,-136(r1)
+LCFI388:
+	std r16,-128(r1)
+LCFI389:
+	std r17,-120(r1)
+LCFI390:
+	std r18,-112(r1)
+LCFI391:
+	std r19,-104(r1)
+LCFI392:
+	std r20,-96(r1)
+LCFI393:
+	std r22,-80(r1)
+LCFI394:
+	std r23,-72(r1)
+LCFI395:
+	std r24,-64(r1)
+LCFI396:
+	std r25,-56(r1)
+LCFI397:
+	std r27,-40(r1)
+LCFI398:
+	std r29,-24(r1)
+LCFI399:
+	std r0,16(r1)
+LCFI400:
+	stdu r1,-608(r1)
+LCFI401:
+	cmpd cr7,r4,r26
+	mr r28,r4
+	mr r30,r3
+	mr r21,r26
+	beq cr7,L847
+	addi r2,r1,208
+	li r0,1
+	li r27,0
+	addi r25,r1,288
+	std r2,376(r1)
+	addi r2,r1,248
+	addi r24,r1,200
+	addi r20,r1,152
+	std r2,368(r1)
+	addi r2,r1,136
+	addi r19,r1,156
+	addi r18,r1,184
+	std r2,384(r1)
+	addi r2,r1,140
+	addi r17,r1,192
+	addi r23,r1,160
+	std r2,392(r1)
+	addi r2,r1,144
+	addi r16,r1,112
+	addi r15,r1,116
+	std r2,400(r1)
+	addi r2,r1,148
+	addi r22,r1,168
+	addi r14,r1,120
+	std r2,408(r1)
+	addi r2,r1,176
+	std r2,416(r1)
+	addi r2,r1,128
+	std r2,424(r1)
+	addi r2,r1,132
+	std r2,432(r1)
+	addi r2,r1,124
+	std r2,440(r1)
+	addi r2,r3,8
+	std r2,448(r1)
+	addi r2,r1,304
+	std r2,456(r1)
+	stb r0,33(r3)
+	stb r0,32(r3)
+	b L849
+	.p2align 4,,15
+L871:
+	addi r26,r26,16
+L849:
+	lwz r0,0(r30)
+	ld r3,376(r1)
+	li r29,0
+	mr r4,r28
+	stw r27,208(r1)
+	stw r27,212(r1)
+	stw r27,216(r1)
+	stw r27,220(r1)
+	stw r27,224(r1)
+	stw r27,228(r1)
+	stw r0,240(r1)
+	stw r29,232(r1)
+	stw r29,236(r1)
+	stb r29,244(r1)
+	bl __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+	lwz r0,0(r30)
+	ld r3,368(r1)
+	mr r4,r28
+	stb r29,284(r1)
+	stw r27,248(r1)
+	stw r27,252(r1)
+	stw r27,256(r1)
+	stw r27,260(r1)
+	stw r27,264(r1)
+	stw r0,280(r1)
+	stw r27,268(r1)
+	stw r29,272(r1)
+	stw r29,276(r1)
+	bl __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+	lfs f0,208(r1)
+	lfs f13,212(r1)
+	ld r0,224(r1)
+	lwz r2,232(r1)
+	li r11,4
+	lwz r9,236(r1)
+	stw r11,276(r1)
+	stw r11,356(r1)
+	std r0,304(r1)
+	lwz r0,240(r1)
+	stfs f0,288(r1)
+	stfs f13,292(r1)
+	cmpwi cr7,r9,4
+	lfs f0,216(r1)
+	lfs f13,220(r1)
+	stw r2,312(r1)
+	lbz r2,244(r1)
+	stw r0,320(r1)
+	ld r0,264(r1)
+	stw r9,316(r1)
+	stb r2,324(r1)
+	lwz r2,272(r1)
+	stfs f0,296(r1)
+	stfs f13,300(r1)
+	lfs f0,248(r1)
+	lfs f13,252(r1)
+	std r0,344(r1)
+	lwz r0,280(r1)
+	stw r2,352(r1)
+	stfs f0,328(r1)
+	stfs f13,332(r1)
+	lfs f0,256(r1)
+	lfs f13,260(r1)
+	stfs f0,336(r1)
+	stfs f13,340(r1)
+	stw r0,360(r1)
+	lbz r0,284(r1)
+	lwz r28,0(r30)
+	stb r0,364(r1)
+	beq cr7,L850
+	rldicl r29,r9,0,32
+	li r0,1
+	cmpw cr7,r11,r29
+	stb r0,33(r30)
+	stb r0,32(r30)
+	beq cr7,L850
+	.p2align 4,,15
+L852:
+	cmpdi cr7,r29,0
+	bne cr7,L853
+	lwz r0,320(r1)
+	li r6,0
+	mr r3,r23
+	mr r4,r25
+	mr r5,r16
+	xori r0,r0,1
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r23
+	stw r29,116(r1)
+	mr r4,r15
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,320(r1)
+	mr r3,r22
+	mr r4,r25
+	mr r5,r14
+	li r6,0
+	stfs f1,304(r1)
+	stw r0,120(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r4,440(r1)
+	mr r3,r22
+	stw r29,124(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lbz r2,324(r1)
+	li r0,1
+	stfs f1,308(r1)
+	stw r0,312(r1)
+	cmpwi cr7,r2,0
+	beq cr7,L855
+	b L873
+	.p2align 4,,15
+L853:
+	cmpwi cr7,r29,1
+	bne cr7,L857
+	lwz r0,320(r1)
+	ld r3,416(r1)
+	mr r4,r25
+	li r6,0
+	ld r5,424(r1)
+	stw r0,128(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,416(r1)
+	ld r4,432(r1)
+	li r5,0
+	stw r29,132(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lbz r2,324(r1)
+	li r0,-1
+	stfs f1,308(r1)
+	stw r0,312(r1)
+	cmpwi cr7,r2,0
+	beq cr7,L855
+	stw r29,312(r1)
+	b L855
+	.p2align 4,,15
+L857:
+	cmpwi cr7,r29,2
+	bne cr7,L860
+	lwz r0,320(r1)
+	ld r5,384(r1)
+	li r6,0
+	mr r3,r18
+	mr r4,r25
+	xori r0,r0,1
+	stw r0,136(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r4,392(r1)
+	li r0,1
+	mr r3,r18
+	li r5,0
+	stw r0,140(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,320(r1)
+	ld r5,400(r1)
+	mr r3,r17
+	mr r4,r25
+	li r6,0
+	stfs f1,304(r1)
+	stw r0,144(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r4,408(r1)
+	li r0,0
+	mr r3,r17
+	li r5,0
+	stw r0,148(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	stfs f1,308(r1)
+	b L855
+	.p2align 4,,15
+L860:
+	lwz r0,320(r1)
+	mr r3,r24
+	mr r4,r25
+	mr r5,r20
+	li r6,0
+	li r29,1
+	stw r0,152(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r24
+	stw r29,156(r1)
+	mr r4,r19
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lbz r0,324(r1)
+	stw r29,312(r1)
+	stfs f1,308(r1)
+	cmpwi cr7,r0,0
+	beq cr7,L855
+L873:
+	li r0,-1
+	stw r0,312(r1)
+L855:
+	ld r4,16(r30)
+	ld r0,24(r30)
+	cmpd cr7,r4,r0
+	beq cr7,L863
+	cmpdi cr7,r4,0
+	beq cr7,L865
+	lwz r0,312(r1)
+	ld r2,304(r1)
+	stw r0,8(r4)
+	std r2,0(r4)
+	ld r4,16(r30)
+L865:
+	addi r4,r4,12
+	std r4,16(r30)
+	b L867
+L863:
+	ld r3,448(r1)
+	ld r5,456(r1)
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+	.p2align 4,,15
+L867:
+	lwz r0,0(r30)
+	cmpw cr7,r0,r28
+	beq cr7,L868
+	ld r2,16(r30)
+	addi r9,r2,-12
+	lfs f0,-12(r2)
+	lfs f13,4(r9)
+	stfs f0,4(r9)
+	stfs f13,-12(r2)
+L868:
+	lwz r2,316(r1)
+	lwz r9,356(r1)
+	li r0,1
+	stb r0,33(r30)
+	stb r0,32(r30)
+	addi r2,r2,1
+	rldicl r29,r2,0,32
+	cmpw cr7,r9,r29
+	stw r29,316(r1)
+	bne cr7,L852
+L850:
+	cmpd cr7,r21,r26
+	mr r28,r26
+	bne cr7,L871
+L847:
+	addi r1,r1,608
+	mr r3,r30
+	ld r0,16(r1)
+	ld r14,-144(r1)
+	ld r15,-136(r1)
+	ld r16,-128(r1)
+	ld r17,-120(r1)
+	ld r18,-112(r1)
+	ld r19,-104(r1)
+	ld r20,-96(r1)
+	mtlr r0
+	ld r21,-88(r1)
+	ld r22,-80(r1)
+	ld r23,-72(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	blr
+LFE8871:
+	.cstring
+	.align 3
+LC6:
+	.ascii "vector::reserve\0"
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm:
+LFB11668:
+	mflr r0
+LCFI402:
+	std r28,-32(r1)
+LCFI403:
+	std r31,-8(r1)
+LCFI404:
+	bcl 20,31,"L00000000044$pb"
+"L00000000044$pb":
+	std r25,-56(r1)
+LCFI405:
+	std r26,-48(r1)
+LCFI406:
+	mr r28,r3
+	mflr r31
+	std r0,16(r1)
+LCFI407:
+	std r27,-40(r1)
+LCFI408:
+	std r29,-24(r1)
+LCFI409:
+	std r30,-16(r1)
+LCFI410:
+	stdu r1,-192(r1)
+LCFI411:
+	lis r0,0x1555
+	ori r0,r0,21845
+	sldi r0,r0,32
+	oris r0,r0,0x5555
+	ori r0,r0,21845
+	cmpld cr7,r4,r0
+	ble+ cr7,L875
+	addis r3,r31,ha16(LC6-"L00000000044$pb")
+	la r3,lo16(LC6-"L00000000044$pb")(r3)
+	bl __ZSt20__throw_length_errorPKc
+	.p2align 4,,15
+L875:
+	lis r0,0xaaaa
+	ld r2,16(r3)
+	ld r30,0(r3)
+	ori r0,r0,43690
+	sldi r0,r0,32
+	subf r2,r30,r2
+	oris r0,r0,0xaaaa
+	sradi r2,r2,2
+	ori r0,r0,43691
+	mulld r2,r2,r0
+	cmpld cr7,r4,r2
+	ble cr7,L887
+	mulli r25,r4,12
+	ld r29,8(r3)
+	mr r26,r30
+	mr r3,r25
+	bl __Znwm
+	cmpd cr7,r30,r29
+	mr r27,r3
+	beq cr7,L879
+	mr r9,r3
+	.p2align 4,,15
+L881:
+	cmpdi cr7,r9,0
+	beq cr7,L882
+	ld r0,0(r30)
+	lwz r2,8(r30)
+	std r0,0(r9)
+	stw r2,8(r9)
+L882:
+	addi r30,r30,12
+	cmpd cr7,r29,r30
+	beq cr7,L879
+	addi r9,r9,12
+	b L881
+L879:
+	ld r3,0(r28)
+	ld r4,8(r28)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,0(r28)
+	cmpdi cr7,r3,0
+	beq cr7,L885
+	bl __ZdlPv
+L885:
+	subf r0,r26,r29
+	add r2,r27,r25
+	std r27,0(r28)
+	rldicr r0,r0,0,61
+	std r2,16(r28)
+	add r0,r27,r0
+	std r0,8(r28)
+L887:
+	addi r1,r1,192
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE11668:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_:
+LFB10596:
+	mflr r0
+LCFI412:
+	std r28,-32(r1)
+LCFI413:
+	mr r28,r3
+	std r26,-48(r1)
+LCFI414:
+	std r27,-40(r1)
+LCFI415:
+	std r29,-24(r1)
+LCFI416:
+	std r30,-16(r1)
+LCFI417:
+	cmpd cr7,r4,r28
+	std r0,16(r1)
+LCFI418:
+	mr r3,r4
+	stdu r1,-176(r1)
+LCFI419:
+	beq cr7,L889
+	lis r8,0xaaaa
+	ld r6,0(r28)
+	ld r30,8(r4)
+	ld r29,0(r4)
+	ld r0,16(r28)
+	ori r8,r8,43690
+	sldi r8,r8,32
+	mr r10,r6
+	subf r0,r6,r0
+	subf r2,r29,r30
+	oris r8,r8,0xaaaa
+	sradi r2,r2,2
+	sradi r0,r0,2
+	ori r8,r8,43691
+	mulld r5,r2,r8
+	mulld r0,r0,r8
+	cmpld cr7,r5,r0
+	ble cr7,L891
+	lis r0,0x1555
+	ori r0,r0,21845
+	sldi r0,r0,32
+	oris r0,r0,0x5555
+	ori r0,r0,21845
+	cmpld cr7,r5,r0
+	ble+ cr7,L893
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L893:
+	sldi r26,r2,2
+	mr r3,r26
+	bl __Znwm
+	cmpd cr7,r29,r30
+	mr r11,r29
+	mr r27,r3
+	beq cr7,L895
+	mr r2,r29
+	mr r9,r3
+	.p2align 4,,15
+L897:
+	cmpdi cr7,r9,0
+	beq cr7,L898
+	lwz r0,8(r2)
+	ld r2,0(r2)
+	stw r0,8(r9)
+	std r2,0(r9)
+L898:
+	addi r2,r11,12
+	cmpd cr7,r2,r30
+	beq cr7,L895
+	addi r9,r9,12
+	mr r11,r2
+	b L897
+L895:
+	ld r3,0(r28)
+	ld r4,8(r28)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,0(r28)
+	cmpdi cr7,r3,0
+	beq cr7,L901
+	bl __ZdlPv
+L901:
+	add r0,r27,r26
+	mr r6,r27
+	std r27,0(r28)
+	mr r3,r26
+	std r0,16(r28)
+	b L903
+	.p2align 4,,15
+L891:
+	ld r4,8(r28)
+	subf r7,r6,r4
+	mr r11,r4
+	sradi r9,r7,2
+	mulld r0,r9,r8
+	cmpld cr7,r5,r0
+	bgt cr7,L904
+	cmpdi cr7,r5,0
+	sldi r30,r2,2
+	mr r3,r6
+	ble cr7,L906
+	mtctr r5
+	mr r11,r29
+	mr r9,r6
+	.p2align 4,,15
+L908:
+	ld r0,0(r11)
+	lwz r2,8(r11)
+	addi r11,r11,12
+	std r0,0(r9)
+	stw r2,8(r9)
+	addi r9,r9,12
+	bdnz L908
+	mulli r30,r5,12
+	ld r4,8(r28)
+	add r3,r6,r30
+L906:
+	addi r5,r1,113
+	bl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_
+	ld r6,0(r28)
+	mr r3,r30
+	b L903
+L904:
+	mulld. r0,r9,r8
+	mtctr r0
+	ble cr0,L910
+	mr r9,r29
+	.p2align 4,,15
+L912:
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	addi r9,r9,12
+	std r0,0(r10)
+	stw r2,8(r10)
+	addi r10,r10,12
+	bdnz L912
+	ld r11,8(r28)
+	ld r6,0(r28)
+	ld r30,8(r3)
+	ld r29,0(r3)
+	subf r7,r6,r11
+L910:
+	rldicr r0,r7,0,61
+	add r9,r29,r0
+	cmpd cr7,r9,r30
+	bne cr7,L927
+	mulli r3,r5,12
+	b L903
+	.p2align 4,,15
+L927:
+	cmpdi cr7,r11,0
+	beq cr7,L917
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	std r0,0(r11)
+	stw r2,8(r11)
+L917:
+	addi r9,r9,12
+	cmpd cr7,r9,r30
+	beq cr7,L919
+	addi r11,r11,12
+	b L927
+L919:
+	mulli r3,r5,12
+	ld r6,0(r28)
+	.p2align 4,,15
+L903:
+	add r0,r3,r6
+	std r0,8(r28)
+L889:
+	addi r1,r1,176
+	mr r3,r28
+	ld r0,16(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE10596:
+	.cstring
+	.align 3
+LC7:
+	.ascii "vector::_M_range_insert\0"
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag:
+LFB12966:
+	mflr r0
+LCFI420:
+	std r25,-56(r1)
+LCFI421:
+	std r26,-48(r1)
+LCFI422:
+	mfcr r2
+LCFI423:
+	bcl 20,31,"L00000000045$pb"
+"L00000000045$pb":
+	cmpd cr4,r5,r6
+	std r28,-32(r1)
+LCFI424:
+	std r29,-24(r1)
+LCFI425:
+	std r30,-16(r1)
+LCFI426:
+	std r31,-8(r1)
+LCFI427:
+	mflr r31
+	std r24,-64(r1)
+LCFI428:
+	std r27,-40(r1)
+LCFI429:
+	std r0,16(r1)
+LCFI430:
+	stw r2,8(r1)
+LCFI431:
+	mr r26,r5
+	stdu r1,-208(r1)
+LCFI432:
+	mr r28,r6
+	mr r30,r4
+	mr r29,r3
+	mr r25,r4
+	beq cr4,L985
+	lis r9,0xaaaa
+	ld r4,8(r3)
+	ld r0,16(r3)
+	subf r2,r5,r6
+	ori r9,r9,43690
+	sradi r2,r2,2
+	sldi r9,r9,32
+	subf r0,r4,r0
+	mr r8,r4
+	oris r9,r9,0xaaaa
+	sradi r0,r0,2
+	ori r9,r9,43691
+	mulld r11,r2,r9
+	mulld r0,r0,r9
+	cmpld cr7,r11,r0
+	std r11,120(r1)
+	bgt cr7,L931
+	subf r0,r30,r4
+	sradi r0,r0,2
+	mulld r7,r0,r9
+	cmpld cr7,r11,r7
+	bge cr7,L933
+	sldi r0,r2,2
+	subf r11,r0,r4
+	cmpd cr7,r4,r11
+	beq cr7,L935
+	mr r9,r4
+	.p2align 4,,15
+L937:
+	cmpdi cr7,r9,0
+	beq cr7,L938
+	ld r0,0(r11)
+	lwz r2,8(r11)
+	std r0,0(r9)
+	stw r2,8(r9)
+L938:
+	addi r11,r11,12
+	cmpd cr7,r4,r11
+	beq cr7,L986
+	addi r9,r9,12
+	b L937
+L986:
+	ld r4,8(r29)
+L935:
+	ld r9,120(r1)
+	lis r2,0xaaaa
+	mr r10,r8
+	ori r2,r2,43690
+	mulli r9,r9,12
+	sldi r2,r2,32
+	oris r2,r2,0xaaaa
+	subf r11,r9,r8
+	ori r2,r2,43691
+	add r4,r4,r9
+	subf r0,r30,r11
+	std r4,8(r29)
+	sradi r0,r0,2
+	mulld. r9,r0,r2
+	mtctr r9
+	ble cr0,L941
+	.p2align 4,,15
+L991:
+	ldu r0,-12(r11)
+	lwz r2,8(r11)
+	stdu r0,-12(r10)
+	stw r2,8(r10)
+	bdnz L991
+L941:
+	lis r0,0xaaaa
+	subf r2,r26,r28
+	ori r0,r0,43690
+	sradi r2,r2,2
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld. r9,r2,r0
+	mtctr r9
+	ble cr0,L985
+	mr r9,r25
+	mr r5,r26
+	.p2align 4,,15
+L944:
+	ld r0,0(r5)
+	lwz r2,8(r5)
+	addi r5,r5,12
+	std r0,0(r9)
+	stw r2,8(r9)
+	addi r9,r9,12
+	bdz L985
+	b L944
+L933:
+	sldi r6,r0,2
+	add r10,r6,r5
+	cmpd cr7,r28,r10
+	mr r9,r10
+	beq cr7,L945
+	mr r2,r10
+	.p2align 4,,15
+L947:
+	cmpdi cr7,r4,0
+	beq cr7,L948
+	lwz r0,8(r2)
+	ld r2,0(r2)
+	stw r0,8(r4)
+	std r2,0(r4)
+L948:
+	addi r2,r9,12
+	cmpd cr7,r2,r28
+	beq cr7,L987
+	addi r4,r4,12
+	mr r9,r2
+	b L947
+L987:
+	ld r4,8(r29)
+L945:
+	ld r0,120(r1)
+	cmpd cr7,r30,r8
+	mr r11,r30
+	subf r0,r7,r0
+	mulli r0,r0,12
+	add r4,r0,r4
+	std r4,8(r29)
+	mr r9,r4
+	beq cr7,L951
+	mr r4,r30
+	.p2align 4,,15
+L953:
+	cmpdi cr7,r9,0
+	beq cr7,L954
+	lwz r0,8(r4)
+	ld r2,0(r4)
+	stw r0,8(r9)
+	std r2,0(r9)
+L954:
+	addi r11,r11,12
+	cmpd cr7,r8,r11
+	beq cr7,L988
+	addi r9,r9,12
+	mr r4,r11
+	b L953
+L988:
+	ld r4,8(r29)
+L951:
+	lis r0,0xaaaa
+	subf r2,r26,r10
+	add r4,r4,r6
+	ori r0,r0,43690
+	sradi r2,r2,2
+	std r4,8(r29)
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld. r9,r2,r0
+	mtctr r9
+	ble cr0,L985
+	mr r9,r25
+	mr r5,r26
+	.p2align 4,,15
+L958:
+	ld r0,0(r5)
+	lwz r2,8(r5)
+	addi r5,r5,12
+	std r0,0(r9)
+	stw r2,8(r9)
+	addi r9,r9,12
+	bdz L985
+	b L958
+	.p2align 4,,15
+L931:
+	ld r0,0(r3)
+	lis r2,0x1555
+	ori r2,r2,21845
+	subf r0,r0,r4
+	sldi r2,r2,32
+	sradi r0,r0,2
+	oris r2,r2,0x5555
+	mulld r4,r0,r9
+	ori r2,r2,21845
+	subf r2,r4,r2
+	std r4,128(r1)
+	cmpld cr7,r11,r2
+	ble+ cr7,L959
+	addis r3,r31,ha16(LC7-"L00000000045$pb")
+	la r3,lo16(LC7-"L00000000045$pb")(r3)
+	bl __ZSt20__throw_length_errorPKc
+	.p2align 4,,15
+L959:
+	cmpld cr7,r11,r4
+	addi r2,r1,120
+	bgt cr7,L963
+	addi r2,r1,128
+L963:
+	ld r0,0(r2)
+	li r24,-4
+	add r2,r4,r0
+	cmpld cr7,r4,r2
+	bgt cr7,L968
+	lis r0,0x1555
+	ori r0,r0,21845
+	sldi r0,r0,32
+	oris r0,r0,0x5555
+	ori r0,r0,21845
+	cmpld cr7,r2,r0
+	bgt cr7,L966
+	mulli r24,r2,12
+	b L968
+L966:
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L968:
+	mr r3,r24
+	bl __Znwm
+	ld r9,0(r29)
+	mr r27,r3
+	mr r11,r3
+	cmpd cr7,r30,r9
+	beq cr7,L969
+	.p2align 4,,15
+L989:
+	cmpdi cr7,r11,0
+	beq cr7,L971
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	std r0,0(r11)
+	stw r2,8(r11)
+L971:
+	addi r9,r9,12
+	addi r11,r11,12
+	cmpd cr7,r9,r30
+	bne cr7,L989
+L969:
+	mr r5,r26
+	beq cr4,L973
+	mr r2,r26
+	.p2align 4,,15
+L975:
+	cmpdi cr7,r11,0
+	beq cr7,L976
+	lwz r0,8(r2)
+	ld r2,0(r2)
+	stw r0,8(r11)
+	std r2,0(r11)
+L976:
+	addi r2,r5,12
+	addi r11,r11,12
+	cmpd cr7,r28,r2
+	beq cr7,L973
+	mr r5,r2
+	b L975
+L973:
+	ld r4,8(r29)
+	mr r9,r25
+	mr r30,r11
+	cmpd cr7,r25,r4
+	beq cr7,L979
+	.p2align 4,,15
+L990:
+	cmpdi cr7,r30,0
+	beq cr7,L981
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	std r0,0(r30)
+	stw r2,8(r30)
+L981:
+	addi r9,r9,12
+	addi r30,r30,12
+	cmpd cr7,r9,r4
+	bne cr7,L990
+	ld r4,8(r29)
+L979:
+	ld r3,0(r29)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,0(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L983
+	bl __ZdlPv
+L983:
+	add r0,r27,r24
+	std r30,8(r29)
+	std r27,0(r29)
+	std r0,16(r29)
+	.p2align 4,,15
+L985:
+	addi r1,r1,208
+	ld r0,16(r1)
+	lwz r11,8(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtcrf 8,r11
+	blr
+LFE12966:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag:
+LFB12358:
+	mflr r0
+LCFI433:
+	std r25,-56(r1)
+LCFI434:
+	std r26,-48(r1)
+LCFI435:
+	mfcr r2
+LCFI436:
+	bcl 20,31,"L00000000046$pb"
+"L00000000046$pb":
+	cmpd cr4,r5,r6
+	std r28,-32(r1)
+LCFI437:
+	std r29,-24(r1)
+LCFI438:
+	std r30,-16(r1)
+LCFI439:
+	std r31,-8(r1)
+LCFI440:
+	mflr r31
+	std r24,-64(r1)
+LCFI441:
+	std r27,-40(r1)
+LCFI442:
+	std r0,16(r1)
+LCFI443:
+	stw r2,8(r1)
+LCFI444:
+	mr r26,r5
+	stdu r1,-208(r1)
+LCFI445:
+	mr r28,r6
+	mr r30,r4
+	mr r29,r3
+	mr r25,r4
+	beq cr4,L1055
+	lis r9,0xaaaa
+	ld r4,8(r3)
+	ld r0,16(r3)
+	subf r2,r5,r6
+	ori r9,r9,43690
+	sradi r2,r2,2
+	sldi r9,r9,32
+	subf r0,r4,r0
+	mr r8,r4
+	oris r9,r9,0xaaaa
+	sradi r0,r0,2
+	ori r9,r9,43691
+	mulld r11,r2,r9
+	mulld r0,r0,r9
+	cmpld cr7,r11,r0
+	std r11,120(r1)
+	bgt cr7,L1001
+	subf r0,r30,r4
+	sradi r0,r0,2
+	mulld r7,r0,r9
+	cmpld cr7,r11,r7
+	bge cr7,L1003
+	sldi r0,r2,2
+	subf r11,r0,r4
+	cmpd cr7,r4,r11
+	beq cr7,L1005
+	mr r9,r4
+	.p2align 4,,15
+L1007:
+	cmpdi cr7,r9,0
+	beq cr7,L1008
+	ld r0,0(r11)
+	lwz r2,8(r11)
+	std r0,0(r9)
+	stw r2,8(r9)
+L1008:
+	addi r11,r11,12
+	cmpd cr7,r4,r11
+	beq cr7,L1056
+	addi r9,r9,12
+	b L1007
+L1056:
+	ld r4,8(r29)
+L1005:
+	ld r9,120(r1)
+	lis r2,0xaaaa
+	mr r10,r8
+	ori r2,r2,43690
+	mulli r9,r9,12
+	sldi r2,r2,32
+	oris r2,r2,0xaaaa
+	subf r11,r9,r8
+	ori r2,r2,43691
+	add r4,r4,r9
+	subf r0,r30,r11
+	std r4,8(r29)
+	sradi r0,r0,2
+	mulld. r9,r0,r2
+	mtctr r9
+	ble cr0,L1011
+	.p2align 4,,15
+L1061:
+	ldu r0,-12(r11)
+	lwz r2,8(r11)
+	stdu r0,-12(r10)
+	stw r2,8(r10)
+	bdnz L1061
+L1011:
+	lis r0,0xaaaa
+	subf r2,r26,r28
+	ori r0,r0,43690
+	sradi r2,r2,2
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld. r9,r2,r0
+	mtctr r9
+	ble cr0,L1055
+	mr r9,r25
+	mr r5,r26
+	.p2align 4,,15
+L1014:
+	ld r0,0(r5)
+	lwz r2,8(r5)
+	addi r5,r5,12
+	std r0,0(r9)
+	stw r2,8(r9)
+	addi r9,r9,12
+	bdz L1055
+	b L1014
+L1003:
+	sldi r6,r0,2
+	add r10,r6,r5
+	cmpd cr7,r28,r10
+	mr r9,r10
+	beq cr7,L1015
+	mr r2,r10
+	.p2align 4,,15
+L1017:
+	cmpdi cr7,r4,0
+	beq cr7,L1018
+	lwz r0,8(r2)
+	ld r2,0(r2)
+	stw r0,8(r4)
+	std r2,0(r4)
+L1018:
+	addi r2,r9,12
+	cmpd cr7,r2,r28
+	beq cr7,L1057
+	addi r4,r4,12
+	mr r9,r2
+	b L1017
+L1057:
+	ld r4,8(r29)
+L1015:
+	ld r0,120(r1)
+	cmpd cr7,r30,r8
+	mr r11,r30
+	subf r0,r7,r0
+	mulli r0,r0,12
+	add r4,r0,r4
+	std r4,8(r29)
+	mr r9,r4
+	beq cr7,L1021
+	mr r4,r30
+	.p2align 4,,15
+L1023:
+	cmpdi cr7,r9,0
+	beq cr7,L1024
+	lwz r0,8(r4)
+	ld r2,0(r4)
+	stw r0,8(r9)
+	std r2,0(r9)
+L1024:
+	addi r11,r11,12
+	cmpd cr7,r8,r11
+	beq cr7,L1058
+	addi r9,r9,12
+	mr r4,r11
+	b L1023
+L1058:
+	ld r4,8(r29)
+L1021:
+	lis r0,0xaaaa
+	subf r2,r26,r10
+	add r4,r4,r6
+	ori r0,r0,43690
+	sradi r2,r2,2
+	std r4,8(r29)
+	sldi r0,r0,32
+	oris r0,r0,0xaaaa
+	ori r0,r0,43691
+	mulld. r9,r2,r0
+	mtctr r9
+	ble cr0,L1055
+	mr r9,r25
+	mr r5,r26
+	.p2align 4,,15
+L1028:
+	ld r0,0(r5)
+	lwz r2,8(r5)
+	addi r5,r5,12
+	std r0,0(r9)
+	stw r2,8(r9)
+	addi r9,r9,12
+	bdz L1055
+	b L1028
+	.p2align 4,,15
+L1001:
+	ld r0,0(r3)
+	lis r2,0x1555
+	ori r2,r2,21845
+	subf r0,r0,r4
+	sldi r2,r2,32
+	sradi r0,r0,2
+	oris r2,r2,0x5555
+	mulld r4,r0,r9
+	ori r2,r2,21845
+	subf r2,r4,r2
+	std r4,128(r1)
+	cmpld cr7,r11,r2
+	ble+ cr7,L1029
+	addis r3,r31,ha16(LC7-"L00000000046$pb")
+	la r3,lo16(LC7-"L00000000046$pb")(r3)
+	bl __ZSt20__throw_length_errorPKc
+	.p2align 4,,15
+L1029:
+	cmpld cr7,r11,r4
+	addi r2,r1,120
+	bgt cr7,L1033
+	addi r2,r1,128
+L1033:
+	ld r0,0(r2)
+	li r24,-4
+	add r2,r4,r0
+	cmpld cr7,r4,r2
+	bgt cr7,L1038
+	lis r0,0x1555
+	ori r0,r0,21845
+	sldi r0,r0,32
+	oris r0,r0,0x5555
+	ori r0,r0,21845
+	cmpld cr7,r2,r0
+	bgt cr7,L1036
+	mulli r24,r2,12
+	b L1038
+L1036:
+	bl __ZSt17__throw_bad_allocv
+	.p2align 4,,15
+L1038:
+	mr r3,r24
+	bl __Znwm
+	ld r9,0(r29)
+	mr r27,r3
+	mr r11,r3
+	cmpd cr7,r30,r9
+	beq cr7,L1039
+	.p2align 4,,15
+L1059:
+	cmpdi cr7,r11,0
+	beq cr7,L1041
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	std r0,0(r11)
+	stw r2,8(r11)
+L1041:
+	addi r9,r9,12
+	addi r11,r11,12
+	cmpd cr7,r9,r30
+	bne cr7,L1059
+L1039:
+	mr r5,r26
+	beq cr4,L1043
+	mr r2,r26
+	.p2align 4,,15
+L1045:
+	cmpdi cr7,r11,0
+	beq cr7,L1046
+	lwz r0,8(r2)
+	ld r2,0(r2)
+	stw r0,8(r11)
+	std r2,0(r11)
+L1046:
+	addi r2,r5,12
+	addi r11,r11,12
+	cmpd cr7,r28,r2
+	beq cr7,L1043
+	mr r5,r2
+	b L1045
+L1043:
+	ld r4,8(r29)
+	mr r9,r25
+	mr r30,r11
+	cmpd cr7,r25,r4
+	beq cr7,L1049
+	.p2align 4,,15
+L1060:
+	cmpdi cr7,r30,0
+	beq cr7,L1051
+	ld r0,0(r9)
+	lwz r2,8(r9)
+	std r0,0(r30)
+	stw r2,8(r30)
+L1051:
+	addi r9,r9,12
+	addi r30,r30,12
+	cmpd cr7,r9,r4
+	bne cr7,L1060
+	ld r4,8(r29)
+L1049:
+	ld r3,0(r29)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,0(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1053
+	bl __ZdlPv
+L1053:
+	add r0,r27,r24
+	std r30,8(r29)
+	std r27,0(r29)
+	std r0,16(r29)
+	.p2align 4,,15
+L1055:
+	addi r1,r1,208
+	ld r0,16(r1)
+	lwz r11,8(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtcrf 8,r11
+	blr
+LFE12358:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_
+	.weak_definition __ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_
+	.private_extern __ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_
+__ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_:
+LFB8872:
+	mflr r0
+LCFI446:
+	std r29,-24(r1)
+LCFI447:
+	std r30,-16(r1)
+LCFI448:
+	std r26,-48(r1)
+LCFI449:
+	std r27,-40(r1)
+LCFI450:
+	std r28,-32(r1)
+LCFI451:
+	std r0,16(r1)
+LCFI452:
+	stdu r1,-160(r1)
+LCFI453:
+	mr r30,r3
+	nop
+	ld r5,8(r4)
+	ld r28,16(r4)
+	lwz r27,0(r4)
+	cmpd cr7,r5,r28
+	mr r29,r5
+	beq cr7,L1069
+	ld r0,8(r3)
+	ld r4,16(r3)
+	cmpd cr7,r4,r0
+	beq cr7,L1071
+	cmpd cr7,r5,r0
+	bne cr7,L1071
+	b L1069
+L1086:
+	mr r6,r28
+	addi r3,r30,8
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag
+	b L1069
+	.p2align 4,,15
+L1075:
+	ld r0,24(r30)
+	cmpd cr7,r4,r0
+	beq cr7,L1076
+	cmpdi cr7,r4,0
+	beq cr7,L1078
+	lwz r0,8(r5)
+	ld r2,0(r5)
+	stw r0,8(r4)
+	std r2,0(r4)
+	ld r4,16(r30)
+L1078:
+	addi r4,r4,12
+	std r4,16(r30)
+	b L1080
+L1076:
+	mr r3,r26
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+	.p2align 4,,15
+L1080:
+	lwz r0,0(r30)
+	cmpw cr7,r0,r27
+	beq cr7,L1081
+	ld r2,16(r30)
+	addi r9,r2,-12
+	lfs f0,-12(r2)
+	lfs f13,4(r9)
+	stfs f0,4(r9)
+	stfs f13,-12(r2)
+L1081:
+	addi r5,r29,12
+	li r0,1
+	cmpd cr7,r28,r5
+	stb r0,33(r30)
+	stb r0,32(r30)
+	beq cr7,L1069
+	ld r4,16(r30)
+	mr r29,r5
+	b L1075
+	.p2align 4,,15
+L1071:
+	lwz r0,0(r30)
+	li r2,1
+	addi r26,r30,8
+	stb r2,33(r30)
+	stb r2,32(r30)
+	cmpw cr7,r0,r27
+	bne cr7,L1075
+	b L1086
+	.p2align 4,,15
+L1069:
+	addi r1,r1,160
+	mr r3,r30
+	ld r0,16(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE8872:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_
+	.weak_definition __ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_
+	.private_extern __ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_
+__ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_:
+LFB9807:
+	mflr r0
+LCFI454:
+	std r25,-56(r1)
+LCFI455:
+	std r26,-48(r1)
+LCFI456:
+	std r27,-40(r1)
+LCFI457:
+	std r28,-32(r1)
+LCFI458:
+	std r29,-24(r1)
+LCFI459:
+	std r30,-16(r1)
+LCFI460:
+	std r0,16(r1)
+LCFI461:
+	stdu r1,-192(r1)
+LCFI462:
+	mr r30,r3
+	mr r3,r4
+	mr r29,r4
+	addi r25,r30,8
+	bl __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	mr r27,r3
+	mr r3,r29
+	bl __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	mr r4,r29
+	mr r28,r3
+	addi r3,r1,112
+	bl __ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_
+	ld r5,16(r30)
+	ld r4,8(r30)
+	mr r3,r25
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_
+	li r0,0
+	cmpd cr7,r28,r27
+	mr r5,r27
+	stb r0,32(r30)
+	stb r0,33(r30)
+	lwz r26,112(r1)
+	beq cr7,L1088
+	ld r0,8(r30)
+	ld r4,16(r30)
+	cmpd cr7,r4,r0
+	beq cr7,L1090
+	cmpd cr7,r0,r27
+	bne cr7,L1090
+	b L1088
+L1105:
+	mr r3,r25
+	mr r5,r27
+	mr r6,r28
+	mr r7,r30
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag
+	b L1088
+	.p2align 4,,15
+L1094:
+	ld r0,24(r30)
+	cmpd cr7,r4,r0
+	beq cr7,L1095
+	cmpdi cr7,r4,0
+	beq cr7,L1097
+	lwz r0,8(r5)
+	ld r2,0(r5)
+	stw r0,8(r4)
+	std r2,0(r4)
+	ld r4,16(r30)
+L1097:
+	addi r4,r4,12
+	std r4,16(r30)
+	b L1099
+L1095:
+	mr r3,r25
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+	.p2align 4,,15
+L1099:
+	lwz r0,0(r30)
+	cmpw cr7,r0,r26
+	beq cr7,L1100
+	ld r2,16(r30)
+	addi r9,r2,-12
+	lfs f0,-12(r2)
+	lfs f13,4(r9)
+	stfs f0,4(r9)
+	stfs f13,-12(r2)
+L1100:
+	addi r29,r29,12
+	li r0,1
+	cmpd cr7,r28,r29
+	stb r0,33(r30)
+	stb r0,32(r30)
+	beq cr7,L1088
+	ld r4,16(r30)
+	mr r5,r29
+	b L1094
+	.p2align 4,,15
+L1090:
+	lwz r2,0(r30)
+	li r0,1
+	mr r29,r27
+	stb r0,33(r30)
+	stb r0,32(r30)
+	cmpw cr7,r2,r26
+	bne cr7,L1094
+	b L1105
+	.p2align 4,,15
+L1088:
+	addi r1,r1,192
+	mr r3,r30
+	ld r0,16(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE9807:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv:
+LFB14614:
+	addi r3,r3,-56
+	b __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+LFE14614:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv:
+LFB14578:
+	mflr r0
+LCFI463:
+	std r28,-32(r1)
+LCFI464:
+	std r29,-24(r1)
+LCFI465:
+	std r30,-16(r1)
+LCFI466:
+	std r31,-8(r1)
+LCFI467:
+	bcl 20,31,"L00000000047$pb"
+"L00000000047$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI468:
+	mr r29,r3
+	li r3,64
+	stdu r1,-144(r1)
+LCFI469:
+LEHB18:
+	bl __Znwm
+LEHE18:
+	addis r2,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000047$pb")
+	lwz r0,8(r29)
+	mr r30,r3
+	ld r3,24(r29)
+	ld r2,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000047$pb")(r2)
+	stw r0,8(r30)
+	cmpdi cr7,r3,0
+	std r3,24(r30)
+	addi r28,r2,16
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000047$pb")
+	std r28,0(r30)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000047$pb")(r2)
+	addi r2,r2,16
+	std r2,16(r30)
+	addis r2,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000047$pb")
+	ld r2,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000047$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1107
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB19:
+	bctrl
+LEHE19:
+	b L1107
+L1113:
+L1109:
+L1114:
+L1111:
+	std r28,0(r30)
+	mr r29,r3
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+	mr r3,r30
+	bl __ZdlPv
+	mr r3,r29
+LEHB20:
+	bl __Unwind_Resume
+LEHE20:
+	.p2align 4,,15
+L1107:
+	lwz r8,48(r29)
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000047$pb")
+	ld r0,32(r29)
+	addi r1,r1,144
+	ld r9,40(r29)
+	addi r3,r30,56
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000047$pb")(r2)
+	stw r8,48(r30)
+	addi r10,r2,104
+	addi r11,r2,16
+	addi r2,r2,72
+	std r0,32(r30)
+	std r9,40(r30)
+	std r11,0(r30)
+	std r10,56(r30)
+	std r2,16(r30)
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE14578:
+	.section __DATA,__gcc_except_tab
+GCC_except_table8:
+LLSDA14578:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x27
+	.set L$set$44,LEHB18-LFB14578
+	.long L$set$44
+	.set L$set$45,LEHE18-LEHB18
+	.long L$set$45
+	.long	0x0
+	.byte	0x0
+	.set L$set$46,LEHB19-LFB14578
+	.long L$set$46
+	.set L$set$47,LEHE19-LEHB19
+	.long L$set$47
+	.set L$set$48,L1113-LFB14578
+	.long L$set$48
+	.byte	0x0
+	.set L$set$49,LEHB20-LFB14578
+	.long L$set$49
+	.set L$set$50,LEHE20-LEHB20
+	.long L$set$50
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv:
+LFB14615:
+	addi r3,r3,-56
+	b __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+LFE14615:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv:
+LFB14580:
+	mflr r0
+LCFI470:
+	std r28,-32(r1)
+LCFI471:
+	std r29,-24(r1)
+LCFI472:
+	std r30,-16(r1)
+LCFI473:
+	std r31,-8(r1)
+LCFI474:
+	bcl 20,31,"L00000000048$pb"
+"L00000000048$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI475:
+	mr r29,r3
+	li r3,64
+	stdu r1,-144(r1)
+LCFI476:
+LEHB21:
+	bl __Znwm
+LEHE21:
+	addis r2,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000048$pb")
+	lwz r0,8(r29)
+	mr r30,r3
+	ld r3,24(r29)
+	ld r2,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000048$pb")(r2)
+	stw r0,8(r30)
+	cmpdi cr7,r3,0
+	std r3,24(r30)
+	addi r28,r2,16
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000048$pb")
+	std r28,0(r30)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000048$pb")(r2)
+	addi r2,r2,16
+	std r2,16(r30)
+	addis r2,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000048$pb")
+	ld r2,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000048$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1116
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB22:
+	bctrl
+LEHE22:
+	b L1116
+L1122:
+L1118:
+L1123:
+L1120:
+	std r28,0(r30)
+	mr r29,r3
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+	mr r3,r30
+	bl __ZdlPv
+	mr r3,r29
+LEHB23:
+	bl __Unwind_Resume
+LEHE23:
+	.p2align 4,,15
+L1116:
+	lwz r8,48(r29)
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000048$pb")
+	ld r0,32(r29)
+	addi r1,r1,144
+	ld r9,40(r29)
+	addi r3,r30,56
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000048$pb")(r2)
+	stw r8,48(r30)
+	addi r10,r2,104
+	addi r11,r2,16
+	addi r2,r2,72
+	std r0,32(r30)
+	std r9,40(r30)
+	std r11,0(r30)
+	std r10,56(r30)
+	std r2,16(r30)
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE14580:
+	.section __DATA,__gcc_except_tab
+GCC_except_table9:
+LLSDA14580:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x27
+	.set L$set$51,LEHB21-LFB14580
+	.long L$set$51
+	.set L$set$52,LEHE21-LEHB21
+	.long L$set$52
+	.long	0x0
+	.byte	0x0
+	.set L$set$53,LEHB22-LFB14580
+	.long L$set$53
+	.set L$set$54,LEHE22-LEHB22
+	.long L$set$54
+	.set L$set$55,L1122-LFB14580
+	.long L$set$55
+	.byte	0x0
+	.set L$set$56,LEHB23-LFB14580
+	.long L$set$56
+	.set L$set$57,LEHE23-LEHB23
+	.long L$set$57
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa14setTimerOfViewEbdRNS_4ViewE
+	.private_extern __ZN8Fielding13HostViewCocoa14setTimerOfViewEbdRNS_4ViewE
+__ZN8Fielding13HostViewCocoa14setTimerOfViewEbdRNS_4ViewE:
+LFB8819:
+	mflr r0
+LCFI477:
+	stfd f31,-8(r1)
+LCFI478:
+	std r29,-32(r1)
+LCFI479:
+	std r30,-24(r1)
+LCFI480:
+	std r31,-16(r1)
+LCFI481:
+	std r0,16(r1)
+LCFI482:
+	stdu r1,-208(r1)
+LCFI483:
+	mfspr r0,256
+	stw r0,172(r1)
+	oris r0,r0,0x8000
+	mtspr 256,r0
+	bcl 20,31,"L00000000049$pb"
+"L00000000049$pb":
+	mflr r31
+	ld r30,160(r3)
+	fmr f31,f1
+	cmpdi cr7,r30,0
+	beq cr7,L1131
+	ld r0,16(r30)
+	cmpd cr7,r0,r6
+	bne cr7,L1131
+	stb r4,176(r3)
+	stfd f1,184(r3)
+	ld r3,96(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1128
+	bl _CFRunLoopTimerInvalidate
+	ld r3,96(r30)
+	bl _CFRelease
+	li r0,0
+	std r0,96(r30)
+L1128:
+	vxor v0,v0,v0
+	li r2,112
+	li r0,128
+	stvx v0,r1,r2
+	addis r2,r31,ha16(L_kCFAllocatorDefault$non_lazy_ptr-"L00000000049$pb")
+	std r30,120(r1)
+	stvx v0,r1,r0
+	li r0,0
+	ld r2,lo16(L_kCFAllocatorDefault$non_lazy_ptr-"L00000000049$pb")(r2)
+	std r0,144(r1)
+	ld r29,0(r2)
+	bl _CFAbsoluteTimeGetCurrent
+	fmr f2,f31
+	addis r8,r31,ha16(L__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv$non_lazy_ptr-"L00000000049$pb")
+	li r6,0
+	fadd f1,f31,f1
+	li r7,0
+	addi r9,r1,112
+	ld r8,lo16(L__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv$non_lazy_ptr-"L00000000049$pb")(r8)
+	mr r3,r29
+	bl _CFRunLoopTimerCreate
+	cmpdi cr7,r3,0
+	mr r4,r3
+	std r3,96(r30)
+	beq cr7,L1131
+	addis r2,r31,ha16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000049$pb")
+	ld r3,88(r30)
+	ld r2,lo16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000049$pb")(r2)
+	ld r5,0(r2)
+	bl _CFRunLoopAddTimer
+	.p2align 4,,15
+L1131:
+	lwz r12,172(r1)
+	mtspr 256,r12
+	addi r1,r1,208
+	ld r0,16(r1)
+	ld r29,-32(r1)
+	ld r30,-24(r1)
+	ld r31,-16(r1)
+	lfd f31,-8(r1)
+	mtlr r0
+	blr
+LFE8819:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+__ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev:
+LFB14616:
+	addi r3,r3,-48
+	b __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+LFE14616:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+__ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev:
+LFB14617:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+LFE14617:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev:
+LFB10155:
+	mflr r0
+LCFI484:
+	std r31,-8(r1)
+LCFI485:
+	std r30,-16(r1)
+LCFI486:
+	bcl 20,31,"L00000000050$pb"
+"L00000000050$pb":
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000050$pb")
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000050$pb")
+	std r0,16(r1)
+LCFI487:
+	stdu r1,-128(r1)
+LCFI488:
+	la r2,lo16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000050$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000050$pb")(r9)
+	addi r0,r2,48
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r3)
+	std r0,40(r3)
+	std r9,48(r3)
+	addi r3,r3,40
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000050$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000050$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1138
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB24:
+	bctrl
+LEHE24:
+	cmpdi cr7,r3,0
+	beq cr7,L1138
+	li r0,0
+	std r0,8(r30)
+	b L1138
+L1140:
+	cmpdi cr7,r4,-1
+	beq cr7,L1137
+LEHB25:
+	bl __Unwind_Resume
+L1137:
+	bl ___cxa_call_unexpected
+LEHE25:
+	.p2align 4,,15
+L1138:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE10155:
+	.section __DATA,__gcc_except_tab
+GCC_except_table10:
+	.align 3
+LLSDA10155:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$58,LEHB24-LFB10155
+	.long L$set$58
+	.set L$set$59,LEHE24-LEHB24
+	.long L$set$59
+	.set L$set$60,L1140-LFB10155
+	.long L$set$60
+	.byte	0x1
+	.set L$set$61,LEHB25-LFB10155
+	.long L$set$61
+	.set L$set$62,LEHE25-LEHB25
+	.long L$set$62
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev:
+LFB14618:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+LFE14618:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+__ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev:
+LFB9980:
+	mflr r0
+LCFI489:
+	std r31,-8(r1)
+LCFI490:
+	std r29,-24(r1)
+LCFI491:
+	bcl 20,31,"L00000000051$pb"
+"L00000000051$pb":
+	std r30,-16(r1)
+LCFI492:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000051$pb")
+	std r0,16(r1)
+LCFI493:
+	stdu r1,-144(r1)
+LCFI494:
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000051$pb")
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000051$pb")(r9)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000051$pb")(r2)
+	addi r0,r9,16
+	addi r9,r9,56
+	std r0,0(r3)
+	std r9,16(r3)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1142
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB26:
+	bctrl
+LEHE26:
+	cmpdi cr7,r3,0
+	beq cr7,L1142
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1142:
+	addis r2,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000051$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000051$pb")
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000051$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000051$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	bl __ZNSt9exceptionD2Ev
+	addi r1,r1,144
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+L1149:
+	cmpdi cr7,r4,-1
+	beq cr7,L1146
+LEHB27:
+	bl __Unwind_Resume
+L1146:
+	bl ___cxa_call_unexpected
+LEHE27:
+LFE9980:
+	.section __DATA,__gcc_except_tab
+GCC_except_table11:
+	.align 3
+LLSDA9980:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$63,LEHB26-LFB9980
+	.long L$set$63
+	.set L$set$64,LEHE26-LEHB26
+	.long L$set$64
+	.set L$set$65,L1149-LFB9980
+	.long L$set$65
+	.byte	0x1
+	.set L$set$66,LEHB27-LFB9980
+	.long L$set$66
+	.set L$set$67,LEHE27-LEHB27
+	.long L$set$67
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail14bad_exception_D0Ev
+	.weak_definition __ZThn40_N5boost16exception_detail14bad_exception_D0Ev
+	.private_extern __ZThn40_N5boost16exception_detail14bad_exception_D0Ev
+__ZThn40_N5boost16exception_detail14bad_exception_D0Ev:
+LFB14619:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail14bad_exception_D0Ev
+LFE14619:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail14bad_exception_D0Ev
+	.weak_definition __ZN5boost16exception_detail14bad_exception_D0Ev
+	.private_extern __ZN5boost16exception_detail14bad_exception_D0Ev
+__ZN5boost16exception_detail14bad_exception_D0Ev:
+LFB7406:
+	mflr r0
+LCFI495:
+	std r31,-8(r1)
+LCFI496:
+	std r30,-16(r1)
+LCFI497:
+	bcl 20,31,"L00000000052$pb"
+"L00000000052$pb":
+	mr r30,r3
+	addi r3,r3,40
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000052$pb")
+	std r0,16(r1)
+LCFI498:
+	stdu r1,-128(r1)
+LCFI499:
+	la r2,lo16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000052$pb")(r2)
+	addi r0,r2,48
+	addi r2,r2,16
+	std r0,40(r30)
+	std r2,0(r30)
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000052$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000052$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1151
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB28:
+	bctrl
+LEHE28:
+	cmpdi cr7,r3,0
+	beq cr7,L1151
+	li r0,0
+	std r0,8(r30)
+	b L1151
+L1157:
+	cmpdi cr7,r4,-1
+	beq cr7,L1154
+LEHB29:
+	bl __Unwind_Resume
+L1154:
+	bl ___cxa_call_unexpected
+LEHE29:
+	.p2align 4,,15
+L1151:
+	addi r1,r1,128
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+LFE7406:
+	.section __DATA,__gcc_except_tab
+GCC_except_table12:
+	.align 3
+LLSDA7406:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$68,LEHB28-LFB7406
+	.long L$set$68
+	.set L$set$69,LEHE28-LEHB28
+	.long L$set$69
+	.set L$set$70,L1157-LFB7406
+	.long L$set$70
+	.byte	0x1
+	.set L$set$71,LEHB29-LFB7406
+	.long L$set$71
+	.set L$set$72,LEHE29-LEHB29
+	.long L$set$72
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+__ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev:
+LFB14620:
+	addi r3,r3,-48
+	b __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+LFE14620:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+__ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev:
+LFB14621:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+LFE14621:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev:
+LFB10168:
+	mflr r0
+LCFI500:
+	std r31,-8(r1)
+LCFI501:
+	std r30,-16(r1)
+LCFI502:
+	bcl 20,31,"L00000000053$pb"
+"L00000000053$pb":
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000053$pb")
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000053$pb")
+	std r0,16(r1)
+LCFI503:
+	stdu r1,-128(r1)
+LCFI504:
+	la r2,lo16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000053$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000053$pb")(r9)
+	addi r0,r2,48
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r3)
+	std r0,40(r3)
+	std r9,48(r3)
+	addi r3,r3,40
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000053$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000053$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1164
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB30:
+	bctrl
+LEHE30:
+	cmpdi cr7,r3,0
+	beq cr7,L1164
+	li r0,0
+	std r0,8(r30)
+	b L1164
+L1166:
+	cmpdi cr7,r4,-1
+	beq cr7,L1163
+LEHB31:
+	bl __Unwind_Resume
+L1163:
+	bl ___cxa_call_unexpected
+LEHE31:
+	.p2align 4,,15
+L1164:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE10168:
+	.section __DATA,__gcc_except_tab
+GCC_except_table13:
+	.align 3
+LLSDA10168:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$73,LEHB30-LFB10168
+	.long L$set$73
+	.set L$set$74,LEHE30-LEHB30
+	.long L$set$74
+	.set L$set$75,L1166-LFB10168
+	.long L$set$75
+	.byte	0x1
+	.set L$set$76,LEHB31-LFB10168
+	.long L$set$76
+	.set L$set$77,LEHE31-LEHB31
+	.long L$set$77
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail10bad_alloc_D0Ev
+	.weak_definition __ZThn40_N5boost16exception_detail10bad_alloc_D0Ev
+	.private_extern __ZThn40_N5boost16exception_detail10bad_alloc_D0Ev
+__ZThn40_N5boost16exception_detail10bad_alloc_D0Ev:
+LFB14622:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail10bad_alloc_D0Ev
+LFE14622:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10bad_alloc_D0Ev
+	.weak_definition __ZN5boost16exception_detail10bad_alloc_D0Ev
+	.private_extern __ZN5boost16exception_detail10bad_alloc_D0Ev
+__ZN5boost16exception_detail10bad_alloc_D0Ev:
+LFB7402:
+	mflr r0
+LCFI505:
+	std r31,-8(r1)
+LCFI506:
+	std r30,-16(r1)
+LCFI507:
+	bcl 20,31,"L00000000054$pb"
+"L00000000054$pb":
+	mr r30,r3
+	addi r3,r3,40
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000054$pb")
+	std r0,16(r1)
+LCFI508:
+	stdu r1,-128(r1)
+LCFI509:
+	la r2,lo16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000054$pb")(r2)
+	addi r0,r2,48
+	addi r2,r2,16
+	std r0,40(r30)
+	std r2,0(r30)
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000054$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000054$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1168
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB32:
+	bctrl
+LEHE32:
+	cmpdi cr7,r3,0
+	beq cr7,L1168
+	li r0,0
+	std r0,8(r30)
+	b L1168
+L1174:
+	cmpdi cr7,r4,-1
+	beq cr7,L1171
+LEHB33:
+	bl __Unwind_Resume
+L1171:
+	bl ___cxa_call_unexpected
+LEHE33:
+	.p2align 4,,15
+L1168:
+	addi r1,r1,128
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+LFE7402:
+	.section __DATA,__gcc_except_tab
+GCC_except_table14:
+	.align 3
+LLSDA7402:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$78,LEHB32-LFB7402
+	.long L$set$78
+	.set L$set$79,LEHE32-LEHB32
+	.long L$set$79
+	.set L$set$80,L1174-LFB7402
+	.long L$set$80
+	.byte	0x1
+	.set L$set$81,LEHB33-LFB7402
+	.long L$set$81
+	.set L$set$82,LEHE33-LEHB33
+	.long L$set$82
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev:
+LFB14623:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+LFE14623:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+__ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev:
+LFB9970:
+	mflr r0
+LCFI510:
+	std r31,-8(r1)
+LCFI511:
+	std r29,-24(r1)
+LCFI512:
+	bcl 20,31,"L00000000055$pb"
+"L00000000055$pb":
+	std r30,-16(r1)
+LCFI513:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000055$pb")
+	std r0,16(r1)
+LCFI514:
+	stdu r1,-144(r1)
+LCFI515:
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000055$pb")
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000055$pb")(r9)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000055$pb")(r2)
+	addi r0,r9,16
+	addi r9,r9,56
+	std r0,0(r3)
+	std r9,16(r3)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1176
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB34:
+	bctrl
+LEHE34:
+	cmpdi cr7,r3,0
+	beq cr7,L1176
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1176:
+	addis r2,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000055$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000055$pb")
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000055$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000055$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	bl __ZNSt9exceptionD2Ev
+	addi r1,r1,144
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+L1183:
+	cmpdi cr7,r4,-1
+	beq cr7,L1180
+LEHB35:
+	bl __Unwind_Resume
+L1180:
+	bl ___cxa_call_unexpected
+LEHE35:
+LFE9970:
+	.section __DATA,__gcc_except_tab
+GCC_except_table15:
+	.align 3
+LLSDA9970:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$83,LEHB34-LFB9970
+	.long L$set$83
+	.set L$set$84,LEHE34-LEHB34
+	.long L$set$84
+	.set L$set$85,L1183-LFB9970
+	.long L$set$85
+	.byte	0x1
+	.set L$set$86,LEHB35-LFB9970
+	.long L$set$86
+	.set L$set$87,LEHE35-LEHB35
+	.long L$set$87
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev:
+LFB14624:
+	addi r3,r3,-56
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+LFE14624:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev:
+LFB14625:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+LFE14625:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev:
+LFB9974:
+	mflr r0
+LCFI516:
+	std r31,-8(r1)
+LCFI517:
+	std r29,-24(r1)
+LCFI518:
+	bcl 20,31,"L00000000056$pb"
+"L00000000056$pb":
+	std r30,-16(r1)
+LCFI519:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000056$pb")
+	std r0,16(r1)
+LCFI520:
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000056$pb")
+	stdu r1,-144(r1)
+LCFI521:
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000056$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000056$pb")(r9)
+	addi r2,r2,16
+	addi r0,r9,16
+	addi r9,r9,56
+	std r2,56(r3)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000056$pb")
+	std r0,0(r3)
+	std r9,16(r3)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000056$pb")(r2)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1186
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB36:
+	bctrl
+LEHE36:
+	cmpdi cr7,r3,0
+	beq cr7,L1186
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1186:
+	addis r2,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000056$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000056$pb")
+	addi r1,r1,144
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000056$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000056$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZNSt9exceptionD2Ev
+L1193:
+	cmpdi cr7,r4,-1
+	beq cr7,L1189
+LEHB37:
+	bl __Unwind_Resume
+L1189:
+	bl ___cxa_call_unexpected
+LEHE37:
+LFE9974:
+	.section __DATA,__gcc_except_tab
+GCC_except_table16:
+	.align 3
+LLSDA9974:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$88,LEHB36-LFB9974
+	.long L$set$88
+	.set L$set$89,LEHE36-LEHB36
+	.long L$set$89
+	.set L$set$90,L1193-LFB9974
+	.long L$set$90
+	.byte	0x1
+	.set L$set$91,LEHB37-LFB9974
+	.long L$set$91
+	.set L$set$92,LEHE37-LEHB37
+	.long L$set$92
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.cstring
+	.align 3
+LC8:
+	.ascii "/Developer/SDKs/MacOSX10.5.modified.sdk/usr/include/boost/exception/detail/exception_ptr.hpp\0"
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv
+	.weak_definition __ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv
+	.private_extern __ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv
+__ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv:
+LFB9355:
+L1269:
+L1201:
+L1270:
+L1209:
+L1271:
+L1212:
+L1272:
+L1214:
+L1268:
+L1218:
+	mflr r0
+LCFI522:
+	std r20,-96(r1)
+LCFI523:
+	std r21,-88(r1)
+LCFI524:
+	std r22,-80(r1)
+LCFI525:
+	std r23,-72(r1)
+LCFI526:
+	bcl 20,31,"L00000000057$pb"
+"L00000000057$pb":
+	std r24,-64(r1)
+LCFI527:
+	std r25,-56(r1)
+LCFI528:
+	std r27,-40(r1)
+LCFI529:
+	std r28,-32(r1)
+LCFI530:
+	std r30,-16(r1)
+LCFI531:
+	std r31,-8(r1)
+LCFI532:
+	mflr r31
+	std r0,16(r1)
+LCFI533:
+	std r19,-104(r1)
+LCFI534:
+	std r26,-48(r1)
+LCFI535:
+	std r29,-24(r1)
+LCFI536:
+	stdu r1,-368(r1)
+LCFI537:
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000057$pb")
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000057$pb")
+	la r9,lo16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000057$pb")(r9)
+	addis r11,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000057$pb")
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE-"L00000000057$pb")(r2)
+	li r0,0
+	addi r22,r9,48
+	addi r23,r9,16
+	addis r9,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000057$pb")
+	addi r27,r2,104
+	addi r28,r2,16
+	addi r30,r2,64
+	ld r9,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000057$pb")(r9)
+	addis r2,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE19__PRETTY_FUNCTION__-"L00000000057$pb")
+	li r10,-1
+	la r11,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000057$pb")(r11)
+	mr r24,r3
+	la r2,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE19__PRETTY_FUNCTION__-"L00000000057$pb")(r2)
+	addi r20,r11,16
+	addi r4,r1,128
+	addi r3,r1,192
+	stw r10,224(r1)
+	stw r10,176(r1)
+	std r0,200(r1)
+	std r0,152(r1)
+	std r0,160(r1)
+	std r0,168(r1)
+	std r0,216(r1)
+	std r0,208(r1)
+	std r2,128(r1)
+	std r23,144(r1)
+	std r22,184(r1)
+	std r28,192(r1)
+	std r30,232(r1)
+	std r27,240(r1)
+	addi r21,r9,16
+	bl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+	addis r2,r31,ha16(LC8-"L00000000057$pb")
+	addi r4,r1,120
+	la r2,lo16(LC8-"L00000000057$pb")(r2)
+	std r2,120(r1)
+	bl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+	li r0,124
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+	addis r2,r31,ha16(__ZGVZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")
+	la r25,lo16(__ZGVZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")(r2)
+	mr r3,r25
+	bl ___cxa_guard_acquire
+	cmpdi cr7,r3,0
+	beq cr7,L1278
+	li r19,0
+	li r3,56
+LEHB38:
+	bl __Znwm
+LEHE38:
+	mr r29,r3
+	ld r3,200(r1)
+	std r21,0(r29)
+	cmpdi cr7,r3,0
+	std r3,8(r29)
+	beq cr7,L1221
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB39:
+	bctrl
+LEHE39:
+L1221:
+	lwa r0,224(r1)
+	ld r2,208(r1)
+	li r3,24
+	ld r9,216(r1)
+	std r28,0(r29)
+	addi r28,r29,48
+	std r30,40(r29)
+	std r27,48(r29)
+	std r2,16(r29)
+	std r9,24(r29)
+	stw r0,32(r29)
+LEHB40:
+	bl __Znwm
+LEHE40:
+	b L1290
+L1273:
+L1224:
+	mr r30,r3
+	mr r3,r29
+	bl __ZdlPv
+	b L1230
+L1290:
+	addis r2,r31,ha16(__ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE-"L00000000057$pb")
+	addis r27,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")
+	std r29,16(r3)
+	li r0,1
+	la r2,lo16(__ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE-"L00000000057$pb")(r2)
+	la r26,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")(r27)
+	stw r0,12(r3)
+	stw r0,8(r3)
+	mr r30,r3
+	addi r29,r3,8
+	addi r2,r2,16
+	li r19,1
+	std r2,0(r3)
+	std r3,8(r26)
+	mr r3,r25
+	std r28,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")(r27)
+	sync
+L1282:
+	lwarx r2,0,r29
+	addi r2,r2,1
+	stwcx. r2,0,r29
+	bne- cr0,L1282
+	isync
+	bl ___cxa_guard_release
+	addis r5,r31,ha16(L___dso_handle$non_lazy_ptr-"L00000000057$pb")
+	addis r3,r31,ha16(___tcf_0-"L00000000057$pb")
+	li r4,0
+	ld r5,lo16(L___dso_handle$non_lazy_ptr-"L00000000057$pb")(r5)
+	la r3,lo16(___tcf_0-"L00000000057$pb")(r3)
+	bl ___cxa_atexit
+	sync
+L1283:
+	lwarx r0,0,r29
+	addic r2,r0,-1
+	stwcx. r2,0,r29
+	bne- cr0,L1283
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L1219
+	b L1291
+L1267:
+L1226:
+	bl ___cxa_begin_catch
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHB41:
+	bl ___cxa_rethrow
+LEHE41:
+L1266:
+L1228:
+	mr r30,r3
+	bl ___cxa_end_catch
+	b L1230
+L1291:
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,16(r2)
+	mtctr r0
+	mr r12,r0
+LEHB42:
+	bctrl
+	sync
+	addi r2,r30,12
+L1281:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L1281
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L1219
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE42:
+	b L1219
+L1274:
+	mr r30,r3
+L1230:
+	cmpdi cr7,r19,0
+	bne cr7,L1231
+	mr r3,r25
+	bl ___cxa_guard_abort
+	b L1231
+	.p2align 4,,15
+L1278:
+	addis r27,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")
+	la r26,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")(r27)
+L1219:
+	ld r2,8(r26)
+	ld r0,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep-"L00000000057$pb")(r27)
+	cmpdi cr7,r2,0
+	std r0,0(r24)
+	std r2,8(r24)
+	beq cr7,L1233
+	sync
+	addi r2,r2,8
+L1280:
+	lwarx r9,0,r2
+	addi r9,r9,1
+	stwcx. r9,0,r2
+	bne- cr0,L1280
+	isync
+	b L1233
+L1275:
+L1231:
+L1235:
+	addi r3,r1,232
+	std r20,240(r1)
+	std r23,192(r1)
+	std r22,232(r1)
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,200(r1)
+	std r21,192(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1237
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB43:
+	bctrl
+LEHE43:
+	cmpdi cr7,r3,0
+	beq cr7,L1237
+	li r0,0
+	std r0,200(r1)
+	b L1237
+L1265:
+	b L1287
+L1240:
+	.p2align 4,,15
+L1233:
+	addi r3,r1,232
+	std r20,240(r1)
+	std r23,192(r1)
+	std r22,232(r1)
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,200(r1)
+	std r21,192(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1242
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB44:
+	bctrl
+LEHE44:
+	cmpdi cr7,r3,0
+	beq cr7,L1242
+	li r0,0
+	std r0,200(r1)
+	b L1242
+L1264:
+	b L1287
+L1245:
+	.p2align 4,,15
+L1242:
+	addi r3,r1,184
+	std r23,144(r1)
+	std r22,184(r1)
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,152(r1)
+	std r21,144(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1194
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB45:
+	bctrl
+LEHE45:
+	cmpdi cr7,r3,0
+	beq cr7,L1194
+	li r0,0
+	std r0,152(r1)
+	b L1194
+L1263:
+	b L1287
+L1249:
+L1276:
+L1237:
+L1250:
+	addi r3,r1,184
+	std r23,144(r1)
+	std r22,184(r1)
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,152(r1)
+	std r21,144(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1251
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB46:
+	bctrl
+LEHE46:
+	cmpdi cr7,r3,0
+	beq cr7,L1251
+	li r0,0
+	std r0,152(r1)
+	b L1251
+L1262:
+L1287:
+	cmpdi cr7,r4,-1
+	bne cr7,L1285
+L1254:
+LEHB47:
+	bl ___cxa_call_unexpected
+L1251:
+	mr r3,r30
+L1285:
+	bl __Unwind_Resume
+LEHE47:
+	.p2align 4,,15
+L1194:
+	addi r1,r1,368
+	mr r3,r24
+	ld r0,16(r1)
+	ld r19,-104(r1)
+	ld r20,-96(r1)
+	ld r21,-88(r1)
+	ld r22,-80(r1)
+	ld r23,-72(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	mtlr r0
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	blr
+LFE9355:
+	.section __DATA,__gcc_except_tab
+GCC_except_table17:
+	.align 3
+LLSDA9355:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x94,0x1
+	.byte	0x3
+	.byte	0x82,0x1
+	.set L$set$93,LEHB38-LFB9355
+	.long L$set$93
+	.set L$set$94,LEHE38-LEHB38
+	.long L$set$94
+	.set L$set$95,L1274-LFB9355
+	.long L$set$95
+	.byte	0x0
+	.set L$set$96,LEHB39-LFB9355
+	.long L$set$96
+	.set L$set$97,LEHE39-LEHB39
+	.long L$set$97
+	.set L$set$98,L1273-LFB9355
+	.long L$set$98
+	.byte	0x0
+	.set L$set$99,LEHB40-LFB9355
+	.long L$set$99
+	.set L$set$100,LEHE40-LEHB40
+	.long L$set$100
+	.set L$set$101,L1267-LFB9355
+	.long L$set$101
+	.byte	0x1
+	.set L$set$102,LEHB41-LFB9355
+	.long L$set$102
+	.set L$set$103,LEHE41-LEHB41
+	.long L$set$103
+	.set L$set$104,L1266-LFB9355
+	.long L$set$104
+	.byte	0x0
+	.set L$set$105,LEHB42-LFB9355
+	.long L$set$105
+	.set L$set$106,LEHE42-LEHB42
+	.long L$set$106
+	.set L$set$107,L1274-LFB9355
+	.long L$set$107
+	.byte	0x0
+	.set L$set$108,LEHB43-LFB9355
+	.long L$set$108
+	.set L$set$109,LEHE43-LEHB43
+	.long L$set$109
+	.set L$set$110,L1265-LFB9355
+	.long L$set$110
+	.byte	0x3
+	.set L$set$111,LEHB44-LFB9355
+	.long L$set$111
+	.set L$set$112,LEHE44-LEHB44
+	.long L$set$112
+	.set L$set$113,L1264-LFB9355
+	.long L$set$113
+	.byte	0x3
+	.set L$set$114,LEHB45-LFB9355
+	.long L$set$114
+	.set L$set$115,LEHE45-LEHB45
+	.long L$set$115
+	.set L$set$116,L1263-LFB9355
+	.long L$set$116
+	.byte	0x3
+	.set L$set$117,LEHB46-LFB9355
+	.long L$set$117
+	.set L$set$118,LEHE46-LEHB46
+	.long L$set$118
+	.set L$set$119,L1262-LFB9355
+	.long L$set$119
+	.byte	0x3
+	.set L$set$120,LEHB47-LFB9355
+	.long L$set$120
+	.set L$set$121,LEHE47-LEHB47
+	.long L$set$121
+	.long	0x0
+	.byte	0x0
+	.byte	0x1
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.quad	0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev:
+LFB14626:
+	addi r3,r3,-56
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+LFE14626:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev:
+LFB14627:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+LFE14627:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev:
+LFB9984:
+	mflr r0
+LCFI538:
+	std r31,-8(r1)
+LCFI539:
+	std r29,-24(r1)
+LCFI540:
+	bcl 20,31,"L00000000058$pb"
+"L00000000058$pb":
+	std r30,-16(r1)
+LCFI541:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000058$pb")
+	std r0,16(r1)
+LCFI542:
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000058$pb")
+	stdu r1,-144(r1)
+LCFI543:
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000058$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000058$pb")(r9)
+	addi r2,r2,16
+	addi r0,r9,16
+	addi r9,r9,56
+	std r2,56(r3)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000058$pb")
+	std r0,0(r3)
+	std r9,16(r3)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000058$pb")(r2)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1294
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB48:
+	bctrl
+LEHE48:
+	cmpdi cr7,r3,0
+	beq cr7,L1294
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1294:
+	addis r2,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000058$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000058$pb")
+	addi r1,r1,144
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000058$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000058$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZNSt9exceptionD2Ev
+L1301:
+	cmpdi cr7,r4,-1
+	beq cr7,L1297
+LEHB49:
+	bl __Unwind_Resume
+L1297:
+	bl ___cxa_call_unexpected
+LEHE49:
+LFE9984:
+	.section __DATA,__gcc_except_tab
+GCC_except_table18:
+	.align 3
+LLSDA9984:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$122,LEHB48-LFB9984
+	.long L$set$122
+	.set L$set$123,LEHE48-LEHB48
+	.long L$set$123
+	.set L$set$124,L1301-LFB9984
+	.long L$set$124
+	.byte	0x1
+	.set L$set$125,LEHB49-LFB9984
+	.long L$set$125
+	.set L$set$126,LEHE49-LEHB49
+	.long L$set$126
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail10bad_alloc_D1Ev
+	.weak_definition __ZThn40_N5boost16exception_detail10bad_alloc_D1Ev
+	.private_extern __ZThn40_N5boost16exception_detail10bad_alloc_D1Ev
+__ZThn40_N5boost16exception_detail10bad_alloc_D1Ev:
+LFB14628:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail10bad_alloc_D1Ev
+LFE14628:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10bad_alloc_D1Ev
+	.weak_definition __ZN5boost16exception_detail10bad_alloc_D1Ev
+	.private_extern __ZN5boost16exception_detail10bad_alloc_D1Ev
+__ZN5boost16exception_detail10bad_alloc_D1Ev:
+LFB7401:
+	mflr r0
+LCFI544:
+	std r31,-8(r1)
+LCFI545:
+	std r30,-16(r1)
+LCFI546:
+	bcl 20,31,"L00000000059$pb"
+"L00000000059$pb":
+	mr r30,r3
+	addi r3,r3,40
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000059$pb")
+	std r0,16(r1)
+LCFI547:
+	stdu r1,-128(r1)
+LCFI548:
+	la r2,lo16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000059$pb")(r2)
+	addi r0,r2,48
+	addi r2,r2,16
+	std r0,40(r30)
+	std r2,0(r30)
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000059$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000059$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1307
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB50:
+	bctrl
+LEHE50:
+	cmpdi cr7,r3,0
+	beq cr7,L1307
+	li r0,0
+	std r0,8(r30)
+	b L1307
+L1309:
+	cmpdi cr7,r4,-1
+	beq cr7,L1306
+LEHB51:
+	bl __Unwind_Resume
+L1306:
+	bl ___cxa_call_unexpected
+LEHE51:
+	.p2align 4,,15
+L1307:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE7401:
+	.section __DATA,__gcc_except_tab
+GCC_except_table19:
+	.align 3
+LLSDA7401:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$127,LEHB50-LFB7401
+	.long L$set$127
+	.set L$set$128,LEHE50-LEHB50
+	.long L$set$128
+	.set L$set$129,L1309-LFB7401
+	.long L$set$129
+	.byte	0x1
+	.set L$set$130,LEHB51-LFB7401
+	.long L$set$130
+	.set L$set$131,LEHE51-LEHB51
+	.long L$set$131
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa14callOnUIThreadEPFvPvES1_
+	.private_extern __ZN8Fielding13HostViewCocoa14callOnUIThreadEPFvPvES1_
+__ZN8Fielding13HostViewCocoa14callOnUIThreadEPFvPvES1_:
+LFB8820:
+	mflr r0
+LCFI549:
+	std r31,-8(r1)
+LCFI550:
+	std r24,-64(r1)
+LCFI551:
+	mfcr r2
+LCFI552:
+	bcl 20,31,"L00000000060$pb"
+"L00000000060$pb":
+	std r25,-56(r1)
+LCFI553:
+	std r26,-48(r1)
+LCFI554:
+	mflr r31
+	std r27,-40(r1)
+LCFI555:
+	std r28,-32(r1)
+LCFI556:
+	std r29,-24(r1)
+LCFI557:
+	std r30,-16(r1)
+LCFI558:
+	std r0,16(r1)
+LCFI559:
+	stw r2,8(r1)
+LCFI560:
+	stdu r1,-272(r1)
+LCFI561:
+	nop
+	nop
+	ld r30,160(r3)
+	cmpdi cr7,r30,0
+	beq cr7,L1366
+	std r4,120(r1)
+	std r5,128(r1)
+	addi r29,r30,144
+	.p2align 4,,15
+L1313:
+	mr r3,r29
+LEHB52:
+	bl _pthread_mutex_lock
+LEHE52:
+	cmpwi cr7,r3,4
+	mr r10,r3
+	beq cr7,L1313
+	cmpdi cr7,r3,0
+	beq cr7,L1315
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000060$pb")
+	addis r29,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000060$pb")
+	stw r10,160(r1)
+	stw r10,144(r1)
+	la r2,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000060$pb")(r2)
+	ld r29,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000060$pb")(r29)
+	li r11,0
+	li r0,-1
+	li r3,64
+	addi r9,r2,56
+	addi r27,r2,16
+	std r11,192(r1)
+	std r11,176(r1)
+	stw r0,200(r1)
+	std r11,184(r1)
+	std r9,168(r1)
+	std r27,152(r1)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000060$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000060$pb")
+	addi r29,r29,16
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000060$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000060$pb")(r9)
+	std r29,136(r1)
+	addi r28,r2,16
+	addi r25,r9,16
+	bl ___cxa_allocate_exception
+	lwz r0,160(r1)
+	mr r30,r3
+	ld r3,176(r1)
+	std r29,0(r30)
+	std r28,16(r30)
+	stw r0,8(r30)
+	cmpdi cr7,r3,0
+	std r3,24(r30)
+	beq cr7,L1317
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB53:
+	bctrl
+LEHE53:
+L1317:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000060$pb")
+	ld r7,184(r1)
+	ld r8,192(r1)
+	lwz r10,200(r1)
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000060$pb")
+	li r29,0
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000060$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000060$pb")(r9)
+	addi r0,r2,104
+	addi r11,r2,16
+	std r7,32(r30)
+	std r8,40(r30)
+	stw r10,48(r30)
+	std r0,56(r30)
+	addi r2,r2,72
+	std r11,0(r30)
+	std r2,16(r30)
+	addi r24,r9,16
+	ld r4,176(r1)
+	cmpdi cr7,r4,0
+	bne cr7,L1319
+	mcrf cr4,cr7
+	b L1320
+L1375:
+L1321:
+	std r25,0(r30)
+	mr r26,r3
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+	b L1344
+	.p2align 4,,15
+L1319:
+	ld r2,0(r4)
+	addi r3,r1,112
+	cmpdi cr4,r29,0
+	ld r0,40(r2)
+	mtctr r0
+	mr r12,r0
+LEHB54:
+	bctrl
+LEHE54:
+	ld r29,112(r1)
+	cmpdi cr4,r29,0
+	beq cr4,L1320
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB55:
+	bctrl
+LEHE55:
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB56:
+	bctrl
+LEHE56:
+	b L1320
+L1373:
+L1325:
+	ld r2,0(r29)
+	mr r26,r3
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L1333
+	.p2align 4,,15
+L1320:
+	ld r3,24(r30)
+	ld r0,192(r1)
+	lwz r2,200(r1)
+	cmpdi cr7,r3,0
+	std r0,40(r30)
+	ld r0,184(r1)
+	stw r2,48(r30)
+	std r0,32(r30)
+	beq cr7,L1326
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB57:
+	bctrl
+	cmpdi cr7,r3,0
+	beq cr7,L1326
+	li r0,0
+	std r0,24(r30)
+L1326:
+	std r29,24(r30)
+	beq cr4,L1331
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE57:
+	beq- cr4,L1331
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB58:
+	bctrl
+LEHE58:
+	b L1331
+L1374:
+	mr r26,r3
+L1333:
+	beq cr4,L1336
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L1336
+L1376:
+	mr r26,r3
+L1336:
+L1377:
+L1338:
+	std r24,56(r30)
+	std r27,0(r30)
+	addi r29,r30,16
+	std r28,16(r30)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1339
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB59:
+	bctrl
+LEHE59:
+	cmpdi cr7,r3,0
+	beq cr7,L1339
+	li r0,0
+	std r0,8(r29)
+	b L1339
+L1372:
+	b L1389
+L1343:
+L1339:
+	std r25,0(r30)
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+L1378:
+L1344:
+L1379:
+L1345:
+	mr r3,r30
+	bl ___cxa_free_exception
+	ld r3,176(r1)
+	std r27,152(r1)
+	std r28,168(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1346
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB60:
+	bctrl
+LEHE60:
+	cmpdi cr7,r3,0
+	beq cr7,L1346
+	li r0,0
+	std r0,176(r1)
+L1346:
+	addi r3,r1,152
+	std r25,152(r1)
+	bl __ZNSt9exceptionD2Ev
+	b L1356
+L1371:
+	b L1389
+L1350:
+	.p2align 4,,15
+L1331:
+	ld r3,176(r1)
+	std r27,152(r1)
+	std r28,168(r1)
+	cmpdi cr7,r3,0
+	beq- cr7,L1351
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB61:
+	bctrl
+LEHE61:
+	cmpdi cr7,r3,0
+	beq cr7,L1351
+	li r0,0
+	std r0,176(r1)
+L1351:
+	addi r3,r1,152
+	std r25,152(r1)
+	bl __ZNSt9exceptionD2Ev
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000060$pb")
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000060$pb")
+	mr r3,r30
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000060$pb")(r4)
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000060$pb")(r5)
+LEHB62:
+	bl ___cxa_throw
+LEHE62:
+L1370:
+L1389:
+	cmpdi cr7,r4,-1
+	bne cr7,L1387
+L1355:
+LEHB63:
+	bl ___cxa_call_unexpected
+L1380:
+	mr r26,r3
+L1356:
+	addi r3,r1,136
+	std r25,136(r1)
+	bl __ZNSt9exceptionD2Ev
+	mr r3,r26
+L1387:
+	bl __Unwind_Resume
+	.p2align 4,,15
+L1315:
+	ld r4,128(r30)
+	ld r0,136(r30)
+	cmpd cr7,r4,r0
+	beq cr7,L1358
+	cmpdi cr7,r4,0
+	beq cr7,L1360
+	ld r0,120(r1)
+	ld r2,128(r1)
+	std r0,0(r4)
+	std r2,8(r4)
+	ld r4,128(r30)
+L1360:
+	addi r4,r4,16
+	std r4,128(r30)
+	b L1381
+L1358:
+	addi r3,r30,120
+	addi r5,r1,120
+	bl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_
+	.p2align 4,,15
+L1381:
+	mr r3,r29
+	bl _pthread_mutex_unlock
+	cmpwi cr7,r3,4
+	beq cr7,L1381
+	cmpdi cr7,r3,0
+	beq+ cr7,L1364
+	addis r3,r31,ha16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000060$pb")
+	addis r4,r31,ha16(LC2-"L00000000060$pb")
+	addis r6,r31,ha16(LC3-"L00000000060$pb")
+	li r5,74
+	la r3,lo16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000060$pb")(r3)
+	la r4,lo16(LC2-"L00000000060$pb")(r4)
+	la r6,lo16(LC3-"L00000000060$pb")(r6)
+	bl ___assert_rtn
+	.p2align 4,,15
+L1364:
+	ld r3,112(r30)
+	bl _CFRunLoopSourceSignal
+	ld r3,88(r30)
+	bl _CFRunLoopWakeUp
+LEHE63:
+L1366:
+	addi r1,r1,272
+	ld r0,16(r1)
+	lwz r11,8(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtcrf 8,r11
+	blr
+LFE8820:
+	.section __DATA,__gcc_except_tab
+GCC_except_table20:
+	.align 3
+LLSDA8820:
+	.byte	0xff
+	.byte	0x0
+	.byte	0xa4,0x1
+	.byte	0x3
+	.byte	0x9c,0x1
+	.set L$set$132,LEHB52-LFB8820
+	.long L$set$132
+	.set L$set$133,LEHE52-LEHB52
+	.long L$set$133
+	.long	0x0
+	.byte	0x0
+	.set L$set$134,LEHB53-LFB8820
+	.long L$set$134
+	.set L$set$135,LEHE53-LEHB53
+	.long L$set$135
+	.set L$set$136,L1375-LFB8820
+	.long L$set$136
+	.byte	0x0
+	.set L$set$137,LEHB54-LFB8820
+	.long L$set$137
+	.set L$set$138,LEHE54-LEHB54
+	.long L$set$138
+	.set L$set$139,L1374-LFB8820
+	.long L$set$139
+	.byte	0x0
+	.set L$set$140,LEHB55-LFB8820
+	.long L$set$140
+	.set L$set$141,LEHE55-LEHB55
+	.long L$set$141
+	.set L$set$142,L1373-LFB8820
+	.long L$set$142
+	.byte	0x0
+	.set L$set$143,LEHB56-LFB8820
+	.long L$set$143
+	.set L$set$144,LEHE56-LEHB56
+	.long L$set$144
+	.set L$set$145,L1374-LFB8820
+	.long L$set$145
+	.byte	0x0
+	.set L$set$146,LEHB57-LFB8820
+	.long L$set$146
+	.set L$set$147,LEHE57-LEHB57
+	.long L$set$147
+	.set L$set$148,L1374-LFB8820
+	.long L$set$148
+	.byte	0x0
+	.set L$set$149,LEHB58-LFB8820
+	.long L$set$149
+	.set L$set$150,LEHE58-LEHB58
+	.long L$set$150
+	.set L$set$151,L1376-LFB8820
+	.long L$set$151
+	.byte	0x0
+	.set L$set$152,LEHB59-LFB8820
+	.long L$set$152
+	.set L$set$153,LEHE59-LEHB59
+	.long L$set$153
+	.set L$set$154,L1372-LFB8820
+	.long L$set$154
+	.byte	0x1
+	.set L$set$155,LEHB60-LFB8820
+	.long L$set$155
+	.set L$set$156,LEHE60-LEHB60
+	.long L$set$156
+	.set L$set$157,L1371-LFB8820
+	.long L$set$157
+	.byte	0x1
+	.set L$set$158,LEHB61-LFB8820
+	.long L$set$158
+	.set L$set$159,LEHE61-LEHB61
+	.long L$set$159
+	.set L$set$160,L1370-LFB8820
+	.long L$set$160
+	.byte	0x1
+	.set L$set$161,LEHB62-LFB8820
+	.long L$set$161
+	.set L$set$162,LEHE62-LEHB62
+	.long L$set$162
+	.set L$set$163,L1380-LFB8820
+	.long L$set$163
+	.byte	0x0
+	.set L$set$164,LEHB63-LFB8820
+	.long L$set$164
+	.set L$set$165,LEHE63-LEHB63
+	.long L$set$165
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.text
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail14bad_exception_D1Ev
+	.weak_definition __ZThn40_N5boost16exception_detail14bad_exception_D1Ev
+	.private_extern __ZThn40_N5boost16exception_detail14bad_exception_D1Ev
+__ZThn40_N5boost16exception_detail14bad_exception_D1Ev:
+LFB14629:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail14bad_exception_D1Ev
+LFE14629:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail14bad_exception_D1Ev
+	.weak_definition __ZN5boost16exception_detail14bad_exception_D1Ev
+	.private_extern __ZN5boost16exception_detail14bad_exception_D1Ev
+__ZN5boost16exception_detail14bad_exception_D1Ev:
+LFB7405:
+	mflr r0
+LCFI562:
+	std r31,-8(r1)
+LCFI563:
+	std r30,-16(r1)
+LCFI564:
+	bcl 20,31,"L00000000061$pb"
+"L00000000061$pb":
+	mr r30,r3
+	addi r3,r3,40
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000061$pb")
+	std r0,16(r1)
+LCFI565:
+	stdu r1,-128(r1)
+LCFI566:
+	la r2,lo16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000061$pb")(r2)
+	addi r0,r2,48
+	addi r2,r2,16
+	std r0,40(r30)
+	std r2,0(r30)
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000061$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000061$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1396
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB64:
+	bctrl
+LEHE64:
+	cmpdi cr7,r3,0
+	beq cr7,L1396
+	li r0,0
+	std r0,8(r30)
+	b L1396
+L1398:
+	cmpdi cr7,r4,-1
+	beq cr7,L1395
+LEHB65:
+	bl __Unwind_Resume
+L1395:
+	bl ___cxa_call_unexpected
+LEHE65:
+	.p2align 4,,15
+L1396:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE7405:
+	.section __DATA,__gcc_except_tab
+GCC_except_table21:
+	.align 3
+LLSDA7405:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$166,LEHB64-LFB7405
+	.long L$set$166
+	.set L$set$167,LEHE64-LEHB64
+	.long L$set$167
+	.set L$set$168,L1398-LFB7405
+	.long L$set$168
+	.byte	0x1
+	.set L$set$169,LEHB65-LFB7405
+	.long L$set$169
+	.set L$set$170,LEHE65-LEHB65
+	.long L$set$170
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstanceD1Ev
+	.weak_definition __ZN17CocoaViewInstanceD1Ev
+	.private_extern __ZN17CocoaViewInstanceD1Ev
+__ZN17CocoaViewInstanceD1Ev:
+LFB8788:
+	mflr r0
+LCFI567:
+	std r30,-16(r1)
+LCFI568:
+	std r31,-8(r1)
+LCFI569:
+	std r28,-32(r1)
+LCFI570:
+	std r29,-24(r1)
+LCFI571:
+	bcl 20,31,"L00000000062$pb"
+"L00000000062$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI572:
+	addis r2,r31,ha16(__ZTV17CocoaViewInstance-"L00000000062$pb")
+	mr r30,r3
+	stdu r1,-160(r1)
+LCFI573:
+	la r2,lo16(__ZTV17CocoaViewInstance-"L00000000062$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	ld r4,112(r3)
+	cmpdi cr7,r4,0
+	beq cr7,L1400
+	addis r2,r31,ha16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000062$pb")
+	ld r3,88(r3)
+	ld r2,lo16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000062$pb")(r2)
+	ld r5,0(r2)
+LEHB66:
+	bl _CFRunLoopRemoveSource
+	ld r3,112(r30)
+	bl _CFRelease
+	li r0,0
+	std r0,112(r30)
+L1400:
+	ld r3,96(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1402
+	bl _CFRunLoopTimerInvalidate
+	ld r3,96(r30)
+	bl _CFRelease
+	li r0,0
+	std r0,96(r30)
+L1402:
+	ld r3,24(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1427
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_5-"L00000000062$pb")
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_5-"L00000000062$pb")(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_5-"L00000000062$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE66:
+	li r0,0
+	addi r29,r30,144
+	std r0,24(r30)
+	b L1428
+L1423:
+L1406:
+	mr r28,r3
+	addi r29,r30,144
+L1407:
+	mr r3,r29
+	bl _pthread_mutex_destroy
+	cmpwi cr7,r3,4
+	beq cr7,L1407
+	b L1410
+	.p2align 4,,15
+L1427:
+	addi r29,r30,144
+	.p2align 4,,15
+L1428:
+	mr r3,r29
+LEHB67:
+	bl _pthread_mutex_destroy
+LEHE67:
+	cmpwi cr7,r3,4
+	beq cr7,L1428
+	b L1431
+L1424:
+	mr r28,r3
+L1410:
+	ld r3,120(r30)
+	ld r4,128(r30)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,120(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1411
+	bl __ZdlPv
+	b L1411
+	.p2align 4,,15
+L1431:
+	ld r3,120(r30)
+	ld r4,128(r30)
+	addi r5,r1,113
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,120(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1413
+	bl __ZdlPv
+L1413:
+	addi r29,r30,48
+	addi r5,r1,115
+	ld r3,8(r29)
+	ld r4,16(r29)
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	bne cr7,L1415
+	b L1416
+L1425:
+L1411:
+L1417:
+	addi r29,r30,48
+	addi r5,r1,114
+	ld r3,8(r29)
+	ld r4,16(r29)
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1418
+	bl __ZdlPv
+L1418:
+L1421:
+	mr r3,r30
+	bl __ZN18CocoaViewInterfaceD2Ev
+	mr r3,r28
+LEHB68:
+	bl __Unwind_Resume
+LEHE68:
+	.p2align 4,,15
+L1415:
+	bl __ZdlPv
+L1416:
+	mr r3,r30
+	bl __ZN18CocoaViewInterfaceD2Ev
+	addi r1,r1,160
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+L1426:
+	nop
+LFE8788:
+	.section __DATA,__gcc_except_tab
+GCC_except_table22:
+LLSDA8788:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x27
+	.set L$set$171,LEHB66-LFB8788
+	.long L$set$171
+	.set L$set$172,LEHE66-LEHB66
+	.long L$set$172
+	.set L$set$173,L1423-LFB8788
+	.long L$set$173
+	.byte	0x0
+	.set L$set$174,LEHB67-LFB8788
+	.long L$set$174
+	.set L$set$175,LEHE67-LEHB67
+	.long L$set$175
+	.set L$set$176,L1424-LFB8788
+	.long L$set$176
+	.byte	0x0
+	.set L$set$177,LEHB68-LFB8788
+	.long L$set$177
+	.set L$set$178,LEHE68-LEHB68
+	.long L$set$178
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstanceD0Ev
+	.weak_definition __ZN17CocoaViewInstanceD0Ev
+	.private_extern __ZN17CocoaViewInstanceD0Ev
+__ZN17CocoaViewInstanceD0Ev:
+LFB8789:
+	mflr r0
+LCFI574:
+	std r30,-16(r1)
+LCFI575:
+	std r31,-8(r1)
+LCFI576:
+	std r28,-32(r1)
+LCFI577:
+	std r29,-24(r1)
+LCFI578:
+	bcl 20,31,"L00000000063$pb"
+"L00000000063$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI579:
+	addis r2,r31,ha16(__ZTV17CocoaViewInstance-"L00000000063$pb")
+	mr r30,r3
+	stdu r1,-160(r1)
+LCFI580:
+	la r2,lo16(__ZTV17CocoaViewInstance-"L00000000063$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	ld r4,112(r3)
+	cmpdi cr7,r4,0
+	beq cr7,L1433
+	addis r2,r31,ha16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000063$pb")
+	ld r3,88(r3)
+	ld r2,lo16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000063$pb")(r2)
+	ld r5,0(r2)
+LEHB69:
+	bl _CFRunLoopRemoveSource
+	ld r3,112(r30)
+	bl _CFRelease
+	li r0,0
+	std r0,112(r30)
+L1433:
+	ld r3,96(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1435
+	bl _CFRunLoopTimerInvalidate
+	ld r3,96(r30)
+	bl _CFRelease
+	li r0,0
+	std r0,96(r30)
+L1435:
+	ld r3,24(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1460
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_5-"L00000000063$pb")
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_5-"L00000000063$pb")(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_5-"L00000000063$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE69:
+	li r0,0
+	addi r29,r30,144
+	std r0,24(r30)
+	b L1461
+L1456:
+L1439:
+	mr r28,r3
+	addi r29,r30,144
+L1440:
+	mr r3,r29
+	bl _pthread_mutex_destroy
+	cmpwi cr7,r3,4
+	beq cr7,L1440
+	b L1443
+	.p2align 4,,15
+L1460:
+	addi r29,r30,144
+	.p2align 4,,15
+L1461:
+	mr r3,r29
+LEHB70:
+	bl _pthread_mutex_destroy
+LEHE70:
+	cmpwi cr7,r3,4
+	beq cr7,L1461
+	b L1464
+L1457:
+	mr r28,r3
+L1443:
+	ld r3,120(r30)
+	ld r4,128(r30)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,120(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1444
+	bl __ZdlPv
+	b L1444
+	.p2align 4,,15
+L1464:
+	ld r3,120(r30)
+	ld r4,128(r30)
+	addi r5,r1,113
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,120(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1446
+	bl __ZdlPv
+L1446:
+	addi r29,r30,48
+	addi r5,r1,115
+	ld r3,8(r29)
+	ld r4,16(r29)
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	bne cr7,L1448
+	b L1449
+L1458:
+L1444:
+L1450:
+	addi r29,r30,48
+	addi r5,r1,114
+	ld r3,8(r29)
+	ld r4,16(r29)
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1451
+	bl __ZdlPv
+L1451:
+L1454:
+	mr r3,r30
+	bl __ZN18CocoaViewInterfaceD2Ev
+	mr r3,r28
+LEHB71:
+	bl __Unwind_Resume
+LEHE71:
+	.p2align 4,,15
+L1448:
+	bl __ZdlPv
+L1459:
+L1449:
+	mr r3,r30
+	bl __ZN18CocoaViewInterfaceD2Ev
+	mr r3,r30
+	bl __ZdlPv
+	addi r1,r1,160
+	ld r0,16(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE8789:
+	.section __DATA,__gcc_except_tab
+GCC_except_table23:
+LLSDA8789:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x27
+	.set L$set$179,LEHB69-LFB8789
+	.long L$set$179
+	.set L$set$180,LEHE69-LEHB69
+	.long L$set$180
+	.set L$set$181,L1456-LFB8789
+	.long L$set$181
+	.byte	0x0
+	.set L$set$182,LEHB70-LFB8789
+	.long L$set$182
+	.set L$set$183,LEHE70-LEHB70
+	.long L$set$183
+	.set L$set$184,L1457-LFB8789
+	.long L$set$184
+	.byte	0x0
+	.set L$set$185,LEHB71-LFB8789
+	.long L$set$185
+	.set L$set$186,LEHE71-LEHB71
+	.long L$set$186
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE
+	.weak_definition __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE
+	.private_extern __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE
+__ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE:
+LFB10834:
+	mflr r0
+LCFI581:
+	std r18,-136(r1)
+LCFI582:
+	std r19,-128(r1)
+LCFI583:
+	std r20,-120(r1)
+LCFI584:
+	std r21,-112(r1)
+LCFI585:
+	bcl 20,31,"L00000000064$pb"
+"L00000000064$pb":
+	std r30,-40(r1)
+LCFI586:
+	std r31,-32(r1)
+LCFI587:
+	mflr r31
+	stfd f29,-24(r1)
+LCFI588:
+	stfd f30,-16(r1)
+LCFI589:
+	stfd f31,-8(r1)
+LCFI590:
+	std r14,-168(r1)
+LCFI591:
+	lis r30,0xaaaa
+	li r2,0
+	std r15,-160(r1)
+LCFI592:
+	std r16,-152(r1)
+LCFI593:
+	li r9,0
+	std r17,-144(r1)
+LCFI594:
+	std r22,-104(r1)
+LCFI595:
+	std r23,-96(r1)
+LCFI596:
+	std r24,-88(r1)
+LCFI597:
+	std r25,-80(r1)
+LCFI598:
+	std r26,-72(r1)
+LCFI599:
+	std r27,-64(r1)
+LCFI600:
+	std r28,-56(r1)
+LCFI601:
+	std r29,-48(r1)
+LCFI602:
+	std r0,16(r1)
+LCFI603:
+	stdu r1,-576(r1)
+LCFI604:
+	ori r30,r30,43690
+	mr r19,r3
+	sldi r30,r30,32
+	oris r30,r30,0xaaaa
+	ori r30,r30,43691
+	ld r0,0(r3)
+	ld r4,8(r3)
+	addi r21,r1,296
+	addi r20,r1,240
+	std r2,240(r1)
+	std r9,256(r1)
+	addi r18,r1,288
+	std r21,312(r1)
+	std r21,320(r1)
+	std r21,336(r1)
+	subf r4,r0,r4
+	li r0,0
+	mr r3,r20
+	sradi r4,r4,2
+	std r0,304(r1)
+	std r0,328(r1)
+	stw r0,296(r1)
+	stw r2,344(r1)
+	std r2,216(r1)
+	std r2,224(r1)
+	std r2,232(r1)
+	std r9,248(r1)
+	mulld r4,r4,r30
+LEHB72:
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm
+	ld r4,0(r19)
+	ld r5,8(r19)
+	cmpd cr7,r4,r5
+	mr r9,r4
+	beq cr7,L1467
+	addi r0,r1,156
+	addis r2,r31,ha16(LC9-"L00000000064$pb")
+	mr r26,r4
+	mr r23,r30
+	std r0,352(r1)
+	addi r0,r1,148
+	lfs f29,lo16(LC9-"L00000000064$pb")(r2)
+	li r25,0
+	addi r22,r1,216
+	std r0,360(r1)
+	addi r0,r1,140
+	addi r14,r1,120
+	addi r16,r1,164
+	std r0,368(r1)
+	addi r0,r1,124
+	fmr f31,f29
+	addi r15,r1,176
+	addi r17,r1,200
+	std r0,376(r1)
+	addi r0,r1,132
+	std r0,384(r1)
+	addi r0,r1,188
+	std r0,392(r1)
+	.p2align 4,,15
+L1469:
+	lfs f0,0(r9)
+	lfs f30,4(r9)
+	fcmpu cr7,f0,f29
+	beq cr7,L1470
+	ld r0,312(r1)
+	fmr f29,f0
+	std r0,336(r1)
+	lwz r2,8(r26)
+	extsw r25,r2
+	b L1473
+	.p2align 4,,15
+L1470:
+	fcmpu cr7,f30,f31
+	beq cr7,L1474
+	cmpdi cr7,r25,0
+	beq cr7,L1474
+	b L1583
+L1478:
+	lfs f0,32(r2)
+	fcmpu cr7,f0,f31
+	cror 30,31,28
+	beq cr7,L1479
+	mr r30,r2
+L1481:
+	cmpd cr7,r21,r2
+	stfs f30,120(r1)
+	mr r24,r30
+	beq cr7,L1482
+	lfs f0,32(r2)
+	fcmpu cr7,f0,f30
+	cror 30,31,28
+	beq cr7,L1482
+	mr r4,r2
+L1485:
+	cmpd cr7,r30,r21
+	mr r27,r4
+	bne cr7,L1486
+	stfs f31,124(r1)
+	stw r25,128(r1)
+	mr r3,r18
+	ld r4,336(r1)
+	ld r5,376(r1)
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+	lwa r0,344(r1)
+	mr r4,r3
+	std r3,336(r1)
+	stfs f30,132(r1)
+	mr r3,r18
+	ld r5,384(r1)
+	stw r0,136(r1)
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+	lwz r0,344(r1)
+	std r3,336(r1)
+	li r11,1
+	cmpwi cr7,r0,0
+	bgt cr7,L1488
+	li r11,0
+L1488:
+	cmpwi cr7,r25,0
+	li r9,1
+	bgt cr7,L1489
+	li r9,0
+L1489:
+	xori r0,r9,1
+	xori r2,r11,1
+	and r0,r0,r11
+	and r2,r2,r9
+	subf r2,r0,r2
+	extsw. r2,r2
+	beq cr0,L1490
+	stfs f31,188(r1)
+	stw r2,196(r1)
+	mr r3,r22
+	stfs f30,192(r1)
+	ld r4,224(r1)
+	ld r5,392(r1)
+	bl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+	b L1490
+L1486:
+	cmpd cr7,r4,r21
+	beq cr7,L1492
+	lfs f0,32(r4)
+	fcmpu cr7,f30,f0
+	bnl cr7,L1494
+L1492:
+	ld r0,312(r1)
+	lwa r9,344(r1)
+	cmpd cr7,r4,r0
+	beq cr7,L1496
+	mr r3,r4
+	bl __ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+	lwa r9,36(r3)
+	mr r27,r3
+L1496:
+	stw r9,144(r1)
+	std r27,336(r1)
+	mr r4,r27
+	mr r3,r18
+	stfs f30,140(r1)
+	ld r5,368(r1)
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+	std r3,336(r1)
+	mr r27,r3
+L1494:
+	lfs f0,32(r30)
+	fcmpu cr7,f31,f0
+	bnl cr7,L1498
+	ld r0,312(r1)
+	cmpd cr7,r30,r0
+	beq cr7,L1501
+	mr r3,r30
+	bl __ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+	std r3,336(r1)
+	mr r2,r3
+	mr r4,r3
+	stfs f31,148(r1)
+	mr r3,r18
+	ld r5,360(r1)
+	lwa r0,36(r2)
+	stw r0,152(r1)
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+	mr r24,r3
+	std r3,336(r1)
+	b L1498
+L1501:
+	lwa r0,344(r1)
+	stfs f31,156(r1)
+	mr r4,r30
+	std r30,336(r1)
+	mr r3,r18
+	ld r5,352(r1)
+	stw r0,160(r1)
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_
+	std r3,336(r1)
+	mr r24,r3
+L1498:
+	mr r30,r24
+	b L1582
+	.p2align 4,,15
+L1504:
+	lwa r29,36(r30)
+	mr r3,r30
+	lfs f31,32(r30)
+	add r0,r25,r29
+	extsw r28,r0
+	stw r28,36(r30)
+	bl __ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+	cmpwi cr7,r29,0
+	mr r30,r3
+	lfs f0,32(r3)
+	li r11,1
+	bgt cr7,L1505
+	li r11,0
+	.p2align 4,,15
+L1505:
+	cmpwi cr7,r28,0
+	li r9,1
+	bgt cr7,L1506
+	li r9,0
+	.p2align 4,,15
+L1506:
+	xori r0,r9,1
+	xori r2,r11,1
+	and r0,r0,r11
+	and r2,r2,r9
+	subf r2,r0,r2
+	extsw. r2,r2
+	beq cr0,L1582
+	stfs f31,200(r1)
+	stfs f0,204(r1)
+	mr r3,r22
+	mr r5,r17
+	stw r2,208(r1)
+	ld r4,224(r1)
+	bl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_
+	.p2align 4,,15
+L1582:
+	cmpd cr7,r27,r30
+	bne cr7,L1504
+	ld r0,312(r1)
+	cmpd cr7,r24,r0
+	beq cr7,L1509
+	mr r3,r24
+	bl __ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+	lwz r0,36(r3)
+	lwz r2,36(r24)
+	cmpw cr7,r0,r2
+	beq cr7,L1511
+	ld r0,312(r1)
+	b L1509
+L1511:
+	mr r3,r24
+	mr r4,r21
+	bl __ZSt28_Rb_tree_rebalance_for_erasePSt18_Rb_tree_node_baseRS_
+	bl __ZdlPv
+	ld r2,328(r1)
+	ld r0,312(r1)
+	addi r2,r2,-1
+	std r2,328(r1)
+L1509:
+	cmpd cr7,r30,r0
+	bne cr7,L1513
+	mr r27,r30
+	b L1515
+L1513:
+	mr r3,r27
+	bl __ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+	lwz r0,36(r27)
+	lwz r2,36(r3)
+	mr r30,r3
+	cmpw cr7,r2,r0
+	bne cr7,L1515
+	mr r3,r27
+	mr r4,r21
+	bl __ZSt28_Rb_tree_rebalance_for_erasePSt18_Rb_tree_node_baseRS_
+	bl __ZdlPv
+	ld r2,328(r1)
+	mr r3,r30
+	addi r2,r2,-1
+	std r2,328(r1)
+	bl __ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+	mr r27,r3
+L1515:
+	std r27,336(r1)
+L1490:
+	li r29,0
+	b L1517
+	.p2align 4,,15
+L1518:
+	ld r9,248(r1)
+	ld r0,240(r1)
+	mulli r11,r29,12
+	cmpd cr7,r0,r9
+	add r30,r2,r11
+	beq cr7,L1572
+	lfs f0,-12(r9)
+	addi r8,r9,-12
+	fcmpu cr7,f29,f0
+	bne cr7,L1572
+	lfsx f0,r2,r11
+	lfs f13,4(r8)
+	fcmpu cr7,f13,f0
+	bne cr7,L1572
+	lwz r10,8(r30)
+	lwz r0,8(r8)
+	neg r2,r10
+	cmpw cr7,r0,r2
+	bne cr7,L1519
+	ld r11,256(r1)
+	mr r9,r8
+	std r8,248(r1)
+	b L1524
+	.p2align 4,,15
+L1525:
+	cmpdi cr7,r9,0
+	beq cr7,L1526
+	ld r0,164(r1)
+	stw r2,8(r9)
+	std r0,0(r9)
+	ld r9,248(r1)
+	ld r11,256(r1)
+L1526:
+	addi r9,r9,12
+	std r9,248(r1)
+	b L1524
+L1588:
+	mr r4,r9
+	mr r3,r20
+	mr r5,r16
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+	ld r9,248(r1)
+	ld r11,256(r1)
+	.p2align 4,,15
+L1524:
+	lwz r0,8(r30)
+	lfs f0,4(r30)
+	cmpd cr7,r9,r11
+	stfs f29,176(r1)
+	neg r0,r0
+	extsw r2,r0
+	stfs f0,180(r1)
+	stw r2,184(r1)
+	beq cr7,L1529
+	cmpdi cr7,r9,0
+	beq cr7,L1531
+	ld r0,176(r1)
+	stw r2,8(r9)
+	std r0,0(r9)
+	ld r9,248(r1)
+L1531:
+	addi r9,r9,12
+	std r9,248(r1)
+	b L1533
+L1529:
+	mr r4,r9
+	mr r3,r20
+	mr r5,r15
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_
+LEHE72:
+	.p2align 4,,15
+L1533:
+	addi r29,r29,1
+L1517:
+	ld r2,216(r1)
+	ld r0,224(r1)
+	subf r0,r2,r0
+	sradi r0,r0,2
+	mulld r0,r0,r23
+	cmpld cr7,r29,r0
+	blt cr7,L1518
+	ld r5,8(r19)
+	.p2align 4,,15
+L1474:
+	lwz r0,8(r26)
+	add r0,r0,r25
+	extsw r25,r0
+L1473:
+	addi r9,r26,12
+	fmr f31,f30
+	cmpd cr7,r5,r9
+	beq cr7,L1534
+	mr r26,r9
+	b L1469
+L1534:
+	ld r4,0(r19)
+L1467:
+	lis r0,0xaaaa
+	ld r2,248(r1)
+	ld r9,240(r1)
+	subf r11,r4,r5
+	ori r0,r0,43690
+	sradi r11,r11,2
+	sldi r0,r0,32
+	subf r2,r9,r2
+	oris r0,r0,0xaaaa
+	sradi r2,r2,2
+	ori r0,r0,43691
+	mulld r11,r11,r0
+	mulld r2,r2,r0
+	srdi r11,r11,1
+	cmpld cr7,r2,r11
+	bge cr7,L1536
+	li r0,0
+	mr r3,r19
+	addi r4,r1,264
+	std r0,280(r1)
+	std r0,264(r1)
+	std r0,272(r1)
+LEHB73:
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_
+LEHE73:
+	b L1584
+L1564:
+L1539:
+	mr r30,r3
+	ld r4,272(r1)
+	ld r3,264(r1)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,264(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1546
+L1544:
+	bl __ZdlPv
+	b L1546
+L1584:
+	ld r3,264(r1)
+	ld r4,272(r1)
+	addi r5,r1,113
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,264(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1542
+	bl __ZdlPv
+	b L1542
+L1565:
+L1536:
+	mr r3,r19
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_
+L1542:
+	mr r3,r19
+	mr r7,r30
+	ld r4,8(r19)
+	ld r5,240(r1)
+	ld r6,248(r1)
+LEHB74:
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag
+LEHE74:
+	b L1585
+L1566:
+	mr r30,r3
+L1546:
+	ld r3,240(r1)
+	ld r4,248(r1)
+	addi r5,r1,114
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,240(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1547
+	bl __ZdlPv
+	b L1547
+L1585:
+	ld r3,240(r1)
+	ld r4,248(r1)
+	addi r5,r1,115
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,240(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1549
+	bl __ZdlPv
+L1549:
+	ld r3,216(r1)
+	ld r4,224(r1)
+	addi r5,r1,117
+	bl __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_
+	ld r3,216(r1)
+	cmpdi cr7,r3,0
+	bne cr7,L1551
+	b L1552
+L1567:
+L1547:
+L1553:
+	ld r3,216(r1)
+	ld r4,224(r1)
+	addi r5,r1,116
+	bl __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_
+	ld r3,216(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1554
+	bl __ZdlPv
+	b L1554
+	.p2align 4,,15
+L1551:
+	bl __ZdlPv
+L1552:
+	mr r3,r18
+	ld r4,304(r1)
+LEHB75:
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E
+LEHE75:
+	b L1586
+L1568:
+L1554:
+L1557:
+	mr r3,r18
+	ld r4,304(r1)
+LEHB76:
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E
+LEHE76:
+	b L1587
+L1563:
+	b L1581
+L1559:
+L1587:
+	mr r3,r30
+L1581:
+LEHB77:
+	bl __Unwind_Resume
+LEHE77:
+L1562:
+	b L1581
+L1560:
+L1583:
+	ld r4,216(r1)
+	ld r5,224(r1)
+	mr r3,r22
+	bl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_
+	ld r2,336(r1)
+	stfs f31,120(r1)
+	cmpd cr7,r21,r2
+	bne cr7,L1478
+L1479:
+	mr r3,r18
+	mr r4,r14
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_
+	mr r30,r3
+	mr r2,r3
+	std r3,336(r1)
+	b L1481
+L1482:
+	mr r4,r14
+	mr r3,r18
+	bl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_
+	mr r4,r3
+	std r3,336(r1)
+	b L1485
+	.p2align 4,,15
+L1572:
+	lwz r10,8(r30)
+L1519:
+	ld r11,256(r1)
+	lfs f0,0(r30)
+	extsw r2,r10
+	stfs f29,164(r1)
+	stw r2,172(r1)
+	cmpd cr7,r9,r11
+	stfs f0,168(r1)
+	bne cr7,L1525
+	b L1588
+L1586:
+	addi r1,r1,576
+	ld r0,16(r1)
+	ld r14,-168(r1)
+	ld r15,-160(r1)
+	ld r16,-152(r1)
+	ld r17,-144(r1)
+	ld r18,-136(r1)
+	ld r19,-128(r1)
+	ld r20,-120(r1)
+	mtlr r0
+	ld r21,-112(r1)
+	ld r22,-104(r1)
+	ld r23,-96(r1)
+	ld r24,-88(r1)
+	ld r25,-80(r1)
+	ld r26,-72(r1)
+	ld r27,-64(r1)
+	ld r28,-56(r1)
+	ld r29,-48(r1)
+	ld r30,-40(r1)
+	ld r31,-32(r1)
+	lfd f29,-24(r1)
+	lfd f30,-16(r1)
+	lfd f31,-8(r1)
+	blr
+LFE10834:
+	.section __DATA,__gcc_except_tab
+GCC_except_table24:
+LLSDA10834:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x4e
+	.set L$set$187,LEHB72-LFB10834
+	.long L$set$187
+	.set L$set$188,LEHE72-LEHB72
+	.long L$set$188
+	.set L$set$189,L1566-LFB10834
+	.long L$set$189
+	.byte	0x0
+	.set L$set$190,LEHB73-LFB10834
+	.long L$set$190
+	.set L$set$191,LEHE73-LEHB73
+	.long L$set$191
+	.set L$set$192,L1564-LFB10834
+	.long L$set$192
+	.byte	0x0
+	.set L$set$193,LEHB74-LFB10834
+	.long L$set$193
+	.set L$set$194,LEHE74-LEHB74
+	.long L$set$194
+	.set L$set$195,L1566-LFB10834
+	.long L$set$195
+	.byte	0x0
+	.set L$set$196,LEHB75-LFB10834
+	.long L$set$196
+	.set L$set$197,LEHE75-LEHB75
+	.long L$set$197
+	.set L$set$198,L1562-LFB10834
+	.long L$set$198
+	.byte	0x0
+	.set L$set$199,LEHB76-LFB10834
+	.long L$set$199
+	.set L$set$200,LEHE76-LEHB76
+	.long L$set$200
+	.set L$set$201,L1563-LFB10834
+	.long L$set$201
+	.byte	0x0
+	.set L$set$202,LEHB77-LFB10834
+	.long L$set$202
+	.set L$set$203,LEHE77-LEHB77
+	.long L$set$203
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+	.weak_definition __ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+	.private_extern __ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+__ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_:
+LFB9803:
+	mflr r0
+LCFI605:
+	std r30,-16(r1)
+LCFI606:
+	mr r30,r3
+	std r0,16(r1)
+LCFI607:
+	stdu r1,-128(r1)
+LCFI608:
+	nop
+	nop
+	lbz r0,33(r3)
+	cmpwi cr7,r0,0
+	beq cr7,L1590
+	ld r3,8(r3)
+	ld r4,16(r30)
+	bl __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_
+	li r0,0
+	stb r0,33(r30)
+	.p2align 4,,15
+L1590:
+	lbz r0,32(r30)
+	cmpwi cr7,r0,0
+	beq cr7,L1592
+	addi r3,r30,8
+	bl __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE
+	li r0,0
+	stb r0,32(r30)
+L1592:
+	addi r1,r1,128
+	li r3,1
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE9803:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+	.weak_definition __ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+	.private_extern __ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+__ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_:
+LFB8870:
+	mflr r0
+LCFI609:
+	std r30,-16(r1)
+LCFI610:
+	std r29,-24(r1)
+LCFI611:
+	mr r30,r3
+	std r0,16(r1)
+LCFI612:
+	stdu r1,-192(r1)
+LCFI613:
+LEHB78:
+	bl __ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+LEHE78:
+	cmpdi cr0,r3,0
+	beq cr0,L1596
+	mr r3,r30
+	bl __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	mr r29,r3
+	mr r3,r30
+	bl __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_
+	xor r29,r3,r29
+	cntlzd r29,r29
+	srdi r29,r29,6
+	b L1598
+	.p2align 4,,15
+L1596:
+	li r29,0
+	std r3,144(r1)
+	stw r3,120(r1)
+	std r3,128(r1)
+	std r3,136(r1)
+	stb r29,152(r1)
+	stb r29,153(r1)
+	mr r4,r30
+	addi r3,r1,120
+LEHB79:
+	bl __ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_
+	lbz r0,153(r1)
+	cmpwi cr7,r0,0
+	beq cr7,L1599
+	ld r3,128(r1)
+	ld r4,136(r1)
+	bl __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_
+	stb r29,153(r1)
+	.p2align 4,,15
+L1599:
+	lbz r0,152(r1)
+	cmpwi cr7,r0,0
+	beq cr7,L1601
+	addi r3,r1,128
+	bl __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE
+	stb r29,152(r1)
+	.p2align 4,,15
+L1601:
+	lbz r0,153(r1)
+	cmpwi cr7,r0,0
+	beq cr7,L1603
+	ld r3,128(r1)
+	ld r4,136(r1)
+	bl __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_
+	stb r29,153(r1)
+	.p2align 4,,15
+L1603:
+	lbz r0,152(r1)
+	cmpwi cr7,r0,0
+	beq cr7,L1605
+	addi r3,r1,128
+	bl __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE
+LEHE79:
+	stb r29,152(r1)
+L1605:
+	ld r2,128(r1)
+	ld r0,136(r1)
+	addi r5,r1,112
+	mr r3,r2
+	mr r4,r0
+	xor r29,r2,r0
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,128(r1)
+	cntlzd r29,r29
+	srdi r29,r29,6
+	cmpdi cr7,r3,0
+	beq cr7,L1598
+	bl __ZdlPv
+	b L1598
+L1612:
+L1608:
+	mr r30,r3
+	ld r4,136(r1)
+	ld r3,128(r1)
+	addi r5,r1,113
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,128(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1609
+	bl __ZdlPv
+L1609:
+	mr r3,r30
+LEHB80:
+	bl __Unwind_Resume
+LEHE80:
+	.p2align 4,,15
+L1598:
+	addi r1,r1,192
+	mr r3,r29
+	ld r0,16(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	blr
+LFE8870:
+	.section __DATA,__gcc_except_tab
+GCC_except_table25:
+LLSDA8870:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x27
+	.set L$set$204,LEHB78-LFB8870
+	.long L$set$204
+	.set L$set$205,LEHE78-LEHB78
+	.long L$set$205
+	.long	0x0
+	.byte	0x0
+	.set L$set$206,LEHB79-LFB8870
+	.long L$set$206
+	.set L$set$207,LEHE79-LEHB79
+	.long L$set$207
+	.set L$set$208,L1612-LFB8870
+	.long L$set$208
+	.byte	0x0
+	.set L$set$209,LEHB80-LFB8870
+	.long L$set$209
+	.set L$set$210,LEHE80-LEHB80
+	.long L$set$210
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev:
+LFB14630:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+LFE14630:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+__ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev:
+LFB9969:
+	mflr r0
+LCFI614:
+	std r31,-8(r1)
+LCFI615:
+	std r29,-24(r1)
+LCFI616:
+	bcl 20,31,"L00000000065$pb"
+"L00000000065$pb":
+	std r30,-16(r1)
+LCFI617:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000065$pb")
+	std r0,16(r1)
+LCFI618:
+	stdu r1,-144(r1)
+LCFI619:
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000065$pb")
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000065$pb")(r9)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000065$pb")(r2)
+	addi r0,r9,16
+	addi r9,r9,56
+	std r0,0(r3)
+	std r9,16(r3)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1614
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB81:
+	bctrl
+LEHE81:
+	cmpdi cr7,r3,0
+	beq cr7,L1614
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1614:
+	addis r2,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000065$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000065$pb")
+	addi r1,r1,144
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000065$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000065$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZNSt9exceptionD2Ev
+L1621:
+	cmpdi cr7,r4,-1
+	beq cr7,L1617
+LEHB82:
+	bl __Unwind_Resume
+L1617:
+	bl ___cxa_call_unexpected
+LEHE82:
+LFE9969:
+	.section __DATA,__gcc_except_tab
+GCC_except_table26:
+	.align 3
+LLSDA9969:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$211,LEHB81-LFB9969
+	.long L$set$211
+	.set L$set$212,LEHE81-LEHB81
+	.long L$set$212
+	.set L$set$213,L1621-LFB9969
+	.long L$set$213
+	.byte	0x1
+	.set L$set$214,LEHB82-LFB9969
+	.long L$set$214
+	.set L$set$215,LEHE82-LEHB82
+	.long L$set$215
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance4drawER6CGRect
+	.weak_definition __ZN17CocoaViewInstance4drawER6CGRect
+	.private_extern __ZN17CocoaViewInstance4drawER6CGRect
+__ZN17CocoaViewInstance4drawER6CGRect:
+LFB8801:
+	mflr r0
+LCFI620:
+	stfd f29,-24(r1)
+LCFI621:
+	stfd f30,-16(r1)
+LCFI622:
+	stfd f31,-8(r1)
+LCFI623:
+	std r20,-120(r1)
+LCFI624:
+	std r21,-112(r1)
+LCFI625:
+	std r22,-104(r1)
+LCFI626:
+	std r0,16(r1)
+LCFI627:
+	std r23,-96(r1)
+LCFI628:
+	std r24,-88(r1)
+LCFI629:
+	std r25,-80(r1)
+LCFI630:
+	std r26,-72(r1)
+LCFI631:
+	std r27,-64(r1)
+LCFI632:
+	std r28,-56(r1)
+LCFI633:
+	std r29,-48(r1)
+LCFI634:
+	std r30,-40(r1)
+LCFI635:
+	std r31,-32(r1)
+LCFI636:
+	stdu r1,-416(r1)
+LCFI637:
+	mfspr r0,256
+	stw r0,292(r1)
+	oris r0,r0,0xc004
+	mtspr 256,r0
+	li r2,0
+	bcl 20,31,"L00000000066$pb"
+"L00000000066$pb":
+	li r0,0
+	mflr r31
+	cmpwi cr7,r30,0
+	stb r2,185(r1)
+	mr r20,r3
+	std r0,176(r1)
+	stw r2,152(r1)
+	std r0,160(r1)
+	std r0,168(r1)
+	stb r2,184(r1)
+	ble cr7,L1623
+	li r26,0
+	li r30,0
+	addi r25,r3,32
+	addi r22,r1,116
+	addi r21,r1,120
+	addi r23,r1,152
+	addi r24,r1,128
+	li r27,0
+	.p2align 4,,15
+L1625:
+	lfdx f0,r30,r29
+	li r28,1
+	add r29,r29,r30
+	mr r3,r25
+	mr r4,r22
+	stw r28,116(r1)
+	frsp f29,f0
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	lfd f12,24(r29)
+	lfdx f0,r30,r29
+	mr r3,r25
+	mr r4,r21
+	lfd f13,16(r29)
+	lfd f11,8(r29)
+	stw r28,120(r1)
+	fsub f1,f1,f12
+	fadd f0,f0,f13
+	fsub f1,f1,f11
+	frsp f31,f0
+	frsp f30,f1
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	lfd f0,8(r29)
+	fcmpu cr7,f29,f31
+	stw r27,128(r1)
+	stw r27,132(r1)
+	stw r27,136(r1)
+	stw r27,140(r1)
+	fsub f1,f1,f0
+	frsp f1,f1
+	bng cr7,L1626
+	fmr f12,f31
+	fmr f0,f29
+	b L1629
+	.p2align 4,,15
+L1626:
+	fmr f12,f29
+	fmr f0,f31
+L1629:
+	fcmpu cr7,f30,f1
+	fmr f13,f30
+	bng cr7,L1633
+	fmr f13,f1
+	fmr f1,f30
+L1633:
+	stfs f12,128(r1)
+	stfs f0,132(r1)
+	mr r3,r23
+	mr r4,r24
+	stfs f13,136(r1)
+	stfs f1,140(r1)
+LEHB83:
+	bl __ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_
+	addi r0,r26,1
+	addi r30,r30,32
+	extsw r26,r0
+	cmpw cr7,r26,r30
+	bne cr7,L1625
+L1623:
+	addis r4,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_13-"L00000000066$pb")
+	addis r3,r31,ha16(L_ZL30_OBJC_CLASSLIST_REFERENCES_$_1-"L00000000066$pb")
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_13-"L00000000066$pb")(r4)
+	ld r3,lo16(L_ZL30_OBJC_CLASSLIST_REFERENCES_$_1-"L00000000066$pb")(r3)
+	la r4,lo16(L_ZL20_OBJC_MESSAGE_REF_13-"L00000000066$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	addis r4,r31,ha16(L_ZL20_OBJC_MESSAGE_REF_14-"L00000000066$pb")
+	ld r0,lo16(L_ZL20_OBJC_MESSAGE_REF_14-"L00000000066$pb")(r4)
+	la r4,lo16(L_ZL20_OBJC_MESSAGE_REF_14-"L00000000066$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	mr r29,r3
+	bl _CGContextSaveGState
+	li r0,1
+	addi r3,r20,32
+	addi r4,r1,124
+	stw r0,124(r1)
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	addis r2,r31,ha16(LC11-"L00000000066$pb")
+	addis r9,r31,ha16(LC13-"L00000000066$pb")
+	stfd f1,280(r1)
+	li r0,240
+	mr r3,r29
+	lfs f12,lo16(LC11-"L00000000066$pb")(r2)
+	lfs f13,lo16(LC13-"L00000000066$pb")(r9)
+	addis r2,r31,ha16(LC4-"L00000000066$pb")
+	lfd f0,lo16(LC4-"L00000000066$pb")(r2)
+	li r2,272
+	stfd f13,240(r1)
+	stfd f0,248(r1)
+	stfd f12,264(r1)
+	stfd f0,272(r1)
+	stfd f0,256(r1)
+	lvx v0,r1,r0
+	li r0,256
+	lvx v13,r1,r2
+	li r2,192
+	lvx v1,r1,r0
+	li r0,224
+	stvx v0,r1,r2
+	li r2,208
+	stvx v13,r1,r0
+	stvx v1,r1,r2
+	lfd f1,192(r1)
+	lfd f2,200(r1)
+	lfd f5,224(r1)
+	lfd f6,232(r1)
+	lfd f3,208(r1)
+	lfd f4,216(r1)
+	bl _CGContextConcatCTM
+	addi r30,r1,128
+	mr r4,r29
+	mr r3,r30
+	bl __ZN8Fielding14GContextQuartzC1EP9CGContext
+	ld r3,16(r20)
+	mr r4,r30
+	addi r5,r1,152
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	mr r3,r29
+	bl _CGContextRestoreGState
+LEHE83:
+	b L1644
+L1641:
+L1635:
+	mr r30,r3
+	ld r4,168(r1)
+	ld r3,160(r1)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,160(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1636
+	bl __ZdlPv
+L1636:
+	mr r3,r30
+LEHB84:
+	bl __Unwind_Resume
+LEHE84:
+L1644:
+	ld r3,160(r1)
+	ld r4,168(r1)
+	addi r5,r1,113
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,160(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1640
+	bl __ZdlPv
+L1640:
+	lwz r12,292(r1)
+	mtspr 256,r12
+	addi r1,r1,416
+	ld r0,16(r1)
+	ld r20,-120(r1)
+	ld r21,-112(r1)
+	ld r22,-104(r1)
+	ld r23,-96(r1)
+	ld r24,-88(r1)
+	ld r25,-80(r1)
+	ld r26,-72(r1)
+	mtlr r0
+	ld r27,-64(r1)
+	ld r28,-56(r1)
+	ld r29,-48(r1)
+	ld r30,-40(r1)
+	ld r31,-32(r1)
+	lfd f29,-24(r1)
+	lfd f30,-16(r1)
+	lfd f31,-8(r1)
+	blr
+LFE8801:
+	.section __DATA,__gcc_except_tab
+GCC_except_table27:
+LLSDA8801:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$216,LEHB83-LFB8801
+	.long L$set$216
+	.set L$set$217,LEHE83-LEHB83
+	.long L$set$217
+	.set L$set$218,L1641-LFB8801
+	.long L$set$218
+	.byte	0x0
+	.set L$set$219,LEHB84-LFB8801
+	.long L$set$219
+	.set L$set$220,LEHE84-LEHB84
+	.long L$set$220
+	.long	0x0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+__ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev:
+LFB14631:
+	addi r3,r3,-48
+	b __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+LFE14631:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+__ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev:
+LFB14632:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+LFE14632:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev:
+LFB10169:
+	mflr r0
+LCFI638:
+	std r31,-8(r1)
+LCFI639:
+	std r30,-16(r1)
+LCFI640:
+	bcl 20,31,"L00000000067$pb"
+"L00000000067$pb":
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000067$pb")
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000067$pb")
+	std r0,16(r1)
+LCFI641:
+	stdu r1,-128(r1)
+LCFI642:
+	la r2,lo16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000067$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000067$pb")(r9)
+	addi r0,r2,48
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r3)
+	std r0,40(r3)
+	std r9,48(r3)
+	addi r3,r3,40
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000067$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000067$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1647
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB85:
+	bctrl
+LEHE85:
+	cmpdi cr7,r3,0
+	beq cr7,L1647
+	li r0,0
+	std r0,8(r30)
+	b L1647
+L1653:
+	cmpdi cr7,r4,-1
+	beq cr7,L1650
+LEHB86:
+	bl __Unwind_Resume
+L1650:
+	bl ___cxa_call_unexpected
+LEHE86:
+	.p2align 4,,15
+L1647:
+	addi r1,r1,128
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+LFE10169:
+	.section __DATA,__gcc_except_tab
+GCC_except_table28:
+	.align 3
+LLSDA10169:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$221,LEHB85-LFB10169
+	.long L$set$221
+	.set L$set$222,LEHE85-LEHB85
+	.long L$set$222
+	.set L$set$223,L1653-LFB10169
+	.long L$set$223
+	.byte	0x1
+	.set L$set$224,LEHB86-LFB10169
+	.long L$set$224
+	.set L$set$225,LEHE86-LEHB86
+	.long L$set$225
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev:
+LFB14633:
+	addi r3,r3,-56
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+LFE14633:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev:
+LFB14634:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+LFE14634:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev:
+LFB9985:
+	mflr r0
+LCFI643:
+	std r31,-8(r1)
+LCFI644:
+	std r29,-24(r1)
+LCFI645:
+	bcl 20,31,"L00000000068$pb"
+"L00000000068$pb":
+	std r30,-16(r1)
+LCFI646:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000068$pb")
+	std r0,16(r1)
+LCFI647:
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000068$pb")
+	stdu r1,-144(r1)
+LCFI648:
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000068$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000068$pb")(r9)
+	addi r2,r2,16
+	addi r0,r9,16
+	addi r9,r9,56
+	std r2,56(r3)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000068$pb")
+	std r0,0(r3)
+	std r9,16(r3)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000068$pb")(r2)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1656
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB87:
+	bctrl
+LEHE87:
+	cmpdi cr7,r3,0
+	beq cr7,L1656
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1656:
+	addis r2,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000068$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000068$pb")
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000068$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000068$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	bl __ZNSt9exceptionD2Ev
+	addi r1,r1,144
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+L1663:
+	cmpdi cr7,r4,-1
+	beq cr7,L1660
+LEHB88:
+	bl __Unwind_Resume
+L1660:
+	bl ___cxa_call_unexpected
+LEHE88:
+LFE9985:
+	.section __DATA,__gcc_except_tab
+GCC_except_table29:
+	.align 3
+LLSDA9985:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$226,LEHB87-LFB9985
+	.long L$set$226
+	.set L$set$227,LEHE87-LEHB87
+	.long L$set$227
+	.set L$set$228,L1663-LFB9985
+	.long L$set$228
+	.byte	0x1
+	.set L$set$229,LEHB88-LFB9985
+	.long L$set$229
+	.set L$set$230,LEHE88-LEHB88
+	.long L$set$230
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa8setChildEPNS_4ViewE
+	.private_extern __ZN8Fielding13HostViewCocoa8setChildEPNS_4ViewE
+__ZN8Fielding13HostViewCocoa8setChildEPNS_4ViewE:
+LFB8818:
+	mflr r0
+LCFI649:
+	std r25,-112(r1)
+LCFI650:
+	std r27,-96(r1)
+LCFI651:
+	mfcr r2
+LCFI652:
+	bl saveFP+44 ; save f25-f31
+LCFI653:
+	std r31,-64(r1)
+LCFI654:
+	std r22,-136(r1)
+LCFI655:
+	mr r27,r3
+	bcl 20,31,"L00000000069$pb"
+"L00000000069$pb":
+	std r23,-128(r1)
+LCFI656:
+	std r24,-120(r1)
+LCFI657:
+	mflr r31
+	std r26,-104(r1)
+LCFI658:
+	std r28,-88(r1)
+LCFI659:
+	stw r2,8(r1)
+LCFI660:
+	std r29,-80(r1)
+LCFI661:
+	std r30,-72(r1)
+LCFI662:
+	stdu r1,-560(r1)
+LCFI663:
+	mr r25,r4
+	ld r3,160(r3)
+	cmpdi cr7,r3,0
+	beq cr7,L1665
+	ld r29,16(r3)
+	cmpd cr7,r29,r4
+	beq cr7,L1730
+	ld r2,0(r3)
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+LEHB89:
+	bctrl
+	li r0,0
+	mr r4,r29
+	mr r3,r27
+	li r5,0
+	std r0,160(r27)
+	bl __ZN8Fielding8HostView12setSuperViewEPNS_4ViewEPS0_
+L1665:
+	cmpdi cr7,r25,0
+	beq cr7,L1730
+	addi r3,r1,136
+	mr r4,r27
+	mr r5,r25
+	li r28,0
+	li r29,0
+	bl __ZN8Fielding8HostView11frameOfViewERKNS_4ViewE
+	li r3,208
+	bl __Znwm
+LEHE89:
+	addis r2,r31,ha16(__ZTV17CocoaViewInstance-"L00000000069$pb")
+	li r0,0
+	ld r24,168(r27)
+	std r27,8(r3)
+	std r25,16(r3)
+	mr r30,r3
+	stw r0,44(r3)
+	stw r0,32(r3)
+	stw r0,36(r3)
+	stw r0,40(r3)
+	std r28,24(r3)
+	la r2,lo16(__ZTV17CocoaViewInstance-"L00000000069$pb")(r2)
+	addi r2,r2,16
+	std r2,0(r3)
+	lfs f0,136(r1)
+	stfs f0,32(r3)
+	lfs f13,140(r1)
+	stfs f13,36(r3)
+	lfs f0,144(r1)
+	stfs f0,40(r3)
+	lfs f13,148(r1)
+	stw r28,48(r3)
+	std r28,56(r3)
+	std r28,64(r3)
+	std r28,72(r3)
+	stb r29,80(r3)
+	stb r29,81(r3)
+	stfs f13,44(r3)
+LEHB90:
+	bl _CFRunLoopGetCurrent
+LEHE90:
+	std r3,88(r30)
+	stb r29,104(r30)
+	addi r23,r30,144
+	li r4,0
+	std r28,96(r30)
+	std r28,120(r30)
+	std r28,128(r30)
+	std r28,136(r30)
+	mr r3,r23
+LEHB91:
+	bl _pthread_mutex_init
+LEHE91:
+	mr. r26,r3
+	beq cr0,L1670
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000069$pb")
+	addis r29,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000069$pb")
+	std r28,280(r1)
+	stw r28,160(r1)
+	stw r28,248(r1)
+	std r28,264(r1)
+	ld r29,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000069$pb")(r29)
+	std r28,272(r1)
+	la r2,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000069$pb")(r2)
+	li r0,-1
+	li r3,64
+	addi r9,r2,56
+	addi r26,r2,16
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000069$pb")
+	addi r29,r29,16
+	stw r0,288(r1)
+	std r9,256(r1)
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000069$pb")
+	std r26,240(r1)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000069$pb")(r2)
+	std r29,152(r1)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000069$pb")(r9)
+	addi r27,r2,16
+	addi r25,r9,16
+	bl ___cxa_allocate_exception
+	lwz r0,248(r1)
+	mr r28,r3
+	ld r3,264(r1)
+	std r29,0(r28)
+	std r27,16(r28)
+	stw r0,8(r28)
+	cmpdi cr7,r3,0
+	std r3,24(r28)
+	beq cr7,L1672
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB92:
+	bctrl
+LEHE92:
+L1672:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000069$pb")
+	ld r7,272(r1)
+	ld r8,280(r1)
+	lwz r10,288(r1)
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000069$pb")
+	li r29,0
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000069$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000069$pb")(r9)
+	addi r0,r2,104
+	addi r11,r2,16
+	std r7,32(r28)
+	std r8,40(r28)
+	stw r10,48(r28)
+	std r0,56(r28)
+	addi r2,r2,72
+	std r11,0(r28)
+	std r2,16(r28)
+	addi r24,r9,16
+	ld r4,264(r1)
+	cmpdi cr7,r4,0
+	bne cr7,L1674
+	mcrf cr4,cr7
+	b L1675
+L1739:
+L1676:
+	std r25,0(r28)
+	mr r22,r3
+	mr r3,r28
+	bl __ZNSt9exceptionD2Ev
+	b L1699
+	.p2align 4,,15
+L1674:
+	ld r2,0(r4)
+	addi r3,r1,128
+	cmpdi cr4,r29,0
+	ld r0,40(r2)
+	mtctr r0
+	mr r12,r0
+LEHB93:
+	bctrl
+LEHE93:
+	ld r29,128(r1)
+	cmpdi cr4,r29,0
+	beq cr4,L1675
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB94:
+	bctrl
+LEHE94:
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB95:
+	bctrl
+LEHE95:
+	b L1675
+L1737:
+L1680:
+	ld r2,0(r29)
+	mr r22,r3
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L1688
+	.p2align 4,,15
+L1675:
+	ld r3,24(r28)
+	ld r0,280(r1)
+	lwz r2,288(r1)
+	cmpdi cr7,r3,0
+	std r0,40(r28)
+	ld r0,272(r1)
+	stw r2,48(r28)
+	std r0,32(r28)
+	beq cr7,L1681
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB96:
+	bctrl
+	cmpdi cr7,r3,0
+	beq cr7,L1681
+	li r0,0
+	std r0,24(r28)
+	.p2align 4,,15
+L1681:
+	std r29,24(r28)
+	beq cr4,L1686
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE96:
+	beq- cr4,L1686
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB97:
+	bctrl
+LEHE97:
+	b L1686
+L1738:
+	mr r22,r3
+L1688:
+	beq cr4,L1691
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L1691
+L1740:
+	mr r22,r3
+L1691:
+L1741:
+L1693:
+	std r24,56(r28)
+	std r26,0(r28)
+	addi r29,r28,16
+	std r27,16(r28)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1694
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB98:
+	bctrl
+LEHE98:
+	cmpdi cr7,r3,0
+	beq cr7,L1694
+	li r0,0
+	std r0,8(r29)
+	b L1694
+L1736:
+	b L1754
+L1698:
+L1694:
+	std r25,0(r28)
+	mr r3,r28
+	bl __ZNSt9exceptionD2Ev
+L1742:
+L1699:
+L1743:
+L1700:
+	mr r3,r28
+	bl ___cxa_free_exception
+	ld r3,264(r1)
+	std r26,240(r1)
+	std r27,256(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1701
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB99:
+	bctrl
+LEHE99:
+	cmpdi cr7,r3,0
+	beq cr7,L1701
+	li r0,0
+	std r0,264(r1)
+L1701:
+	addi r3,r1,240
+	std r25,240(r1)
+	bl __ZNSt9exceptionD2Ev
+	b L1711
+L1735:
+	b L1754
+L1705:
+	.p2align 4,,15
+L1686:
+	ld r3,264(r1)
+	std r26,240(r1)
+	std r27,256(r1)
+	cmpdi cr7,r3,0
+	beq- cr7,L1706
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB100:
+	bctrl
+LEHE100:
+	cmpdi cr7,r3,0
+	beq cr7,L1706
+	li r0,0
+	std r0,264(r1)
+L1706:
+	addi r3,r1,240
+	std r25,240(r1)
+	bl __ZNSt9exceptionD2Ev
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000069$pb")
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev$non_lazy_ptr-"L00000000069$pb")
+	mr r3,r28
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE-"L00000000069$pb")(r4)
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev$non_lazy_ptr-"L00000000069$pb")(r5)
+LEHB101:
+	bl ___cxa_throw
+LEHE101:
+L1734:
+L1754:
+	cmpdi cr7,r4,-1
+	bne cr7,L1752
+L1710:
+LEHB102:
+	bl ___cxa_call_unexpected
+LEHE102:
+L1744:
+	mr r22,r3
+L1711:
+	addi r3,r1,152
+	std r25,152(r1)
+	bl __ZNSt9exceptionD2Ev
+	b L1718
+	.p2align 4,,15
+L1670:
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_0-"L00000000069$pb")
+	mr r3,r24
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_0-"L00000000069$pb")(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_0-"L00000000069$pb")(r4)
+	mtctr r0
+	mr r12,r0
+LEHB103:
+	bctrl
+	stfd f2,392(r1)
+	stfd f3,400(r1)
+	addi r29,r30,32
+	li r28,1
+	stfd f4,408(r1)
+	stfd f1,384(r1)
+	mr r3,r29
+	ld r0,392(r1)
+	ld r2,400(r1)
+	std r0,208(r1)
+	std r2,216(r1)
+	ld r0,408(r1)
+	ld r2,384(r1)
+	std r0,224(r1)
+	std r2,200(r1)
+	bl __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+	lfd f31,224(r1)
+	stw r28,116(r1)
+	mr r3,r29
+	fmr f25,f1
+	addi r4,r1,116
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	mr r3,r29
+	addi r4,r1,120
+	stw r26,120(r1)
+	fsub f27,f31,f1
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	mr r3,r29
+	addi r4,r1,124
+	stw r28,124(r1)
+	fmr f28,f1
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_1-"L00000000069$pb")
+	addis r3,r31,ha16(L_ZL30_OBJC_CLASSLIST_REFERENCES_$_0-"L00000000069$pb")
+	fmr f29,f1
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_1-"L00000000069$pb")(r4)
+	ld r3,lo16(L_ZL30_OBJC_CLASSLIST_REFERENCES_$_0-"L00000000069$pb")(r3)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_1-"L00000000069$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_2-"L00000000069$pb")
+	stfd f29,192(r1)
+	stfd f28,184(r1)
+	stfd f25,168(r1)
+	stfd f27,176(r1)
+	mr r9,r30
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_2-"L00000000069$pb")(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_2-"L00000000069$pb")(r4)
+	fmr f1,f25
+	fmr f2,f27
+	fmr f3,f28
+	fmr f4,f29
+	mtctr r0
+	mr r12,r0
+	bctrl
+	std r3,24(r30)
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_3-"L00000000069$pb")
+	mr r5,r3
+	mr r3,r24
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_3-"L00000000069$pb")(r2)
+	ld r2,lo16(L_ZL19_OBJC_MESSAGE_REF_3-"L00000000069$pb")(r2)
+	mtctr r2
+	mr r12,r2
+	bctrl
+	addis r4,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_4-"L00000000069$pb")
+	ld r3,24(r30)
+	ld r0,lo16(L_ZL19_OBJC_MESSAGE_REF_4-"L00000000069$pb")(r4)
+	la r4,lo16(L_ZL19_OBJC_MESSAGE_REF_4-"L00000000069$pb")(r4)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	addi r29,r1,296
+	li r4,0
+	li r5,80
+	mr r3,r29
+	bl _memset
+	addis r2,r31,ha16(L_kCFAllocatorDefault$non_lazy_ptr-"L00000000069$pb")
+	addis r9,r31,ha16(L__ZN17CocoaViewInstance17runLoopFireStaticEPv$non_lazy_ptr-"L00000000069$pb")
+	std r30,304(r1)
+	mr r5,r29
+	ld r2,lo16(L_kCFAllocatorDefault$non_lazy_ptr-"L00000000069$pb")(r2)
+	ld r9,lo16(L__ZN17CocoaViewInstance17runLoopFireStaticEPv$non_lazy_ptr-"L00000000069$pb")(r9)
+	li r4,0
+	ld r29,0(r2)
+	std r9,368(r1)
+	mr r3,r29
+	bl _CFRunLoopSourceCreate
+	cmpdi cr7,r3,0
+	std r3,112(r30)
+	beq cr7,L1713
+	addis r2,r31,ha16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000069$pb")
+	mr r4,r3
+	ld r3,88(r30)
+	ld r2,lo16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000069$pb")(r2)
+	ld r5,0(r2)
+	bl _CFRunLoopAddSource
+LEHE103:
+	b L1713
+L1745:
+	mr r22,r3
+L1715:
+L1716:
+	mr r3,r23
+	bl _pthread_mutex_destroy
+	cmpwi cr7,r3,4
+	beq cr7,L1716
+	b L1718
+L1746:
+	mr r22,r3
+L1718:
+	ld r3,120(r30)
+	ld r4,128(r30)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,120(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1721
+	bl __ZdlPv
+	b L1721
+L1747:
+	mr r22,r3
+L1721:
+	addi r29,r30,48
+	addi r5,r1,113
+	ld r3,8(r29)
+	ld r4,16(r29)
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1722
+	bl __ZdlPv
+L1722:
+L1748:
+L1724:
+L1749:
+L1725:
+	mr r3,r30
+	bl __ZN18CocoaViewInterfaceD2Ev
+	mr r3,r30
+	bl __ZdlPv
+	mr r3,r22
+L1752:
+LEHB104:
+	bl __Unwind_Resume
+	.p2align 4,,15
+L1713:
+	std r30,160(r27)
+	lfd f31,184(r27)
+	ld r3,96(r30)
+	cmpdi cr7,r3,0
+	beq cr7,L1726
+	bl _CFRunLoopTimerInvalidate
+	ld r3,96(r30)
+	bl _CFRelease
+	li r0,0
+	std r0,96(r30)
+L1726:
+	li r0,0
+	std r30,208(r1)
+	std r0,232(r1)
+	std r0,200(r1)
+	std r0,216(r1)
+	std r0,224(r1)
+	bl _CFAbsoluteTimeGetCurrent
+	fmr f2,f31
+	fadd f1,f31,f1
+	addis r8,r31,ha16(L__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv$non_lazy_ptr-"L00000000069$pb")
+	mr r3,r29
+	addi r9,r1,200
+	li r6,0
+	ld r8,lo16(L__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv$non_lazy_ptr-"L00000000069$pb")(r8)
+	li r7,0
+	bl _CFRunLoopTimerCreate
+	cmpdi cr7,r3,0
+	mr r4,r3
+	std r3,96(r30)
+	beq cr7,L1728
+	addis r2,r31,ha16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000069$pb")
+	ld r3,88(r30)
+	ld r2,lo16(L_kCFRunLoopCommonModes$non_lazy_ptr-"L00000000069$pb")(r2)
+	ld r5,0(r2)
+	bl _CFRunLoopAddTimer
+L1728:
+	mr r3,r27
+	mr r4,r25
+	mr r5,r27
+	bl __ZN8Fielding8HostView12setSuperViewEPNS_4ViewEPS0_
+LEHE104:
+L1730:
+	addi r1,r1,560
+	lwz r11,8(r1)
+	ld r0,16(r1)
+	ld r22,-136(r1)
+	ld r23,-128(r1)
+	ld r24,-120(r1)
+	ld r25,-112(r1)
+	ld r26,-104(r1)
+	ld r27,-96(r1)
+	mtlr r0
+	ld r28,-88(r1)
+	ld r29,-80(r1)
+	mtcrf 8,r11
+	ld r30,-72(r1)
+	ld r31,-64(r1)
+	b restFP+44 ; restore f25-f31
+LFE8818:
+	.section __DATA,__gcc_except_tab
+GCC_except_table30:
+	.align 3
+LLSDA8818:
+	.byte	0xff
+	.byte	0x0
+	.byte	0xdc,0x1
+	.byte	0x3
+	.byte	0xd0,0x1
+	.set L$set$231,LEHB89-LFB8818
+	.long L$set$231
+	.set L$set$232,LEHE89-LEHB89
+	.long L$set$232
+	.long	0x0
+	.byte	0x0
+	.set L$set$233,LEHB90-LFB8818
+	.long L$set$233
+	.set L$set$234,LEHE90-LEHB90
+	.long L$set$234
+	.set L$set$235,L1747-LFB8818
+	.long L$set$235
+	.byte	0x0
+	.set L$set$236,LEHB91-LFB8818
+	.long L$set$236
+	.set L$set$237,LEHE91-LEHB91
+	.long L$set$237
+	.set L$set$238,L1746-LFB8818
+	.long L$set$238
+	.byte	0x0
+	.set L$set$239,LEHB92-LFB8818
+	.long L$set$239
+	.set L$set$240,LEHE92-LEHB92
+	.long L$set$240
+	.set L$set$241,L1739-LFB8818
+	.long L$set$241
+	.byte	0x0
+	.set L$set$242,LEHB93-LFB8818
+	.long L$set$242
+	.set L$set$243,LEHE93-LEHB93
+	.long L$set$243
+	.set L$set$244,L1738-LFB8818
+	.long L$set$244
+	.byte	0x0
+	.set L$set$245,LEHB94-LFB8818
+	.long L$set$245
+	.set L$set$246,LEHE94-LEHB94
+	.long L$set$246
+	.set L$set$247,L1737-LFB8818
+	.long L$set$247
+	.byte	0x0
+	.set L$set$248,LEHB95-LFB8818
+	.long L$set$248
+	.set L$set$249,LEHE95-LEHB95
+	.long L$set$249
+	.set L$set$250,L1738-LFB8818
+	.long L$set$250
+	.byte	0x0
+	.set L$set$251,LEHB96-LFB8818
+	.long L$set$251
+	.set L$set$252,LEHE96-LEHB96
+	.long L$set$252
+	.set L$set$253,L1738-LFB8818
+	.long L$set$253
+	.byte	0x0
+	.set L$set$254,LEHB97-LFB8818
+	.long L$set$254
+	.set L$set$255,LEHE97-LEHB97
+	.long L$set$255
+	.set L$set$256,L1740-LFB8818
+	.long L$set$256
+	.byte	0x0
+	.set L$set$257,LEHB98-LFB8818
+	.long L$set$257
+	.set L$set$258,LEHE98-LEHB98
+	.long L$set$258
+	.set L$set$259,L1736-LFB8818
+	.long L$set$259
+	.byte	0x1
+	.set L$set$260,LEHB99-LFB8818
+	.long L$set$260
+	.set L$set$261,LEHE99-LEHB99
+	.long L$set$261
+	.set L$set$262,L1735-LFB8818
+	.long L$set$262
+	.byte	0x1
+	.set L$set$263,LEHB100-LFB8818
+	.long L$set$263
+	.set L$set$264,LEHE100-LEHB100
+	.long L$set$264
+	.set L$set$265,L1734-LFB8818
+	.long L$set$265
+	.byte	0x1
+	.set L$set$266,LEHB101-LFB8818
+	.long L$set$266
+	.set L$set$267,LEHE101-LEHB101
+	.long L$set$267
+	.set L$set$268,L1744-LFB8818
+	.long L$set$268
+	.byte	0x0
+	.set L$set$269,LEHB102-LFB8818
+	.long L$set$269
+	.set L$set$270,LEHE102-LEHB102
+	.long L$set$270
+	.long	0x0
+	.byte	0x0
+	.set L$set$271,LEHB103-LFB8818
+	.long L$set$271
+	.set L$set$272,LEHE103-LEHB103
+	.long L$set$272
+	.set L$set$273,L1745-LFB8818
+	.long L$set$273
+	.byte	0x0
+	.set L$set$274,LEHB104-LFB8818
+	.long L$set$274
+	.set L$set$275,LEHE104-LEHB104
+	.long L$set$275
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.text
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev:
+LFB14635:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+LFE14635:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+__ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev:
+LFB9979:
+	mflr r0
+LCFI664:
+	std r31,-8(r1)
+LCFI665:
+	std r29,-24(r1)
+LCFI666:
+	bcl 20,31,"L00000000070$pb"
+"L00000000070$pb":
+	std r30,-16(r1)
+LCFI667:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000070$pb")
+	std r0,16(r1)
+LCFI668:
+	stdu r1,-144(r1)
+LCFI669:
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000070$pb")
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000070$pb")(r9)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000070$pb")(r2)
+	addi r0,r9,16
+	addi r9,r9,56
+	std r0,0(r3)
+	std r9,16(r3)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1757
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB105:
+	bctrl
+LEHE105:
+	cmpdi cr7,r3,0
+	beq cr7,L1757
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1757:
+	addis r2,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000070$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000070$pb")
+	addi r1,r1,144
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000070$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000070$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZNSt9exceptionD2Ev
+L1764:
+	cmpdi cr7,r4,-1
+	beq cr7,L1760
+LEHB106:
+	bl __Unwind_Resume
+L1760:
+	bl ___cxa_call_unexpected
+LEHE106:
+LFE9979:
+	.section __DATA,__gcc_except_tab
+GCC_except_table31:
+	.align 3
+LLSDA9979:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$276,LEHB105-LFB9979
+	.long L$set$276
+	.set L$set$277,LEHE105-LEHB105
+	.long L$set$277
+	.set L$set$278,L1764-LFB9979
+	.long L$set$278
+	.byte	0x1
+	.set L$set$279,LEHB106-LFB9979
+	.long L$set$279
+	.set L$set$280,LEHE106-LEHB106
+	.long L$set$280
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+__ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev:
+LFB14636:
+	addi r3,r3,-48
+	b __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+LFE14636:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+__ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev:
+LFB14637:
+	addi r3,r3,-40
+	b __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+LFE14637:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev:
+LFB10156:
+	mflr r0
+LCFI670:
+	std r31,-8(r1)
+LCFI671:
+	std r30,-16(r1)
+LCFI672:
+	bcl 20,31,"L00000000071$pb"
+"L00000000071$pb":
+	mr r30,r3
+	mflr r31
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000071$pb")
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000071$pb")
+	std r0,16(r1)
+LCFI673:
+	stdu r1,-128(r1)
+LCFI674:
+	la r2,lo16(__ZTVN5boost16exception_detail10bad_alloc_E-"L00000000071$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000071$pb")(r9)
+	addi r0,r2,48
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r3)
+	std r0,40(r3)
+	std r9,48(r3)
+	addi r3,r3,40
+	bl __ZNSt9bad_allocD2Ev
+	ld r3,8(r30)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000071$pb")
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000071$pb")(r2)
+	cmpdi cr7,r3,0
+	addi r2,r2,16
+	std r2,0(r30)
+	beq cr7,L1767
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB107:
+	bctrl
+LEHE107:
+	cmpdi cr7,r3,0
+	beq cr7,L1767
+	li r0,0
+	std r0,8(r30)
+	b L1767
+L1773:
+	cmpdi cr7,r4,-1
+	beq cr7,L1770
+LEHB108:
+	bl __Unwind_Resume
+L1770:
+	bl ___cxa_call_unexpected
+LEHE108:
+	.p2align 4,,15
+L1767:
+	addi r1,r1,128
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+LFE10156:
+	.section __DATA,__gcc_except_tab
+GCC_except_table32:
+	.align 3
+LLSDA10156:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$281,LEHB107-LFB10156
+	.long L$set$281
+	.set L$set$282,LEHE107-LEHB107
+	.long L$set$282
+	.set L$set$283,L1773-LFB10156
+	.long L$set$283
+	.byte	0x1
+	.set L$set$284,LEHB108-LFB10156
+	.long L$set$284
+	.set L$set$285,LEHE108-LEHB108
+	.long L$set$285
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev:
+LFB14638:
+	addi r3,r3,-56
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+LFE14638:
+	.align 2
+	.p2align 4,,15
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev:
+LFB14639:
+	addi r3,r3,-16
+	b __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+LFE14639:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev:
+LFB9975:
+	mflr r0
+LCFI675:
+	std r31,-8(r1)
+LCFI676:
+	std r29,-24(r1)
+LCFI677:
+	bcl 20,31,"L00000000072$pb"
+"L00000000072$pb":
+	std r30,-16(r1)
+LCFI678:
+	addi r29,r3,16
+	mr r30,r3
+	mflr r31
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000072$pb")
+	std r0,16(r1)
+LCFI679:
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000072$pb")
+	stdu r1,-144(r1)
+LCFI680:
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000072$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE-"L00000000072$pb")(r9)
+	addi r2,r2,16
+	addi r0,r9,16
+	addi r9,r9,56
+	std r2,56(r3)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000072$pb")
+	std r0,0(r3)
+	std r9,16(r3)
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000072$pb")(r2)
+	addi r2,r2,16
+	std r2,16(r3)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L1776
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB109:
+	bctrl
+LEHE109:
+	cmpdi cr7,r3,0
+	beq cr7,L1776
+	li r0,0
+	std r0,8(r29)
+	.p2align 4,,15
+L1776:
+	addis r2,r31,ha16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000072$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000072$pb")
+	mr r3,r30
+	ld r2,lo16(L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr-"L00000000072$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000072$pb")(r9)
+	addi r2,r2,16
+	addi r9,r9,16
+	std r2,0(r30)
+	std r9,0(r30)
+	bl __ZNSt9exceptionD2Ev
+	addi r1,r1,144
+	mr r3,r30
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	mtlr r0
+	b __ZdlPv
+L1783:
+	cmpdi cr7,r4,-1
+	beq cr7,L1780
+LEHB110:
+	bl __Unwind_Resume
+L1780:
+	bl ___cxa_call_unexpected
+LEHE110:
+LFE9975:
+	.section __DATA,__gcc_except_tab
+GCC_except_table33:
+	.align 3
+LLSDA9975:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x25
+	.byte	0x3
+	.byte	0x1a
+	.set L$set$286,LEHB109-LFB9975
+	.long L$set$286
+	.set L$set$287,LEHE109-LEHB109
+	.long L$set$287
+	.set L$set$288,L1783-LFB9975
+	.long L$set$288
+	.byte	0x1
+	.set L$set$289,LEHB110-LFB9975
+	.long L$set$289
+	.set L$set$290,LEHE110-LEHB110
+	.long L$set$290
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv
+	.weak_definition __ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv
+	.private_extern __ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv
+__ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv:
+LFB9369:
+L1859:
+L1791:
+L1860:
+L1799:
+L1861:
+L1802:
+L1862:
+L1804:
+L1858:
+L1808:
+	mflr r0
+LCFI681:
+	std r20,-96(r1)
+LCFI682:
+	std r21,-88(r1)
+LCFI683:
+	std r22,-80(r1)
+LCFI684:
+	std r23,-72(r1)
+LCFI685:
+	bcl 20,31,"L00000000073$pb"
+"L00000000073$pb":
+	std r24,-64(r1)
+LCFI686:
+	std r25,-56(r1)
+LCFI687:
+	std r27,-40(r1)
+LCFI688:
+	std r28,-32(r1)
+LCFI689:
+	std r30,-16(r1)
+LCFI690:
+	std r31,-8(r1)
+LCFI691:
+	mflr r31
+	std r0,16(r1)
+LCFI692:
+	std r19,-104(r1)
+LCFI693:
+	std r26,-48(r1)
+LCFI694:
+	std r29,-24(r1)
+LCFI695:
+	stdu r1,-368(r1)
+LCFI696:
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000073$pb")
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000073$pb")
+	la r9,lo16(__ZTVN5boost16exception_detail14bad_exception_E-"L00000000073$pb")(r9)
+	addis r11,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000073$pb")
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE-"L00000000073$pb")(r2)
+	li r0,0
+	addi r22,r9,48
+	addi r23,r9,16
+	addis r9,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000073$pb")
+	addi r27,r2,104
+	addi r28,r2,16
+	addi r30,r2,64
+	ld r9,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000073$pb")(r9)
+	addis r2,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE19__PRETTY_FUNCTION__-"L00000000073$pb")
+	li r10,-1
+	la r11,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000073$pb")(r11)
+	mr r24,r3
+	la r2,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE19__PRETTY_FUNCTION__-"L00000000073$pb")(r2)
+	addi r20,r11,16
+	addi r4,r1,128
+	addi r3,r1,192
+	stw r10,224(r1)
+	stw r10,176(r1)
+	std r0,200(r1)
+	std r0,152(r1)
+	std r0,160(r1)
+	std r0,168(r1)
+	std r0,216(r1)
+	std r0,208(r1)
+	std r2,128(r1)
+	std r23,144(r1)
+	std r22,184(r1)
+	std r28,192(r1)
+	std r30,232(r1)
+	std r27,240(r1)
+	addi r21,r9,16
+	bl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE
+	addis r2,r31,ha16(LC8-"L00000000073$pb")
+	addi r4,r1,120
+	la r2,lo16(LC8-"L00000000073$pb")(r2)
+	std r2,120(r1)
+	bl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE
+	li r0,124
+	addi r4,r1,112
+	stw r0,112(r1)
+	bl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE
+	addis r2,r31,ha16(__ZGVZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")
+	la r25,lo16(__ZGVZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")(r2)
+	mr r3,r25
+	bl ___cxa_guard_acquire
+	cmpdi cr7,r3,0
+	beq cr7,L1868
+	li r19,0
+	li r3,56
+LEHB111:
+	bl __Znwm
+LEHE111:
+	mr r29,r3
+	ld r3,200(r1)
+	std r21,0(r29)
+	cmpdi cr7,r3,0
+	std r3,8(r29)
+	beq cr7,L1811
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB112:
+	bctrl
+LEHE112:
+L1811:
+	lwa r0,224(r1)
+	ld r2,208(r1)
+	li r3,24
+	ld r9,216(r1)
+	std r28,0(r29)
+	addi r28,r29,48
+	std r30,40(r29)
+	std r27,48(r29)
+	std r2,16(r29)
+	std r9,24(r29)
+	stw r0,32(r29)
+LEHB113:
+	bl __Znwm
+LEHE113:
+	b L1880
+L1863:
+L1814:
+	mr r30,r3
+	mr r3,r29
+	bl __ZdlPv
+	b L1820
+L1880:
+	addis r2,r31,ha16(__ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE-"L00000000073$pb")
+	addis r27,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")
+	std r29,16(r3)
+	li r0,1
+	la r2,lo16(__ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE-"L00000000073$pb")(r2)
+	la r26,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")(r27)
+	stw r0,12(r3)
+	stw r0,8(r3)
+	mr r30,r3
+	addi r29,r3,8
+	addi r2,r2,16
+	li r19,1
+	std r2,0(r3)
+	std r3,8(r26)
+	mr r3,r25
+	std r28,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")(r27)
+	sync
+L1872:
+	lwarx r2,0,r29
+	addi r2,r2,1
+	stwcx. r2,0,r29
+	bne- cr0,L1872
+	isync
+	bl ___cxa_guard_release
+	addis r5,r31,ha16(L___dso_handle$non_lazy_ptr-"L00000000073$pb")
+	addis r3,r31,ha16(___tcf_1-"L00000000073$pb")
+	li r4,0
+	ld r5,lo16(L___dso_handle$non_lazy_ptr-"L00000000073$pb")(r5)
+	la r3,lo16(___tcf_1-"L00000000073$pb")(r3)
+	bl ___cxa_atexit
+	sync
+L1873:
+	lwarx r0,0,r29
+	addic r2,r0,-1
+	stwcx. r2,0,r29
+	bne- cr0,L1873
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L1809
+	b L1881
+L1857:
+L1816:
+	bl ___cxa_begin_catch
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,8(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHB114:
+	bl ___cxa_rethrow
+LEHE114:
+L1856:
+L1818:
+	mr r30,r3
+	bl ___cxa_end_catch
+	b L1820
+L1881:
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,16(r2)
+	mtctr r0
+	mr r12,r0
+LEHB115:
+	bctrl
+	sync
+	addi r2,r30,12
+L1871:
+	lwarx r0,0,r2
+	addic r9,r0,-1
+	stwcx. r9,0,r2
+	bne- cr0,L1871
+	isync
+	cmpwi cr7,r0,1
+	bne cr7,L1809
+	ld r2,0(r30)
+	mr r3,r30
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE115:
+	b L1809
+L1864:
+	mr r30,r3
+L1820:
+	cmpdi cr7,r19,0
+	bne cr7,L1821
+	mr r3,r25
+	bl ___cxa_guard_abort
+	b L1821
+	.p2align 4,,15
+L1868:
+	addis r27,r31,ha16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")
+	la r26,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")(r27)
+L1809:
+	ld r2,8(r26)
+	ld r0,lo16(__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep-"L00000000073$pb")(r27)
+	cmpdi cr7,r2,0
+	std r0,0(r24)
+	std r2,8(r24)
+	beq cr7,L1823
+	sync
+	addi r2,r2,8
+L1870:
+	lwarx r9,0,r2
+	addi r9,r9,1
+	stwcx. r9,0,r2
+	bne- cr0,L1870
+	isync
+	b L1823
+L1865:
+L1821:
+L1825:
+	addi r3,r1,232
+	std r20,240(r1)
+	std r23,192(r1)
+	std r22,232(r1)
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,200(r1)
+	std r21,192(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1827
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB116:
+	bctrl
+LEHE116:
+	cmpdi cr7,r3,0
+	beq cr7,L1827
+	li r0,0
+	std r0,200(r1)
+	b L1827
+L1855:
+	b L1877
+L1830:
+	.p2align 4,,15
+L1823:
+	addi r3,r1,232
+	std r20,240(r1)
+	std r23,192(r1)
+	std r22,232(r1)
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,200(r1)
+	std r21,192(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1832
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB117:
+	bctrl
+LEHE117:
+	cmpdi cr7,r3,0
+	beq cr7,L1832
+	li r0,0
+	std r0,200(r1)
+	b L1832
+L1854:
+	b L1877
+L1835:
+	.p2align 4,,15
+L1832:
+	addi r3,r1,184
+	std r23,144(r1)
+	std r22,184(r1)
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,152(r1)
+	std r21,144(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1784
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB118:
+	bctrl
+LEHE118:
+	cmpdi cr7,r3,0
+	beq cr7,L1784
+	li r0,0
+	std r0,152(r1)
+	b L1784
+L1853:
+	b L1877
+L1839:
+L1866:
+L1827:
+L1840:
+	addi r3,r1,184
+	std r23,144(r1)
+	std r22,184(r1)
+	bl __ZNSt13bad_exceptionD2Ev
+	ld r3,152(r1)
+	std r21,144(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L1841
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB119:
+	bctrl
+LEHE119:
+	cmpdi cr7,r3,0
+	beq cr7,L1841
+	li r0,0
+	std r0,152(r1)
+	b L1841
+L1852:
+L1877:
+	cmpdi cr7,r4,-1
+	bne cr7,L1875
+L1844:
+LEHB120:
+	bl ___cxa_call_unexpected
+L1841:
+	mr r3,r30
+L1875:
+	bl __Unwind_Resume
+LEHE120:
+	.p2align 4,,15
+L1784:
+	addi r1,r1,368
+	mr r3,r24
+	ld r0,16(r1)
+	ld r19,-104(r1)
+	ld r20,-96(r1)
+	ld r21,-88(r1)
+	ld r22,-80(r1)
+	ld r23,-72(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	mtlr r0
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	blr
+LFE9369:
+	.section __DATA,__gcc_except_tab
+GCC_except_table34:
+	.align 3
+LLSDA9369:
+	.byte	0xff
+	.byte	0x0
+	.byte	0x94,0x1
+	.byte	0x3
+	.byte	0x82,0x1
+	.set L$set$291,LEHB111-LFB9369
+	.long L$set$291
+	.set L$set$292,LEHE111-LEHB111
+	.long L$set$292
+	.set L$set$293,L1864-LFB9369
+	.long L$set$293
+	.byte	0x0
+	.set L$set$294,LEHB112-LFB9369
+	.long L$set$294
+	.set L$set$295,LEHE112-LEHB112
+	.long L$set$295
+	.set L$set$296,L1863-LFB9369
+	.long L$set$296
+	.byte	0x0
+	.set L$set$297,LEHB113-LFB9369
+	.long L$set$297
+	.set L$set$298,LEHE113-LEHB113
+	.long L$set$298
+	.set L$set$299,L1857-LFB9369
+	.long L$set$299
+	.byte	0x1
+	.set L$set$300,LEHB114-LFB9369
+	.long L$set$300
+	.set L$set$301,LEHE114-LEHB114
+	.long L$set$301
+	.set L$set$302,L1856-LFB9369
+	.long L$set$302
+	.byte	0x0
+	.set L$set$303,LEHB115-LFB9369
+	.long L$set$303
+	.set L$set$304,LEHE115-LEHB115
+	.long L$set$304
+	.set L$set$305,L1864-LFB9369
+	.long L$set$305
+	.byte	0x0
+	.set L$set$306,LEHB116-LFB9369
+	.long L$set$306
+	.set L$set$307,LEHE116-LEHB116
+	.long L$set$307
+	.set L$set$308,L1855-LFB9369
+	.long L$set$308
+	.byte	0x3
+	.set L$set$309,LEHB117-LFB9369
+	.long L$set$309
+	.set L$set$310,LEHE117-LEHB117
+	.long L$set$310
+	.set L$set$311,L1854-LFB9369
+	.long L$set$311
+	.byte	0x3
+	.set L$set$312,LEHB118-LFB9369
+	.long L$set$312
+	.set L$set$313,LEHE118-LEHB118
+	.long L$set$313
+	.set L$set$314,L1853-LFB9369
+	.long L$set$314
+	.byte	0x3
+	.set L$set$315,LEHB119-LFB9369
+	.long L$set$315
+	.set L$set$316,LEHE119-LEHB119
+	.long L$set$316
+	.set L$set$317,L1852-LFB9369
+	.long L$set$317
+	.byte	0x3
+	.set L$set$318,LEHB120-LFB9369
+	.long L$set$318
+	.set L$set$319,LEHE120-LEHB120
+	.long L$set$319
+	.long	0x0
+	.byte	0x0
+	.byte	0x1
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.quad	0
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.section __TEXT,__StaticInit,regular,pure_instructions
+	.align 2
+	.p2align 4,,15
+__Z41__static_initialization_and_destruction_0ii:
+LFB14478:
+	mflr r0
+LCFI697:
+	cmpwi cr7,r3,1
+	std r31,-8(r1)
+LCFI698:
+	std r30,-16(r1)
+LCFI699:
+	bcl 20,31,"L00000000074$pb"
+"L00000000074$pb":
+	mflr r31
+	std r0,16(r1)
+LCFI700:
+	stdu r1,-128(r1)
+LCFI701:
+	bne cr7,L1889
+	xoris r0,r4,0xffff
+	cmpwi cr7,r0,-1
+	bne cr7,L1889
+	addis r3,r31,ha16(__ZStL8__ioinit-"L00000000074$pb")
+	la r3,lo16(__ZStL8__ioinit-"L00000000074$pb")(r3)
+	bl __ZNSt8ios_base4InitC1Ev
+	addis r2,r31,ha16(L___dso_handle$non_lazy_ptr-"L00000000074$pb")
+	addis r3,r31,ha16(___tcf_2-"L00000000074$pb")
+	li r4,0
+	ld r30,lo16(L___dso_handle$non_lazy_ptr-"L00000000074$pb")(r2)
+	la r3,lo16(___tcf_2-"L00000000074$pb")(r3)
+	mr r5,r30
+	bl ___cxa_atexit
+	addis r2,r31,ha16(__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE-"L00000000074$pb")
+	lbz r0,lo16(__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE-"L00000000074$pb")(r2)
+	cmpwi cr7,r0,0
+	bne cr7,L1886
+	addis r3,r31,ha16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE-"L00000000074$pb")
+	li r0,1
+	la r3,lo16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE-"L00000000074$pb")(r3)
+	stb r0,lo16(__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE-"L00000000074$pb")(r2)
+	bl __ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv
+	addis r3,r31,ha16(___tcf_3-"L00000000074$pb")
+	li r4,0
+	mr r5,r30
+	la r3,lo16(___tcf_3-"L00000000074$pb")(r3)
+	bl ___cxa_atexit
+	.p2align 4,,15
+L1886:
+	addis r2,r31,ha16(__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE-"L00000000074$pb")
+	lbz r0,lo16(__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE-"L00000000074$pb")(r2)
+	cmpwi cr7,r0,0
+	bne cr7,L1889
+	addis r3,r31,ha16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE-"L00000000074$pb")
+	li r0,1
+	la r3,lo16(__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE-"L00000000074$pb")(r3)
+	stb r0,lo16(__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE-"L00000000074$pb")(r2)
+	bl __ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv
+	addi r1,r1,128
+	addis r3,r31,ha16(___tcf_4-"L00000000074$pb")
+	mr r5,r30
+	li r4,0
+	ld r0,16(r1)
+	ld r31,-8(r1)
+	la r3,lo16(___tcf_4-"L00000000074$pb")(r3)
+	ld r30,-16(r1)
+	mtlr r0
+	b ___cxa_atexit
+	.p2align 4,,15
+L1889:
+	addi r1,r1,128
+	ld r0,16(r1)
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtlr r0
+	blr
+LFE14478:
+	.align 2
+	.p2align 4,,15
+__GLOBAL__I__ZN12_GLOBAL__N_12_1E:
+LFB14606:
+	li r4,-1
+	li r3,1
+	rldicl r4,r4,0,48
+	b __Z41__static_initialization_and_destruction_0ii
+LFE14606:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_:
+LFB13121:
+	mflr r0
+LCFI702:
+	std r22,-88(r1)
+LCFI703:
+	std r25,-64(r1)
+LCFI704:
+	std r27,-48(r1)
+LCFI705:
+	stfd f31,-8(r1)
+LCFI706:
+	std r14,-152(r1)
+LCFI707:
+	std r15,-144(r1)
+LCFI708:
+	mr r27,r3
+	std r16,-136(r1)
+LCFI709:
+	std r17,-128(r1)
+LCFI710:
+	std r18,-120(r1)
+LCFI711:
+	std r19,-112(r1)
+LCFI712:
+	std r20,-104(r1)
+LCFI713:
+	std r21,-96(r1)
+LCFI714:
+	std r23,-80(r1)
+LCFI715:
+	std r24,-72(r1)
+LCFI716:
+	std r26,-56(r1)
+LCFI717:
+	std r28,-40(r1)
+LCFI718:
+	std r29,-32(r1)
+LCFI719:
+	std r30,-24(r1)
+LCFI720:
+	std r0,16(r1)
+LCFI721:
+	stdu r1,-512(r1)
+LCFI722:
+	mr r25,r4
+	addi r22,r3,8
+	ld r0,16(r3)
+	cmpdi cr7,r0,0
+	beq cr7,L1893
+	mr r30,r0
+	addi r0,r1,136
+	addi r23,r1,176
+	addi r18,r1,112
+	std r0,240(r1)
+	addi r0,r1,140
+	addi r21,r1,116
+	addi r24,r1,184
+	std r0,248(r1)
+	addi r0,r1,208
+	addi r20,r1,120
+	addi r19,r1,124
+	std r0,256(r1)
+	addi r0,r1,144
+	addi r17,r1,192
+	addi r15,r1,128
+	std r0,264(r1)
+	addi r0,r1,148
+	addi r14,r1,132
+	addi r16,r1,200
+	std r0,272(r1)
+	addi r0,r1,216
+	std r0,280(r1)
+	addi r0,r1,152
+	std r0,288(r1)
+	addi r0,r1,156
+	std r0,296(r1)
+	addi r0,r1,224
+	std r0,304(r1)
+	addi r0,r1,160
+	std r0,312(r1)
+	addi r0,r1,164
+	std r0,320(r1)
+	addi r0,r1,232
+	std r0,328(r1)
+	addi r0,r1,168
+	std r0,336(r1)
+	addi r0,r1,172
+	std r0,344(r1)
+	.p2align 4,,15
+L1895:
+	lwz r0,0(r27)
+	addi r28,r30,32
+	li r6,0
+	mr r3,r23
+	mr r5,r18
+	mr r4,r28
+	li r29,0
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r23
+	stw r29,116(r1)
+	mr r4,r21
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	mr r3,r24
+	mr r4,r25
+	fmr f31,f1
+	mr r5,r20
+	li r6,0
+	stw r0,120(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r24
+	stw r29,124(r1)
+	mr r4,r19
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1896
+	bne cr7,L1898
+	lwz r0,0(r27)
+	li r6,0
+	mr r3,r17
+	mr r4,r28
+	mr r5,r15
+	xori r0,r0,1
+	rldicl r26,r0,0,32
+	stw r26,128(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r17
+	stw r29,132(r1)
+	mr r4,r14
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r5,240(r1)
+	mr r3,r16
+	mr r4,r25
+	li r6,0
+	fmr f31,f1
+	stw r26,136(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r4,248(r1)
+	mr r3,r16
+	li r5,0
+	stw r29,140(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1896
+	bne cr7,L1898
+	lwz r0,0(r27)
+	ld r3,256(r1)
+	li r6,0
+	mr r4,r28
+	ld r5,264(r1)
+	li r29,1
+	stw r0,144(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,256(r1)
+	ld r4,272(r1)
+	li r5,0
+	stw r29,148(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	ld r3,280(r1)
+	mr r4,r25
+	li r6,0
+	ld r5,288(r1)
+	fmr f31,f1
+	stw r0,152(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,280(r1)
+	ld r4,296(r1)
+	li r5,0
+	stw r29,156(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1896
+	bne cr7,L1898
+	ld r3,304(r1)
+	ld r5,312(r1)
+	li r6,0
+	mr r4,r28
+	stw r26,160(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,304(r1)
+	ld r4,320(r1)
+	li r5,0
+	stw r29,164(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,328(r1)
+	ld r5,336(r1)
+	mr r4,r25
+	li r6,0
+	fmr f31,f1
+	stw r26,168(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,328(r1)
+	ld r4,344(r1)
+	li r5,0
+	stw r29,172(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	blt cr7,L1898
+	.p2align 4,,15
+L1896:
+	mr r22,r30
+	ld r30,16(r30)
+	b L1908
+	.p2align 4,,15
+L1898:
+	ld r30,24(r30)
+L1908:
+	cmpdi cr7,r30,0
+	bne cr7,L1895
+L1893:
+	addi r1,r1,512
+	mr r3,r22
+	ld r0,16(r1)
+	ld r14,-152(r1)
+	ld r15,-144(r1)
+	ld r16,-136(r1)
+	ld r17,-128(r1)
+	ld r18,-120(r1)
+	ld r19,-112(r1)
+	ld r20,-104(r1)
+	mtlr r0
+	ld r21,-96(r1)
+	ld r22,-88(r1)
+	ld r23,-80(r1)
+	ld r24,-72(r1)
+	ld r25,-64(r1)
+	ld r26,-56(r1)
+	ld r27,-48(r1)
+	ld r28,-40(r1)
+	ld r29,-32(r1)
+	ld r30,-24(r1)
+	lfd f31,-8(r1)
+	blr
+LFE13121:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_:
+LFB13117:
+	mflr r0
+LCFI723:
+	std r24,-72(r1)
+LCFI724:
+	std r25,-64(r1)
+LCFI725:
+	std r27,-48(r1)
+LCFI726:
+	std r28,-40(r1)
+LCFI727:
+	std r30,-24(r1)
+LCFI728:
+	stfd f31,-8(r1)
+LCFI729:
+	std r22,-88(r1)
+LCFI730:
+	std r23,-80(r1)
+LCFI731:
+	mr r27,r3
+	std r26,-56(r1)
+LCFI732:
+	std r29,-32(r1)
+LCFI733:
+	std r0,16(r1)
+LCFI734:
+	stdu r1,-336(r1)
+LCFI735:
+	li r3,48
+	mr r25,r4
+	mr r24,r5
+	mr r28,r6
+	bl __Znwm
+	cmpdi cr7,r3,-32
+	mr r30,r3
+	beq cr7,L1912
+	li r0,0
+	stw r0,44(r3)
+	stw r0,32(r3)
+	stw r0,36(r3)
+	stw r0,40(r3)
+	lfs f0,0(r28)
+	stfs f0,32(r3)
+	lfs f13,4(r28)
+	stfs f13,36(r3)
+	lfs f0,8(r28)
+	stfs f0,40(r3)
+	lfs f13,12(r28)
+	stfs f13,44(r3)
+L1912:
+	cmpdi cr7,r25,0
+	addi r26,r27,8
+	bne cr7,L1914
+	cmpd cr7,r26,r24
+	beq cr7,L1914
+	lwz r0,0(r27)
+	addi r29,r1,176
+	li r6,0
+	mr r4,r28
+	addi r5,r1,112
+	mr r3,r29
+	addi r23,r24,32
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r25,116(r1)
+	addi r4,r1,116
+	li r5,0
+	addi r29,r1,184
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	mr r3,r29
+	mr r4,r23
+	fmr f31,f1
+	addi r5,r1,120
+	li r6,0
+	stw r0,120(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r25,124(r1)
+	addi r4,r1,124
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1917
+	bne cr7,L1914
+	lwz r0,0(r27)
+	addi r29,r1,192
+	li r6,0
+	mr r4,r28
+	addi r5,r1,128
+	mr r3,r29
+	xori r0,r0,1
+	rldicl r22,r0,0,32
+	stw r22,128(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r25,132(r1)
+	addi r4,r1,132
+	li r5,0
+	addi r29,r1,200
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r23
+	stw r22,136(r1)
+	fmr f31,f1
+	addi r5,r1,136
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,140
+	stw r25,140(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1917
+	bne cr7,L1914
+	lwz r0,0(r27)
+	addi r29,r1,208
+	li r6,0
+	mr r4,r28
+	addi r5,r1,144
+	mr r3,r29
+	li r25,1
+	stw r0,144(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r25,148(r1)
+	addi r4,r1,148
+	li r5,0
+	addi r29,r1,216
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	mr r4,r23
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,152
+	li r6,0
+	stw r0,152(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r25,156(r1)
+	addi r4,r1,156
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1917
+	bne cr7,L1914
+	addi r29,r1,224
+	li r6,0
+	stw r22,160(r1)
+	mr r4,r28
+	mr r3,r29
+	addi r5,r1,160
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,164
+	stw r25,164(r1)
+	li r5,0
+	addi r29,r1,232
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r4,r23
+	mr r3,r29
+	stw r22,168(r1)
+	fmr f31,f1
+	addi r5,r1,168
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,172
+	stw r25,172(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bnl cr7,L1917
+	.p2align 4,,15
+L1914:
+	li r3,1
+	b L1928
+L1917:
+	li r3,0
+	.p2align 4,,15
+L1928:
+	mr r5,r24
+	mr r6,r26
+	mr r4,r30
+	bl __ZSt29_Rb_tree_insert_and_rebalancebPSt18_Rb_tree_node_baseS0_RS_
+	ld r2,40(r27)
+	addi r1,r1,336
+	mr r3,r30
+	addi r2,r2,1
+	std r2,40(r27)
+	ld r0,16(r1)
+	ld r22,-88(r1)
+	ld r23,-80(r1)
+	ld r24,-72(r1)
+	ld r25,-64(r1)
+	ld r26,-56(r1)
+	ld r27,-48(r1)
+	ld r28,-40(r1)
+	mtlr r0
+	ld r29,-32(r1)
+	ld r30,-24(r1)
+	lfd f31,-8(r1)
+	blr
+LFE13117:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_:
+LFB13118:
+	mflr r0
+LCFI736:
+	std r25,-64(r1)
+LCFI737:
+	std r27,-48(r1)
+LCFI738:
+	std r30,-24(r1)
+LCFI739:
+	stfd f31,-8(r1)
+LCFI740:
+	std r14,-152(r1)
+LCFI741:
+	std r15,-144(r1)
+LCFI742:
+	mr r27,r3
+	std r16,-136(r1)
+LCFI743:
+	std r17,-128(r1)
+LCFI744:
+	std r18,-120(r1)
+LCFI745:
+	std r19,-112(r1)
+LCFI746:
+	std r20,-104(r1)
+LCFI747:
+	std r21,-96(r1)
+LCFI748:
+	std r22,-88(r1)
+LCFI749:
+	std r23,-80(r1)
+LCFI750:
+	std r24,-72(r1)
+LCFI751:
+	std r26,-56(r1)
+LCFI752:
+	std r28,-40(r1)
+LCFI753:
+	std r29,-32(r1)
+LCFI754:
+	std r0,16(r1)
+LCFI755:
+	stdu r1,-640(r1)
+LCFI756:
+	mr r25,r4
+	addi r30,r3,8
+	ld r0,16(r3)
+	cmpdi cr7,r0,0
+	beq cr7,L1932
+	mr r28,r0
+	addi r0,r1,132
+	addi r23,r1,240
+	addi r20,r1,112
+	std r0,368(r1)
+	addi r0,r1,272
+	addi r19,r1,116
+	addi r24,r1,248
+	std r0,376(r1)
+	addi r0,r1,144
+	addi r22,r1,120
+	addi r21,r1,124
+	std r0,384(r1)
+	addi r0,r1,148
+	addi r18,r1,256
+	addi r14,r1,128
+	std r0,392(r1)
+	addi r0,r1,280
+	addi r17,r1,264
+	addi r16,r1,136
+	std r0,400(r1)
+	addi r0,r1,152
+	addi r15,r1,140
+	std r0,408(r1)
+	addi r0,r1,156
+	std r0,416(r1)
+	addi r0,r1,288
+	std r0,424(r1)
+	addi r0,r1,160
+	std r0,432(r1)
+	addi r0,r1,164
+	std r0,440(r1)
+	addi r0,r1,296
+	std r0,448(r1)
+	addi r0,r1,168
+	std r0,456(r1)
+	addi r0,r1,172
+	std r0,464(r1)
+	.p2align 4,,15
+L1934:
+	lwz r0,0(r27)
+	li r6,0
+	mr r3,r23
+	mr r4,r25
+	mr r5,r20
+	li r29,0
+	addi r30,r28,32
+	stw r0,112(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r23
+	stw r29,116(r1)
+	mr r4,r19
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	mr r3,r24
+	mr r4,r30
+	fmr f31,f1
+	mr r5,r22
+	li r6,0
+	stw r0,120(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r24
+	stw r29,124(r1)
+	mr r4,r21
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1935
+	bne cr7,L1937
+	lwz r0,0(r27)
+	li r6,0
+	mr r3,r18
+	mr r4,r25
+	mr r5,r14
+	xori r0,r0,1
+	rldicl r26,r0,0,32
+	stw r26,128(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r4,368(r1)
+	mr r3,r18
+	stw r29,132(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r17
+	mr r4,r30
+	stw r26,136(r1)
+	fmr f31,f1
+	mr r5,r16
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r17
+	mr r4,r15
+	stw r29,140(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1935
+	bne cr7,L1937
+	lwz r0,0(r27)
+	ld r3,376(r1)
+	li r6,0
+	mr r4,r25
+	ld r5,384(r1)
+	li r29,1
+	stw r0,144(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,376(r1)
+	ld r4,392(r1)
+	li r5,0
+	stw r29,148(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	ld r3,400(r1)
+	mr r4,r30
+	li r6,0
+	ld r5,408(r1)
+	fmr f31,f1
+	stw r0,152(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,400(r1)
+	ld r4,416(r1)
+	li r5,0
+	stw r29,156(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1935
+	bne cr7,L1937
+	ld r3,424(r1)
+	ld r5,432(r1)
+	li r6,0
+	mr r4,r25
+	stw r26,160(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,424(r1)
+	ld r4,440(r1)
+	li r5,0
+	stw r29,164(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,448(r1)
+	ld r5,456(r1)
+	mr r4,r30
+	li r6,0
+	fmr f31,f1
+	stw r26,168(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	ld r3,448(r1)
+	ld r4,464(r1)
+	li r5,0
+	stw r29,172(r1)
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	mfcr r2
+	rlwinm r2,r2,29,1
+	bnl cr7,L1946
+	.p2align 4,,15
+L1947:
+	ld r0,16(r28)
+	b L1948
+	.p2align 4,,15
+L1946:
+	ld r0,24(r28)
+L1948:
+	cmpdi cr7,r0,0
+	beq cr7,L1949
+	mr r28,r0
+	b L1934
+L1949:
+	cmpdi cr7,r2,0
+	mr r30,r28
+	mr r26,r28
+	beq cr7,L1952
+L1932:
+	ld r0,24(r27)
+	cmpd cr7,r0,r30
+	beq cr7,L1958
+	mr r3,r30
+	bl __ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+	mr r26,r3
+L1952:
+	lwz r0,0(r27)
+	addi r29,r1,304
+	addi r24,r26,32
+	li r6,0
+	addi r5,r1,176
+	mr r3,r29
+	mr r4,r24
+	li r28,0
+	stw r0,176(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,180(r1)
+	addi r4,r1,180
+	li r5,0
+	addi r29,r1,312
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	mr r4,r25
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,184
+	li r6,0
+	stw r0,184(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,188(r1)
+	addi r4,r1,188
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1956
+	bne cr7,L1958
+	lwz r0,0(r27)
+	addi r29,r1,320
+	li r6,0
+	mr r4,r24
+	addi r5,r1,192
+	mr r3,r29
+	xori r0,r0,1
+	rldicl r23,r0,0,32
+	stw r23,192(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,196(r1)
+	addi r4,r1,196
+	li r5,0
+	addi r29,r1,328
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r25
+	stw r23,200(r1)
+	fmr f31,f1
+	addi r5,r1,200
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,204
+	stw r28,204(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1956
+	bne cr7,L1958
+	lwz r0,0(r27)
+	addi r29,r1,336
+	li r6,0
+	mr r4,r24
+	addi r5,r1,208
+	mr r3,r29
+	li r28,1
+	stw r0,208(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,212(r1)
+	addi r4,r1,212
+	li r5,0
+	addi r29,r1,344
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r27)
+	mr r4,r25
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,216
+	li r6,0
+	stw r0,216(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,220(r1)
+	addi r4,r1,220
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1956
+	bne cr7,L1958
+	addi r29,r1,352
+	li r6,0
+	stw r23,224(r1)
+	mr r4,r24
+	mr r3,r29
+	addi r5,r1,224
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,228
+	stw r28,228(r1)
+	li r5,0
+	addi r29,r1,360
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r25
+	stw r23,232(r1)
+	fmr f31,f1
+	addi r5,r1,232
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,236
+	stw r28,236(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bnl cr7,L1956
+L1958:
+	mr r3,r27
+	mr r5,r30
+	mr r6,r25
+	li r4,0
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_
+	li r0,1
+	b L1955
+L1956:
+	mr r3,r26
+	li r0,0
+	b L1955
+	.p2align 4,,15
+L1937:
+	li r2,1
+	b L1947
+	.p2align 4,,15
+L1935:
+	li r2,0
+	b L1946
+L1955:
+	addi r1,r1,640
+	rldimi r30,r0,56,0
+	ld r0,16(r1)
+	mr r4,r30
+	ld r14,-152(r1)
+	ld r15,-144(r1)
+	ld r16,-136(r1)
+	ld r17,-128(r1)
+	ld r18,-120(r1)
+	ld r19,-112(r1)
+	ld r20,-104(r1)
+	mtlr r0
+	ld r21,-96(r1)
+	ld r22,-88(r1)
+	ld r23,-80(r1)
+	ld r24,-72(r1)
+	ld r25,-64(r1)
+	ld r26,-56(r1)
+	ld r27,-48(r1)
+	ld r28,-40(r1)
+	ld r29,-32(r1)
+	ld r30,-24(r1)
+	lfd f31,-8(r1)
+	blr
+LFE13118:
+	.align 2
+	.p2align 4,,15
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_:
+LFB12535:
+	mflr r0
+LCFI757:
+	std r25,-64(r1)
+LCFI758:
+	std r26,-56(r1)
+LCFI759:
+	std r30,-24(r1)
+LCFI760:
+	stfd f31,-8(r1)
+LCFI761:
+	std r23,-80(r1)
+LCFI762:
+	std r24,-72(r1)
+LCFI763:
+	mr r30,r3
+	std r0,16(r1)
+LCFI764:
+	std r27,-48(r1)
+LCFI765:
+	std r28,-40(r1)
+LCFI766:
+	std r29,-32(r1)
+LCFI767:
+	stdu r1,-576(r1)
+LCFI768:
+	addi r0,r3,8
+	mr r25,r4
+	cmpd cr7,r0,r4
+	mr r26,r5
+	beq cr7,L1970
+	ld r0,32(r3)
+	cmpd cr7,r0,r4
+	bne cr7,L1972
+L1970:
+	ld r0,40(r30)
+	cmpdi cr7,r0,0
+	beq cr7,L1973
+	ld r2,32(r30)
+	lwz r0,0(r30)
+	addi r29,r1,304
+	li r6,0
+	addi r5,r1,112
+	li r28,0
+	mr r3,r29
+	addi r27,r2,32
+	stw r0,112(r1)
+	mr r4,r27
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,116
+	stw r28,116(r1)
+	li r5,0
+	addi r29,r1,312
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r30)
+	mr r4,r26
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,120
+	li r6,0
+	stw r0,120(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,124(r1)
+	addi r4,r1,124
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1976
+	lwz r0,0(r30)
+	addi r29,r1,320
+	li r6,0
+	mr r4,r27
+	addi r5,r1,128
+	mr r3,r29
+	xori r0,r0,1
+	rldicl r25,r0,0,32
+	stw r25,128(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,132(r1)
+	addi r4,r1,132
+	li r5,0
+	addi r29,r1,328
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r26
+	stw r25,136(r1)
+	fmr f31,f1
+	addi r5,r1,136
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,140
+	stw r28,140(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1976
+	lwz r0,0(r30)
+	addi r29,r1,336
+	li r6,0
+	mr r4,r27
+	addi r5,r1,144
+	mr r3,r29
+	li r28,1
+	stw r0,144(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,148(r1)
+	addi r4,r1,148
+	li r5,0
+	addi r29,r1,344
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r30)
+	mr r4,r26
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,152
+	li r6,0
+	stw r0,152(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,156(r1)
+	addi r4,r1,156
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1976
+	addi r29,r1,352
+	li r6,0
+	stw r25,160(r1)
+	mr r4,r27
+	mr r3,r29
+	addi r5,r1,160
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,164
+	stw r28,164(r1)
+	li r5,0
+	addi r29,r1,360
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r26
+	stw r25,168(r1)
+	fmr f31,f1
+	addi r5,r1,168
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,172
+	stw r28,172(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bnl cr7,L1973
+L1976:
+	ld r5,32(r30)
+	mr r3,r30
+	mr r6,r26
+	li r4,0
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_
+	b L1985
+	.p2align 4,,15
+L2010:
+	fcmpu cr7,f31,f1
+	bne cr7,L1987
+	lwz r0,0(r30)
+	addi r29,r1,384
+	li r6,0
+	mr r4,r27
+	addi r5,r1,192
+	mr r3,r29
+	li r28,0
+	xori r0,r0,1
+	rldicl r24,r0,0,32
+	stw r24,192(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,196(r1)
+	addi r4,r1,196
+	li r5,0
+	addi r29,r1,392
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r26
+	stw r24,200(r1)
+	fmr f31,f1
+	addi r5,r1,200
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,204
+	stw r28,204(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1987
+	lwz r0,0(r30)
+	addi r29,r1,400
+	li r6,0
+	mr r4,r27
+	addi r5,r1,208
+	mr r3,r29
+	li r28,1
+	stw r0,208(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,212(r1)
+	addi r4,r1,212
+	li r5,0
+	addi r29,r1,408
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r30)
+	mr r4,r26
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,216
+	li r6,0
+	stw r0,216(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,220(r1)
+	addi r4,r1,220
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1987
+	addi r29,r1,416
+	li r6,0
+	stw r24,224(r1)
+	mr r4,r27
+	mr r3,r29
+	addi r5,r1,224
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,228
+	stw r28,228(r1)
+	li r5,0
+	addi r29,r1,424
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r26
+	stw r24,232(r1)
+	fmr f31,f1
+	addi r5,r1,232
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,236
+	stw r28,236(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bnl cr7,L1973
+	.p2align 4,,15
+L1987:
+	lwz r0,0(r30)
+	addi r29,r1,432
+	li r6,0
+	mr r4,r26
+	addi r5,r1,240
+	mr r3,r29
+	li r28,0
+	addi r27,r23,32
+	stw r0,240(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,244(r1)
+	addi r4,r1,244
+	li r5,0
+	addi r29,r1,440
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r30)
+	mr r3,r29
+	mr r4,r27
+	fmr f31,f1
+	addi r5,r1,248
+	li r6,0
+	stw r0,248(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,252(r1)
+	addi r4,r1,252
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1998
+	lwz r0,0(r30)
+	addi r29,r1,448
+	li r6,0
+	mr r4,r26
+	addi r5,r1,256
+	mr r3,r29
+	xori r0,r0,1
+	rldicl r24,r0,0,32
+	stw r24,256(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,260(r1)
+	addi r4,r1,260
+	li r5,0
+	addi r29,r1,456
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	mr r4,r27
+	stw r24,264(r1)
+	fmr f31,f1
+	addi r5,r1,264
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,268
+	stw r28,268(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1998
+	lwz r0,0(r30)
+	addi r29,r1,464
+	li r6,0
+	mr r4,r26
+	addi r5,r1,272
+	mr r3,r29
+	li r28,1
+	stw r0,272(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,276(r1)
+	addi r4,r1,276
+	li r5,0
+	addi r29,r1,472
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r30)
+	mr r4,r27
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,280
+	li r6,0
+	stw r0,280(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,284(r1)
+	addi r4,r1,284
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bgt cr7,L1973
+	bne cr7,L1998
+	addi r29,r1,480
+	li r6,0
+	stw r24,288(r1)
+	mr r4,r26
+	mr r3,r29
+	addi r5,r1,288
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,292
+	stw r28,292(r1)
+	li r5,0
+	addi r29,r1,488
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r4,r27
+	mr r3,r29
+	stw r24,296(r1)
+	fmr f31,f1
+	addi r5,r1,296
+	li r6,0
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	addi r4,r1,300
+	stw r28,300(r1)
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bnl cr7,L1973
+L1998:
+	ld r0,24(r25)
+	cmpdi cr7,r0,0
+	bne cr7,L2007
+	mr r3,r30
+	mr r5,r25
+	mr r6,r26
+	li r4,0
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_
+	b L1985
+L2007:
+	mr r4,r23
+	mr r3,r30
+	mr r6,r26
+	mr r5,r23
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_
+	b L1985
+	.p2align 4,,15
+L1972:
+	mr r3,r4
+	addi r29,r1,368
+	addi r27,r25,32
+	li r28,0
+	bl __ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+	lwz r0,0(r30)
+	li r6,0
+	mr r4,r27
+	addi r5,r1,176
+	mr r23,r3
+	mr r3,r29
+	stw r0,176(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,180(r1)
+	addi r4,r1,180
+	li r5,0
+	addi r29,r1,376
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	lwz r0,0(r30)
+	mr r4,r26
+	mr r3,r29
+	fmr f31,f1
+	addi r5,r1,184
+	li r6,0
+	stw r0,184(r1)
+	bl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r29
+	stw r28,188(r1)
+	addi r4,r1,188
+	li r5,0
+	bl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE
+	fcmpu cr7,f31,f1
+	bng cr7,L2010
+	.p2align 4,,15
+L1973:
+	mr r3,r30
+	mr r4,r26
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_
+L1985:
+	addi r1,r1,576
+	ld r0,16(r1)
+	ld r23,-80(r1)
+	ld r24,-72(r1)
+	ld r25,-64(r1)
+	ld r26,-56(r1)
+	ld r27,-48(r1)
+	ld r28,-40(r1)
+	ld r29,-32(r1)
+	mtlr r0
+	ld r30,-24(r1)
+	lfd f31,-8(r1)
+	blr
+LFE12535:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE
+	.weak_definition __ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE
+	.private_extern __ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE
+__ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE:
+LFB11952:
+	mflr r0
+LCFI769:
+	stfd f31,-8(r1)
+LCFI770:
+	std r19,-112(r1)
+LCFI771:
+	std r20,-104(r1)
+LCFI772:
+	std r23,-80(r1)
+LCFI773:
+	mr r19,r3
+	fmr f31,f1
+	std r24,-72(r1)
+LCFI774:
+	std r25,-64(r1)
+LCFI775:
+	std r27,-48(r1)
+LCFI776:
+	std r14,-152(r1)
+LCFI777:
+	std r15,-144(r1)
+LCFI778:
+	std r16,-136(r1)
+LCFI779:
+	std r17,-128(r1)
+LCFI780:
+	std r18,-120(r1)
+LCFI781:
+	std r21,-96(r1)
+LCFI782:
+	std r22,-88(r1)
+LCFI783:
+	std r26,-56(r1)
+LCFI784:
+	std r28,-40(r1)
+LCFI785:
+	std r29,-32(r1)
+LCFI786:
+	std r30,-24(r1)
+LCFI787:
+	std r0,16(r1)
+LCFI788:
+	stdu r1,-576(r1)
+LCFI789:
+	mr r23,r4
+	mr r27,r5
+	mr r20,r6
+	mr r24,r7
+	mr r25,r9
+	ld r0,40(r4)
+	cmpdi cr7,r0,0
+	bne cr7,L2012
+	b L2013
+	.p2align 4,,15
+L2014:
+	cmpd cr7,r26,r30
+	beq cr7,L2015
+	lwz r2,0(r25)
+	lfs f13,0(r27)
+	sldi r2,r2,3
+	add r2,r2,r30
+	lfs f0,32(r2)
+	fcmpu cr7,f0,f13
+	bgt cr7,L2015
+L2017:
+	addi r0,r1,144
+	li r21,0
+	li r29,0
+	addi r18,r1,152
+	std r0,304(r1)
+	addi r0,r1,148
+	addi r22,r1,112
+	addi r15,r1,200
+	std r0,312(r1)
+	addi r0,r1,136
+	addi r14,r1,208
+	addi r17,r1,256
+	std r0,320(r1)
+	addi r0,r1,140
+	addi r16,r1,288
+	std r0,328(r1)
+	addi r0,r1,184
+	std r0,336(r1)
+	addi r0,r1,192
+	std r0,344(r1)
+	addi r0,r1,128
+	std r0,352(r1)
+	addi r0,r1,132
+	std r0,360(r1)
+	addi r0,r1,120
+	std r0,368(r1)
+	addi r0,r1,124
+	std r0,376(r1)
+	addi r0,r1,116
+	std r0,384(r1)
+	addi r0,r1,272
+	std r0,392(r1)
+	addi r0,r1,176
+	std r0,400(r1)
+	b L2084
+	.p2align 4,,15
+L2015:
+	ld r0,24(r23)
+	cmpd cr7,r0,r30
+	beq cr7,L2017
+	mr r3,r30
+	bl __ZSt18_Rb_tree_decrementPKSt18_Rb_tree_node_base
+	mr r30,r3
+	b L2014
+	.p2align 4,,15
+L2021:
+	stw r29,152(r1)
+	stw r29,156(r1)
+	mr r3,r18
+	mr r4,r27
+	li r5,1
+	li r6,0
+	mr r28,r29
+	lfs f0,32(r2)
+	stfs f0,152(r1)
+	lfs f13,36(r2)
+	stfs f13,156(r1)
+	bl __ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE
+	cmpdi cr7,r3,0
+	beq cr7,L2081
+	b L2085
+L2087:
+	slwi r2,r0,1
+	addi r24,r1,112
+	addi r29,r1,256
+	addi r4,r1,272
+	addi r2,r2,1
+	mr r3,r29
+	rldic r2,r2,2,30
+	add r2,r2,r24
+	stfs f31,160(r2)
+	stw r28,268(r1)
+	stw r28,256(r1)
+	stw r28,260(r1)
+	stw r28,264(r1)
+	bl __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+	ld r4,8(r19)
+	mr r3,r19
+	mr r5,r29
+	bl __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+L2025:
+	mr r3,r30
+	bl __ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base
+	mr r4,r26
+	std r30,256(r1)
+	mr r28,r3
+	mr r3,r30
+	bl __ZSt28_Rb_tree_rebalance_for_erasePSt18_Rb_tree_node_baseRS_
+	bl __ZdlPv
+	ld r2,40(r23)
+	addi r2,r2,-1
+	std r2,40(r23)
+	lwz r3,0(r25)
+	lfs f13,0(r27)
+	rldicl r9,r3,0,32
+	sldi r0,r9,3
+	add r2,r0,r24
+	lfs f0,160(r2)
+	fcmpu cr7,f0,f13
+	blt cr7,L2026
+L2027:
+	add r2,r0,r24
+	lfs f13,4(r27)
+	lfs f0,164(r2)
+	fcmpu cr7,f0,f13
+	bgt cr7,L2028
+	b L2029
+	.p2align 4,,15
+L2030:
+	addi r2,r9,1
+	mr r4,r16
+	mr r3,r17
+	rldic r2,r2,2,30
+	add r2,r2,r22
+	stfs f31,176(r2)
+	stw r29,256(r1)
+	stw r29,260(r1)
+	stw r29,264(r1)
+	stw r29,268(r1)
+	bl __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+	ld r4,8(r19)
+	mr r3,r19
+	mr r5,r17
+	bl __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_
+L2031:
+	mr r3,r30
+	bl __ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base
+	mr r4,r26
+	std r30,256(r1)
+	mr r28,r3
+	mr r3,r30
+	bl __ZSt28_Rb_tree_rebalance_for_erasePSt18_Rb_tree_node_baseRS_
+	bl __ZdlPv
+	ld r2,40(r23)
+	addi r2,r2,-1
+	std r2,40(r23)
+	nop
+	lbz r0,0(r20)
+	cmpwi cr7,r0,0
+	beq cr7,L2032
+	lwz r3,0(r25)
+	lfs f10,0(r27)
+	rldicl r0,r3,0,32
+	sldi r2,r0,3
+	add r2,r2,r24
+	lfs f0,4(r2)
+	fcmpu cr7,f0,f10
+	cror 30,29,30
+	bne cr7,L2034
+	cmpdi cr7,r21,0
+	slwi r9,r0,1
+	bne cr7,L2037
+	addi r0,r9,1
+	rldic r0,r0,2,30
+	lfsx f0,r24,r0
+	fcmpu cr7,f0,f10
+	bng cr7,L2037
+	slwi r2,r3,1
+	lfs f0,8(r24)
+	lfs f13,12(r24)
+	lfs f11,0(r24)
+	lfs f12,4(r24)
+	mr r3,r23
+	mr r4,r28
+	addi r2,r2,1
+	ld r5,392(r1)
+	rldic r2,r2,2,30
+	add r2,r2,r22
+	stfs f0,280(r1)
+	stfs f13,284(r1)
+	stfs f11,272(r1)
+	stfs f12,276(r1)
+	stfs f10,160(r2)
+	std r28,256(r1)
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	lwz r3,0(r25)
+	lfs f13,4(r27)
+	slwi r2,r3,1
+	addi r2,r2,1
+	rldic r2,r2,2,30
+	lfsx f0,r2,r24
+	fcmpu cr7,f0,f13
+	bng cr7,L2040
+	sldi r3,r3,3
+	ld r4,400(r1)
+	li r5,0
+	stfs f13,176(r1)
+	stfs f0,180(r1)
+	mr r30,r28
+	li r21,1
+	add r3,r24,r3
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	b L2084
+L2040:
+	stb r21,0(r20)
+	mr r30,r28
+	li r21,1
+	b L2084
+L2088:
+	ld r11,384(r1)
+L2044:
+	lfs f0,0(r11)
+	addi r0,r9,1
+	mr r30,r28
+	li r21,1
+	rldic r0,r0,2,30
+	stfsx f0,r24,r0
+	b L2084
+L2034:
+	mr r4,r28
+	mr r5,r24
+	std r28,256(r1)
+	mr r3,r23
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	lwz r3,0(r25)
+	ld r4,336(r1)
+	li r5,0
+	stfs f31,184(r1)
+	stfs f31,188(r1)
+	xori r3,r3,1
+	rldic r3,r3,3,29
+	add r3,r24,r3
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	lwz r3,0(r25)
+	lfs f13,0(r27)
+	ld r9,376(r1)
+	rldic r0,r3,3,29
+	add r2,r0,r22
+	lfs f0,176(r2)
+	stfs f13,124(r1)
+	fcmpu cr7,f13,f0
+	stfs f0,120(r1)
+	blt cr7,L2048
+	ld r9,368(r1)
+L2048:
+	rldic r2,r3,3,29
+	lfs f13,4(r27)
+	lfs f12,0(r9)
+	add r2,r2,r22
+	lfs f0,180(r2)
+	ld r2,360(r1)
+	stfs f13,132(r1)
+	fcmpu cr7,f13,f0
+	stfs f0,128(r1)
+	bgt cr7,L2052
+	ld r2,352(r1)
+L2052:
+	lfs f0,0(r2)
+	ld r4,344(r1)
+	add r3,r24,r0
+	li r5,0
+	stfs f12,192(r1)
+	mr r30,r28
+	li r21,1
+	stfs f0,196(r1)
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	b L2084
+	.p2align 4,,15
+L2032:
+	li r0,1
+	mr r4,r15
+	li r5,0
+	stb r0,0(r20)
+	stfs f31,200(r1)
+	stfs f31,204(r1)
+	lwz r3,0(r25)
+	xori r3,r3,1
+	rldic r3,r3,3,29
+	add r3,r24,r3
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	lwz r3,0(r25)
+	lfs f13,0(r27)
+	ld r9,328(r1)
+	rldic r0,r3,3,29
+	add r2,r0,r22
+	lfs f0,176(r2)
+	stfs f13,140(r1)
+	fcmpu cr7,f13,f0
+	stfs f0,136(r1)
+	blt cr7,L2056
+	ld r9,320(r1)
+L2056:
+	rldic r2,r3,3,29
+	lfs f13,4(r27)
+	lfs f12,0(r9)
+	add r2,r2,r22
+	lfs f0,180(r2)
+	ld r2,312(r1)
+	stfs f13,148(r1)
+	fcmpu cr7,f13,f0
+	stfs f0,144(r1)
+	bgt cr7,L2060
+	ld r2,304(r1)
+L2060:
+	lfs f0,0(r2)
+	add r3,r24,r0
+	mr r4,r14
+	li r5,0
+	stfs f12,208(r1)
+	mr r30,r28
+	li r21,1
+	stfs f0,212(r1)
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	b L2084
+L2086:
+	mr r3,r30
+	bl __ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base
+	mr r30,r3
+L2084:
+	cmpd cr7,r26,r30
+	beq cr7,L2062
+	lwz r0,0(r25)
+	lfs f13,4(r27)
+	sldi r0,r0,3
+	add r2,r0,r30
+	lfs f0,32(r2)
+	fcmpu cr7,f0,f13
+	cror 30,31,29
+	beq cr7,L2062
+	lfs f13,36(r2)
+	lfs f0,0(r27)
+	fcmpu cr7,f13,f0
+	cror 30,29,30
+	beq cr7,L2021
+	b L2086
+	.p2align 4,,15
+L2013:
+	lbz r0,0(r20)
+	cmpwi cr7,r0,0
+	beq cr7,L2065
+	lwz r9,0(r25)
+	rldicl r0,r9,0,32
+	xori r2,r0,1
+	slwi r2,r2,1
+	addi r2,r2,1
+	rldic r2,r2,2,30
+	lfsx f0,r2,r24
+	fcmpu cr7,f31,f0
+	bne cr7,L2067
+	slwi r2,r0,1
+	lfs f10,0(r27)
+	addi r2,r2,1
+	rldic r2,r2,2,30
+	lfsx f0,r2,r24
+	fcmpu cr6,f0,f10
+	cror 30,27,24
+	beq cr7,L2067
+	bng cr6,L2070
+	slwi r2,r9,1
+	lfs f12,4(r24)
+	lfs f0,8(r24)
+	lfs f11,0(r24)
+	lfs f13,12(r24)
+	addi r0,r23,8
+	mr r3,r23
+	addi r2,r2,1
+	addi r5,r1,272
+	mr r4,r0
+	rldic r2,r2,2,30
+	add r9,r1,r2
+	stfs f12,276(r1)
+	stfs f0,280(r1)
+	stfs f11,272(r1)
+	stfs f13,284(r1)
+	stfs f10,272(r9)
+	std r0,256(r1)
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	lwz r3,0(r25)
+	lfs f0,4(r27)
+	slwi r2,r3,1
+	addi r2,r2,1
+	rldic r2,r2,2,30
+	lfsx f12,r2,r24
+	fcmpu cr7,f12,f0
+	bng cr7,L2073
+	sldi r3,r3,3
+	addi r4,r1,216
+	stfs f0,216(r1)
+	stfs f12,220(r1)
+	li r5,0
+	add r3,r24,r3
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	b L2029
+L2073:
+	li r0,0
+	stb r0,0(r20)
+	b L2029
+L2070:
+	lfs f0,4(r27)
+	stfsx f0,r2,r24
+	b L2029
+L2065:
+	lwz r3,0(r25)
+	lfs f11,12(r24)
+	addi r29,r1,288
+	addi r4,r1,224
+	lfs f12,0(r24)
+	lfs f13,4(r24)
+	li r5,0
+	lfs f0,8(r24)
+	stfs f31,228(r1)
+	stfs f31,224(r1)
+	xori r3,r3,1
+	rldic r3,r3,3,29
+	stfs f11,300(r1)
+	stfs f12,288(r1)
+	stfs f13,292(r1)
+	add r3,r29,r3
+	stfs f0,296(r1)
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	lwz r3,0(r25)
+	mr r4,r27
+	li r5,0
+	sldi r3,r3,3
+	add r3,r29,r3
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r23
+	mr r4,r29
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_
+	std r3,232(r1)
+	b L2029
+L2012:
+	addi r29,r1,240
+	li r0,0
+	mr r4,r5
+	li r5,0
+	mr r3,r29
+	stw r0,252(r1)
+	stw r0,240(r1)
+	stw r0,244(r1)
+	stw r0,248(r1)
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	li r5,0
+	mr r4,r27
+	addi r3,r1,248
+	addi r26,r23,8
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	mr r3,r23
+	mr r4,r29
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_
+	mr r30,r3
+	b L2014
+L2085:
+	stw r29,272(r1)
+	stw r29,276(r1)
+	addi r24,r1,112
+	stw r29,280(r1)
+	stw r29,284(r1)
+	lfs f0,32(r30)
+	lwz r0,0(r25)
+	xori r0,r0,1
+	stfs f0,272(r1)
+	rldicl r0,r0,0,32
+	sldi r2,r0,3
+	add r2,r2,r30
+	lfs f13,36(r30)
+	stfs f13,276(r1)
+	lfs f0,40(r30)
+	stfs f0,280(r1)
+	lfs f13,44(r30)
+	stfs f13,284(r1)
+	lfs f0,32(r2)
+	fcmpu cr7,f0,f31
+	bnl cr7,L2025
+	b L2087
+L2026:
+	lfs f0,272(r1)
+	lfs f13,276(r1)
+	xori r3,r9,1
+	addi r29,r1,288
+	addi r4,r1,160
+	li r5,0
+	stfs f31,160(r1)
+	stfs f31,164(r1)
+	rldic r3,r3,3,29
+	add r3,r29,r3
+	stfs f0,288(r1)
+	stfs f13,292(r1)
+	lfs f0,280(r1)
+	lfs f13,284(r1)
+	stfs f0,296(r1)
+	stfs f13,300(r1)
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	lwz r2,0(r25)
+	lfs f0,0(r27)
+	mr r5,r29
+	mr r3,r23
+	mr r4,r28
+	slwi r2,r2,1
+	addi r2,r2,1
+	rldic r2,r2,2,30
+	add r2,r2,r24
+	stfs f0,176(r2)
+	std r28,256(r1)
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	lwz r3,0(r25)
+	rldic r0,r3,3,29
+	b L2027
+L2028:
+	lfs f0,272(r1)
+	lfs f13,276(r1)
+	xori r3,r3,1
+	addi r29,r1,288
+	addi r4,r1,168
+	li r5,0
+	stfs f31,172(r1)
+	stfs f31,168(r1)
+	rldic r3,r3,3,29
+	add r3,r29,r3
+	stfs f0,288(r1)
+	stfs f13,292(r1)
+	lfs f0,280(r1)
+	lfs f13,284(r1)
+	stfs f0,296(r1)
+	stfs f13,300(r1)
+	bl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE
+	lwz r2,0(r25)
+	lfs f0,4(r27)
+	mr r3,r23
+	mr r4,r28
+	mr r5,r29
+	rldic r2,r2,3,30
+	add r2,r2,r24
+	stfs f0,176(r2)
+	std r28,256(r1)
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	b L2029
+	.p2align 4,,15
+L2081:
+	stw r29,288(r1)
+	stw r29,292(r1)
+	stw r29,296(r1)
+	stw r29,300(r1)
+	lfs f0,32(r30)
+	lwz r0,0(r25)
+	xori r0,r0,1
+	stfs f0,288(r1)
+	rldic r9,r0,1,32
+	sldi r2,r9,2
+	add r2,r2,r22
+	lfs f13,36(r30)
+	stfs f13,292(r1)
+	lfs f0,40(r30)
+	stfs f0,296(r1)
+	lfs f13,44(r30)
+	stfs f13,300(r1)
+	lfs f0,176(r2)
+	fcmpu cr7,f31,f0
+	bgt cr7,L2030
+	b L2031
+	.p2align 4,,15
+L2037:
+	lfs f13,4(r27)
+	slwi r2,r3,1
+	mr r11,r22
+	addi r2,r2,1
+	rldic r2,r2,2,30
+	stfs f13,112(r1)
+	add r2,r2,r22
+	lfs f0,176(r2)
+	fcmpu cr7,f0,f13
+	stfs f0,116(r1)
+	bng cr7,L2044
+	b L2088
+L2062:
+	cmpdi cr7,r21,0
+	beq cr7,L2013
+	b L2029
+L2067:
+	addi r0,r23,8
+	mr r3,r23
+	mr r5,r24
+	mr r4,r0
+	std r0,256(r1)
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	li r0,0
+	stb r0,0(r20)
+	b L2065
+	.p2align 4,,15
+L2029:
+	addi r1,r1,576
+	mr r3,r19
+	ld r0,16(r1)
+	ld r14,-152(r1)
+	ld r15,-144(r1)
+	ld r16,-136(r1)
+	ld r17,-128(r1)
+	ld r18,-120(r1)
+	ld r19,-112(r1)
+	ld r20,-104(r1)
+	mtlr r0
+	ld r21,-96(r1)
+	ld r22,-88(r1)
+	ld r23,-80(r1)
+	ld r24,-72(r1)
+	ld r25,-64(r1)
+	ld r26,-56(r1)
+	ld r27,-48(r1)
+	ld r28,-40(r1)
+	ld r29,-32(r1)
+	ld r30,-24(r1)
+	lfd f31,-8(r1)
+	blr
+LFE11952:
+	.align 2
+	.p2align 4,,15
+	.globl __ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_
+	.weak_definition __ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_
+	.private_extern __ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_
+__ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_:
+LFB10558:
+	mflr r0
+LCFI790:
+	std r21,-104(r1)
+LCFI791:
+	std r22,-96(r1)
+LCFI792:
+	std r23,-88(r1)
+LCFI793:
+	std r28,-48(r1)
+LCFI794:
+	bcl 20,31,"L00000000075$pb"
+"L00000000075$pb":
+	std r29,-40(r1)
+LCFI795:
+	std r31,-24(r1)
+LCFI796:
+	mflr r31
+	std r0,16(r1)
+LCFI797:
+	stfd f30,-16(r1)
+LCFI798:
+	stfd f31,-8(r1)
+LCFI799:
+	std r24,-80(r1)
+LCFI800:
+	li r9,0
+	std r25,-72(r1)
+LCFI801:
+	std r26,-64(r1)
+LCFI802:
+	mr r0,r4
+	std r27,-56(r1)
+LCFI803:
+	std r30,-32(r1)
+LCFI804:
+	stdu r1,-368(r1)
+LCFI805:
+	mr r29,r0
+	li r0,0
+	li r10,0
+	mr r21,r3
+	mr r23,r5
+	stw r9,136(r1)
+	stw r9,140(r1)
+	addi r28,r1,220
+	addi r22,r1,176
+	stw r9,144(r1)
+	stw r9,148(r1)
+	mr r3,r28
+	addi r4,r1,152
+	lwz r11,0(r6)
+	stb r0,216(r1)
+	std r10,184(r1)
+	stw r9,240(r1)
+	stw r9,152(r1)
+	stw r9,156(r1)
+	stw r9,160(r1)
+	stw r9,164(r1)
+	stw r11,236(r1)
+	std r10,208(r1)
+	stw r10,176(r1)
+	std r22,192(r1)
+	srawi r0,r11,31
+	xor r2,r0,r11
+	subf r2,r2,r0
+	srwi r2,r2,31
+	stw r2,168(r1)
+	stw r2,112(r1)
+	std r22,200(r1)
+	stw r9,220(r1)
+	stw r9,224(r1)
+	stw r9,228(r1)
+	stw r9,232(r1)
+	bl __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_
+	addis r2,r31,ha16(LC9-"L00000000075$pb")
+	cmpd cr7,r23,r29
+	lfs f0,lo16(LC9-"L00000000075$pb")(r2)
+	stfs f0,240(r1)
+	beq cr7,L2110
+	fmr f30,f0
+	addi r27,r1,168
+	addi r24,r1,120
+	addi r25,r1,216
+	addi r26,r1,116
+	.p2align 4,,15
+L2092:
+	lfs f31,0(r29)
+	fcmpu cr7,f31,f30
+	beq cr7,L2093
+	lbz r0,216(r1)
+	cmpwi cr7,r0,0
+	beq cr7,L2096
+	std r22,128(r1)
+	mr r3,r27
+	mr r4,r22
+	mr r5,r28
+LEHB121:
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_
+	li r0,0
+	stb r0,216(r1)
+	.p2align 4,,15
+L2096:
+	stfs f31,240(r1)
+	fmr f30,f31
+L2093:
+	addi r30,r29,12
+	lfs f0,4(r29)
+	lwz r0,236(r1)
+	lfs f1,240(r1)
+	mr r3,r21
+	mr r4,r27
+	lfs f13,4(r30)
+	mr r5,r24
+	mr r6,r25
+	mr r7,r28
+	mr r9,r26
+	stw r0,116(r1)
+	stfs f0,120(r1)
+	stfs f13,124(r1)
+	bl __ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE
+LEHE121:
+	lwz r0,8(r30)
+	srawi r9,r0,31
+	xor r2,r9,r0
+	subf r2,r9,r2
+	cmpwi cr7,r2,1
+	ble cr7,L2098
+	mr r30,r29
+L2098:
+	addi r29,r30,12
+	cmpd cr7,r23,r29
+	bne cr7,L2092
+	b L2090
+L2109:
+L2101:
+	mr r30,r3
+	ld r4,184(r1)
+	mr r3,r27
+LEHB122:
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+LEHE122:
+	b L2114
+L2108:
+	b L2113
+L2103:
+L2114:
+	mr r3,r30
+L2113:
+LEHB123:
+	bl __Unwind_Resume
+LEHE123:
+	.p2align 4,,15
+L2110:
+	addi r27,r1,168
+L2090:
+	mr r3,r27
+	ld r4,184(r1)
+LEHB124:
+	bl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+LEHE124:
+	b L2115
+L2107:
+	b L2113
+L2105:
+L2115:
+	addi r1,r1,368
+	ld r0,16(r1)
+	ld r21,-104(r1)
+	ld r22,-96(r1)
+	ld r23,-88(r1)
+	ld r24,-80(r1)
+	ld r25,-72(r1)
+	ld r26,-64(r1)
+	ld r27,-56(r1)
+	mtlr r0
+	ld r28,-48(r1)
+	ld r29,-40(r1)
+	ld r30,-32(r1)
+	ld r31,-24(r1)
+	lfd f30,-16(r1)
+	lfd f31,-8(r1)
+	blr
+LFE10558:
+	.section __DATA,__gcc_except_tab
+GCC_except_table35:
+LLSDA10558:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x3
+	.byte	0x34
+	.set L$set$320,LEHB121-LFB10558
+	.long L$set$320
+	.set L$set$321,LEHE121-LEHB121
+	.long L$set$321
+	.set L$set$322,L2109-LFB10558
+	.long L$set$322
+	.byte	0x0
+	.set L$set$323,LEHB122-LFB10558
+	.long L$set$323
+	.set L$set$324,LEHE122-LEHB122
+	.long L$set$324
+	.set L$set$325,L2108-LFB10558
+	.long L$set$325
+	.byte	0x0
+	.set L$set$326,LEHB123-LFB10558
+	.long L$set$326
+	.set L$set$327,LEHE123-LEHB123
+	.long L$set$327
+	.long	0x0
+	.byte	0x0
+	.set L$set$328,LEHB124-LFB10558
+	.long L$set$328
+	.set L$set$329,LEHE124-LEHB124
+	.long L$set$329
+	.set L$set$330,L2107-LFB10558
+	.long L$set$330
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE
+	.weak_definition __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE
+	.private_extern __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE
+__ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE:
+LFB8792:
+	mflr r0
+LCFI806:
+	std r27,-80(r1)
+LCFI807:
+	std r28,-72(r1)
+LCFI808:
+	mfcr r2
+LCFI809:
+	bl saveFP+52 ; save f27-f31
+LCFI810:
+	std r31,-48(r1)
+LCFI811:
+	std r21,-128(r1)
+LCFI812:
+	bcl 20,31,"L00000000076$pb"
+"L00000000076$pb":
+	std r22,-120(r1)
+LCFI813:
+	std r23,-112(r1)
+LCFI814:
+	mflr r31
+	std r24,-104(r1)
+LCFI815:
+	std r25,-96(r1)
+LCFI816:
+	std r26,-88(r1)
+LCFI817:
+	std r29,-64(r1)
+LCFI818:
+	std r30,-56(r1)
+LCFI819:
+	stw r2,8(r1)
+LCFI820:
+	stdu r1,-400(r1)
+LCFI821:
+	mr r27,r3
+	mr r28,r4
+LEHB125:
+	bl _pthread_main_np
+LEHE125:
+	cmpdi cr7,r3,0
+	beq cr7,L2197
+	lbz r0,33(r28)
+	li r29,0
+	li r3,0
+	std r29,168(r1)
+	std r3,160(r1)
+	std r29,176(r1)
+	cmpwi cr7,r0,0
+	beq cr7,L2119
+	ld r3,8(r28)
+	ld r4,16(r28)
+LEHB126:
+	bl __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_
+	stb r29,33(r28)
+L2119:
+	lbz r0,32(r28)
+	cmpwi cr7,r0,0
+	beq cr7,L2121
+	addi r3,r28,8
+	bl __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE
+	stb r29,32(r28)
+L2121:
+	lwz r0,0(r28)
+	ld r4,8(r28)
+	mr r7,r30
+	addi r3,r1,160
+	ld r5,16(r28)
+	addi r6,r1,132
+	stw r0,132(r1)
+	bl __ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_
+	ld r3,160(r1)
+	ld r29,168(r1)
+	cmpd cr7,r29,r3
+	mr r30,r3
+	beq cr7,L2124
+	addis r2,r31,ha16(L_ZL19_OBJC_MESSAGE_REF_6-"L00000000076$pb")
+	addi r28,r27,32
+	addi r21,r1,116
+	addi r23,r1,120
+	la r24,lo16(L_ZL19_OBJC_MESSAGE_REF_6-"L00000000076$pb")(r2)
+	addi r25,r1,124
+	addi r26,r1,128
+	mr r22,r24
+	.p2align 4,,15
+L2126:
+	mr r3,r30
+	li r29,1
+	bl __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+	mr r4,r21
+	mr r3,r28
+	stw r29,116(r1)
+	fmr f27,f1
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	mr r3,r30
+	fmr f31,f1
+	bl __ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_
+	mr r3,r30
+	mr r4,r23
+	stw r29,120(r1)
+	fmr f29,f1
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	li r0,0
+	mr r3,r30
+	fmr f28,f1
+	mr r4,r25
+	stw r0,124(r1)
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	fsubs f31,f31,f29
+	mr r3,r30
+	mr r4,r26
+	stw r29,128(r1)
+	fmr f30,f1
+	bl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE
+	ld r0,0(r22)
+	ld r3,24(r27)
+	mr r4,r24
+	fmr f4,f1
+	stfd f27,184(r1)
+	fmr f1,f27
+	fsubs f31,f31,f28
+	mtctr r0
+	stfd f30,200(r1)
+	fmr f3,f30
+	mr r12,r0
+	stfd f4,208(r1)
+	stfd f31,192(r1)
+	fmr f2,f31
+	bctrl
+LEHE126:
+	ld r29,168(r1)
+	addi r30,r30,16
+	cmpd cr7,r30,r29
+	bne cr7,L2126
+	b L2198
+L2196:
+L2128:
+	mr r28,r3
+	ld r4,168(r1)
+	ld r3,160(r1)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_
+	ld r3,160(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2129
+	bl __ZdlPv
+L2129:
+	mr r3,r28
+LEHB127:
+	bl __Unwind_Resume
+	.p2align 4,,15
+L2198:
+	ld r3,160(r1)
+L2124:
+	mr r4,r29
+	addi r5,r1,113
+	bl __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_
+	ld r3,160(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2181
+	bl __ZdlPv
+	b L2181
+L2197:
+	addi r30,r27,144
+	.p2align 4,,15
+L2117:
+	mr r3,r30
+	bl _pthread_mutex_lock
+LEHE127:
+	cmpwi cr7,r3,4
+	mr r10,r3
+	beq cr7,L2117
+	cmpdi cr7,r3,0
+	beq cr7,L2134
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000076$pb")
+	addis r29,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000076$pb")
+	stw r10,224(r1)
+	stw r10,152(r1)
+	la r2,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000076$pb")(r2)
+	ld r29,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000076$pb")(r29)
+	li r11,0
+	li r0,-1
+	li r3,64
+	addi r9,r2,56
+	addi r25,r2,16
+	std r11,256(r1)
+	std r11,240(r1)
+	stw r0,264(r1)
+	std r11,248(r1)
+	std r9,232(r1)
+	std r25,216(r1)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000076$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000076$pb")
+	addi r29,r29,16
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000076$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000076$pb")(r9)
+	std r29,144(r1)
+	addi r27,r2,16
+	addi r26,r9,16
+	bl ___cxa_allocate_exception
+	lwz r0,224(r1)
+	mr r30,r3
+	ld r3,240(r1)
+	std r29,0(r30)
+	std r27,16(r30)
+	stw r0,8(r30)
+	cmpdi cr7,r3,0
+	std r3,24(r30)
+	beq cr7,L2136
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB128:
+	bctrl
+LEHE128:
+L2136:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000076$pb")
+	ld r7,248(r1)
+	ld r8,256(r1)
+	lwz r10,264(r1)
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000076$pb")
+	li r29,0
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000076$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000076$pb")(r9)
+	addi r0,r2,104
+	addi r11,r2,16
+	std r7,32(r30)
+	std r8,40(r30)
+	stw r10,48(r30)
+	std r0,56(r30)
+	addi r2,r2,72
+	std r11,0(r30)
+	std r2,16(r30)
+	addi r24,r9,16
+	ld r4,240(r1)
+	cmpdi cr7,r4,0
+	bne cr7,L2138
+	mcrf cr4,cr7
+	b L2139
+L2190:
+L2140:
+	std r26,0(r30)
+	mr r28,r3
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+	b L2163
+	.p2align 4,,15
+L2138:
+	ld r2,0(r4)
+	addi r3,r1,136
+	cmpdi cr4,r29,0
+	ld r0,40(r2)
+	mtctr r0
+	mr r12,r0
+LEHB129:
+	bctrl
+LEHE129:
+	ld r29,136(r1)
+	cmpdi cr4,r29,0
+	beq cr4,L2139
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB130:
+	bctrl
+LEHE130:
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB131:
+	bctrl
+LEHE131:
+	b L2139
+L2188:
+L2144:
+	ld r2,0(r29)
+	mr r28,r3
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L2152
+	.p2align 4,,15
+L2139:
+	ld r3,24(r30)
+	ld r0,256(r1)
+	lwz r2,264(r1)
+	cmpdi cr7,r3,0
+	std r0,40(r30)
+	ld r0,248(r1)
+	stw r2,48(r30)
+	std r0,32(r30)
+	beq cr7,L2145
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB132:
+	bctrl
+	cmpdi cr7,r3,0
+	beq cr7,L2145
+	li r0,0
+	std r0,24(r30)
+L2145:
+	std r29,24(r30)
+	beq cr4,L2150
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE132:
+	beq- cr4,L2150
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB133:
+	bctrl
+LEHE133:
+	b L2150
+L2189:
+	mr r28,r3
+L2152:
+	beq cr4,L2155
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L2155
+L2191:
+	mr r28,r3
+L2155:
+L2192:
+L2157:
+	std r24,56(r30)
+	std r25,0(r30)
+	addi r29,r30,16
+	std r27,16(r30)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L2158
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB134:
+	bctrl
+LEHE134:
+	cmpdi cr7,r3,0
+	beq cr7,L2158
+	li r0,0
+	std r0,8(r29)
+	b L2158
+L2187:
+	b L2206
+L2162:
+L2158:
+	std r26,0(r30)
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+L2193:
+L2163:
+L2194:
+L2164:
+	mr r3,r30
+	bl ___cxa_free_exception
+	ld r3,240(r1)
+	std r25,216(r1)
+	std r27,232(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2165
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB135:
+	bctrl
+LEHE135:
+	cmpdi cr7,r3,0
+	beq cr7,L2165
+	li r0,0
+	std r0,240(r1)
+L2165:
+	addi r3,r1,216
+	std r26,216(r1)
+	bl __ZNSt9exceptionD2Ev
+	b L2175
+L2186:
+	b L2206
+L2169:
+	.p2align 4,,15
+L2150:
+	ld r3,240(r1)
+	std r25,216(r1)
+	std r27,232(r1)
+	cmpdi cr7,r3,0
+	beq- cr7,L2170
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB136:
+	bctrl
+LEHE136:
+	cmpdi cr7,r3,0
+	beq cr7,L2170
+	li r0,0
+	std r0,240(r1)
+L2170:
+	addi r3,r1,216
+	std r26,216(r1)
+	bl __ZNSt9exceptionD2Ev
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000076$pb")
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000076$pb")
+	mr r3,r30
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000076$pb")(r4)
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000076$pb")(r5)
+LEHB137:
+	bl ___cxa_throw
+LEHE137:
+L2185:
+L2206:
+	cmpdi cr7,r4,-1
+	bne cr7,L2204
+L2174:
+LEHB138:
+	bl ___cxa_call_unexpected
+L2195:
+	mr r28,r3
+L2175:
+	addi r3,r1,144
+	std r26,144(r1)
+	bl __ZNSt9exceptionD2Ev
+	mr r3,r28
+L2204:
+	bl __Unwind_Resume
+	.p2align 4,,15
+L2134:
+	mr r4,r28
+	addi r3,r27,48
+	bl __ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_
+L2177:
+	mr r3,r30
+	bl _pthread_mutex_unlock
+	cmpwi cr7,r3,4
+	beq cr7,L2177
+	cmpdi cr7,r3,0
+	beq+ cr7,L2179
+	addis r3,r31,ha16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000076$pb")
+	addis r4,r31,ha16(LC2-"L00000000076$pb")
+	addis r6,r31,ha16(LC3-"L00000000076$pb")
+	li r5,74
+	la r3,lo16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000076$pb")(r3)
+	la r4,lo16(LC2-"L00000000076$pb")(r4)
+	la r6,lo16(LC3-"L00000000076$pb")(r6)
+	bl ___assert_rtn
+	.p2align 4,,15
+L2179:
+	ld r3,112(r27)
+	bl _CFRunLoopSourceSignal
+	ld r3,88(r27)
+	bl _CFRunLoopWakeUp
+LEHE138:
+L2181:
+	addi r1,r1,400
+	lwz r11,8(r1)
+	ld r0,16(r1)
+	ld r21,-128(r1)
+	ld r22,-120(r1)
+	ld r23,-112(r1)
+	ld r24,-104(r1)
+	ld r25,-96(r1)
+	ld r26,-88(r1)
+	mtlr r0
+	ld r27,-80(r1)
+	ld r28,-72(r1)
+	mtcrf 8,r11
+	ld r29,-64(r1)
+	ld r30,-56(r1)
+	ld r31,-48(r1)
+	b restFP+52 ; restore f27-f31
+LFE8792:
+	.section __DATA,__gcc_except_tab
+GCC_except_table36:
+	.align 3
+LLSDA8792:
+	.byte	0xff
+	.byte	0x0
+	.byte	0xbc,0x1
+	.byte	0x3
+	.byte	0xb6,0x1
+	.set L$set$331,LEHB125-LFB8792
+	.long L$set$331
+	.set L$set$332,LEHE125-LEHB125
+	.long L$set$332
+	.long	0x0
+	.byte	0x0
+	.set L$set$333,LEHB126-LFB8792
+	.long L$set$333
+	.set L$set$334,LEHE126-LEHB126
+	.long L$set$334
+	.set L$set$335,L2196-LFB8792
+	.long L$set$335
+	.byte	0x0
+	.set L$set$336,LEHB127-LFB8792
+	.long L$set$336
+	.set L$set$337,LEHE127-LEHB127
+	.long L$set$337
+	.long	0x0
+	.byte	0x0
+	.set L$set$338,LEHB128-LFB8792
+	.long L$set$338
+	.set L$set$339,LEHE128-LEHB128
+	.long L$set$339
+	.set L$set$340,L2190-LFB8792
+	.long L$set$340
+	.byte	0x0
+	.set L$set$341,LEHB129-LFB8792
+	.long L$set$341
+	.set L$set$342,LEHE129-LEHB129
+	.long L$set$342
+	.set L$set$343,L2189-LFB8792
+	.long L$set$343
+	.byte	0x0
+	.set L$set$344,LEHB130-LFB8792
+	.long L$set$344
+	.set L$set$345,LEHE130-LEHB130
+	.long L$set$345
+	.set L$set$346,L2188-LFB8792
+	.long L$set$346
+	.byte	0x0
+	.set L$set$347,LEHB131-LFB8792
+	.long L$set$347
+	.set L$set$348,LEHE131-LEHB131
+	.long L$set$348
+	.set L$set$349,L2189-LFB8792
+	.long L$set$349
+	.byte	0x0
+	.set L$set$350,LEHB132-LFB8792
+	.long L$set$350
+	.set L$set$351,LEHE132-LEHB132
+	.long L$set$351
+	.set L$set$352,L2189-LFB8792
+	.long L$set$352
+	.byte	0x0
+	.set L$set$353,LEHB133-LFB8792
+	.long L$set$353
+	.set L$set$354,LEHE133-LEHB133
+	.long L$set$354
+	.set L$set$355,L2191-LFB8792
+	.long L$set$355
+	.byte	0x0
+	.set L$set$356,LEHB134-LFB8792
+	.long L$set$356
+	.set L$set$357,LEHE134-LEHB134
+	.long L$set$357
+	.set L$set$358,L2187-LFB8792
+	.long L$set$358
+	.byte	0x1
+	.set L$set$359,LEHB135-LFB8792
+	.long L$set$359
+	.set L$set$360,LEHE135-LEHB135
+	.long L$set$360
+	.set L$set$361,L2186-LFB8792
+	.long L$set$361
+	.byte	0x1
+	.set L$set$362,LEHB136-LFB8792
+	.long L$set$362
+	.set L$set$363,LEHE136-LEHB136
+	.long L$set$363
+	.set L$set$364,L2185-LFB8792
+	.long L$set$364
+	.byte	0x1
+	.set L$set$365,LEHB137-LFB8792
+	.long L$set$365
+	.set L$set$366,LEHE137-LEHB137
+	.long L$set$366
+	.set L$set$367,L2195-LFB8792
+	.long L$set$367
+	.byte	0x0
+	.set L$set$368,LEHB138-LFB8792
+	.long L$set$368
+	.set L$set$369,LEHE138-LEHB138
+	.long L$set$369
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.text
+	.align 2
+	.p2align 4,,15
+	.globl __ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE
+	.private_extern __ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE
+__ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE:
+LFB8822:
+	ld r3,160(r3)
+	cmpdi cr7,r3,0
+	beq cr7,L2211
+	b __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE
+	.p2align 4,,15
+L2211:
+	blr
+LFE8822:
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+	.align 2
+	.p2align 4,,15
+	.globl __ZN17CocoaViewInstance17runLoopFireStaticEPv
+	.weak_definition __ZN17CocoaViewInstance17runLoopFireStaticEPv
+	.private_extern __ZN17CocoaViewInstance17runLoopFireStaticEPv
+__ZN17CocoaViewInstance17runLoopFireStaticEPv:
+LFB8809:
+	mflr r0
+LCFI822:
+	std r27,-40(r1)
+LCFI823:
+	std r28,-32(r1)
+LCFI824:
+	mfcr r2
+LCFI825:
+	bcl 20,31,"L00000000077$pb"
+"L00000000077$pb":
+	std r31,-8(r1)
+LCFI826:
+	std r0,16(r1)
+LCFI827:
+	li r9,0
+	li r0,0
+	mflr r31
+	std r24,-64(r1)
+LCFI828:
+	std r25,-56(r1)
+LCFI829:
+	std r26,-48(r1)
+LCFI830:
+	std r29,-24(r1)
+LCFI831:
+	std r30,-16(r1)
+LCFI832:
+	stw r2,8(r1)
+LCFI833:
+	stdu r1,-368(r1)
+LCFI834:
+	li r2,0
+	mr r27,r3
+	addi r28,r3,144
+	std r9,192(r1)
+	std r0,144(r1)
+	stb r2,201(r1)
+	std r9,152(r1)
+	std r9,160(r1)
+	stw r9,168(r1)
+	std r9,176(r1)
+	std r9,184(r1)
+	stb r2,200(r1)
+	.p2align 4,,15
+L2213:
+	mr r3,r28
+LEHB139:
+	bl _pthread_mutex_lock
+LEHE139:
+	cmpwi cr7,r3,4
+	mr r30,r3
+	beq cr7,L2213
+	cmpdi cr7,r3,0
+	beq cr7,L2215
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000077$pb")
+	addis r29,r31,ha16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000077$pb")
+	stw r30,256(r1)
+	stw r30,136(r1)
+	la r2,lo16(__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE-"L00000000077$pb")(r2)
+	ld r29,lo16(L__ZTVN5boost10lock_errorE$non_lazy_ptr-"L00000000077$pb")(r29)
+	li r11,0
+	li r0,-1
+	li r3,64
+	addi r9,r2,56
+	addi r28,r2,16
+	std r11,288(r1)
+	std r11,272(r1)
+	stw r0,296(r1)
+	std r11,280(r1)
+	std r9,264(r1)
+	std r28,248(r1)
+	addis r2,r31,ha16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000077$pb")
+	addis r9,r31,ha16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000077$pb")
+	addi r29,r29,16
+	ld r2,lo16(L__ZTVN5boost9exceptionE$non_lazy_ptr-"L00000000077$pb")(r2)
+	ld r9,lo16(L__ZTVN5boost16thread_exceptionE$non_lazy_ptr-"L00000000077$pb")(r9)
+	std r29,128(r1)
+	addi r27,r2,16
+	addi r26,r9,16
+	bl ___cxa_allocate_exception
+	lwz r0,256(r1)
+	mr r30,r3
+	ld r3,272(r1)
+	std r29,0(r30)
+	std r27,16(r30)
+	stw r0,8(r30)
+	cmpdi cr7,r3,0
+	std r3,24(r30)
+	beq cr7,L2217
+	ld r2,0(r3)
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB140:
+	bctrl
+LEHE140:
+L2217:
+	addis r2,r31,ha16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000077$pb")
+	ld r7,280(r1)
+	ld r8,288(r1)
+	lwz r10,296(r1)
+	addis r9,r31,ha16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000077$pb")
+	li r29,0
+	la r2,lo16(__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000077$pb")(r2)
+	la r9,lo16(__ZTVN5boost16exception_detail10clone_baseE-"L00000000077$pb")(r9)
+	addi r0,r2,104
+	addi r11,r2,16
+	std r7,32(r30)
+	std r8,40(r30)
+	stw r10,48(r30)
+	std r0,56(r30)
+	addi r2,r2,72
+	std r11,0(r30)
+	std r2,16(r30)
+	addi r24,r9,16
+	ld r4,272(r1)
+	cmpdi cr7,r4,0
+	bne cr7,L2219
+	mcrf cr4,cr7
+	b L2220
+L2295:
+L2221:
+	std r26,0(r30)
+	mr r25,r3
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+	b L2244
+	.p2align 4,,15
+L2219:
+	ld r2,0(r4)
+	addi r3,r1,120
+	cmpdi cr4,r29,0
+	ld r0,40(r2)
+	mtctr r0
+	mr r12,r0
+LEHB141:
+	bctrl
+LEHE141:
+	ld r29,120(r1)
+	cmpdi cr4,r29,0
+	beq cr4,L2220
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+LEHB142:
+	bctrl
+LEHE142:
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB143:
+	bctrl
+LEHE143:
+	b L2220
+L2293:
+L2225:
+	ld r2,0(r29)
+	mr r25,r3
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L2233
+	.p2align 4,,15
+L2220:
+	ld r3,24(r30)
+	ld r0,288(r1)
+	lwz r2,296(r1)
+	cmpdi cr7,r3,0
+	std r0,40(r30)
+	ld r0,280(r1)
+	stw r2,48(r30)
+	std r0,32(r30)
+	beq cr7,L2226
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB144:
+	bctrl
+	cmpdi cr7,r3,0
+	beq cr7,L2226
+	li r0,0
+	std r0,24(r30)
+L2226:
+	std r29,24(r30)
+	beq cr4,L2231
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,24(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+LEHE144:
+	beq- cr4,L2231
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB145:
+	bctrl
+LEHE145:
+	b L2231
+L2294:
+	mr r25,r3
+L2233:
+	beq cr4,L2236
+	ld r2,0(r29)
+	mr r3,r29
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+	bctrl
+	b L2236
+L2296:
+	mr r25,r3
+L2236:
+L2297:
+L2238:
+	std r24,56(r30)
+	std r28,0(r30)
+	addi r29,r30,16
+	std r27,16(r30)
+	ld r3,8(r29)
+	cmpdi cr7,r3,0
+	beq cr7,L2239
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB146:
+	bctrl
+LEHE146:
+	cmpdi cr7,r3,0
+	beq cr7,L2239
+	li r0,0
+	std r0,8(r29)
+	b L2239
+L2292:
+	b L2314
+L2243:
+L2239:
+	std r26,0(r30)
+	mr r3,r30
+	bl __ZNSt9exceptionD2Ev
+L2298:
+L2244:
+L2299:
+L2245:
+	mr r3,r30
+	bl ___cxa_free_exception
+	ld r3,272(r1)
+	std r28,248(r1)
+	std r27,264(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2246
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB147:
+	bctrl
+LEHE147:
+	cmpdi cr7,r3,0
+	beq cr7,L2246
+	li r0,0
+	std r0,272(r1)
+L2246:
+	addi r3,r1,248
+	std r26,248(r1)
+	bl __ZNSt9exceptionD2Ev
+	b L2256
+L2291:
+	b L2314
+L2250:
+	.p2align 4,,15
+L2231:
+	ld r3,272(r1)
+	std r28,248(r1)
+	std r27,264(r1)
+	cmpdi cr7,r3,0
+	beq- cr7,L2251
+	ld r2,0(r3)
+	ld r0,32(r2)
+	mtctr r0
+	mr r12,r0
+LEHB148:
+	bctrl
+LEHE148:
+	cmpdi cr7,r3,0
+	beq cr7,L2251
+	li r0,0
+	std r0,272(r1)
+L2251:
+	addi r3,r1,248
+	std r26,248(r1)
+	bl __ZNSt9exceptionD2Ev
+	addis r4,r31,ha16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000077$pb")
+	addis r5,r31,ha16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000077$pb")
+	mr r3,r30
+	la r4,lo16(__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE-"L00000000077$pb")(r4)
+	ld r5,lo16(L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr-"L00000000077$pb")(r5)
+LEHB149:
+	bl ___cxa_throw
+LEHE149:
+L2290:
+L2314:
+	cmpdi cr7,r4,-1
+	bne cr7,L2312
+L2255:
+LEHB150:
+	bl ___cxa_call_unexpected
+LEHE150:
+L2300:
+	mr r25,r3
+L2256:
+	addi r3,r1,128
+	std r26,128(r1)
+	bl __ZNSt9exceptionD2Ev
+	b L2276
+	.p2align 4,,15
+L2215:
+	addi r29,r27,120
+	addi r3,r1,144
+	mr r4,r29
+LEHB151:
+	bl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_
+	ld r4,120(r27)
+	ld r5,128(r27)
+	mr r3,r29
+	addi r26,r1,168
+	addi r29,r27,48
+	bl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_
+	cmpd cr7,r26,r29
+	beq cr7,L2258
+	lwz r0,48(r27)
+	addi r3,r1,176
+	addi r4,r27,56
+	stw r0,168(r1)
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_
+LEHE151:
+	lbz r0,80(r27)
+	lbz r2,81(r27)
+	stb r0,200(r1)
+	stb r2,201(r1)
+L2258:
+	addi r2,r1,208
+	li r0,0
+	stw r30,208(r1)
+	std r30,216(r1)
+	std r30,224(r1)
+	std r30,232(r1)
+	stb r0,241(r1)
+	stb r0,240(r1)
+	cmpd cr7,r29,r2
+	beq cr7,L2260
+	stw r30,48(r27)
+	addi r3,r27,56
+	addi r4,r1,216
+LEHB152:
+	bl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_
+LEHE152:
+	lbz r0,240(r1)
+	lbz r2,241(r1)
+	stb r0,80(r27)
+	stb r2,81(r27)
+L2260:
+	ld r3,216(r1)
+	ld r4,224(r1)
+	addi r5,r1,112
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,216(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2304
+	bl __ZdlPv
+	b L2304
+L2301:
+L2264:
+	mr r25,r3
+	ld r4,224(r1)
+	ld r3,216(r1)
+	addi r5,r1,113
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,216(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2276
+	bl __ZdlPv
+	b L2276
+	.p2align 4,,15
+L2304:
+	mr r3,r28
+LEHB153:
+	bl _pthread_mutex_unlock
+	cmpwi cr7,r3,4
+	beq cr7,L2304
+	cmpdi cr7,r3,0
+	beq+ cr7,L2268
+	addis r3,r31,ha16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000077$pb")
+	addis r4,r31,ha16(LC2-"L00000000077$pb")
+	addis r6,r31,ha16(LC3-"L00000000077$pb")
+	li r5,74
+	la r3,lo16(__ZZN5boost5mutex6unlockEvE8__func__-"L00000000077$pb")(r3)
+	la r4,lo16(LC2-"L00000000077$pb")(r4)
+	la r6,lo16(LC3-"L00000000077$pb")(r6)
+	bl ___assert_rtn
+	.p2align 4,,15
+L2268:
+	ld r29,144(r1)
+	ld r9,152(r1)
+	cmpd cr7,r9,r29
+	beq cr7,L2270
+	.p2align 4,,15
+L2305:
+	ld r0,0(r29)
+	cmpdi cr7,r0,0
+	beq cr7,L2272
+	mtctr r0
+	ld r3,8(r29)
+	mr r12,r0
+	bctrl
+	ld r9,152(r1)
+L2272:
+	addi r29,r29,16
+	cmpd cr7,r9,r29
+	bne cr7,L2305
+L2270:
+	mr r3,r26
+	bl __ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_
+	cmpdi cr7,r3,0
+	bne cr7,L2274
+	mr r3,r27
+	mr r4,r26
+	bl __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE
+LEHE153:
+	b L2274
+L2302:
+	mr r25,r3
+L2276:
+	ld r3,176(r1)
+	ld r4,184(r1)
+	addi r5,r1,114
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,176(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2277
+	bl __ZdlPv
+	b L2277
+	.p2align 4,,15
+L2274:
+	ld r3,176(r1)
+	ld r4,184(r1)
+	addi r5,r1,115
+	bl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_
+	ld r3,176(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2279
+	bl __ZdlPv
+L2279:
+	ld r3,144(r1)
+	ld r4,152(r1)
+	addi r5,r1,117
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,144(r1)
+	cmpdi cr7,r3,0
+	bne cr7,L2281
+	b L2286
+L2303:
+L2277:
+L2283:
+	ld r3,144(r1)
+	ld r4,152(r1)
+	addi r5,r1,116
+	bl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_
+	ld r3,144(r1)
+	cmpdi cr7,r3,0
+	beq cr7,L2284
+	bl __ZdlPv
+L2284:
+	mr r3,r25
+L2312:
+LEHB154:
+	bl __Unwind_Resume
+LEHE154:
+	.p2align 4,,15
+L2281:
+	bl __ZdlPv
+L2286:
+	addi r1,r1,368
+	ld r0,16(r1)
+	lwz r11,8(r1)
+	ld r24,-64(r1)
+	ld r25,-56(r1)
+	ld r26,-48(r1)
+	ld r27,-40(r1)
+	ld r28,-32(r1)
+	ld r29,-24(r1)
+	mtlr r0
+	ld r30,-16(r1)
+	ld r31,-8(r1)
+	mtcrf 8,r11
+	blr
+LFE8809:
+	.section __DATA,__gcc_except_tab
+GCC_except_table37:
+	.align 3
+LLSDA8809:
+	.byte	0xff
+	.byte	0x0
+	.byte	0xdc,0x1
+	.byte	0x3
+	.byte	0xd0,0x1
+	.set L$set$370,LEHB139-LFB8809
+	.long L$set$370
+	.set L$set$371,LEHE139-LEHB139
+	.long L$set$371
+	.set L$set$372,L2302-LFB8809
+	.long L$set$372
+	.byte	0x0
+	.set L$set$373,LEHB140-LFB8809
+	.long L$set$373
+	.set L$set$374,LEHE140-LEHB140
+	.long L$set$374
+	.set L$set$375,L2295-LFB8809
+	.long L$set$375
+	.byte	0x0
+	.set L$set$376,LEHB141-LFB8809
+	.long L$set$376
+	.set L$set$377,LEHE141-LEHB141
+	.long L$set$377
+	.set L$set$378,L2294-LFB8809
+	.long L$set$378
+	.byte	0x0
+	.set L$set$379,LEHB142-LFB8809
+	.long L$set$379
+	.set L$set$380,LEHE142-LEHB142
+	.long L$set$380
+	.set L$set$381,L2293-LFB8809
+	.long L$set$381
+	.byte	0x0
+	.set L$set$382,LEHB143-LFB8809
+	.long L$set$382
+	.set L$set$383,LEHE143-LEHB143
+	.long L$set$383
+	.set L$set$384,L2294-LFB8809
+	.long L$set$384
+	.byte	0x0
+	.set L$set$385,LEHB144-LFB8809
+	.long L$set$385
+	.set L$set$386,LEHE144-LEHB144
+	.long L$set$386
+	.set L$set$387,L2294-LFB8809
+	.long L$set$387
+	.byte	0x0
+	.set L$set$388,LEHB145-LFB8809
+	.long L$set$388
+	.set L$set$389,LEHE145-LEHB145
+	.long L$set$389
+	.set L$set$390,L2296-LFB8809
+	.long L$set$390
+	.byte	0x0
+	.set L$set$391,LEHB146-LFB8809
+	.long L$set$391
+	.set L$set$392,LEHE146-LEHB146
+	.long L$set$392
+	.set L$set$393,L2292-LFB8809
+	.long L$set$393
+	.byte	0x1
+	.set L$set$394,LEHB147-LFB8809
+	.long L$set$394
+	.set L$set$395,LEHE147-LEHB147
+	.long L$set$395
+	.set L$set$396,L2291-LFB8809
+	.long L$set$396
+	.byte	0x1
+	.set L$set$397,LEHB148-LFB8809
+	.long L$set$397
+	.set L$set$398,LEHE148-LEHB148
+	.long L$set$398
+	.set L$set$399,L2290-LFB8809
+	.long L$set$399
+	.byte	0x1
+	.set L$set$400,LEHB149-LFB8809
+	.long L$set$400
+	.set L$set$401,LEHE149-LEHB149
+	.long L$set$401
+	.set L$set$402,L2300-LFB8809
+	.long L$set$402
+	.byte	0x0
+	.set L$set$403,LEHB150-LFB8809
+	.long L$set$403
+	.set L$set$404,LEHE150-LEHB150
+	.long L$set$404
+	.long	0x0
+	.byte	0x0
+	.set L$set$405,LEHB151-LFB8809
+	.long L$set$405
+	.set L$set$406,LEHE151-LEHB151
+	.long L$set$406
+	.set L$set$407,L2302-LFB8809
+	.long L$set$407
+	.byte	0x0
+	.set L$set$408,LEHB152-LFB8809
+	.long L$set$408
+	.set L$set$409,LEHE152-LEHB152
+	.long L$set$409
+	.set L$set$410,L2301-LFB8809
+	.long L$set$410
+	.byte	0x0
+	.set L$set$411,LEHB153-LFB8809
+	.long L$set$411
+	.set L$set$412,LEHE153-LEHB153
+	.long L$set$412
+	.set L$set$413,L2302-LFB8809
+	.long L$set$413
+	.byte	0x0
+	.set L$set$414,LEHB154-LFB8809
+	.long L$set$414
+	.set L$set$415,LEHE154-LEHB154
+	.long L$set$415
+	.long	0x0
+	.byte	0x0
+	.byte	0x7f
+	.byte	0x0
+	.align 3
+	.byte	0x0
+	.section __TEXT,__textcoal_nt,coalesced,pure_instructions
+.lcomm __ZN12_GLOBAL__N_12_1E,1,0
+	.private_extern __ZGVZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep
+	.globl __ZGVZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep
+	.weak_definition __ZGVZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep
+	.section __DATA,__datacoal_nt,coalesced
+	.align 3
+__ZGVZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep:
+	.space 8
+	.private_extern __ZGVZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep
+	.globl __ZGVZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep
+	.weak_definition __ZGVZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep
+	.align 3
+__ZGVZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep:
+	.space 8
+	.private_extern __ZTVN8Fielding13HostViewCocoaE
+	.globl __ZTVN8Fielding13HostViewCocoaE
+	.const_data
+	.align 3
+__ZTVN8Fielding13HostViewCocoaE:
+	.quad	0
+	.quad	__ZTIN8Fielding13HostViewCocoaE
+	.quad	__ZN8Fielding13HostViewCocoaD1Ev
+	.quad	__ZN8Fielding13HostViewCocoaD0Ev
+	.quad	__ZN8Fielding4View16addedToSuperViewEv
+	.quad	__ZN8Fielding4View20removedFromSuperViewEv
+	.quad	__ZN8Fielding9SuperView4drawERNS_8GContextERKNS_6RegionE
+	.quad	__ZN8Fielding9SuperView7hitTestERKN5boost7polygon10point_dataIfEE
+	.quad	__ZN8Fielding9SuperView5wheelERKN5boost7polygon10point_dataIfEEf
+	.quad	__ZN8Fielding9SuperView9mouseDownERKN5boost7polygon10point_dataIfEE
+	.quad	__ZN8Fielding9SuperView7mouseUpERKN5boost7polygon10point_dataIfEE
+	.quad	__ZN8Fielding9SuperView9mouseDragERKN5boost7polygon10point_dataIfEE
+	.quad	__ZN8Fielding9SuperView13mouseDblClickERKN5boost7polygon10point_dataIfEE
+	.quad	__ZN8Fielding9SuperView5timerEv
+	.quad	__ZN8Fielding9SuperView8isOpaqueEv
+	.quad	__ZN8Fielding9SuperView15GetOpaqueRegionEv
+	.quad	__ZN8Fielding13HostViewCocoa14callOnUIThreadEPFvPvES1_
+	.quad	__ZN8Fielding13HostViewCocoa11GetRootViewEv
+	.quad	__ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE
+	.quad	__ZN8Fielding4View8setTimerEbd
+	.quad	__ZN8Fielding8HostView3addERNS_4ViewE
+	.quad	__ZN8Fielding8HostView6removeERNS_4ViewE
+	.quad	__ZN8Fielding8HostView18captureMouseOfViewERNS_4ViewE
+	.quad	__ZN8Fielding8HostView18releaseMouseOfViewERNS_4ViewE
+	.quad	__ZN8Fielding13HostViewCocoa14setTimerOfViewEbdRNS_4ViewE
+	.quad	__ZN8Fielding13HostViewCocoa8setChildEPNS_4ViewE
+	.quad	__ZN8Fielding13HostViewCocoa16hostMouseCaptureEv
+	.quad	__ZN8Fielding13HostViewCocoa16hostMouseReleaseEv
+	.private_extern __ZTSN8Fielding13HostViewCocoaE
+	.globl __ZTSN8Fielding13HostViewCocoaE
+	.cstring
+	.align 3
+__ZTSN8Fielding13HostViewCocoaE:
+	.ascii "N8Fielding13HostViewCocoaE\0"
+	.private_extern __ZTIN8Fielding13HostViewCocoaE
+	.globl __ZTIN8Fielding13HostViewCocoaE
+	.const_data
+	.align 3
+__ZTIN8Fielding13HostViewCocoaE:
+	.quad	__ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	__ZTSN8Fielding13HostViewCocoaE
+	.quad	__ZTIN8Fielding8HostViewE
+	.private_extern __ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE
+	.globl __ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE
+	.weak_definition __ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE
+	.section __DATA,__datacoal_nt,coalesced
+	.align 3
+__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE:
+	.space 8
+	.private_extern __ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE
+	.globl __ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE
+	.weak_definition __ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE
+	.align 3
+__ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE:
+	.space 8
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_0:
+	.ascii "frame\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_0:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_0
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_1:
+	.ascii "alloc\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_1:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_1
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_2:
+	.ascii "initWithFrame:andView:\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_2:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_2
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_3:
+	.ascii "addSubview:\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_3:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_3
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_4:
+	.ascii "release\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_4:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_4
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_5:
+	.ascii "removeFromSuperview\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_5:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_5
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_6:
+	.ascii "setNeedsDisplayInRect:\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_6:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_6
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_7:
+	.ascii "superview\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_7:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_7
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_8:
+	.ascii "convertPoint:fromView:\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_8:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_8
+	.cstring
+	.align 3
+L_ZL21_OBJC_METH_VAR_NAME_9:
+	.ascii "locationInWindow\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL19_OBJC_MESSAGE_REF_9:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL21_OBJC_METH_VAR_NAME_9
+	.cstring
+	.align 3
+L_ZL22_OBJC_METH_VAR_NAME_10:
+	.ascii "modifierFlags\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL20_OBJC_MESSAGE_REF_10:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL22_OBJC_METH_VAR_NAME_10
+	.cstring
+	.align 3
+L_ZL22_OBJC_METH_VAR_NAME_11:
+	.ascii "clickCount\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL20_OBJC_MESSAGE_REF_11:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL22_OBJC_METH_VAR_NAME_11
+	.cstring
+	.align 3
+L_ZL22_OBJC_METH_VAR_NAME_12:
+	.ascii "deltaY\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL20_OBJC_MESSAGE_REF_12:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL22_OBJC_METH_VAR_NAME_12
+	.cstring
+	.align 3
+L_ZL22_OBJC_METH_VAR_NAME_13:
+	.ascii "currentContext\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL20_OBJC_MESSAGE_REF_13:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL22_OBJC_METH_VAR_NAME_13
+	.cstring
+	.align 3
+L_ZL22_OBJC_METH_VAR_NAME_14:
+	.ascii "graphicsPort\0"
+	.section __DATA, __objc_msgrefs, regular, no_dead_strip
+	.align 3
+L_ZL20_OBJC_MESSAGE_REF_14:
+	.quad	_objc_msgSend_fixup
+	.quad	L_ZL22_OBJC_METH_VAR_NAME_14
+	.section __DATA, __objc_classrefs, regular, no_dead_strip
+	.align 3
+L_ZL30_OBJC_CLASSLIST_REFERENCES_$_0:
+	.quad	_OBJC_CLASS_$_com_fieldingdsp_UIToolBox_CocoaViewWrapper_c570292
+	.align 3
+L_ZL30_OBJC_CLASSLIST_REFERENCES_$_1:
+	.quad	_OBJC_CLASS_$_NSGraphicsContext
+.lcomm __ZStL8__ioinit,1,0
+	.private_extern __ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE
+	.globl __ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE
+	.weak_definition __ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE
+	.section __DATA,__datacoal_nt,coalesced
+	.align 3
+__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_alloc_EE1eE:
+	.space 16
+	.private_extern __ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE
+	.globl __ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE
+	.weak_definition __ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE
+	.align 3
+__ZN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_exception_EE1eE:
+	.space 16
+	.private_extern __ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep
+	.globl __ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep
+	.weak_definition __ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep
+	.align 3
+__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE2ep:
+	.space 16
+	.cstring
+	.align 3
+__ZZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEvE19__PRETTY_FUNCTION__:
+	.ascii "boost::exception_ptr boost::exception_detail::get_static_exception_object() [with Exception = boost::exception_detail::bad_alloc_]\0"
+	.private_extern __ZTVN5boost16exception_detail10bad_alloc_E
+	.globl __ZTVN5boost16exception_detail10bad_alloc_E
+	.weak_definition __ZTVN5boost16exception_detail10bad_alloc_E
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost16exception_detail10bad_alloc_E:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail10bad_alloc_E
+	.quad	__ZN5boost16exception_detail10bad_alloc_D1Ev
+	.quad	__ZN5boost16exception_detail10bad_alloc_D0Ev
+	.quad	-40
+	.quad	__ZTIN5boost16exception_detail10bad_alloc_E
+	.quad	__ZThn40_N5boost16exception_detail10bad_alloc_D1Ev
+	.quad	__ZThn40_N5boost16exception_detail10bad_alloc_D0Ev
+	.quad	__ZNKSt9exception4whatEv
+	.private_extern __ZTIN5boost16exception_detail10bad_alloc_E
+	.globl __ZTIN5boost16exception_detail10bad_alloc_E
+	.weak_definition __ZTIN5boost16exception_detail10bad_alloc_E
+	.align 3
+__ZTIN5boost16exception_detail10bad_alloc_E:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail10bad_alloc_E
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost9exceptionE
+	.quad	2
+	.quad	__ZTISt9bad_alloc
+	.quad	10242
+	.private_extern __ZTSN5boost16exception_detail10bad_alloc_E
+	.globl __ZTSN5boost16exception_detail10bad_alloc_E
+	.weak_definition __ZTSN5boost16exception_detail10bad_alloc_E
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail10bad_alloc_E:
+	.ascii "N5boost16exception_detail10bad_alloc_E\0"
+	.globl __ZTIN5boost9exceptionE
+	.weak_definition __ZTIN5boost9exceptionE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTIN5boost9exceptionE:
+	.quad	__ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	__ZTSN5boost9exceptionE
+	.globl __ZTSN5boost9exceptionE
+	.weak_definition __ZTSN5boost9exceptionE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost9exceptionE:
+	.ascii "N5boost9exceptionE\0"
+	.globl __ZTVN5boost9exceptionE
+	.weak_definition __ZTVN5boost9exceptionE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost9exceptionE:
+	.quad	0
+	.quad	__ZTIN5boost9exceptionE
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.private_extern __ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.globl __ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.weak_definition __ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.align 3
+__ZTVN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.quad	__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.quad	__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+	.quad	-40
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.quad	__ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.quad	__ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.quad	__ZNKSt9exception4whatEv
+	.quad	-48
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.quad	__ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv
+	.quad	__ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv
+	.quad	__ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.quad	__ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev
+	.private_extern __ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.globl __ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.weak_definition __ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.align 3
+__ZTIN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost16exception_detail10bad_alloc_E
+	.quad	2
+	.quad	__ZTIN5boost16exception_detail10clone_baseE
+	.quad	12290
+	.private_extern __ZTSN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.globl __ZTSN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.weak_definition __ZTSN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail10clone_implINS0_10bad_alloc_EEE:
+	.ascii "N5boost16exception_detail10clone_implINS0_10bad_alloc_EEE\0"
+	.private_extern __ZTIN5boost16exception_detail10clone_baseE
+	.globl __ZTIN5boost16exception_detail10clone_baseE
+	.weak_definition __ZTIN5boost16exception_detail10clone_baseE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTIN5boost16exception_detail10clone_baseE:
+	.quad	__ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail10clone_baseE
+	.private_extern __ZTSN5boost16exception_detail10clone_baseE
+	.globl __ZTSN5boost16exception_detail10clone_baseE
+	.weak_definition __ZTSN5boost16exception_detail10clone_baseE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail10clone_baseE:
+	.ascii "N5boost16exception_detail10clone_baseE\0"
+	.private_extern __ZTVN5boost16exception_detail10clone_baseE
+	.globl __ZTVN5boost16exception_detail10clone_baseE
+	.weak_definition __ZTVN5boost16exception_detail10clone_baseE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost16exception_detail10clone_baseE:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail10clone_baseE
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	__ZN5boost16exception_detail10clone_baseD1Ev
+	.quad	__ZN5boost16exception_detail10clone_baseD0Ev
+	.private_extern __ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.globl __ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.weak_definition __ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.align 3
+__ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE:
+	.quad	0
+	.quad	__ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv
+	.quad	__ZN5boost6detail15sp_counted_base7destroyEv
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info
+	.private_extern __ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.globl __ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.weak_definition __ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.align 3
+__ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE:
+	.quad	__ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	__ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.quad	__ZTIN5boost6detail15sp_counted_baseE
+	.private_extern __ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.globl __ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.weak_definition __ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE:
+	.ascii "N5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEEE\0"
+	.private_extern __ZTIN5boost6detail15sp_counted_baseE
+	.globl __ZTIN5boost6detail15sp_counted_baseE
+	.weak_definition __ZTIN5boost6detail15sp_counted_baseE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTIN5boost6detail15sp_counted_baseE:
+	.quad	__ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	__ZTSN5boost6detail15sp_counted_baseE
+	.private_extern __ZTSN5boost6detail15sp_counted_baseE
+	.globl __ZTSN5boost6detail15sp_counted_baseE
+	.weak_definition __ZTSN5boost6detail15sp_counted_baseE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost6detail15sp_counted_baseE:
+	.ascii "N5boost6detail15sp_counted_baseE\0"
+	.private_extern __ZTVN5boost6detail15sp_counted_baseE
+	.globl __ZTVN5boost6detail15sp_counted_baseE
+	.weak_definition __ZTVN5boost6detail15sp_counted_baseE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost6detail15sp_counted_baseE:
+	.quad	0
+	.quad	__ZTIN5boost6detail15sp_counted_baseE
+	.quad	__ZN5boost6detail15sp_counted_baseD1Ev
+	.quad	__ZN5boost6detail15sp_counted_baseD0Ev
+	.quad	___cxa_pure_virtual
+	.quad	__ZN5boost6detail15sp_counted_base7destroyEv
+	.quad	___cxa_pure_virtual
+	.private_extern __ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep
+	.globl __ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep
+	.weak_definition __ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep
+	.section __DATA,__datacoal_nt,coalesced
+	.align 3
+__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE2ep:
+	.space 16
+	.cstring
+	.align 3
+__ZZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEvE19__PRETTY_FUNCTION__:
+	.ascii "boost::exception_ptr boost::exception_detail::get_static_exception_object() [with Exception = boost::exception_detail::bad_exception_]\0"
+	.private_extern __ZTVN5boost16exception_detail14bad_exception_E
+	.globl __ZTVN5boost16exception_detail14bad_exception_E
+	.weak_definition __ZTVN5boost16exception_detail14bad_exception_E
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost16exception_detail14bad_exception_E:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail14bad_exception_E
+	.quad	__ZN5boost16exception_detail14bad_exception_D1Ev
+	.quad	__ZN5boost16exception_detail14bad_exception_D0Ev
+	.quad	-40
+	.quad	__ZTIN5boost16exception_detail14bad_exception_E
+	.quad	__ZThn40_N5boost16exception_detail14bad_exception_D1Ev
+	.quad	__ZThn40_N5boost16exception_detail14bad_exception_D0Ev
+	.quad	__ZNKSt9exception4whatEv
+	.private_extern __ZTIN5boost16exception_detail14bad_exception_E
+	.globl __ZTIN5boost16exception_detail14bad_exception_E
+	.weak_definition __ZTIN5boost16exception_detail14bad_exception_E
+	.align 3
+__ZTIN5boost16exception_detail14bad_exception_E:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail14bad_exception_E
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost9exceptionE
+	.quad	2
+	.quad	__ZTISt13bad_exception
+	.quad	10242
+	.private_extern __ZTSN5boost16exception_detail14bad_exception_E
+	.globl __ZTSN5boost16exception_detail14bad_exception_E
+	.weak_definition __ZTSN5boost16exception_detail14bad_exception_E
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail14bad_exception_E:
+	.ascii "N5boost16exception_detail14bad_exception_E\0"
+	.private_extern __ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.globl __ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.weak_definition __ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost16exception_detail10clone_implINS0_14bad_exception_EEE:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.quad	__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.quad	__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+	.quad	-40
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.quad	__ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.quad	__ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.quad	__ZNKSt9exception4whatEv
+	.quad	-48
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.quad	__ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv
+	.quad	__ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv
+	.quad	__ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.quad	__ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev
+	.private_extern __ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.globl __ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.weak_definition __ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.align 3
+__ZTIN5boost16exception_detail10clone_implINS0_14bad_exception_EEE:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost16exception_detail14bad_exception_E
+	.quad	2
+	.quad	__ZTIN5boost16exception_detail10clone_baseE
+	.quad	12290
+	.private_extern __ZTSN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.globl __ZTSN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.weak_definition __ZTSN5boost16exception_detail10clone_implINS0_14bad_exception_EEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail10clone_implINS0_14bad_exception_EEE:
+	.ascii "N5boost16exception_detail10clone_implINS0_14bad_exception_EEE\0"
+	.private_extern __ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.globl __ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.weak_definition __ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE:
+	.quad	0
+	.quad	__ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv
+	.quad	__ZN5boost6detail15sp_counted_base7destroyEv
+	.quad	__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info
+	.private_extern __ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.globl __ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.weak_definition __ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.align 3
+__ZTIN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE:
+	.quad	__ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	__ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.quad	__ZTIN5boost6detail15sp_counted_baseE
+	.private_extern __ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.globl __ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.weak_definition __ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE:
+	.ascii "N5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEEE\0"
+	.globl __ZTVN5boost10lock_errorE
+	.weak_definition __ZTVN5boost10lock_errorE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost10lock_errorE:
+	.quad	0
+	.quad	__ZTIN5boost10lock_errorE
+	.quad	__ZN5boost10lock_errorD1Ev
+	.quad	__ZN5boost10lock_errorD0Ev
+	.quad	__ZNK5boost10lock_error4whatEv
+	.globl __ZTIN5boost10lock_errorE
+	.weak_definition __ZTIN5boost10lock_errorE
+	.align 3
+__ZTIN5boost10lock_errorE:
+	.quad	__ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	__ZTSN5boost10lock_errorE
+	.quad	__ZTIN5boost16thread_exceptionE
+	.globl __ZTSN5boost10lock_errorE
+	.weak_definition __ZTSN5boost10lock_errorE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost10lock_errorE:
+	.ascii "N5boost10lock_errorE\0"
+	.globl __ZTIN5boost16thread_exceptionE
+	.weak_definition __ZTIN5boost16thread_exceptionE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTIN5boost16thread_exceptionE:
+	.quad	__ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	__ZTSN5boost16thread_exceptionE
+	.quad	__ZTISt9exception
+	.globl __ZTSN5boost16thread_exceptionE
+	.weak_definition __ZTSN5boost16thread_exceptionE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16thread_exceptionE:
+	.ascii "N5boost16thread_exceptionE\0"
+	.globl __ZTVN5boost16thread_exceptionE
+	.weak_definition __ZTVN5boost16thread_exceptionE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost16thread_exceptionE:
+	.quad	0
+	.quad	__ZTIN5boost16thread_exceptionE
+	.quad	__ZN5boost16thread_exceptionD1Ev
+	.quad	__ZN5boost16thread_exceptionD0Ev
+	.quad	__ZNKSt9exception4whatEv
+	.private_extern __ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.globl __ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.weak_definition __ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.align 3
+__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.quad	2
+	.quad	__ZTIN5boost16exception_detail10clone_baseE
+	.quad	14338
+	.private_extern __ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.globl __ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.weak_definition __ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE:
+	.ascii "N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE\0"
+	.private_extern __ZTIN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.globl __ZTIN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.weak_definition __ZTIN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTIN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost10lock_errorE
+	.quad	2
+	.quad	__ZTIN5boost9exceptionE
+	.quad	4098
+	.private_extern __ZTSN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.globl __ZTSN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.weak_definition __ZTSN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE:
+	.ascii "N5boost16exception_detail19error_info_injectorINS_10lock_errorEEE\0"
+	.private_extern __ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.globl __ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.weak_definition __ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.quad	__ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+	.quad	__ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+	.quad	__ZNK5boost10lock_error4whatEv
+	.quad	-16
+	.quad	__ZTIN5boost16exception_detail19error_info_injectorINS_10lock_errorEEE
+	.quad	__ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev
+	.quad	__ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev
+	.private_extern __ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.globl __ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.weak_definition __ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.align 3
+__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.quad	__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.quad	__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.quad	__ZNK5boost10lock_error4whatEv
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+	.quad	-16
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.quad	__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.quad	__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.quad	-56
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEEE
+	.quad	__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv
+	.quad	__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv
+	.quad	__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.quad	__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev
+	.cstring
+	.align 3
+__ZZN5boost5mutex6unlockEvE8__func__:
+	.ascii "unlock\0"
+	.private_extern __ZTV17CocoaViewInstance
+	.globl __ZTV17CocoaViewInstance
+	.weak_definition __ZTV17CocoaViewInstance
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTV17CocoaViewInstance:
+	.quad	0
+	.quad	__ZTI17CocoaViewInstance
+	.quad	__ZN17CocoaViewInstanceD1Ev
+	.quad	__ZN17CocoaViewInstanceD0Ev
+	.quad	__ZN17CocoaViewInstance19viewDidMoveToWindowEv
+	.quad	__ZN17CocoaViewInstance9mouseDownEP7NSEvent
+	.quad	__ZN17CocoaViewInstance12mouseDraggedEP7NSEvent
+	.quad	__ZN17CocoaViewInstance7mouseUpEP7NSEvent
+	.quad	__ZN17CocoaViewInstance4drawER6CGRect
+	.quad	__ZN17CocoaViewInstance7hitTestER7CGPoint
+	.quad	__ZN17CocoaViewInstance11scrollWheelEP7NSEvent
+	.private_extern __ZTI17CocoaViewInstance
+	.globl __ZTI17CocoaViewInstance
+	.weak_definition __ZTI17CocoaViewInstance
+	.align 3
+__ZTI17CocoaViewInstance:
+	.quad	__ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	__ZTS17CocoaViewInstance
+	.quad	__ZTI18CocoaViewInterface
+	.private_extern __ZTS17CocoaViewInstance
+	.globl __ZTS17CocoaViewInstance
+	.weak_definition __ZTS17CocoaViewInstance
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTS17CocoaViewInstance:
+	.ascii "17CocoaViewInstance\0"
+	.private_extern __ZTI18CocoaViewInterface
+	.globl __ZTI18CocoaViewInterface
+	.weak_definition __ZTI18CocoaViewInterface
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTI18CocoaViewInterface:
+	.quad	__ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	__ZTS18CocoaViewInterface
+	.private_extern __ZTS18CocoaViewInterface
+	.globl __ZTS18CocoaViewInterface
+	.weak_definition __ZTS18CocoaViewInterface
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTS18CocoaViewInterface:
+	.ascii "18CocoaViewInterface\0"
+	.private_extern __ZTV18CocoaViewInterface
+	.globl __ZTV18CocoaViewInterface
+	.weak_definition __ZTV18CocoaViewInterface
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTV18CocoaViewInterface:
+	.quad	0
+	.quad	__ZTI18CocoaViewInterface
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.quad	___cxa_pure_virtual
+	.globl __ZTVN5boost21thread_resource_errorE
+	.weak_definition __ZTVN5boost21thread_resource_errorE
+	.align 3
+__ZTVN5boost21thread_resource_errorE:
+	.quad	0
+	.quad	__ZTIN5boost21thread_resource_errorE
+	.quad	__ZN5boost21thread_resource_errorD1Ev
+	.quad	__ZN5boost21thread_resource_errorD0Ev
+	.quad	__ZNK5boost21thread_resource_error4whatEv
+	.globl __ZTIN5boost21thread_resource_errorE
+	.weak_definition __ZTIN5boost21thread_resource_errorE
+	.align 3
+__ZTIN5boost21thread_resource_errorE:
+	.quad	__ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	__ZTSN5boost21thread_resource_errorE
+	.quad	__ZTIN5boost16thread_exceptionE
+	.globl __ZTSN5boost21thread_resource_errorE
+	.weak_definition __ZTSN5boost21thread_resource_errorE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost21thread_resource_errorE:
+	.ascii "N5boost21thread_resource_errorE\0"
+	.private_extern __ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.globl __ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.weak_definition __ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.quad	2
+	.quad	__ZTIN5boost16exception_detail10clone_baseE
+	.quad	14338
+	.private_extern __ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.globl __ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.weak_definition __ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE:
+	.ascii "N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE\0"
+	.private_extern __ZTIN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.globl __ZTIN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.weak_definition __ZTIN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTIN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE:
+	.quad	__ZTVN10__cxxabiv121__vmi_class_type_infoE+16
+	.quad	__ZTSN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.long	0
+	.long	2
+	.quad	__ZTIN5boost21thread_resource_errorE
+	.quad	2
+	.quad	__ZTIN5boost9exceptionE
+	.quad	4098
+	.private_extern __ZTSN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.globl __ZTSN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.weak_definition __ZTSN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.section __TEXT,__const_coal,coalesced
+	.align 3
+__ZTSN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE:
+	.ascii "N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE\0"
+	.private_extern __ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.globl __ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.weak_definition __ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.section __DATA,__const_coal,coalesced
+	.align 3
+__ZTVN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.quad	__ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+	.quad	__ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+	.quad	__ZNK5boost21thread_resource_error4whatEv
+	.quad	-16
+	.quad	__ZTIN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEEE
+	.quad	__ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev
+	.quad	__ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev
+	.private_extern __ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.globl __ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.weak_definition __ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.align 3
+__ZTVN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE:
+	.quad	0
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.quad	__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.quad	__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.quad	__ZNK5boost21thread_resource_error4whatEv
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+	.quad	__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+	.quad	-16
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.quad	__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.quad	__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.quad	-56
+	.quad	__ZTIN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEEE
+	.quad	__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv
+	.quad	__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv
+	.quad	__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.quad	__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev
+	.literal8
+	.align 3
+LC4:
+	.long	0
+	.long	0
+	.literal4
+	.align 2
+LC9:
+	.long	2139095039
+	.align 2
+LC11:
+	.long	-1082130432
+	.align 2
+LC13:
+	.long	1065353216
+	.globl __ZN8Fielding13HostViewCocoa11GetRootViewEv.eh
+	.private_extern __ZN8Fielding13HostViewCocoa11GetRootViewEv.eh
+__ZN8Fielding13HostViewCocoa11GetRootViewEv.eh = 0
+.no_dead_strip __ZN8Fielding13HostViewCocoa11GetRootViewEv.eh
+	.globl __ZN8Fielding13HostViewCocoa16hostMouseCaptureEv.eh
+	.private_extern __ZN8Fielding13HostViewCocoa16hostMouseCaptureEv.eh
+__ZN8Fielding13HostViewCocoa16hostMouseCaptureEv.eh = 0
+.no_dead_strip __ZN8Fielding13HostViewCocoa16hostMouseCaptureEv.eh
+	.globl __ZN8Fielding13HostViewCocoa16hostMouseReleaseEv.eh
+	.private_extern __ZN8Fielding13HostViewCocoa16hostMouseReleaseEv.eh
+__ZN8Fielding13HostViewCocoa16hostMouseReleaseEv.eh = 0
+.no_dead_strip __ZN8Fielding13HostViewCocoa16hostMouseReleaseEv.eh
+	.globl __ZN18CocoaViewInterfaceD0Ev.eh
+	.private_extern __ZN18CocoaViewInterfaceD0Ev.eh
+__ZN18CocoaViewInterfaceD0Ev.eh = 0
+.no_dead_strip __ZN18CocoaViewInterfaceD0Ev.eh
+	.globl __ZN18CocoaViewInterfaceD2Ev.eh
+	.private_extern __ZN18CocoaViewInterfaceD2Ev.eh
+__ZN18CocoaViewInterfaceD2Ev.eh = 0
+.no_dead_strip __ZN18CocoaViewInterfaceD2Ev.eh
+	.globl __ZN18CocoaViewInterfaceD1Ev.eh
+	.private_extern __ZN18CocoaViewInterfaceD1Ev.eh
+__ZN18CocoaViewInterfaceD1Ev.eh = 0
+.no_dead_strip __ZN18CocoaViewInterfaceD1Ev.eh
+___tcf_2.eh = 0
+.no_dead_strip ___tcf_2.eh
+	.globl __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj.eh
+	.private_extern __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj.eh
+__ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj.eh = 0
+.no_dead_strip __ZN8Fielding13HostViewCocoa12setModifiersERNS_4ViewEj.eh
+	.globl __ZN8Fielding13HostViewCocoaD1Ev.eh
+	.private_extern __ZN8Fielding13HostViewCocoaD1Ev.eh
+__ZN8Fielding13HostViewCocoaD1Ev.eh = 0
+.no_dead_strip __ZN8Fielding13HostViewCocoaD1Ev.eh
+	.globl __ZN8Fielding13HostViewCocoaC1EP6NSView.eh
+	.private_extern __ZN8Fielding13HostViewCocoaC1EP6NSView.eh
+__ZN8Fielding13HostViewCocoaC1EP6NSView.eh = 0
+.no_dead_strip __ZN8Fielding13HostViewCocoaC1EP6NSView.eh
+__GLOBAL__I__ZN12_GLOBAL__N_12_1E.eh = 0
+.no_dead_strip __GLOBAL__I__ZN12_GLOBAL__N_12_1E.eh
+	.globl __ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE.eh
+	.private_extern __ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE.eh
+__ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE.eh = 0
+.no_dead_strip __ZN8Fielding13HostViewCocoa12needsDisplayERKNS_6RegionE.eh
+	.section __TEXT,__eh_frame,coalesced,no_toc+strip_static_syms+live_support
+EH_frame1:
+	.set L$set$416,LECIE1-LSCIE1
+	.long L$set$416
+LSCIE1:
+	.long	0x0
+	.byte	0x1
+	.ascii "zPLR\0"
+	.byte	0x1
+	.byte	0x78
+	.byte	0x41
+	.byte	0x7
+	.byte	0x9b
+	.long	L___gxx_personality_v0$non_lazy_ptr-.
+	.byte	0x10
+	.byte	0x10
+	.byte	0xc
+	.byte	0x1
+	.byte	0x0
+	.align 3
+LECIE1:
+	.globl __ZNK5boost10lock_error4whatEv.eh
+	.weak_definition __ZNK5boost10lock_error4whatEv.eh
+__ZNK5boost10lock_error4whatEv.eh:
+LSFDE1:
+	.set L$set$417,LEFDE1-LASFDE1
+	.long L$set$417
+LASFDE1:
+	.long	LASFDE1-EH_frame1
+	.quad	LFB4406-.
+	.set L$set$418,LFE4406-LFB4406
+	.quad L$set$418
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE1:
+	.globl __ZNK5boost21thread_resource_error4whatEv.eh
+	.weak_definition __ZNK5boost21thread_resource_error4whatEv.eh
+__ZNK5boost21thread_resource_error4whatEv.eh:
+LSFDE3:
+	.set L$set$419,LEFDE3-LASFDE3
+	.long L$set$419
+LASFDE3:
+	.long	LASFDE3-EH_frame1
+	.quad	LFB4417-.
+	.set L$set$420,LFE4417-LFB4417
+	.quad L$set$420
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE3:
+	.globl __ZN5boost6detail15sp_counted_base7destroyEv.eh
+	.private_extern __ZN5boost6detail15sp_counted_base7destroyEv.eh
+	.weak_definition __ZN5boost6detail15sp_counted_base7destroyEv.eh
+__ZN5boost6detail15sp_counted_base7destroyEv.eh:
+LSFDE5:
+	.set L$set$421,LEFDE5-LASFDE5
+	.long L$set$421
+LASFDE5:
+	.long	LASFDE5-EH_frame1
+	.quad	LFB4515-.
+	.set L$set$422,LFE4515-LFB4515
+	.quad L$set$422
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE5:
+	.globl __ZN5boost6detail26sp_enable_shared_from_thisEz.eh
+	.private_extern __ZN5boost6detail26sp_enable_shared_from_thisEz.eh
+	.weak_definition __ZN5boost6detail26sp_enable_shared_from_thisEz.eh
+__ZN5boost6detail26sp_enable_shared_from_thisEz.eh:
+LSFDE7:
+	.set L$set$423,LEFDE7-LASFDE7
+	.long L$set$423
+LASFDE7:
+	.long	LASFDE7-EH_frame1
+	.quad	LFB4616-.
+	.set L$set$424,LFE4616-LFB4616
+	.quad L$set$424
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE7:
+	.globl __ZN17CocoaViewInstance19viewDidMoveToWindowEv.eh
+	.private_extern __ZN17CocoaViewInstance19viewDidMoveToWindowEv.eh
+	.weak_definition __ZN17CocoaViewInstance19viewDidMoveToWindowEv.eh
+__ZN17CocoaViewInstance19viewDidMoveToWindowEv.eh:
+LSFDE9:
+	.set L$set$425,LEFDE9-LASFDE9
+	.long L$set$425
+LASFDE9:
+	.long	LASFDE9-EH_frame1
+	.quad	LFB8790-.
+	.set L$set$426,LFE8790-LFB8790
+	.quad L$set$426
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE9:
+	.globl __ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv.eh
+	.private_extern __ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv.eh
+	.weak_definition __ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv.eh
+__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv.eh:
+LSFDE11:
+	.set L$set$427,LEFDE11-LASFDE11
+	.long L$set$427
+LASFDE11:
+	.long	LASFDE11-EH_frame1
+	.quad	LFB8806-.
+	.set L$set$428,LFE8806-LFB8806
+	.quad L$set$428
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE11:
+	.globl __ZN8Fielding13HostViewCocoa14GetNSViewFrameEP6NSView.eh
+	.private_extern __ZN8Fielding13HostViewCocoa14GetNSViewFrameEP6NSView.eh
+__ZN8Fielding13HostViewCocoa14GetNSViewFrameEP6NSView.eh:
+LSFDE19:
+	.set L$set$429,LEFDE19-LASFDE19
+	.long L$set$429
+LASFDE19:
+	.long	LASFDE19-EH_frame1
+	.quad	LFB8825-.
+	.set L$set$430,LFE8825-LFB8825
+	.quad L$set$430
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$431,LCFI4-LFB8825
+	.long L$set$431
+	.byte	0xe
+	.byte	0xd0,0x1
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE19:
+	.globl __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh
+	.private_extern __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh
+	.weak_definition __ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh
+__ZN5boost7polygon15end_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh:
+LSFDE21:
+	.set L$set$432,LEFDE21-LASFDE21
+	.long L$set$432
+LASFDE21:
+	.long	LASFDE21-EH_frame1
+	.quad	LFB9804-.
+	.set L$set$433,LFE9804-LFB9804
+	.quad L$set$433
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE21:
+	.globl __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh
+	.private_extern __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh
+	.weak_definition __ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh
+__ZN5boost7polygon17begin_90_set_dataINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_21polygon_90_set_traitsIS6_E13iterator_typeEE4typeERKS6_.eh:
+LSFDE23:
+	.set L$set$434,LEFDE23-LASFDE23
+	.long L$set$434
+LASFDE23:
+	.long	LASFDE23-EH_frame1
+	.quad	LFB9805-.
+	.set L$set$435,LFE9805-LFB9805
+	.quad L$set$435
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE23:
+	.globl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS0_23rectangle_interval_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh:
+LSFDE25:
+	.set L$set$436,LEFDE25-LASFDE25
+	.long L$set$436
+LASFDE25:
+	.long	LASFDE25-EH_frame1
+	.quad	LFB9837-.
+	.set L$set$437,LFE9837-LFB9837
+	.quad L$set$437
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE25:
+	.globl __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_.eh
+	.private_extern __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_.eh
+	.weak_definition __ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_.eh
+__ZSt8_DestroyIP18tSimpleCallbackArgSaIS0_EEvT_S3_T0_.eh:
+LSFDE27:
+	.set L$set$438,LEFDE27-LASFDE27
+	.long L$set$438
+LASFDE27:
+	.long	LASFDE27-EH_frame1
+	.quad	LFB10533-.
+	.set L$set$439,LFE10533-LFB10533
+	.quad L$set$439
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE27:
+	.globl __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_.eh
+	.private_extern __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_.eh
+	.weak_definition __ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_.eh
+__ZSt8_DestroyIPN5boost7polygon14rectangle_dataIfEESaIS3_EEvT_S6_T0_.eh:
+LSFDE29:
+	.set L$set$440,LEFDE29-LASFDE29
+	.long L$set$440
+LASFDE29:
+	.long	LASFDE29-EH_frame1
+	.quad	LFB10555-.
+	.set L$set$441,LFE10555-LFB10555
+	.quad L$set$441
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE29:
+	.globl __ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh
+	.private_extern __ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh
+	.weak_definition __ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh
+__ZN5boost7polygon8verticalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_vENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh:
+LSFDE31:
+	.set L$set$442,LEFDE31-LASFDE31
+	.long L$set$442
+LASFDE31:
+	.long	LASFDE31-EH_frame1
+	.quad	LFB10574-.
+	.set L$set$443,LFE10574-LFB10574
+	.quad L$set$443
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE31:
+	.globl __ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh
+	.private_extern __ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh
+	.weak_definition __ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh
+__ZN5boost7polygon10horizontalINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_r_hENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_16rectangle_traitsISA_NS0_7gtl_yesEE13interval_typeEE4typeERKSA_.eh:
+LSFDE33:
+	.set L$set$444,LEFDE33-LASFDE33
+	.long L$set$444
+LASFDE33:
+	.long	LASFDE33-EH_frame1
+	.quad	LFB10577-.
+	.set L$set$445,LFE10577-LFB10577
+	.quad L$set$445
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE33:
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_.eh
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_.eh
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_.eh
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIP18tSimpleCallbackArgSt6vectorIS2_SaIS2_EEEES5_EvT_S8_T0_.eh:
+LSFDE35:
+	.set L$set$446,LEFDE35-LASFDE35
+	.long L$set$446
+LASFDE35:
+	.long	LASFDE35-EH_frame1
+	.quad	LFB10591-.
+	.set L$set$447,LFE10591-LFB10591
+	.quad L$set$447
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE35:
+	.globl __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_.eh
+	.private_extern __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_.eh
+	.weak_definition __ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_.eh
+__ZSt8_DestroyIPSt4pairIfS0_IfiEESaIS2_EEvT_S5_T0_.eh:
+LSFDE37:
+	.set L$set$448,LEFDE37-LASFDE37
+	.long L$set$448
+LASFDE37:
+	.long	LASFDE37-EH_frame1
+	.quad	LFB10821-.
+	.set L$set$449,LFE10821-LFB10821
+	.quad L$set$449
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE37:
+	.globl __ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_.eh
+	.private_extern __ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_.eh
+	.weak_definition __ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_.eh
+__ZN5boost7polygon20scanline_orientationINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeENS0_14orientation_2dEE4typeERKS6_.eh:
+LSFDE39:
+	.set L$set$450,LEFDE39-LASFDE39
+	.long L$set$450
+LASFDE39:
+	.long	LASFDE39-EH_frame1
+	.quad	LFB10831-.
+	.set L$set$451,LFE10831-LFB10831
+	.quad L$set$451
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE39:
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh:
+LSFDE41:
+	.set L$set$452,LEFDE41-LASFDE41
+	.long L$set$452
+LASFDE41:
+	.long	LASFDE41-EH_frame1
+	.quad	LFB11168-.
+	.set L$set$453,LFE11168-LFB11168
+	.quad L$set$453
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE41:
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh:
+LSFDE43:
+	.set L$set$454,LEFDE43-LASFDE43
+	.long L$set$454
+LASFDE43:
+	.long	LASFDE43-EH_frame1
+	.quad	LFB11169-.
+	.set L$set$455,LFE11169-LFB11169
+	.quad L$set$455
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE43:
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_10bad_alloc_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh:
+LSFDE45:
+	.set L$set$456,LEFDE45-LASFDE45
+	.long L$set$456
+LASFDE45:
+	.long	LASFDE45-EH_frame1
+	.quad	LFB11170-.
+	.set L$set$457,LFE11170-LFB11170
+	.quad L$set$457
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE45:
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_15throw_function_EPKcEE.eh:
+LSFDE47:
+	.set L$set$458,LEFDE47-LASFDE47
+	.long L$set$458
+LASFDE47:
+	.long	LASFDE47-EH_frame1
+	.quad	LFB11174-.
+	.set L$set$459,LFE11174-LFB11174
+	.quad L$set$459
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE47:
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_file_EPKcEE.eh:
+LSFDE49:
+	.set L$set$460,LEFDE49-LASFDE49
+	.long L$set$460
+LASFDE49:
+	.long	LASFDE49-EH_frame1
+	.quad	LFB11175-.
+	.set L$set$461,LFE11175-LFB11175
+	.quad L$set$461
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE49:
+	.globl __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh
+	.private_extern __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh
+	.weak_definition __ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh
+__ZN5boost16exception_detail8set_infoINS0_10clone_implINS0_14bad_exception_EEEEERKT_S7_RKNS_10error_infoINS_11throw_line_EiEE.eh:
+LSFDE51:
+	.set L$set$462,LEFDE51-LASFDE51
+	.long L$set$462
+LASFDE51:
+	.long	LASFDE51-EH_frame1
+	.quad	LFB11176-.
+	.set L$set$463,LFE11176-LFB11176
+	.quad L$set$463
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE51:
+	.globl __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon3getINS0_13interval_dataIfEEEENS0_24interval_coordinate_typeIT_E4typeERKS5_NS0_12direction_1dEPNS_9enable_ifINS0_6gtl_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh:
+LSFDE53:
+	.set L$set$464,LEFDE53-LASFDE53
+	.long L$set$464
+LASFDE53:
+	.long	LASFDE53-EH_frame1
+	.quad	LFB11357-.
+	.set L$set$465,LFE11357-LFB11357
+	.quad L$set$465
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE53:
+	.globl __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon3lowINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh:
+LSFDE55:
+	.set L$set$466,LEFDE55-LASFDE55
+	.long L$set$466
+LASFDE55:
+	.long	LASFDE55-EH_frame1
+	.quad	LFB10883-.
+	.set L$set$467,LFE10883-LFB10883
+	.quad L$set$467
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$468,LCFI7-LFB10883
+	.long L$set$468
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE55:
+	.globl __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE.eh
+	.private_extern __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE.eh
+	.weak_definition __ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE.eh
+__ZN5boost7polygon3getINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_7y_r_getENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dENS0_12direction_1dE.eh:
+LSFDE57:
+	.set L$set$469,LEFDE57-LASFDE57
+	.long L$set$469
+LASFDE57:
+	.long	LASFDE57-EH_frame1
+	.quad	LFB10512-.
+	.set L$set$470,LFE10512-LFB10512
+	.quad L$set$470
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$471,LCFI10-LFB10512
+	.long L$set$471
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE57:
+	.globl __ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh
+	.private_extern __ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh
+	.weak_definition __ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh
+__ZN5boost7polygon2ylINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_ylENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh:
+LSFDE59:
+	.set L$set$472,LEFDE59-LASFDE59
+	.long L$set$472
+LASFDE59:
+	.long	LASFDE59-EH_frame1
+	.quad	LFB9625-.
+	.set L$set$473,LFE9625-LFB9625
+	.quad L$set$473
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$474,LCFI13-LFB9625
+	.long L$set$474
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE59:
+	.globl __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh
+	.private_extern __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh
+	.weak_definition __ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh
+__ZN5boost7polygon2xlINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_6y_r_xlENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_coordinate_typeISA_E4typeEE4typeERKSA_.eh:
+LSFDE61:
+	.set L$set$475,LEFDE61-LASFDE61
+	.long L$set$475
+LASFDE61:
+	.long	LASFDE61-EH_frame1
+	.quad	LFB9624-.
+	.set L$set$476,LFE9624-LFB9624
+	.quad L$set$476
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$477,LCFI16-LFB9624
+	.long L$set$477
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE61:
+	.globl __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon4highINS0_13interval_dataIfEEEENS0_15interval_traitsIT_E15coordinate_typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh:
+LSFDE63:
+	.set L$set$478,LEFDE63-LASFDE63
+	.long L$set$478
+LASFDE63:
+	.long	LASFDE63-EH_frame1
+	.quad	LFB11358-.
+	.set L$set$479,LFE11358-LFB11358
+	.quad L$set$479
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$480,LCFI19-LFB11358
+	.long L$set$480
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE63:
+	.globl __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb.eh
+	.private_extern __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb.eh
+	.weak_definition __ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb.eh
+__ZN5boost7polygon8containsINS0_13interval_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_12y_i_containsENS0_19is_interval_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEbE4typeERKS9_NS0_15interval_traitsIS9_E15coordinate_typeEb.eh:
+LSFDE65:
+	.set L$set$481,LEFDE65-LASFDE65
+	.long L$set$481
+LASFDE65:
+	.long	LASFDE65-EH_frame1
+	.quad	LFB10576-.
+	.set L$set$482,LFE10576-LFB10576
+	.quad L$set$482
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$483,LCFI22-LFB10576
+	.long L$set$483
+	.byte	0x9e
+	.byte	0x3
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$484,LCFI24-LCFI22
+	.long L$set$484
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE65:
+	.globl __ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon5deltaINS0_13interval_dataIfEEEENS0_24interval_difference_typeIT_E4typeERKS5_PNS_9enable_ifINS0_19is_interval_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEvE4typeE.eh:
+LSFDE67:
+	.set L$set$485,LEFDE67-LASFDE67
+	.long L$set$485
+LASFDE67:
+	.long	LASFDE67-EH_frame1
+	.quad	LFB10513-.
+	.set L$set$486,LFE10513-LFB10513
+	.quad L$set$486
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$487,LCFI27-LFB10513
+	.long L$set$487
+	.byte	0x9d
+	.byte	0x4
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$488,LCFI29-LCFI27
+	.long L$set$488
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE67:
+	.globl __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE.eh
+	.private_extern __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE.eh
+	.weak_definition __ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE.eh
+__ZN5boost7polygon5deltaINS0_14rectangle_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_9y_r_deltaENS0_6gtl_ifINS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeEE4typeENS0_25rectangle_difference_typeISA_E4typeEE4typeERKSA_NS0_14orientation_2dE.eh:
+LSFDE69:
+	.set L$set$489,LEFDE69-LASFDE69
+	.long L$set$489
+LASFDE69:
+	.long	LASFDE69-EH_frame1
+	.quad	LFB9626-.
+	.set L$set$490,LFE9626-LFB9626
+	.quad L$set$490
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$491,LCFI33-LFB9626
+	.long L$set$491
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE69:
+	.globl __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon3getINS0_10point_dataIfEEEENS0_21point_coordinate_typeIT_E4typeERKS5_NS0_14orientation_2dEPNS_9enable_ifINS0_6gtl_ifINS0_16is_point_conceptINS0_16geometry_conceptIS5_E4typeEE4typeEE4typeEvE4typeE.eh:
+LSFDE71:
+	.set L$set$492,LEFDE71-LASFDE71
+	.long L$set$492
+LASFDE71:
+	.long	LASFDE71-EH_frame1
+	.quad	LFB11399-.
+	.set L$set$493,LFE11399-LFB11399
+	.quad L$set$493
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE71:
+	.globl __ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh
+	.private_extern __ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh
+	.weak_definition __ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh
+__ZN5boost7polygon1xINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_xENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh:
+LSFDE73:
+	.set L$set$494,LEFDE73-LASFDE73
+	.long L$set$494
+LASFDE73:
+	.long	LASFDE73-EH_frame1
+	.quad	LFB10578-.
+	.set L$set$495,LFE10578-LFB10578
+	.quad L$set$495
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$496,LCFI36-LFB10578
+	.long L$set$496
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE73:
+	.globl __ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh
+	.private_extern __ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh
+	.weak_definition __ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh
+__ZN5boost7polygon1yINS0_10point_dataIfEEEENS_9enable_ifINS0_7gtl_andINS0_5y_p_yENS0_16is_point_conceptINS0_16geometry_conceptIT_E4typeEE4typeEE4typeENS0_12point_traitsIS9_E15coordinate_typeEE4typeERKS9_.eh:
+LSFDE75:
+	.set L$set$497,LEFDE75-LASFDE75
+	.long L$set$497
+LASFDE75:
+	.long	LASFDE75-EH_frame1
+	.quad	LFB10575-.
+	.set L$set$498,LFE10575-LFB10575
+	.quad L$set$498
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$499,LCFI39-LFB10575
+	.long L$set$499
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE75:
+	.globl __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b.eh
+	.private_extern __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b.eh
+	.weak_definition __ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b.eh
+__ZN5boost7polygon8containsINS0_14rectangle_dataIfEENS0_10point_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_13y_r_contains2ENS0_20is_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_16is_point_conceptINSA_IT0_E4typeEE4typeEE4typeEbE4typeERKSB_SH_b.eh:
+LSFDE77:
+	.set L$set$500,LEFDE77-LASFDE77
+	.long L$set$500
+LASFDE77:
+	.long	LASFDE77-EH_frame1
+	.quad	LFB9673-.
+	.set L$set$501,LFE9673-LFB9673
+	.quad L$set$501
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$502,LCFI46-LFB9673
+	.long L$set$502
+	.byte	0xe
+	.byte	0xb0,0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE77:
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_.eh
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_.eh
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_.eh
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES7_EvT_SA_T0_.eh:
+LSFDE79:
+	.set L$set$503,LEFDE79-LASFDE79
+	.long L$set$503
+LASFDE79:
+	.long	LASFDE79-EH_frame1
+	.quad	LFB11415-.
+	.set L$set$504,LFE11415-LFB11415
+	.quad L$set$504
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE79:
+	.globl __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_.eh
+	.private_extern __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_.eh
+	.weak_definition __ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_.eh
+__ZSt8_DestroyIPSt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EEvT_S8_T0_.eh:
+LSFDE81:
+	.set L$set$505,LEFDE81-LASFDE81
+	.long L$set$505
+LASFDE81:
+	.long	LASFDE81-EH_frame1
+	.quad	LFB12321-.
+	.set L$set$506,LFE12321-LFB12321
+	.quad L$set$506
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE81:
+	.globl __ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon8containsINS0_13interval_dataIfEES3_EEbRKT_RKT0_bPNS_9enable_ifINS0_7gtl_andINS0_19is_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENSC_INSD_IS7_E4typeEE4typeEE4typeEvE4typeE.eh:
+LSFDE83:
+	.set L$set$507,LEFDE83-LASFDE83
+	.long L$set$507
+LASFDE83:
+	.long	LASFDE83-EH_frame1
+	.quad	LFB12555-.
+	.set L$set$508,LFE12555-LFB12555
+	.quad L$set$508
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$509,LCFI50-LFB12555
+	.long L$set$509
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$510,LCFI52-LCFI50
+	.long L$set$510
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE83:
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_.eh
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_.eh
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_.eh
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPSt4pairIN5boost7polygon13interval_dataIfEEiESt6vectorIS7_SaIS7_EEEESA_EvT_SD_T0_.eh:
+LSFDE85:
+	.set L$set$511,LEFDE85-LASFDE85
+	.long L$set$511
+LASFDE85:
+	.long	LASFDE85-EH_frame1
+	.quad	LFB12946-.
+	.set L$set$512,LFE12946-LFB12946
+	.quad L$set$512
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE85:
+	.globl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_.eh
+	.private_extern __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_.eh
+	.weak_definition __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_.eh
+__ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_.eh:
+LSFDE87:
+	.set L$set$513,LEFDE87-LASFDE87
+	.long L$set$513
+LASFDE87:
+	.long	LASFDE87-EH_frame1
+	.quad	LFB10595-.
+	.set L$set$514,LFE10595-LFB10595
+	.quad L$set$514
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$515,LCFI56-LFB10595
+	.long L$set$515
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$516,LCFI58-LCFI56
+	.long L$set$516
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE87:
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_.eh
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_.eh
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_.eh
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE11lower_boundERS1_.eh:
+LSFDE89:
+	.set L$set$517,LEFDE89-LASFDE89
+	.long L$set$517
+LASFDE89:
+	.long	LASFDE89-EH_frame1
+	.quad	LFB13411-.
+	.set L$set$518,LFE13411-LFB13411
+	.quad L$set$518
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE89:
+	.globl __ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon9constructINS0_13interval_dataIfEEffEET_T0_T1_PNS_9enable_ifINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeEvE4typeE.eh:
+LSFDE91:
+	.set L$set$519,LEFDE91-LASFDE91
+	.long L$set$519
+LASFDE91:
+	.long	LASFDE91-EH_frame1
+	.quad	LFB13505-.
+	.set L$set$520,LFE13505-LFB13505
+	.quad L$set$520
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE91:
+	.globl __ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon14copy_constructINS0_13interval_dataIfEES3_EET_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSB_IS5_E4typeEE4typeEE4typeEvE4typeE.eh:
+LSFDE93:
+	.set L$set$521,LEFDE93-LASFDE93
+	.long L$set$521
+LASFDE93:
+	.long	LASFDE93-EH_frame1
+	.quad	LFB13039-.
+	.set L$set$522,LFE13039-LFB13039
+	.quad L$set$522
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$523,LCFI62-LFB13039
+	.long L$set$523
+	.byte	0x9d
+	.byte	0x4
+	.byte	0x9c
+	.byte	0x5
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$524,LCFI64-LCFI62
+	.long L$set$524
+	.byte	0xe
+	.byte	0xb0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE93:
+	.globl __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE.eh
+	.private_extern __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE.eh
+	.weak_definition __ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE.eh
+__ZN5boost7polygon6assignINS0_13interval_dataIfEES3_EERT_S5_RKT0_PNS_9enable_ifINS0_7gtl_andINS0_27is_mutable_interval_conceptINS0_16geometry_conceptIS4_E4typeEE4typeENS0_19is_interval_conceptINSC_IS6_E4typeEE4typeEE4typeEvE4typeE.eh:
+LSFDE95:
+	.set L$set$525,LEFDE95-LASFDE95
+	.long L$set$525
+LASFDE95:
+	.long	LASFDE95-EH_frame1
+	.quad	LFB12396-.
+	.set L$set$526,LFE12396-LFB12396
+	.quad L$set$526
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$527,LCFI66-LFB12396
+	.long L$set$527
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$528,LCFI68-LCFI66
+	.long L$set$528
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE95:
+	.globl __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_.eh
+	.private_extern __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_.eh
+	.weak_definition __ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_.eh
+__ZN5boost7polygon3setINS0_14rectangle_dataIfEENS0_13interval_dataIfEEEENS_9enable_ifINS0_9gtl_and_3INS0_8y_r_set2ENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_19is_interval_conceptINSA_IT0_E4typeEE4typeEE4typeEvE4typeERSB_NS0_14orientation_2dERKSH_.eh:
+LSFDE97:
+	.set L$set$529,LEFDE97-LASFDE97
+	.long L$set$529
+LASFDE97:
+	.long	LASFDE97-EH_frame1
+	.quad	LFB9842-.
+	.set L$set$530,LFE9842-LFB9842
+	.quad L$set$530
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE97:
+	.globl __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_.eh
+	.private_extern __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_.eh
+	.weak_definition __ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_.eh
+__ZN5boost7polygon6assignINS0_14rectangle_dataIfEES3_EERNS_9enable_ifINS0_9gtl_and_3INS0_10y_r_assignENS0_28is_mutable_rectangle_conceptINS0_16geometry_conceptIT_E4typeEE4typeENS0_20is_rectangle_conceptINS8_IT0_E4typeEE4typeEE4typeES9_E4typeERS9_RKSF_.eh:
+LSFDE99:
+	.set L$set$531,LEFDE99-LASFDE99
+	.long L$set$531
+LASFDE99:
+	.long	LASFDE99-EH_frame1
+	.quad	LFB11943-.
+	.set L$set$532,LFE11943-LFB11943
+	.quad L$set$532
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$533,LCFI74-LFB11943
+	.long L$set$533
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE99:
+	.globl __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_.eh
+	.private_extern __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_.eh
+	.weak_definition __ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_.eh
+__ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN5boost7polygon14rectangle_dataIfEESt6vectorIS5_SaIS5_EEEES8_EvT_SB_T0_.eh:
+LSFDE101:
+	.set L$set$534,LEFDE101-LASFDE101
+	.long L$set$534
+LASFDE101:
+	.long	LASFDE101-EH_frame1
+	.quad	LFB13568-.
+	.set L$set$535,LFE13568-LFB13568
+	.quad L$set$535
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE101:
+	.globl __ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_.eh
+	.private_extern __ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_.eh
+	.weak_definition __ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_.eh
+__ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_ET_SA_SA_T0_.eh:
+LSFDE103:
+	.set L$set$536,LEFDE103-LASFDE103
+	.long L$set$536
+LASFDE103:
+	.long	LASFDE103-EH_frame1
+	.quad	LFB13754-.
+	.set L$set$537,LFE13754-LFB13754
+	.quad L$set$537
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE103:
+	.globl __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_.eh
+	.private_extern __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_.eh
+	.weak_definition __ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_.eh
+__ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEES4_EvT_T0_.eh:
+LSFDE105:
+	.set L$set$538,LEFDE105-LASFDE105
+	.long L$set$538
+LASFDE105:
+	.long	LASFDE105-EH_frame1
+	.quad	LFB14037-.
+	.set L$set$539,LFE14037-LFB14037
+	.quad L$set$539
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE105:
+	.globl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_.eh
+	.private_extern __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_.eh
+	.weak_definition __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_.eh
+__ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EESB_.eh:
+LSFDE107:
+	.set L$set$540,LEFDE107-LASFDE107
+	.long L$set$540
+LASFDE107:
+	.long	LASFDE107-EH_frame1
+	.quad	LFB12327-.
+	.set L$set$541,LFE12327-LFB12327
+	.quad L$set$541
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$542,LCFI78-LFB12327
+	.long L$set$542
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$543,LCFI80-LCFI78
+	.long L$set$543
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE107:
+	.globl __ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh
+	.private_extern __ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh
+	.weak_definition __ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh
+__ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh:
+LSFDE109:
+	.set L$set$544,LEFDE109-LASFDE109
+	.long L$set$544
+LASFDE109:
+	.long	LASFDE109-EH_frame1
+	.quad	LFB14358-.
+	.set L$set$545,LFE14358-LFB14358
+	.quad L$set$545
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE109:
+	.globl __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh
+	.private_extern __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh
+	.weak_definition __ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh
+__ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElS4_EvT_T0_SB_T1_.eh:
+LSFDE111:
+	.set L$set$546,LEFDE111-LASFDE111
+	.long L$set$546
+LASFDE111:
+	.long	LASFDE111-EH_frame1
+	.quad	LFB14223-.
+	.set L$set$547,LFE14223-LFB14223
+	.quad L$set$547
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE111:
+	.globl __ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.private_extern __ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.weak_definition __ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+__ZSt9make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh:
+LSFDE113:
+	.set L$set$548,LEFDE113-LASFDE113
+	.long L$set$548
+LASFDE113:
+	.long	LASFDE113-EH_frame1
+	.quad	LFB14029-.
+	.set L$set$549,LFE14029-LFB14029
+	.quad L$set$549
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$550,LCFI87-LFB14029
+	.long L$set$550
+	.byte	0xe
+	.byte	0xb0,0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE113:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE11get_deleterERKSt9type_info.eh:
+LSFDE115:
+	.set L$set$551,LEFDE115-LASFDE115
+	.long L$set$551
+LASFDE115:
+	.long	LASFDE115-EH_frame1
+	.quad	LFB14525-.
+	.set L$set$552,LFE14525-LFB14525
+	.quad L$set$552
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE115:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE11get_deleterERKSt9type_info.eh:
+LSFDE117:
+	.set L$set$553,LEFDE117-LASFDE117
+	.long L$set$553
+LASFDE117:
+	.long	LASFDE117-EH_frame1
+	.quad	LFB14527-.
+	.set L$set$554,LFE14527-LFB14527
+	.quad L$set$554
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE117:
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E.eh
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E.eh
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E.eh
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E.eh:
+LSFDE119:
+	.set L$set$555,LEFDE119-LASFDE119
+	.long L$set$555
+LASFDE119:
+	.long	LASFDE119-EH_frame1
+	.quad	LFB12300-.
+	.set L$set$556,LFE12300-LFB12300
+	.quad L$set$556
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$557,LCFI89-LFB12300
+	.long L$set$557
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$558,LCFI92-LCFI89
+	.long L$set$558
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x4
+	.set L$set$559,LCFI93-LCFI92
+	.long L$set$559
+	.byte	0xe
+	.byte	0x90,0x1
+	.align 3
+LEFDE119:
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E.eh
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E.eh
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E.eh
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E.eh:
+LSFDE121:
+	.set L$set$560,LEFDE121-LASFDE121
+	.long L$set$560
+LASFDE121:
+	.long	LASFDE121-EH_frame1
+	.quad	LFB11947-.
+	.set L$set$561,LFE11947-LFB11947
+	.quad L$set$561
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$562,LCFI95-LFB11947
+	.long L$set$562
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$563,LCFI98-LCFI95
+	.long L$set$563
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x4
+	.set L$set$564,LCFI99-LCFI98
+	.long L$set$564
+	.byte	0xe
+	.byte	0x90,0x1
+	.align 3
+LEFDE121:
+	.globl __ZN5boost6detail15sp_counted_baseD0Ev.eh
+	.private_extern __ZN5boost6detail15sp_counted_baseD0Ev.eh
+	.weak_definition __ZN5boost6detail15sp_counted_baseD0Ev.eh
+__ZN5boost6detail15sp_counted_baseD0Ev.eh:
+LSFDE129:
+	.set L$set$565,LEFDE129-LASFDE129
+	.long L$set$565
+LASFDE129:
+	.long	LASFDE129-EH_frame1
+	.quad	LFB4514-.
+	.set L$set$566,LFE4514-LFB4514
+	.quad L$set$566
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE129:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED0Ev.eh:
+LSFDE131:
+	.set L$set$567,LEFDE131-LASFDE131
+	.long L$set$567
+LASFDE131:
+	.long	LASFDE131-EH_frame1
+	.quad	LFB14489-.
+	.set L$set$568,LFE14489-LFB14489
+	.quad L$set$568
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE131:
+	.globl __ZN5boost16exception_detail10clone_baseD0Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_baseD0Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_baseD0Ev.eh
+__ZN5boost16exception_detail10clone_baseD0Ev.eh:
+LSFDE133:
+	.set L$set$569,LEFDE133-LASFDE133
+	.long L$set$569
+LASFDE133:
+	.long	LASFDE133-EH_frame1
+	.quad	LFB4493-.
+	.set L$set$570,LFE4493-LFB4493
+	.quad L$set$570
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE133:
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_.eh
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_.eh
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_.eh
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE9_M_insertEPSt18_Rb_tree_node_baseSA_RKS2_.eh:
+LSFDE139:
+	.set L$set$571,LEFDE139-LASFDE139
+	.long L$set$571
+LASFDE139:
+	.long	LASFDE139-EH_frame1
+	.quad	LFB13776-.
+	.set L$set$572,LFE13776-LFB13776
+	.quad L$set$572
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$573,LCFI107-LFB13776
+	.long L$set$573
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE139:
+	.globl __ZN5boost16thread_exceptionD0Ev.eh
+	.weak_definition __ZN5boost16thread_exceptionD0Ev.eh
+__ZN5boost16thread_exceptionD0Ev.eh:
+LSFDE141:
+	.set L$set$574,LEFDE141-LASFDE141
+	.long L$set$574
+LASFDE141:
+	.long	LASFDE141-EH_frame1
+	.quad	LFB4393-.
+	.set L$set$575,LFE4393-LFB4393
+	.quad L$set$575
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$576,LCFI110-LFB4393
+	.long L$set$576
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$577,LCFI112-LCFI110
+	.long L$set$577
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE141:
+	.globl __ZN5boost16thread_exceptionD1Ev.eh
+	.weak_definition __ZN5boost16thread_exceptionD1Ev.eh
+__ZN5boost16thread_exceptionD1Ev.eh:
+LSFDE143:
+	.set L$set$578,LEFDE143-LASFDE143
+	.long L$set$578
+LASFDE143:
+	.long	LASFDE143-EH_frame1
+	.quad	LFB4392-.
+	.set L$set$579,LFE4392-LFB4392
+	.quad L$set$579
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE143:
+	.globl __ZN5boost5mutex6unlockEv.eh
+	.private_extern __ZN5boost5mutex6unlockEv.eh
+	.weak_definition __ZN5boost5mutex6unlockEv.eh
+__ZN5boost5mutex6unlockEv.eh:
+LSFDE145:
+	.set L$set$580,LEFDE145-LASFDE145
+	.long L$set$580
+LASFDE145:
+	.long	LASFDE145-EH_frame1
+	.quad	LFB5643-.
+	.set L$set$581,LFE5643-LFB5643
+	.quad L$set$581
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$582,LCFI115-LFB5643
+	.long L$set$582
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$583,LCFI117-LCFI115
+	.long L$set$583
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE145:
+	.globl __ZN8Fielding13HostViewCocoaD0Ev.eh
+	.private_extern __ZN8Fielding13HostViewCocoaD0Ev.eh
+__ZN8Fielding13HostViewCocoaD0Ev.eh:
+LSFDE147:
+	.set L$set$584,LEFDE147-LASFDE147
+	.long L$set$584
+LASFDE147:
+	.long	LASFDE147-EH_frame1
+	.quad	LFB8817-.
+	.set L$set$585,LFE8817-LFB8817
+	.quad L$set$585
+	.byte	0x8
+	.quad	LLSDA8817-.
+	.byte	0x4
+	.set L$set$586,LCFI121-LFB8817
+	.long L$set$586
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$587,LCFI123-LCFI121
+	.long L$set$587
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE147:
+	.globl __ZN8Fielding13HostViewCocoaD2Ev.eh
+	.private_extern __ZN8Fielding13HostViewCocoaD2Ev.eh
+__ZN8Fielding13HostViewCocoaD2Ev.eh:
+LSFDE149:
+	.set L$set$588,LEFDE149-LASFDE149
+	.long L$set$588
+LASFDE149:
+	.long	LASFDE149-EH_frame1
+	.quad	LFB8815-.
+	.set L$set$589,LFE8815-LFB8815
+	.quad L$set$589
+	.byte	0x8
+	.quad	LLSDA8815-.
+	.byte	0x4
+	.set L$set$590,LCFI127-LFB8815
+	.long L$set$590
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$591,LCFI129-LCFI127
+	.long L$set$591
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE149:
+	.globl __ZN8Fielding13HostViewCocoaC2EP6NSView.eh
+	.private_extern __ZN8Fielding13HostViewCocoaC2EP6NSView.eh
+__ZN8Fielding13HostViewCocoaC2EP6NSView.eh:
+LSFDE153:
+	.set L$set$592,LEFDE153-LASFDE153
+	.long L$set$592
+LASFDE153:
+	.long	LASFDE153-EH_frame1
+	.quad	LFB8812-.
+	.set L$set$593,LFE8812-LFB8812
+	.quad L$set$593
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$594,LCFI134-LFB8812
+	.long L$set$594
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$595,LCFI136-LCFI134
+	.long L$set$595
+	.byte	0xe
+	.byte	0xb0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE153:
+	.globl __ZN17CocoaViewInstance7hitTestER7CGPoint.eh
+	.private_extern __ZN17CocoaViewInstance7hitTestER7CGPoint.eh
+	.weak_definition __ZN17CocoaViewInstance7hitTestER7CGPoint.eh
+__ZN17CocoaViewInstance7hitTestER7CGPoint.eh:
+LSFDE157:
+	.set L$set$596,LEFDE157-LASFDE157
+	.long L$set$596
+LASFDE157:
+	.long	LASFDE157-EH_frame1
+	.quad	LFB8794-.
+	.set L$set$597,LFE8794-LFB8794
+	.quad L$set$597
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$598,LCFI141-LFB8794
+	.long L$set$598
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$599,LCFI143-LCFI141
+	.long L$set$599
+	.byte	0x98
+	.byte	0x8
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x4
+	.set L$set$600,LCFI147-LCFI143
+	.long L$set$600
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x99
+	.byte	0x7
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE157:
+	.globl __ZN17CocoaViewInstance9mouseDownEP7NSEvent.eh
+	.private_extern __ZN17CocoaViewInstance9mouseDownEP7NSEvent.eh
+	.weak_definition __ZN17CocoaViewInstance9mouseDownEP7NSEvent.eh
+__ZN17CocoaViewInstance9mouseDownEP7NSEvent.eh:
+LSFDE159:
+	.set L$set$601,LEFDE159-LASFDE159
+	.long L$set$601
+LASFDE159:
+	.long	LASFDE159-EH_frame1
+	.quad	LFB8797-.
+	.set L$set$602,LFE8797-LFB8797
+	.quad L$set$602
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$603,LCFI150-LFB8797
+	.long L$set$603
+	.byte	0x9a
+	.byte	0x8
+	.byte	0x9f
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$604,LCFI156-LCFI150
+	.long L$set$604
+	.byte	0x9e
+	.byte	0x4
+	.byte	0x9d
+	.byte	0x5
+	.byte	0x9c
+	.byte	0x6
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0x4
+	.set L$set$605,LCFI158-LCFI156
+	.long L$set$605
+	.byte	0xe
+	.byte	0xe0,0x1
+	.byte	0x9b
+	.byte	0x7
+	.align 3
+LEFDE159:
+	.globl __ZN17CocoaViewInstance11scrollWheelEP7NSEvent.eh
+	.private_extern __ZN17CocoaViewInstance11scrollWheelEP7NSEvent.eh
+	.weak_definition __ZN17CocoaViewInstance11scrollWheelEP7NSEvent.eh
+__ZN17CocoaViewInstance11scrollWheelEP7NSEvent.eh:
+LSFDE161:
+	.set L$set$606,LEFDE161-LASFDE161
+	.long L$set$606
+LASFDE161:
+	.long	LASFDE161-EH_frame1
+	.quad	LFB8800-.
+	.set L$set$607,LFE8800-LFB8800
+	.quad L$set$607
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$608,LCFI161-LFB8800
+	.long L$set$608
+	.byte	0x9f
+	.byte	0x3
+	.byte	0x9a
+	.byte	0x8
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$609,LCFI163-LCFI161
+	.long L$set$609
+	.byte	0x99
+	.byte	0x9
+	.byte	0x98
+	.byte	0xa
+	.byte	0x4
+	.set L$set$610,LCFI171-LCFI163
+	.long L$set$610
+	.byte	0xe
+	.byte	0xf0,0x1
+	.byte	0x9d
+	.byte	0x5
+	.byte	0x9c
+	.byte	0x6
+	.byte	0x9b
+	.byte	0x7
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0x9e
+	.byte	0x4
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE161:
+	.globl __ZN17CocoaViewInstance12mouseDraggedEP7NSEvent.eh
+	.private_extern __ZN17CocoaViewInstance12mouseDraggedEP7NSEvent.eh
+	.weak_definition __ZN17CocoaViewInstance12mouseDraggedEP7NSEvent.eh
+__ZN17CocoaViewInstance12mouseDraggedEP7NSEvent.eh:
+LSFDE163:
+	.set L$set$611,LEFDE163-LASFDE163
+	.long L$set$611
+LASFDE163:
+	.long	LASFDE163-EH_frame1
+	.quad	LFB8799-.
+	.set L$set$612,LFE8799-LFB8799
+	.quad L$set$612
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$613,LCFI176-LFB8799
+	.long L$set$613
+	.byte	0xbd
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x4
+	.byte	0x9e
+	.byte	0x5
+	.byte	0x9b
+	.byte	0x8
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$614,LCFI182-LCFI176
+	.long L$set$614
+	.byte	0xe
+	.byte	0xd0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9d
+	.byte	0x6
+	.byte	0x9c
+	.byte	0x7
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.align 3
+LEFDE163:
+	.globl __ZN17CocoaViewInstance7mouseUpEP7NSEvent.eh
+	.private_extern __ZN17CocoaViewInstance7mouseUpEP7NSEvent.eh
+	.weak_definition __ZN17CocoaViewInstance7mouseUpEP7NSEvent.eh
+__ZN17CocoaViewInstance7mouseUpEP7NSEvent.eh:
+LSFDE165:
+	.set L$set$615,LEFDE165-LASFDE165
+	.long L$set$615
+LASFDE165:
+	.long	LASFDE165-EH_frame1
+	.quad	LFB8798-.
+	.set L$set$616,LFE8798-LFB8798
+	.quad L$set$616
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$617,LCFI185-LFB8798
+	.long L$set$617
+	.byte	0x9a
+	.byte	0x8
+	.byte	0x9f
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$618,LCFI191-LCFI185
+	.long L$set$618
+	.byte	0x9e
+	.byte	0x4
+	.byte	0x9d
+	.byte	0x5
+	.byte	0x9c
+	.byte	0x6
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0x4
+	.set L$set$619,LCFI193-LCFI191
+	.long L$set$619
+	.byte	0xe
+	.byte	0xe0,0x1
+	.byte	0x9b
+	.byte	0x7
+	.align 3
+LEFDE165:
+	.globl __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh
+	.private_extern __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh
+	.weak_definition __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh
+__ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh:
+LSFDE167:
+	.set L$set$620,LEFDE167-LASFDE167
+	.long L$set$620
+LASFDE167:
+	.long	LASFDE167-EH_frame1
+	.quad	LFB13126-.
+	.set L$set$621,LFE13126-LFB13126
+	.quad L$set$621
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$622,LCFI198-LFB13126
+	.long L$set$622
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$623,LCFI200-LCFI198
+	.long L$set$623
+	.byte	0x99
+	.byte	0x7
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x4
+	.set L$set$624,LCFI203-LCFI200
+	.long L$set$624
+	.byte	0xe
+	.byte	0xd0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9a
+	.byte	0x6
+	.align 3
+LEFDE167:
+	.globl __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh
+	.private_extern __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh
+	.weak_definition __ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh
+__ZNSt6vectorIN5boost7polygon14rectangle_dataIfEESaIS3_EE6insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_.eh:
+LSFDE169:
+	.set L$set$625,LEFDE169-LASFDE169
+	.long L$set$625
+LASFDE169:
+	.long	LASFDE169-EH_frame1
+	.quad	LFB12557-.
+	.set L$set$626,LFE12557-LFB12557
+	.quad L$set$626
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$627,LCFI207-LFB12557
+	.long L$set$627
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$628,LCFI209-LCFI207
+	.long L$set$628
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE169:
+___tcf_1.eh:
+LSFDE171:
+	.set L$set$629,LEFDE171-LASFDE171
+	.long L$set$629
+LASFDE171:
+	.long	LASFDE171-EH_frame1
+	.quad	LFB9382-.
+	.set L$set$630,LFE9382-LFB9382
+	.quad L$set$630
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$631,LCFI212-LFB9382
+	.long L$set$631
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$632,LCFI214-LCFI212
+	.long L$set$632
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE171:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEE7disposeEv.eh:
+LSFDE173:
+	.set L$set$633,LEFDE173-LASFDE173
+	.long L$set$633
+LASFDE173:
+	.long	LASFDE173-EH_frame1
+	.quad	LFB14524-.
+	.set L$set$634,LFE14524-LFB14524
+	.quad L$set$634
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE173:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEE7disposeEv.eh:
+LSFDE175:
+	.set L$set$635,LEFDE175-LASFDE175
+	.long L$set$635
+LASFDE175:
+	.long	LASFDE175-EH_frame1
+	.quad	LFB14526-.
+	.set L$set$636,LFE14526-LFB14526
+	.quad L$set$636
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE175:
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_.eh
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_.eh
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_.eh
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueERKS2_.eh:
+LSFDE177:
+	.set L$set$637,LEFDE177-LASFDE177
+	.long L$set$637
+LASFDE177:
+	.long	LASFDE177-EH_frame1
+	.quad	LFB13777-.
+	.set L$set$638,LFE13777-LFB13777
+	.quad L$set$638
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$639,LCFI218-LFB13777
+	.long L$set$639
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$640,LCFI220-LCFI218
+	.long L$set$640
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE177:
+	.globl __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_.eh
+	.private_extern __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_.eh
+	.weak_definition __ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_.eh
+__ZNSt8_Rb_treeIfSt4pairIKfiESt10_Select1stIS2_ESt4lessIfESaIS2_EE13insert_uniqueESt17_Rb_tree_iteratorIS2_ERKS2_.eh:
+LSFDE179:
+	.set L$set$641,LEFDE179-LASFDE179
+	.long L$set$641
+LASFDE179:
+	.long	LASFDE179-EH_frame1
+	.quad	LFB13412-.
+	.set L$set$642,LFE13412-LFB13412
+	.quad L$set$642
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$643,LCFI224-LFB13412
+	.long L$set$643
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$644,LCFI225-LCFI224
+	.long L$set$644
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x4
+	.set L$set$645,LCFI226-LCFI225
+	.long L$set$645
+	.byte	0xe
+	.byte	0x90,0x1
+	.align 3
+LEFDE179:
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_.eh
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_.eh
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_.eh
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EES8_.eh:
+LSFDE181:
+	.set L$set$646,LEFDE181-LASFDE181
+	.long L$set$646
+LASFDE181:
+	.long	LASFDE181-EH_frame1
+	.quad	LFB12349-.
+	.set L$set$647,LFE12349-LFB12349
+	.quad L$set$647
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$648,LCFI230-LFB12349
+	.long L$set$648
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$649,LCFI232-LCFI230
+	.long L$set$649
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE181:
+	.globl __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.private_extern __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.weak_definition __ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+__ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh:
+LSFDE183:
+	.set L$set$650,LEFDE183-LASFDE183
+	.long L$set$650
+LASFDE183:
+	.long	LASFDE183-EH_frame1
+	.quad	LFB13755-.
+	.set L$set$651,LFE13755-LFB13755
+	.quad L$set$651
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$652,LCFI239-LFB13755
+	.long L$set$652
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x4
+	.set L$set$653,LCFI240-LCFI239
+	.long L$set$653
+	.byte	0xe
+	.byte	0xb0,0x1
+	.align 3
+LEFDE183:
+	.globl __ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.private_extern __ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.weak_definition __ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+__ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh:
+LSFDE185:
+	.set L$set$654,LEFDE185-LASFDE185
+	.long L$set$654
+LASFDE185:
+	.long	LASFDE185-EH_frame1
+	.quad	LFB13380-.
+	.set L$set$655,LFE13380-LFB13380
+	.quad L$set$655
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$656,LCFI243-LFB13380
+	.long L$set$656
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$657,LCFI244-LCFI243
+	.long L$set$657
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x4
+	.set L$set$658,LCFI245-LCFI244
+	.long L$set$658
+	.byte	0xe
+	.byte	0xa0,0x1
+	.align 3
+LEFDE185:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_14bad_exception_EEEED1Ev.eh:
+LSFDE187:
+	.set L$set$659,LEFDE187-LASFDE187
+	.long L$set$659
+LASFDE187:
+	.long	LASFDE187-EH_frame1
+	.quad	LFB14488-.
+	.set L$set$660,LFE14488-LFB14488
+	.quad L$set$660
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE187:
+	.globl __ZN5boost6detail15sp_counted_baseD1Ev.eh
+	.private_extern __ZN5boost6detail15sp_counted_baseD1Ev.eh
+	.weak_definition __ZN5boost6detail15sp_counted_baseD1Ev.eh
+__ZN5boost6detail15sp_counted_baseD1Ev.eh:
+LSFDE189:
+	.set L$set$661,LEFDE189-LASFDE189
+	.long L$set$661
+LASFDE189:
+	.long	LASFDE189-EH_frame1
+	.quad	LFB4513-.
+	.set L$set$662,LFE4513-LFB4513
+	.quad L$set$662
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE189:
+	.globl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh
+	.private_extern __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh
+	.weak_definition __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh
+__ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh:
+LSFDE191:
+	.set L$set$663,LEFDE191-LASFDE191
+	.long L$set$663
+LASFDE191:
+	.long	LASFDE191-EH_frame1
+	.quad	LFB13421-.
+	.set L$set$664,LFE13421-LFB13421
+	.quad L$set$664
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$665,LCFI250-LFB13421
+	.long L$set$665
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$666,LCFI252-LCFI250
+	.long L$set$666
+	.byte	0x99
+	.byte	0x7
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x4
+	.set L$set$667,LCFI255-LCFI252
+	.long L$set$667
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9b
+	.byte	0x5
+	.align 3
+LEFDE191:
+	.globl __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh
+	.private_extern __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh
+	.weak_definition __ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh
+__ZNSt6vectorISt4pairIN5boost7polygon13interval_dataIfEEiESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_.eh:
+LSFDE193:
+	.set L$set$668,LEFDE193-LASFDE193
+	.long L$set$668
+LASFDE193:
+	.long	LASFDE193-EH_frame1
+	.quad	LFB12956-.
+	.set L$set$669,LFE12956-LFB12956
+	.quad L$set$669
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$670,LCFI259-LFB12956
+	.long L$set$670
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$671,LCFI261-LCFI259
+	.long L$set$671
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE193:
+___tcf_4.eh:
+LSFDE195:
+	.set L$set$672,LEFDE195-LASFDE195
+	.long L$set$672
+LASFDE195:
+	.long	LASFDE195-EH_frame1
+	.quad	LFB14481-.
+	.set L$set$673,LFE14481-LFB14481
+	.quad L$set$673
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$674,LCFI264-LFB14481
+	.long L$set$674
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$675,LCFI266-LCFI264
+	.long L$set$675
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE195:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED0Ev.eh:
+LSFDE197:
+	.set L$set$676,LEFDE197-LASFDE197
+	.long L$set$676
+LASFDE197:
+	.long	LASFDE197-EH_frame1
+	.quad	LFB14493-.
+	.set L$set$677,LFE14493-LFB14493
+	.quad L$set$677
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE197:
+	.globl __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev.eh
+	.private_extern __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev.eh
+	.weak_definition __ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev.eh
+__ZN5boost6detail17sp_counted_impl_pINS_16exception_detail10clone_implINS2_10bad_alloc_EEEED1Ev.eh:
+LSFDE199:
+	.set L$set$678,LEFDE199-LASFDE199
+	.long L$set$678
+LASFDE199:
+	.long	LASFDE199-EH_frame1
+	.quad	LFB14492-.
+	.set L$set$679,LFE14492-LFB14492
+	.quad L$set$679
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE199:
+___tcf_0.eh:
+LSFDE201:
+	.set L$set$680,LEFDE201-LASFDE201
+	.long L$set$680
+LASFDE201:
+	.long	LASFDE201-EH_frame1
+	.quad	LFB9368-.
+	.set L$set$681,LFE9368-LFB9368
+	.quad L$set$681
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$682,LCFI269-LFB9368
+	.long L$set$682
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$683,LCFI271-LCFI269
+	.long L$set$683
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE201:
+	.globl __ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.private_extern __ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+	.weak_definition __ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh
+__ZSt9sort_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_.eh:
+LSFDE203:
+	.set L$set$684,LEFDE203-LASFDE203
+	.long L$set$684
+LASFDE203:
+	.long	LASFDE203-EH_frame1
+	.quad	LFB14033-.
+	.set L$set$685,LFE14033-LFB14033
+	.quad L$set$685
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$686,LCFI278-LFB14033
+	.long L$set$686
+	.byte	0xe
+	.byte	0xb0,0x1
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE203:
+	.globl __ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_.eh
+	.private_extern __ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_.eh
+	.weak_definition __ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_.eh
+__ZSt12partial_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEEEvT_SA_SA_.eh:
+LSFDE205:
+	.set L$set$687,LEFDE205-LASFDE205
+	.long L$set$687
+LASFDE205:
+	.long	LASFDE205-EH_frame1
+	.quad	LFB13751-.
+	.set L$set$688,LFE13751-LFB13751
+	.quad L$set$688
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$689,LCFI286-LFB13751
+	.long L$set$689
+	.byte	0xe
+	.byte	0xb0,0x1
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE205:
+	.globl __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_.eh
+	.private_extern __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_.eh
+	.weak_definition __ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_.eh
+__ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS2_IfiEESt6vectorIS4_SaIS4_EEEElEvT_SA_T0_.eh:
+LSFDE207:
+	.set L$set$690,LEFDE207-LASFDE207
+	.long L$set$690
+LASFDE207:
+	.long	LASFDE207-EH_frame1
+	.quad	LFB13379-.
+	.set L$set$691,LFE13379-LFB13379
+	.quad L$set$691
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$692,LCFI295-LFB13379
+	.long L$set$692
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x99
+	.byte	0x7
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE207:
+	.globl __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_.eh
+	.private_extern __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_.eh
+	.weak_definition __ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_.eh
+__ZN5boost7polygon7gtlsortIN9__gnu_cxx17__normal_iteratorIPSt4pairIfS4_IfiEESt6vectorIS6_SaIS6_EEEEEEvT_SC_.eh:
+LSFDE209:
+	.set L$set$693,LEFDE209-LASFDE209
+	.long L$set$693
+LASFDE209:
+	.long	LASFDE209-EH_frame1
+	.quad	LFB11643-.
+	.set L$set$694,LFE11643-LFB11643
+	.quad L$set$694
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$695,LCFI298-LFB11643
+	.long L$set$695
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$696,LCFI300-LCFI298
+	.long L$set$696
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE209:
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh
+__ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh:
+LSFDE211:
+	.set L$set$697,LEFDE211-LASFDE211
+	.long L$set$697
+LASFDE211:
+	.long	LASFDE211-EH_frame1
+	.quad	LFB14608-.
+	.set L$set$698,LFE14608-LFB14608
+	.quad L$set$698
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE211:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE7rethrowEv.eh:
+LSFDE213:
+	.set L$set$699,LEFDE213-LASFDE213
+	.long L$set$699
+LASFDE213:
+	.long	LASFDE213-EH_frame1
+	.quad	LFB14571-.
+	.set L$set$700,LFE14571-LFB14571
+	.quad L$set$700
+	.byte	0x8
+	.quad	LLSDA14571-.
+	.byte	0x4
+	.set L$set$701,LCFI304-LFB14571
+	.long L$set$701
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$702,LCFI306-LCFI304
+	.long L$set$702
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE213:
+___tcf_3.eh:
+LSFDE215:
+	.set L$set$703,LEFDE215-LASFDE215
+	.long L$set$703
+LASFDE215:
+	.long	LASFDE215-EH_frame1
+	.quad	LFB14480-.
+	.set L$set$704,LFE14480-LFB14480
+	.quad L$set$704
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$705,LCFI309-LFB14480
+	.long L$set$705
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$706,LCFI311-LCFI309
+	.long L$set$706
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE215:
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh
+__ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh:
+LSFDE217:
+	.set L$set$707,LEFDE217-LASFDE217
+	.long L$set$707
+LASFDE217:
+	.long	LASFDE217-EH_frame1
+	.quad	LFB14609-.
+	.set L$set$708,LFE14609-LFB14609
+	.quad L$set$708
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE217:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE7rethrowEv.eh:
+LSFDE219:
+	.set L$set$709,LEFDE219-LASFDE219
+	.long L$set$709
+LASFDE219:
+	.long	LASFDE219-EH_frame1
+	.quad	LFB14569-.
+	.set L$set$710,LFE14569-LFB14569
+	.quad L$set$710
+	.byte	0x8
+	.quad	LLSDA14569-.
+	.byte	0x4
+	.set L$set$711,LCFI315-LFB14569
+	.long L$set$711
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$712,LCFI317-LCFI315
+	.long L$set$712
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE219:
+	.globl __ZN5boost16exception_detail10clone_baseD1Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_baseD1Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_baseD1Ev.eh
+__ZN5boost16exception_detail10clone_baseD1Ev.eh:
+LSFDE221:
+	.set L$set$713,LEFDE221-LASFDE221
+	.long L$set$713
+LASFDE221:
+	.long	LASFDE221-EH_frame1
+	.quad	LFB4492-.
+	.set L$set$714,LFE4492-LFB4492
+	.quad L$set$714
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE221:
+	.globl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_.eh
+	.private_extern __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_.eh
+	.weak_definition __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_.eh
+__ZNSt6vectorI18tSimpleCallbackArgSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_.eh:
+LSFDE223:
+	.set L$set$715,LEFDE223-LASFDE223
+	.long L$set$715
+LASFDE223:
+	.long	LASFDE223-EH_frame1
+	.quad	LFB10535-.
+	.set L$set$716,LFE10535-LFB10535
+	.quad L$set$716
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$717,LCFI322-LFB10535
+	.long L$set$717
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$718,LCFI324-LCFI322
+	.long L$set$718
+	.byte	0x99
+	.byte	0x7
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x4
+	.set L$set$719,LCFI327-LCFI324
+	.long L$set$719
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9a
+	.byte	0x6
+	.align 3
+LEFDE223:
+	.globl __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_.eh
+	.private_extern __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_.eh
+	.weak_definition __ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_.eh
+__ZNSt6vectorI18tSimpleCallbackArgSaIS0_EEaSERKS2_.eh:
+LSFDE225:
+	.set L$set$720,LEFDE225-LASFDE225
+	.long L$set$720
+LASFDE225:
+	.long	LASFDE225-EH_frame1
+	.quad	LFB9677-.
+	.set L$set$721,LFE9677-LFB9677
+	.quad L$set$721
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$722,LCFI334-LFB9677
+	.long L$set$722
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x4
+	.set L$set$723,LCFI335-LCFI334
+	.long L$set$723
+	.byte	0xe
+	.byte	0xb0,0x1
+	.align 3
+LEFDE225:
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh
+__ZThn48_NK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh:
+LSFDE227:
+	.set L$set$724,LEFDE227-LASFDE227
+	.long L$set$724
+LASFDE227:
+	.long	LASFDE227-EH_frame1
+	.quad	LFB14610-.
+	.set L$set$725,LFE14610-LFB14610
+	.quad L$set$725
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE227:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_10bad_alloc_EE5cloneEv.eh:
+LSFDE229:
+	.set L$set$726,LEFDE229-LASFDE229
+	.long L$set$726
+LASFDE229:
+	.long	LASFDE229-EH_frame1
+	.quad	LFB14570-.
+	.set L$set$727,LFE14570-LFB14570
+	.quad L$set$727
+	.byte	0x8
+	.quad	LLSDA14570-.
+	.byte	0x4
+	.set L$set$728,LCFI339-LFB14570
+	.long L$set$728
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$729,LCFI341-LCFI339
+	.long L$set$729
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE229:
+	.globl __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh
+	.private_extern __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh
+	.weak_definition __ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh
+__ZThn48_NK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh:
+LSFDE231:
+	.set L$set$730,LEFDE231-LASFDE231
+	.long L$set$730
+LASFDE231:
+	.long	LASFDE231-EH_frame1
+	.quad	LFB14611-.
+	.set L$set$731,LFE14611-LFB14611
+	.quad L$set$731
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE231:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_14bad_exception_EE5cloneEv.eh:
+LSFDE233:
+	.set L$set$732,LEFDE233-LASFDE233
+	.long L$set$732
+LASFDE233:
+	.long	LASFDE233-EH_frame1
+	.quad	LFB14568-.
+	.set L$set$733,LFE14568-LFB14568
+	.quad L$set$733
+	.byte	0x8
+	.quad	LLSDA14568-.
+	.byte	0x4
+	.set L$set$734,LCFI345-LFB14568
+	.long L$set$734
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$735,LCFI347-LCFI345
+	.long L$set$735
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE233:
+	.globl __ZN5boost10lock_errorD0Ev.eh
+	.weak_definition __ZN5boost10lock_errorD0Ev.eh
+__ZN5boost10lock_errorD0Ev.eh:
+LSFDE235:
+	.set L$set$736,LEFDE235-LASFDE235
+	.long L$set$736
+LASFDE235:
+	.long	LASFDE235-EH_frame1
+	.quad	LFB4405-.
+	.set L$set$737,LFE4405-LFB4405
+	.quad L$set$737
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$738,LCFI350-LFB4405
+	.long L$set$738
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$739,LCFI352-LCFI350
+	.long L$set$739
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE235:
+	.globl __ZN5boost21thread_resource_errorD0Ev.eh
+	.weak_definition __ZN5boost21thread_resource_errorD0Ev.eh
+__ZN5boost21thread_resource_errorD0Ev.eh:
+LSFDE237:
+	.set L$set$740,LEFDE237-LASFDE237
+	.long L$set$740
+LASFDE237:
+	.long	LASFDE237-EH_frame1
+	.quad	LFB4416-.
+	.set L$set$741,LFE4416-LFB4416
+	.quad L$set$741
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$742,LCFI355-LFB4416
+	.long L$set$742
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$743,LCFI357-LCFI355
+	.long L$set$743
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE237:
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh:
+LSFDE239:
+	.set L$set$744,LEFDE239-LASFDE239
+	.long L$set$744
+LASFDE239:
+	.long	LASFDE239-EH_frame1
+	.quad	LFB14612-.
+	.set L$set$745,LFE14612-LFB14612
+	.quad L$set$745
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE239:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE7rethrowEv.eh:
+LSFDE241:
+	.set L$set$746,LEFDE241-LASFDE241
+	.long L$set$746
+LASFDE241:
+	.long	LASFDE241-EH_frame1
+	.quad	LFB14579-.
+	.set L$set$747,LFE14579-LFB14579
+	.quad L$set$747
+	.byte	0x8
+	.quad	LLSDA14579-.
+	.byte	0x4
+	.set L$set$748,LCFI362-LFB14579
+	.long L$set$748
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$749,LCFI364-LCFI362
+	.long L$set$749
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE241:
+	.globl __ZN5boost10lock_errorD1Ev.eh
+	.weak_definition __ZN5boost10lock_errorD1Ev.eh
+__ZN5boost10lock_errorD1Ev.eh:
+LSFDE243:
+	.set L$set$750,LEFDE243-LASFDE243
+	.long L$set$750
+LASFDE243:
+	.long	LASFDE243-EH_frame1
+	.quad	LFB4404-.
+	.set L$set$751,LFE4404-LFB4404
+	.quad L$set$751
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE243:
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh:
+LSFDE245:
+	.set L$set$752,LEFDE245-LASFDE245
+	.long L$set$752
+LASFDE245:
+	.long	LASFDE245-EH_frame1
+	.quad	LFB14613-.
+	.set L$set$753,LFE14613-LFB14613
+	.quad L$set$753
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE245:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE7rethrowEv.eh:
+LSFDE247:
+	.set L$set$754,LEFDE247-LASFDE247
+	.long L$set$754
+LASFDE247:
+	.long	LASFDE247-EH_frame1
+	.quad	LFB14581-.
+	.set L$set$755,LFE14581-LFB14581
+	.quad L$set$755
+	.byte	0x8
+	.quad	LLSDA14581-.
+	.byte	0x4
+	.set L$set$756,LCFI369-LFB14581
+	.long L$set$756
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$757,LCFI371-LCFI369
+	.long L$set$757
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE247:
+	.globl __ZN5boost21thread_resource_errorD1Ev.eh
+	.weak_definition __ZN5boost21thread_resource_errorD1Ev.eh
+__ZN5boost21thread_resource_errorD1Ev.eh:
+LSFDE249:
+	.set L$set$758,LEFDE249-LASFDE249
+	.long L$set$758
+LASFDE249:
+	.long	LASFDE249-EH_frame1
+	.quad	LFB4415-.
+	.set L$set$759,LFE4415-LFB4415
+	.quad L$set$759
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE249:
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_.eh
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_.eh
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_.eh
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_.eh:
+LSFDE251:
+	.set L$set$760,LEFDE251-LASFDE251
+	.long L$set$760
+LASFDE251:
+	.long	LASFDE251-EH_frame1
+	.quad	LFB12348-.
+	.set L$set$761,LFE12348-LFB12348
+	.quad L$set$761
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$762,LCFI376-LFB12348
+	.long L$set$762
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$763,LCFI378-LCFI376
+	.long L$set$763
+	.byte	0x99
+	.byte	0x7
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x4
+	.set L$set$764,LCFI381-LCFI378
+	.long L$set$764
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9b
+	.byte	0x5
+	.align 3
+LEFDE251:
+	.globl __ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_.eh
+	.private_extern __ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_.eh
+	.weak_definition __ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_.eh
+__ZN5boost7polygon9operatorspLIfNS0_14rectangle_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS0_19polygon_90_set_dataIT_EEE4typeERSG_RKS9_.eh:
+LSFDE253:
+	.set L$set$765,LEFDE253-LASFDE253
+	.long L$set$765
+LASFDE253:
+	.long	LASFDE253-EH_frame1
+	.quad	LFB8871-.
+	.set L$set$766,LFE8871-LFB8871
+	.quad L$set$766
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$767,LCFI383-LFB8871
+	.long L$set$767
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$768,LCFI401-LCFI383
+	.long L$set$768
+	.byte	0xe
+	.byte	0xe0,0x4
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x99
+	.byte	0x7
+	.byte	0x98
+	.byte	0x8
+	.byte	0x97
+	.byte	0x9
+	.byte	0x96
+	.byte	0xa
+	.byte	0x94
+	.byte	0xc
+	.byte	0x93
+	.byte	0xd
+	.byte	0x92
+	.byte	0xe
+	.byte	0x91
+	.byte	0xf
+	.byte	0x90
+	.byte	0x10
+	.byte	0x8f
+	.byte	0x11
+	.byte	0x8e
+	.byte	0x12
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x95
+	.byte	0xb
+	.align 3
+LEFDE253:
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm.eh
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm.eh
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm.eh
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE7reserveEm.eh:
+LSFDE255:
+	.set L$set$769,LEFDE255-LASFDE255
+	.long L$set$769
+LASFDE255:
+	.long	LASFDE255-EH_frame1
+	.quad	LFB11668-.
+	.set L$set$770,LFE11668-LFB11668
+	.quad L$set$770
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$771,LCFI404-LFB11668
+	.long L$set$771
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$772,LCFI411-LCFI404
+	.long L$set$772
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x99
+	.byte	0x7
+	.align 3
+LEFDE255:
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_.eh
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_.eh
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_.eh
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EEaSERKS4_.eh:
+LSFDE257:
+	.set L$set$773,LEFDE257-LASFDE257
+	.long L$set$773
+LASFDE257:
+	.long	LASFDE257-EH_frame1
+	.quad	LFB10596-.
+	.set L$set$774,LFE10596-LFB10596
+	.quad L$set$774
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$775,LCFI413-LFB10596
+	.long L$set$775
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$776,LCFI419-LCFI413
+	.long L$set$776
+	.byte	0xe
+	.byte	0xb0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x6
+	.align 3
+LEFDE257:
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag.eh
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag.eh
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag.eh
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS2_S4_EEEEvS9_T_SA_St20forward_iterator_tag.eh:
+LSFDE259:
+	.set L$set$777,LEFDE259-LASFDE259
+	.long L$set$777
+LASFDE259:
+	.long	LASFDE259-EH_frame1
+	.quad	LFB12966-.
+	.set L$set$778,LFE12966-LFB12966
+	.quad L$set$778
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$779,LCFI423-LFB12966
+	.long L$set$779
+	.byte	0x9
+	.byte	0x46
+	.byte	0x2
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x99
+	.byte	0x7
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$780,LCFI427-LCFI423
+	.long L$set$780
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x4
+	.set L$set$781,LCFI432-LCFI427
+	.long L$set$781
+	.byte	0xe
+	.byte	0xd0,0x1
+	.byte	0x11
+	.byte	0x46
+	.byte	0x7f
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x98
+	.byte	0x8
+	.align 3
+LEFDE259:
+	.globl __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag.eh
+	.private_extern __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag.eh
+	.weak_definition __ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag.eh
+__ZNSt6vectorISt4pairIfS0_IfiEESaIS2_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPKS2_S4_EEEEvNS7_IPS2_S4_EET_SD_St20forward_iterator_tag.eh:
+LSFDE261:
+	.set L$set$782,LEFDE261-LASFDE261
+	.long L$set$782
+LASFDE261:
+	.long	LASFDE261-EH_frame1
+	.quad	LFB12358-.
+	.set L$set$783,LFE12358-LFB12358
+	.quad L$set$783
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$784,LCFI436-LFB12358
+	.long L$set$784
+	.byte	0x9
+	.byte	0x46
+	.byte	0x2
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x99
+	.byte	0x7
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$785,LCFI440-LCFI436
+	.long L$set$785
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x4
+	.set L$set$786,LCFI445-LCFI440
+	.long L$set$786
+	.byte	0xe
+	.byte	0xd0,0x1
+	.byte	0x11
+	.byte	0x46
+	.byte	0x7f
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x98
+	.byte	0x8
+	.align 3
+LEFDE261:
+	.globl __ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_.eh
+	.private_extern __ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_.eh
+	.weak_definition __ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_.eh
+__ZN5boost7polygon9operatorspLIfNS0_19polygon_90_set_dataIfEEEERNS_9enable_ifINS0_7gtl_andINS1_9y_ps90_peENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeENS3_IT_EEE4typeERSF_RKS9_.eh:
+LSFDE263:
+	.set L$set$787,LEFDE263-LASFDE263
+	.long L$set$787
+LASFDE263:
+	.long	LASFDE263-EH_frame1
+	.quad	LFB8872-.
+	.set L$set$788,LFE8872-LFB8872
+	.quad L$set$788
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$789,LCFI453-LFB8872
+	.long L$set$789
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE263:
+	.globl __ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_.eh
+	.private_extern __ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_.eh
+	.weak_definition __ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_.eh
+__ZN5boost7polygon6assignINS0_19polygon_90_set_dataIfEES3_EERNS_9enable_ifINS0_7gtl_andINS0_30is_mutable_polygon_90_set_typeIT_E4typeENS0_22is_polygon_90_set_typeIT0_E4typeEE4typeES7_E4typeERS7_RKSB_.eh:
+LSFDE265:
+	.set L$set$790,LEFDE265-LASFDE265
+	.long L$set$790
+LASFDE265:
+	.long	LASFDE265-EH_frame1
+	.quad	LFB9807-.
+	.set L$set$791,LFE9807-LFB9807
+	.quad L$set$791
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$792,LCFI462-LFB9807
+	.long L$set$792
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x99
+	.byte	0x7
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE265:
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh:
+LSFDE267:
+	.set L$set$793,LEFDE267-LASFDE267
+	.long L$set$793
+LASFDE267:
+	.long	LASFDE267-EH_frame1
+	.quad	LFB14614-.
+	.set L$set$794,LFE14614-LFB14614
+	.quad L$set$794
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE267:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEE5cloneEv.eh:
+LSFDE269:
+	.set L$set$795,LEFDE269-LASFDE269
+	.long L$set$795
+LASFDE269:
+	.long	LASFDE269-EH_frame1
+	.quad	LFB14578-.
+	.set L$set$796,LFE14578-LFB14578
+	.quad L$set$796
+	.byte	0x8
+	.quad	LLSDA14578-.
+	.byte	0x4
+	.set L$set$797,LCFI467-LFB14578
+	.long L$set$797
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$798,LCFI469-LCFI467
+	.long L$set$798
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE269:
+	.globl __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh
+	.private_extern __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh
+	.weak_definition __ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh
+__ZThn56_NK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh:
+LSFDE271:
+	.set L$set$799,LEFDE271-LASFDE271
+	.long L$set$799
+LASFDE271:
+	.long	LASFDE271-EH_frame1
+	.quad	LFB14615-.
+	.set L$set$800,LFE14615-LFB14615
+	.quad L$set$800
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE271:
+	.globl __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh
+	.private_extern __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh
+	.weak_definition __ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh
+__ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEE5cloneEv.eh:
+LSFDE273:
+	.set L$set$801,LEFDE273-LASFDE273
+	.long L$set$801
+LASFDE273:
+	.long	LASFDE273-EH_frame1
+	.quad	LFB14580-.
+	.set L$set$802,LFE14580-LFB14580
+	.quad L$set$802
+	.byte	0x8
+	.quad	LLSDA14580-.
+	.byte	0x4
+	.set L$set$803,LCFI474-LFB14580
+	.long L$set$803
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$804,LCFI476-LCFI474
+	.long L$set$804
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE273:
+	.globl __ZN8Fielding13HostViewCocoa14setTimerOfViewEbdRNS_4ViewE.eh
+	.private_extern __ZN8Fielding13HostViewCocoa14setTimerOfViewEbdRNS_4ViewE.eh
+__ZN8Fielding13HostViewCocoa14setTimerOfViewEbdRNS_4ViewE.eh:
+LSFDE275:
+	.set L$set$805,LEFDE275-LASFDE275
+	.long L$set$805
+LASFDE275:
+	.long	LASFDE275-EH_frame1
+	.quad	LFB8819-.
+	.set L$set$806,LFE8819-LFB8819
+	.quad L$set$806
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$807,LCFI483-LFB8819
+	.long L$set$807
+	.byte	0xe
+	.byte	0xd0,0x1
+	.byte	0x9f
+	.byte	0x2
+	.byte	0x9e
+	.byte	0x3
+	.byte	0x9d
+	.byte	0x4
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE275:
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+__ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh:
+LSFDE277:
+	.set L$set$808,LEFDE277-LASFDE277
+	.long L$set$808
+LASFDE277:
+	.long	LASFDE277-EH_frame1
+	.quad	LFB14616-.
+	.set L$set$809,LFE14616-LFB14616
+	.quad L$set$809
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE277:
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+__ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh:
+LSFDE279:
+	.set L$set$810,LEFDE279-LASFDE279
+	.long L$set$810
+LASFDE279:
+	.long	LASFDE279-EH_frame1
+	.quad	LFB14617-.
+	.set L$set$811,LFE14617-LFB14617
+	.quad L$set$811
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE279:
+	.globl __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev.eh:
+LSFDE281:
+	.set L$set$812,LEFDE281-LASFDE281
+	.long L$set$812
+LASFDE281:
+	.long	LASFDE281-EH_frame1
+	.quad	LFB10155-.
+	.set L$set$813,LFE10155-LFB10155
+	.quad L$set$813
+	.byte	0x8
+	.quad	LLSDA10155-.
+	.byte	0x4
+	.set L$set$814,LCFI486-LFB10155
+	.long L$set$814
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$815,LCFI488-LCFI486
+	.long L$set$815
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE281:
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh:
+LSFDE283:
+	.set L$set$816,LEFDE283-LASFDE283
+	.long L$set$816
+LASFDE283:
+	.long	LASFDE283-EH_frame1
+	.quad	LFB14618-.
+	.set L$set$817,LFE14618-LFB14618
+	.quad L$set$817
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE283:
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh
+__ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED0Ev.eh:
+LSFDE285:
+	.set L$set$818,LEFDE285-LASFDE285
+	.long L$set$818
+LASFDE285:
+	.long	LASFDE285-EH_frame1
+	.quad	LFB9980-.
+	.set L$set$819,LFE9980-LFB9980
+	.quad L$set$819
+	.byte	0x8
+	.quad	LLSDA9980-.
+	.byte	0x4
+	.set L$set$820,LCFI491-LFB9980
+	.long L$set$820
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$821,LCFI492-LCFI491
+	.long L$set$821
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$822,LCFI494-LCFI492
+	.long L$set$822
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE285:
+	.globl __ZThn40_N5boost16exception_detail14bad_exception_D0Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail14bad_exception_D0Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail14bad_exception_D0Ev.eh
+__ZThn40_N5boost16exception_detail14bad_exception_D0Ev.eh:
+LSFDE287:
+	.set L$set$823,LEFDE287-LASFDE287
+	.long L$set$823
+LASFDE287:
+	.long	LASFDE287-EH_frame1
+	.quad	LFB14619-.
+	.set L$set$824,LFE14619-LFB14619
+	.quad L$set$824
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE287:
+	.globl __ZN5boost16exception_detail14bad_exception_D0Ev.eh
+	.private_extern __ZN5boost16exception_detail14bad_exception_D0Ev.eh
+	.weak_definition __ZN5boost16exception_detail14bad_exception_D0Ev.eh
+__ZN5boost16exception_detail14bad_exception_D0Ev.eh:
+LSFDE289:
+	.set L$set$825,LEFDE289-LASFDE289
+	.long L$set$825
+LASFDE289:
+	.long	LASFDE289-EH_frame1
+	.quad	LFB7406-.
+	.set L$set$826,LFE7406-LFB7406
+	.quad L$set$826
+	.byte	0x8
+	.quad	LLSDA7406-.
+	.byte	0x4
+	.set L$set$827,LCFI497-LFB7406
+	.long L$set$827
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$828,LCFI499-LCFI497
+	.long L$set$828
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE289:
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+__ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh:
+LSFDE291:
+	.set L$set$829,LEFDE291-LASFDE291
+	.long L$set$829
+LASFDE291:
+	.long	LASFDE291-EH_frame1
+	.quad	LFB14620-.
+	.set L$set$830,LFE14620-LFB14620
+	.quad L$set$830
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE291:
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+__ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh:
+LSFDE293:
+	.set L$set$831,LEFDE293-LASFDE293
+	.long L$set$831
+LASFDE293:
+	.long	LASFDE293-EH_frame1
+	.quad	LFB14621-.
+	.set L$set$832,LFE14621-LFB14621
+	.quad L$set$832
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE293:
+	.globl __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev.eh:
+LSFDE295:
+	.set L$set$833,LEFDE295-LASFDE295
+	.long L$set$833
+LASFDE295:
+	.long	LASFDE295-EH_frame1
+	.quad	LFB10168-.
+	.set L$set$834,LFE10168-LFB10168
+	.quad L$set$834
+	.byte	0x8
+	.quad	LLSDA10168-.
+	.byte	0x4
+	.set L$set$835,LCFI502-LFB10168
+	.long L$set$835
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$836,LCFI504-LCFI502
+	.long L$set$836
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE295:
+	.globl __ZThn40_N5boost16exception_detail10bad_alloc_D0Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail10bad_alloc_D0Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail10bad_alloc_D0Ev.eh
+__ZThn40_N5boost16exception_detail10bad_alloc_D0Ev.eh:
+LSFDE297:
+	.set L$set$837,LEFDE297-LASFDE297
+	.long L$set$837
+LASFDE297:
+	.long	LASFDE297-EH_frame1
+	.quad	LFB14622-.
+	.set L$set$838,LFE14622-LFB14622
+	.quad L$set$838
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE297:
+	.globl __ZN5boost16exception_detail10bad_alloc_D0Ev.eh
+	.private_extern __ZN5boost16exception_detail10bad_alloc_D0Ev.eh
+	.weak_definition __ZN5boost16exception_detail10bad_alloc_D0Ev.eh
+__ZN5boost16exception_detail10bad_alloc_D0Ev.eh:
+LSFDE299:
+	.set L$set$839,LEFDE299-LASFDE299
+	.long L$set$839
+LASFDE299:
+	.long	LASFDE299-EH_frame1
+	.quad	LFB7402-.
+	.set L$set$840,LFE7402-LFB7402
+	.quad L$set$840
+	.byte	0x8
+	.quad	LLSDA7402-.
+	.byte	0x4
+	.set L$set$841,LCFI507-LFB7402
+	.long L$set$841
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$842,LCFI509-LCFI507
+	.long L$set$842
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE299:
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh:
+LSFDE301:
+	.set L$set$843,LEFDE301-LASFDE301
+	.long L$set$843
+LASFDE301:
+	.long	LASFDE301-EH_frame1
+	.quad	LFB14623-.
+	.set L$set$844,LFE14623-LFB14623
+	.quad L$set$844
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE301:
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh
+__ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED0Ev.eh:
+LSFDE303:
+	.set L$set$845,LEFDE303-LASFDE303
+	.long L$set$845
+LASFDE303:
+	.long	LASFDE303-EH_frame1
+	.quad	LFB9970-.
+	.set L$set$846,LFE9970-LFB9970
+	.quad L$set$846
+	.byte	0x8
+	.quad	LLSDA9970-.
+	.byte	0x4
+	.set L$set$847,LCFI512-LFB9970
+	.long L$set$847
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$848,LCFI513-LCFI512
+	.long L$set$848
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$849,LCFI515-LCFI513
+	.long L$set$849
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE303:
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh:
+LSFDE305:
+	.set L$set$850,LEFDE305-LASFDE305
+	.long L$set$850
+LASFDE305:
+	.long	LASFDE305-EH_frame1
+	.quad	LFB14624-.
+	.set L$set$851,LFE14624-LFB14624
+	.quad L$set$851
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE305:
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh:
+LSFDE307:
+	.set L$set$852,LEFDE307-LASFDE307
+	.long L$set$852
+LASFDE307:
+	.long	LASFDE307-EH_frame1
+	.quad	LFB14625-.
+	.set L$set$853,LFE14625-LFB14625
+	.quad L$set$853
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE307:
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev.eh:
+LSFDE309:
+	.set L$set$854,LEFDE309-LASFDE309
+	.long L$set$854
+LASFDE309:
+	.long	LASFDE309-EH_frame1
+	.quad	LFB9974-.
+	.set L$set$855,LFE9974-LFB9974
+	.quad L$set$855
+	.byte	0x8
+	.quad	LLSDA9974-.
+	.byte	0x4
+	.set L$set$856,LCFI518-LFB9974
+	.long L$set$856
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$857,LCFI519-LCFI518
+	.long L$set$857
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$858,LCFI521-LCFI519
+	.long L$set$858
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE309:
+	.globl __ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv.eh
+	.private_extern __ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv.eh
+	.weak_definition __ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv.eh
+__ZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEENS_13exception_ptrEv.eh:
+LSFDE311:
+	.set L$set$859,LEFDE311-LASFDE311
+	.long L$set$859
+LASFDE311:
+	.long	LASFDE311-EH_frame1
+	.quad	LFB9355-.
+	.set L$set$860,LFE9355-LFB9355
+	.quad L$set$860
+	.byte	0x8
+	.quad	LLSDA9355-.
+	.byte	0x4
+	.set L$set$861,LCFI526-LFB9355
+	.long L$set$861
+	.byte	0x97
+	.byte	0x9
+	.byte	0x96
+	.byte	0xa
+	.byte	0x95
+	.byte	0xb
+	.byte	0x94
+	.byte	0xc
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$862,LCFI532-LCFI526
+	.long L$set$862
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x99
+	.byte	0x7
+	.byte	0x98
+	.byte	0x8
+	.byte	0x4
+	.set L$set$863,LCFI537-LCFI532
+	.long L$set$863
+	.byte	0xe
+	.byte	0xf0,0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x93
+	.byte	0xd
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE311:
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh:
+LSFDE313:
+	.set L$set$864,LEFDE313-LASFDE313
+	.long L$set$864
+LASFDE313:
+	.long	LASFDE313-EH_frame1
+	.quad	LFB14626-.
+	.set L$set$865,LFE14626-LFB14626
+	.quad L$set$865
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE313:
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh:
+LSFDE315:
+	.set L$set$866,LEFDE315-LASFDE315
+	.long L$set$866
+LASFDE315:
+	.long	LASFDE315-EH_frame1
+	.quad	LFB14627-.
+	.set L$set$867,LFE14627-LFB14627
+	.quad L$set$867
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE315:
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev.eh:
+LSFDE317:
+	.set L$set$868,LEFDE317-LASFDE317
+	.long L$set$868
+LASFDE317:
+	.long	LASFDE317-EH_frame1
+	.quad	LFB9984-.
+	.set L$set$869,LFE9984-LFB9984
+	.quad L$set$869
+	.byte	0x8
+	.quad	LLSDA9984-.
+	.byte	0x4
+	.set L$set$870,LCFI540-LFB9984
+	.long L$set$870
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$871,LCFI541-LCFI540
+	.long L$set$871
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$872,LCFI543-LCFI541
+	.long L$set$872
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE317:
+	.globl __ZThn40_N5boost16exception_detail10bad_alloc_D1Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail10bad_alloc_D1Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail10bad_alloc_D1Ev.eh
+__ZThn40_N5boost16exception_detail10bad_alloc_D1Ev.eh:
+LSFDE319:
+	.set L$set$873,LEFDE319-LASFDE319
+	.long L$set$873
+LASFDE319:
+	.long	LASFDE319-EH_frame1
+	.quad	LFB14628-.
+	.set L$set$874,LFE14628-LFB14628
+	.quad L$set$874
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE319:
+	.globl __ZN5boost16exception_detail10bad_alloc_D1Ev.eh
+	.private_extern __ZN5boost16exception_detail10bad_alloc_D1Ev.eh
+	.weak_definition __ZN5boost16exception_detail10bad_alloc_D1Ev.eh
+__ZN5boost16exception_detail10bad_alloc_D1Ev.eh:
+LSFDE321:
+	.set L$set$875,LEFDE321-LASFDE321
+	.long L$set$875
+LASFDE321:
+	.long	LASFDE321-EH_frame1
+	.quad	LFB7401-.
+	.set L$set$876,LFE7401-LFB7401
+	.quad L$set$876
+	.byte	0x8
+	.quad	LLSDA7401-.
+	.byte	0x4
+	.set L$set$877,LCFI546-LFB7401
+	.long L$set$877
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$878,LCFI548-LCFI546
+	.long L$set$878
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE321:
+	.globl __ZN8Fielding13HostViewCocoa14callOnUIThreadEPFvPvES1_.eh
+	.private_extern __ZN8Fielding13HostViewCocoa14callOnUIThreadEPFvPvES1_.eh
+__ZN8Fielding13HostViewCocoa14callOnUIThreadEPFvPvES1_.eh:
+LSFDE323:
+	.set L$set$879,LEFDE323-LASFDE323
+	.long L$set$879
+LASFDE323:
+	.long	LASFDE323-EH_frame1
+	.quad	LFB8820-.
+	.set L$set$880,LFE8820-LFB8820
+	.quad L$set$880
+	.byte	0x8
+	.quad	LLSDA8820-.
+	.byte	0x4
+	.set L$set$881,LCFI552-LFB8820
+	.long L$set$881
+	.byte	0x9
+	.byte	0x46
+	.byte	0x2
+	.byte	0x98
+	.byte	0x8
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$882,LCFI561-LCFI552
+	.long L$set$882
+	.byte	0xe
+	.byte	0x90,0x2
+	.byte	0x11
+	.byte	0x46
+	.byte	0x7f
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x99
+	.byte	0x7
+	.align 3
+LEFDE323:
+	.globl __ZThn40_N5boost16exception_detail14bad_exception_D1Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail14bad_exception_D1Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail14bad_exception_D1Ev.eh
+__ZThn40_N5boost16exception_detail14bad_exception_D1Ev.eh:
+LSFDE325:
+	.set L$set$883,LEFDE325-LASFDE325
+	.long L$set$883
+LASFDE325:
+	.long	LASFDE325-EH_frame1
+	.quad	LFB14629-.
+	.set L$set$884,LFE14629-LFB14629
+	.quad L$set$884
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE325:
+	.globl __ZN5boost16exception_detail14bad_exception_D1Ev.eh
+	.private_extern __ZN5boost16exception_detail14bad_exception_D1Ev.eh
+	.weak_definition __ZN5boost16exception_detail14bad_exception_D1Ev.eh
+__ZN5boost16exception_detail14bad_exception_D1Ev.eh:
+LSFDE327:
+	.set L$set$885,LEFDE327-LASFDE327
+	.long L$set$885
+LASFDE327:
+	.long	LASFDE327-EH_frame1
+	.quad	LFB7405-.
+	.set L$set$886,LFE7405-LFB7405
+	.quad L$set$886
+	.byte	0x8
+	.quad	LLSDA7405-.
+	.byte	0x4
+	.set L$set$887,LCFI564-LFB7405
+	.long L$set$887
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$888,LCFI566-LCFI564
+	.long L$set$888
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE327:
+	.globl __ZN17CocoaViewInstanceD1Ev.eh
+	.private_extern __ZN17CocoaViewInstanceD1Ev.eh
+	.weak_definition __ZN17CocoaViewInstanceD1Ev.eh
+__ZN17CocoaViewInstanceD1Ev.eh:
+LSFDE329:
+	.set L$set$889,LEFDE329-LASFDE329
+	.long L$set$889
+LASFDE329:
+	.long	LASFDE329-EH_frame1
+	.quad	LFB8788-.
+	.set L$set$890,LFE8788-LFB8788
+	.quad L$set$890
+	.byte	0x8
+	.quad	LLSDA8788-.
+	.byte	0x4
+	.set L$set$891,LCFI571-LFB8788
+	.long L$set$891
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$892,LCFI573-LCFI571
+	.long L$set$892
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE329:
+	.globl __ZN17CocoaViewInstanceD0Ev.eh
+	.private_extern __ZN17CocoaViewInstanceD0Ev.eh
+	.weak_definition __ZN17CocoaViewInstanceD0Ev.eh
+__ZN17CocoaViewInstanceD0Ev.eh:
+LSFDE331:
+	.set L$set$893,LEFDE331-LASFDE331
+	.long L$set$893
+LASFDE331:
+	.long	LASFDE331-EH_frame1
+	.quad	LFB8789-.
+	.set L$set$894,LFE8789-LFB8789
+	.quad L$set$894
+	.byte	0x8
+	.quad	LLSDA8789-.
+	.byte	0x4
+	.set L$set$895,LCFI578-LFB8789
+	.long L$set$895
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$896,LCFI580-LCFI578
+	.long L$set$896
+	.byte	0xe
+	.byte	0xa0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE331:
+	.globl __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE.eh
+	.private_extern __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE.eh
+	.weak_definition __ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE.eh
+__ZN5boost7polygon10boolean_op22default_arg_workaroundIiE14applyBooleanOrIfEEvRSt6vectorISt4pairIT_S6_IS7_iEESaIS9_EE.eh:
+LSFDE333:
+	.set L$set$897,LEFDE333-LASFDE333
+	.long L$set$897
+LASFDE333:
+	.long	LASFDE333-EH_frame1
+	.quad	LFB10834-.
+	.set L$set$898,LFE10834-LFB10834
+	.quad L$set$898
+	.byte	0x8
+	.quad	LLSDA10834-.
+	.byte	0x4
+	.set L$set$899,LCFI585-LFB10834
+	.long L$set$899
+	.byte	0x95
+	.byte	0xe
+	.byte	0x94
+	.byte	0xf
+	.byte	0x93
+	.byte	0x10
+	.byte	0x92
+	.byte	0x11
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$900,LCFI587-LCFI585
+	.long L$set$900
+	.byte	0x9f
+	.byte	0x4
+	.byte	0x9e
+	.byte	0x5
+	.byte	0x4
+	.set L$set$901,LCFI604-LCFI587
+	.long L$set$901
+	.byte	0xe
+	.byte	0xc0,0x4
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9d
+	.byte	0x6
+	.byte	0x9c
+	.byte	0x7
+	.byte	0x9b
+	.byte	0x8
+	.byte	0x9a
+	.byte	0x9
+	.byte	0x99
+	.byte	0xa
+	.byte	0x98
+	.byte	0xb
+	.byte	0x97
+	.byte	0xc
+	.byte	0x96
+	.byte	0xd
+	.byte	0x91
+	.byte	0x12
+	.byte	0x90
+	.byte	0x13
+	.byte	0x8f
+	.byte	0x14
+	.byte	0x8e
+	.byte	0x15
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0xbd
+	.byte	0x3
+	.align 3
+LEFDE333:
+	.globl __ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh
+	.private_extern __ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh
+	.weak_definition __ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh
+__ZN5boost7polygon5cleanINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_22is_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh:
+LSFDE335:
+	.set L$set$902,LEFDE335-LASFDE335
+	.long L$set$902
+LASFDE335:
+	.long	LASFDE335-EH_frame1
+	.quad	LFB9803-.
+	.set L$set$903,LFE9803-LFB9803
+	.quad L$set$903
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$904,LCFI606-LFB9803
+	.long L$set$904
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$905,LCFI608-LCFI606
+	.long L$set$905
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE335:
+	.globl __ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh
+	.private_extern __ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh
+	.weak_definition __ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh
+__ZN5boost7polygon5emptyINS0_19polygon_90_set_dataIfEEEENS_9enable_ifINS0_30is_mutable_polygon_90_set_typeIT_E4typeEbE4typeERKS6_.eh:
+LSFDE337:
+	.set L$set$906,LEFDE337-LASFDE337
+	.long L$set$906
+LASFDE337:
+	.long	LASFDE337-EH_frame1
+	.quad	LFB8870-.
+	.set L$set$907,LFE8870-LFB8870
+	.quad L$set$907
+	.byte	0x8
+	.quad	LLSDA8870-.
+	.byte	0x4
+	.set L$set$908,LCFI611-LFB8870
+	.long L$set$908
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$909,LCFI613-LCFI611
+	.long L$set$909
+	.byte	0xe
+	.byte	0xc0,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE337:
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh:
+LSFDE339:
+	.set L$set$910,LEFDE339-LASFDE339
+	.long L$set$910
+LASFDE339:
+	.long	LASFDE339-EH_frame1
+	.quad	LFB14630-.
+	.set L$set$911,LFE14630-LFB14630
+	.quad L$set$911
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE339:
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh
+__ZN5boost16exception_detail19error_info_injectorINS_21thread_resource_errorEED1Ev.eh:
+LSFDE341:
+	.set L$set$912,LEFDE341-LASFDE341
+	.long L$set$912
+LASFDE341:
+	.long	LASFDE341-EH_frame1
+	.quad	LFB9969-.
+	.set L$set$913,LFE9969-LFB9969
+	.quad L$set$913
+	.byte	0x8
+	.quad	LLSDA9969-.
+	.byte	0x4
+	.set L$set$914,LCFI616-LFB9969
+	.long L$set$914
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$915,LCFI617-LCFI616
+	.long L$set$915
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$916,LCFI619-LCFI617
+	.long L$set$916
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE341:
+	.globl __ZN17CocoaViewInstance4drawER6CGRect.eh
+	.private_extern __ZN17CocoaViewInstance4drawER6CGRect.eh
+	.weak_definition __ZN17CocoaViewInstance4drawER6CGRect.eh
+__ZN17CocoaViewInstance4drawER6CGRect.eh:
+LSFDE343:
+	.set L$set$917,LEFDE343-LASFDE343
+	.long L$set$917
+LASFDE343:
+	.long	LASFDE343-EH_frame1
+	.quad	LFB8801-.
+	.set L$set$918,LFE8801-LFB8801
+	.quad L$set$918
+	.byte	0x8
+	.quad	LLSDA8801-.
+	.byte	0x4
+	.set L$set$919,LCFI637-LFB8801
+	.long L$set$919
+	.byte	0xe
+	.byte	0xa0,0x3
+	.byte	0x9f
+	.byte	0x4
+	.byte	0x9e
+	.byte	0x5
+	.byte	0x9d
+	.byte	0x6
+	.byte	0x9c
+	.byte	0x7
+	.byte	0x9b
+	.byte	0x8
+	.byte	0x9a
+	.byte	0x9
+	.byte	0x99
+	.byte	0xa
+	.byte	0x98
+	.byte	0xb
+	.byte	0x97
+	.byte	0xc
+	.byte	0x96
+	.byte	0xd
+	.byte	0x95
+	.byte	0xe
+	.byte	0x94
+	.byte	0xf
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0xbd
+	.byte	0x3
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE343:
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+__ZThn48_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh:
+LSFDE345:
+	.set L$set$920,LEFDE345-LASFDE345
+	.long L$set$920
+LASFDE345:
+	.long	LASFDE345-EH_frame1
+	.quad	LFB14631-.
+	.set L$set$921,LFE14631-LFB14631
+	.quad L$set$921
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE345:
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+__ZThn40_N5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh:
+LSFDE347:
+	.set L$set$922,LEFDE347-LASFDE347
+	.long L$set$922
+LASFDE347:
+	.long	LASFDE347-EH_frame1
+	.quad	LFB14632-.
+	.set L$set$923,LFE14632-LFB14632
+	.quad L$set$923
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE347:
+	.globl __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED0Ev.eh:
+LSFDE349:
+	.set L$set$924,LEFDE349-LASFDE349
+	.long L$set$924
+LASFDE349:
+	.long	LASFDE349-EH_frame1
+	.quad	LFB10169-.
+	.set L$set$925,LFE10169-LFB10169
+	.quad L$set$925
+	.byte	0x8
+	.quad	LLSDA10169-.
+	.byte	0x4
+	.set L$set$926,LCFI640-LFB10169
+	.long L$set$926
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$927,LCFI642-LCFI640
+	.long L$set$927
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE349:
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh:
+LSFDE351:
+	.set L$set$928,LEFDE351-LASFDE351
+	.long L$set$928
+LASFDE351:
+	.long	LASFDE351-EH_frame1
+	.quad	LFB14633-.
+	.set L$set$929,LFE14633-LFB14633
+	.quad L$set$929
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE351:
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh:
+LSFDE353:
+	.set L$set$930,LEFDE353-LASFDE353
+	.long L$set$930
+LASFDE353:
+	.long	LASFDE353-EH_frame1
+	.quad	LFB14634-.
+	.set L$set$931,LFE14634-LFB14634
+	.quad L$set$931
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE353:
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED0Ev.eh:
+LSFDE355:
+	.set L$set$932,LEFDE355-LASFDE355
+	.long L$set$932
+LASFDE355:
+	.long	LASFDE355-EH_frame1
+	.quad	LFB9985-.
+	.set L$set$933,LFE9985-LFB9985
+	.quad L$set$933
+	.byte	0x8
+	.quad	LLSDA9985-.
+	.byte	0x4
+	.set L$set$934,LCFI645-LFB9985
+	.long L$set$934
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$935,LCFI646-LCFI645
+	.long L$set$935
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$936,LCFI648-LCFI646
+	.long L$set$936
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE355:
+	.globl __ZN8Fielding13HostViewCocoa8setChildEPNS_4ViewE.eh
+	.private_extern __ZN8Fielding13HostViewCocoa8setChildEPNS_4ViewE.eh
+__ZN8Fielding13HostViewCocoa8setChildEPNS_4ViewE.eh:
+LSFDE357:
+	.set L$set$937,LEFDE357-LASFDE357
+	.long L$set$937
+LASFDE357:
+	.long	LASFDE357-EH_frame1
+	.quad	LFB8818-.
+	.set L$set$938,LFE8818-LFB8818
+	.quad L$set$938
+	.byte	0x8
+	.quad	LLSDA8818-.
+	.byte	0x4
+	.set L$set$939,LCFI652-LFB8818
+	.long L$set$939
+	.byte	0x9
+	.byte	0x46
+	.byte	0x2
+	.byte	0x9b
+	.byte	0xc
+	.byte	0x99
+	.byte	0xe
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$940,LCFI655-LCFI652
+	.long L$set$940
+	.byte	0x96
+	.byte	0x11
+	.byte	0x9f
+	.byte	0x8
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0xbd
+	.byte	0x3
+	.byte	0xbc
+	.byte	0x4
+	.byte	0xbb
+	.byte	0x5
+	.byte	0xba
+	.byte	0x6
+	.byte	0xb9
+	.byte	0x7
+	.byte	0x4
+	.set L$set$941,LCFI663-LCFI655
+	.long L$set$941
+	.byte	0xe
+	.byte	0xb0,0x4
+	.byte	0x9e
+	.byte	0x9
+	.byte	0x9d
+	.byte	0xa
+	.byte	0x11
+	.byte	0x46
+	.byte	0x7f
+	.byte	0x9c
+	.byte	0xb
+	.byte	0x9a
+	.byte	0xd
+	.byte	0x98
+	.byte	0xf
+	.byte	0x97
+	.byte	0x10
+	.align 3
+LEFDE357:
+	.globl __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh
+__ZThn16_N5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh:
+LSFDE359:
+	.set L$set$942,LEFDE359-LASFDE359
+	.long L$set$942
+LASFDE359:
+	.long	LASFDE359-EH_frame1
+	.quad	LFB14635-.
+	.set L$set$943,LFE14635-LFB14635
+	.quad L$set$943
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE359:
+	.globl __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh
+	.private_extern __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh
+	.weak_definition __ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh
+__ZN5boost16exception_detail19error_info_injectorINS_10lock_errorEED1Ev.eh:
+LSFDE361:
+	.set L$set$944,LEFDE361-LASFDE361
+	.long L$set$944
+LASFDE361:
+	.long	LASFDE361-EH_frame1
+	.quad	LFB9979-.
+	.set L$set$945,LFE9979-LFB9979
+	.quad L$set$945
+	.byte	0x8
+	.quad	LLSDA9979-.
+	.byte	0x4
+	.set L$set$946,LCFI666-LFB9979
+	.long L$set$946
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$947,LCFI667-LCFI666
+	.long L$set$947
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$948,LCFI669-LCFI667
+	.long L$set$948
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE361:
+	.globl __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+	.private_extern __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+	.weak_definition __ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+__ZThn48_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh:
+LSFDE363:
+	.set L$set$949,LEFDE363-LASFDE363
+	.long L$set$949
+LASFDE363:
+	.long	LASFDE363-EH_frame1
+	.quad	LFB14636-.
+	.set L$set$950,LFE14636-LFB14636
+	.quad L$set$950
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE363:
+	.globl __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+	.private_extern __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+	.weak_definition __ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+__ZThn40_N5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh:
+LSFDE365:
+	.set L$set$951,LEFDE365-LASFDE365
+	.long L$set$951
+LASFDE365:
+	.long	LASFDE365-EH_frame1
+	.quad	LFB14637-.
+	.set L$set$952,LFE14637-LFB14637
+	.quad L$set$952
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE365:
+	.globl __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED0Ev.eh:
+LSFDE367:
+	.set L$set$953,LEFDE367-LASFDE367
+	.long L$set$953
+LASFDE367:
+	.long	LASFDE367-EH_frame1
+	.quad	LFB10156-.
+	.set L$set$954,LFE10156-LFB10156
+	.quad L$set$954
+	.byte	0x8
+	.quad	LLSDA10156-.
+	.byte	0x4
+	.set L$set$955,LCFI672-LFB10156
+	.long L$set$955
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$956,LCFI674-LCFI672
+	.long L$set$956
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE367:
+	.globl __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+	.private_extern __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+	.weak_definition __ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+__ZThn56_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh:
+LSFDE369:
+	.set L$set$957,LEFDE369-LASFDE369
+	.long L$set$957
+LASFDE369:
+	.long	LASFDE369-EH_frame1
+	.quad	LFB14638-.
+	.set L$set$958,LFE14638-LFB14638
+	.quad L$set$958
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE369:
+	.globl __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+	.private_extern __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+	.weak_definition __ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+__ZThn16_N5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh:
+LSFDE371:
+	.set L$set$959,LEFDE371-LASFDE371
+	.long L$set$959
+LASFDE371:
+	.long	LASFDE371-EH_frame1
+	.quad	LFB14639-.
+	.set L$set$960,LFE14639-LFB14639
+	.quad L$set$960
+	.byte	0x8
+	.quad	0x0
+	.align 3
+LEFDE371:
+	.globl __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+	.private_extern __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+	.weak_definition __ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh
+__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED0Ev.eh:
+LSFDE373:
+	.set L$set$961,LEFDE373-LASFDE373
+	.long L$set$961
+LASFDE373:
+	.long	LASFDE373-EH_frame1
+	.quad	LFB9975-.
+	.set L$set$962,LFE9975-LFB9975
+	.quad L$set$962
+	.byte	0x8
+	.quad	LLSDA9975-.
+	.byte	0x4
+	.set L$set$963,LCFI677-LFB9975
+	.long L$set$963
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$964,LCFI678-LCFI677
+	.long L$set$964
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x4
+	.set L$set$965,LCFI680-LCFI678
+	.long L$set$965
+	.byte	0xe
+	.byte	0x90,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE373:
+	.globl __ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv.eh
+	.private_extern __ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv.eh
+	.weak_definition __ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv.eh
+__ZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_EEENS_13exception_ptrEv.eh:
+LSFDE375:
+	.set L$set$966,LEFDE375-LASFDE375
+	.long L$set$966
+LASFDE375:
+	.long	LASFDE375-EH_frame1
+	.quad	LFB9369-.
+	.set L$set$967,LFE9369-LFB9369
+	.quad L$set$967
+	.byte	0x8
+	.quad	LLSDA9369-.
+	.byte	0x4
+	.set L$set$968,LCFI685-LFB9369
+	.long L$set$968
+	.byte	0x97
+	.byte	0x9
+	.byte	0x96
+	.byte	0xa
+	.byte	0x95
+	.byte	0xb
+	.byte	0x94
+	.byte	0xc
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$969,LCFI691-LCFI685
+	.long L$set$969
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x99
+	.byte	0x7
+	.byte	0x98
+	.byte	0x8
+	.byte	0x4
+	.set L$set$970,LCFI696-LCFI691
+	.long L$set$970
+	.byte	0xe
+	.byte	0xf0,0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x93
+	.byte	0xd
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE375:
+__Z41__static_initialization_and_destruction_0ii.eh:
+LSFDE377:
+	.set L$set$971,LEFDE377-LASFDE377
+	.long L$set$971
+LASFDE377:
+	.long	LASFDE377-EH_frame1
+	.quad	LFB14478-.
+	.set L$set$972,LFE14478-LFB14478
+	.quad L$set$972
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$973,LCFI699-LFB14478
+	.long L$set$973
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$974,LCFI701-LCFI699
+	.long L$set$974
+	.byte	0xe
+	.byte	0x80,0x1
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE377:
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_.eh
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_.eh
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_.eh
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE11lower_boundERKS3_.eh:
+LSFDE381:
+	.set L$set$975,LEFDE381-LASFDE381
+	.long L$set$975
+LASFDE381:
+	.long	LASFDE381-EH_frame1
+	.quad	LFB13121-.
+	.set L$set$976,LFE13121-LFB13121
+	.quad L$set$976
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$977,LCFI708-LFB13121
+	.long L$set$977
+	.byte	0x8f
+	.byte	0x12
+	.byte	0x8e
+	.byte	0x13
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9b
+	.byte	0x6
+	.byte	0x99
+	.byte	0x8
+	.byte	0x96
+	.byte	0xb
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$978,LCFI722-LCFI708
+	.long L$set$978
+	.byte	0xe
+	.byte	0x80,0x4
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9e
+	.byte	0x3
+	.byte	0x9d
+	.byte	0x4
+	.byte	0x9c
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x7
+	.byte	0x98
+	.byte	0x9
+	.byte	0x97
+	.byte	0xa
+	.byte	0x95
+	.byte	0xc
+	.byte	0x94
+	.byte	0xd
+	.byte	0x93
+	.byte	0xe
+	.byte	0x92
+	.byte	0xf
+	.byte	0x91
+	.byte	0x10
+	.byte	0x90
+	.byte	0x11
+	.align 3
+LEFDE381:
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_.eh
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_.eh
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_.eh
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_.eh:
+LSFDE383:
+	.set L$set$979,LEFDE383-LASFDE383
+	.long L$set$979
+LASFDE383:
+	.long	LASFDE383-EH_frame1
+	.quad	LFB13117-.
+	.set L$set$980,LFE13117-LFB13117
+	.quad L$set$980
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$981,LCFI731-LFB13117
+	.long L$set$981
+	.byte	0x97
+	.byte	0xa
+	.byte	0x96
+	.byte	0xb
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x3
+	.byte	0x9c
+	.byte	0x5
+	.byte	0x9b
+	.byte	0x6
+	.byte	0x99
+	.byte	0x8
+	.byte	0x98
+	.byte	0x9
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$982,LCFI735-LCFI731
+	.long L$set$982
+	.byte	0xe
+	.byte	0xd0,0x2
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9d
+	.byte	0x4
+	.byte	0x9a
+	.byte	0x7
+	.align 3
+LEFDE383:
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_.eh
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_.eh
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_.eh
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueERKS3_.eh:
+LSFDE385:
+	.set L$set$983,LEFDE385-LASFDE385
+	.long L$set$983
+LASFDE385:
+	.long	LASFDE385-EH_frame1
+	.quad	LFB13118-.
+	.set L$set$984,LFE13118-LFB13118
+	.quad L$set$984
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$985,LCFI742-LFB13118
+	.long L$set$985
+	.byte	0x8f
+	.byte	0x12
+	.byte	0x8e
+	.byte	0x13
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x3
+	.byte	0x9b
+	.byte	0x6
+	.byte	0x99
+	.byte	0x8
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$986,LCFI756-LCFI742
+	.long L$set$986
+	.byte	0xe
+	.byte	0x80,0x5
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9d
+	.byte	0x4
+	.byte	0x9c
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x7
+	.byte	0x98
+	.byte	0x9
+	.byte	0x97
+	.byte	0xa
+	.byte	0x96
+	.byte	0xb
+	.byte	0x95
+	.byte	0xc
+	.byte	0x94
+	.byte	0xd
+	.byte	0x93
+	.byte	0xe
+	.byte	0x92
+	.byte	0xf
+	.byte	0x91
+	.byte	0x10
+	.byte	0x90
+	.byte	0x11
+	.align 3
+LEFDE385:
+	.globl __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_.eh
+	.private_extern __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_.eh
+	.weak_definition __ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_.eh
+__ZNSt8_Rb_treeIN5boost7polygon14rectangle_dataIfEES3_St9_IdentityIS3_ENS1_22less_rectangle_conceptIS3_S3_EESaIS3_EE13insert_uniqueESt17_Rb_tree_iteratorIS3_ERKS3_.eh:
+LSFDE387:
+	.set L$set$987,LEFDE387-LASFDE387
+	.long L$set$987
+LASFDE387:
+	.long	LASFDE387-EH_frame1
+	.quad	LFB12535-.
+	.set L$set$988,LFE12535-LFB12535
+	.quad L$set$988
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$989,LCFI763-LFB12535
+	.long L$set$989
+	.byte	0x98
+	.byte	0x9
+	.byte	0x97
+	.byte	0xa
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9e
+	.byte	0x3
+	.byte	0x9a
+	.byte	0x7
+	.byte	0x99
+	.byte	0x8
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$990,LCFI768-LCFI763
+	.long L$set$990
+	.byte	0xe
+	.byte	0xc0,0x4
+	.byte	0x9d
+	.byte	0x4
+	.byte	0x9c
+	.byte	0x5
+	.byte	0x9b
+	.byte	0x6
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.align 3
+LEFDE387:
+	.globl __ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE.eh
+	.private_extern __ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE.eh
+	.weak_definition __ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE.eh
+__ZN5boost7polygon19rectangle_formation12processEdge_ISt6vectorINS0_14rectangle_dataIfEESaIS5_EESt3setIS5_NS0_22less_rectangle_conceptIS5_S5_EES6_ES5_NS0_13interval_dataIfEEfEERT_SF_RT0_RKT2_RbRT1_T3_NS0_14orientation_2dE.eh:
+LSFDE389:
+	.set L$set$991,LEFDE389-LASFDE389
+	.long L$set$991
+LASFDE389:
+	.long	LASFDE389-EH_frame1
+	.quad	LFB11952-.
+	.set L$set$992,LFE11952-LFB11952
+	.quad L$set$992
+	.byte	0x8
+	.quad	0x0
+	.byte	0x4
+	.set L$set$993,LCFI773-LFB11952
+	.long L$set$993
+	.byte	0x97
+	.byte	0xa
+	.byte	0x94
+	.byte	0xd
+	.byte	0x93
+	.byte	0xe
+	.byte	0xbf
+	.byte	0x1
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$994,LCFI789-LCFI773
+	.long L$set$994
+	.byte	0xe
+	.byte	0xc0,0x4
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9e
+	.byte	0x3
+	.byte	0x9d
+	.byte	0x4
+	.byte	0x9c
+	.byte	0x5
+	.byte	0x9a
+	.byte	0x7
+	.byte	0x96
+	.byte	0xb
+	.byte	0x95
+	.byte	0xc
+	.byte	0x92
+	.byte	0xf
+	.byte	0x91
+	.byte	0x10
+	.byte	0x90
+	.byte	0x11
+	.byte	0x8f
+	.byte	0x12
+	.byte	0x8e
+	.byte	0x13
+	.byte	0x9b
+	.byte	0x6
+	.byte	0x99
+	.byte	0x8
+	.byte	0x98
+	.byte	0x9
+	.align 3
+LEFDE389:
+	.globl __ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_.eh
+	.private_extern __ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_.eh
+	.weak_definition __ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_.eh
+__ZN5boost7polygon15form_rectanglesISt6vectorINS0_14rectangle_dataIfEESaIS4_EEN9__gnu_cxx17__normal_iteratorIPSt4pairIfS9_IfiEES2_ISB_SaISB_EEEENS0_17rectangle_conceptEEEvRT_T0_SJ_NS0_14orientation_2dET1_.eh:
+LSFDE391:
+	.set L$set$995,LEFDE391-LASFDE391
+	.long L$set$995
+LASFDE391:
+	.long	LASFDE391-EH_frame1
+	.quad	LFB10558-.
+	.set L$set$996,LFE10558-LFB10558
+	.quad L$set$996
+	.byte	0x8
+	.quad	LLSDA10558-.
+	.byte	0x4
+	.set L$set$997,LCFI794-LFB10558
+	.long L$set$997
+	.byte	0x9c
+	.byte	0x6
+	.byte	0x97
+	.byte	0xb
+	.byte	0x96
+	.byte	0xc
+	.byte	0x95
+	.byte	0xd
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$998,LCFI796-LCFI794
+	.long L$set$998
+	.byte	0x9f
+	.byte	0x3
+	.byte	0x9d
+	.byte	0x5
+	.byte	0x4
+	.set L$set$999,LCFI802-LCFI796
+	.long L$set$999
+	.byte	0x9a
+	.byte	0x8
+	.byte	0x99
+	.byte	0x9
+	.byte	0x98
+	.byte	0xa
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x4
+	.set L$set$1000,LCFI805-LCFI802
+	.long L$set$1000
+	.byte	0xe
+	.byte	0xf0,0x2
+	.byte	0x9e
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x7
+	.align 3
+LEFDE391:
+	.globl __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE.eh
+	.private_extern __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE.eh
+	.weak_definition __ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE.eh
+__ZN17CocoaViewInstance12needsDisplayERKN8Fielding6RegionE.eh:
+LSFDE393:
+	.set L$set$1001,LEFDE393-LASFDE393
+	.long L$set$1001
+LASFDE393:
+	.long	LASFDE393-EH_frame1
+	.quad	LFB8792-.
+	.set L$set$1002,LFE8792-LFB8792
+	.quad L$set$1002
+	.byte	0x8
+	.quad	LLSDA8792-.
+	.byte	0x4
+	.set L$set$1003,LCFI809-LFB8792
+	.long L$set$1003
+	.byte	0x9
+	.byte	0x46
+	.byte	0x2
+	.byte	0x9c
+	.byte	0x9
+	.byte	0x9b
+	.byte	0xa
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$1004,LCFI812-LCFI809
+	.long L$set$1004
+	.byte	0x95
+	.byte	0x10
+	.byte	0x9f
+	.byte	0x6
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0xbf
+	.byte	0x1
+	.byte	0xbe
+	.byte	0x2
+	.byte	0xbd
+	.byte	0x3
+	.byte	0xbc
+	.byte	0x4
+	.byte	0xbb
+	.byte	0x5
+	.byte	0x4
+	.set L$set$1005,LCFI821-LCFI812
+	.long L$set$1005
+	.byte	0xe
+	.byte	0x90,0x3
+	.byte	0x11
+	.byte	0x46
+	.byte	0x7f
+	.byte	0x9e
+	.byte	0x7
+	.byte	0x9d
+	.byte	0x8
+	.byte	0x9a
+	.byte	0xb
+	.byte	0x99
+	.byte	0xc
+	.byte	0x98
+	.byte	0xd
+	.byte	0x97
+	.byte	0xe
+	.byte	0x96
+	.byte	0xf
+	.align 3
+LEFDE393:
+	.globl __ZN17CocoaViewInstance17runLoopFireStaticEPv.eh
+	.private_extern __ZN17CocoaViewInstance17runLoopFireStaticEPv.eh
+	.weak_definition __ZN17CocoaViewInstance17runLoopFireStaticEPv.eh
+__ZN17CocoaViewInstance17runLoopFireStaticEPv.eh:
+LSFDE397:
+	.set L$set$1006,LEFDE397-LASFDE397
+	.long L$set$1006
+LASFDE397:
+	.long	LASFDE397-EH_frame1
+	.quad	LFB8809-.
+	.set L$set$1007,LFE8809-LFB8809
+	.quad L$set$1007
+	.byte	0x8
+	.quad	LLSDA8809-.
+	.byte	0x4
+	.set L$set$1008,LCFI825-LFB8809
+	.long L$set$1008
+	.byte	0x9
+	.byte	0x46
+	.byte	0x2
+	.byte	0x9c
+	.byte	0x4
+	.byte	0x9b
+	.byte	0x5
+	.byte	0x9
+	.byte	0x41
+	.byte	0x0
+	.byte	0x4
+	.set L$set$1009,LCFI827-LCFI825
+	.long L$set$1009
+	.byte	0x11
+	.byte	0x41
+	.byte	0x7e
+	.byte	0x9f
+	.byte	0x1
+	.byte	0x4
+	.set L$set$1010,LCFI834-LCFI827
+	.long L$set$1010
+	.byte	0xe
+	.byte	0xf0,0x2
+	.byte	0x11
+	.byte	0x46
+	.byte	0x7f
+	.byte	0x9e
+	.byte	0x2
+	.byte	0x9d
+	.byte	0x3
+	.byte	0x9a
+	.byte	0x6
+	.byte	0x99
+	.byte	0x7
+	.byte	0x98
+	.byte	0x8
+	.align 3
+LEFDE397:
+	.non_lazy_symbol_pointer
+L__ZTVN5boost21thread_resource_errorE$non_lazy_ptr:
+	.indirect_symbol __ZTVN5boost21thread_resource_errorE
+	.quad	0
+	.data
+	.align 3
+L__ZN17CocoaViewInstance17runLoopFireStaticEPv$non_lazy_ptr:
+	.quad	__ZN17CocoaViewInstance17runLoopFireStaticEPv
+	.align 3
+L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev$non_lazy_ptr:
+	.quad	__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_21thread_resource_errorEEEED1Ev
+	.align 3
+L__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv$non_lazy_ptr:
+	.quad	__ZN17CocoaViewInstance18EventLoopTimerProcEP16__CFRunLoopTimerPv
+	.non_lazy_symbol_pointer
+L___dso_handle$non_lazy_ptr:
+	.indirect_symbol ___dso_handle
+	.quad	0
+L_kCFRunLoopCommonModes$non_lazy_ptr:
+	.indirect_symbol _kCFRunLoopCommonModes
+	.quad	0
+L__ZTVN5boost9exceptionE$non_lazy_ptr:
+	.indirect_symbol __ZTVN5boost9exceptionE
+	.quad	0
+	.data
+	.align 3
+L__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev$non_lazy_ptr:
+	.quad	__ZN5boost16exception_detail10clone_implINS0_14bad_exception_EED1Ev
+	.non_lazy_symbol_pointer
+L___gxx_personality_v0$non_lazy_ptr:
+	.indirect_symbol ___gxx_personality_v0
+	.quad	0
+L_kCFAllocatorDefault$non_lazy_ptr:
+	.indirect_symbol _kCFAllocatorDefault
+	.quad	0
+L__ZTVSt9exception$non_lazy_ptr:
+	.indirect_symbol __ZTVSt9exception
+	.quad	0
+	.data
+	.align 3
+L__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev$non_lazy_ptr:
+	.quad	__ZN5boost16exception_detail10clone_implINS0_10bad_alloc_EED1Ev
+	.non_lazy_symbol_pointer
+L__ZTVN5boost16thread_exceptionE$non_lazy_ptr:
+	.indirect_symbol __ZTVN5boost16thread_exceptionE
+	.quad	0
+L__ZTVN5boost10lock_errorE$non_lazy_ptr:
+	.indirect_symbol __ZTVN5boost10lock_errorE
+	.quad	0
+	.data
+	.align 3
+L__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev$non_lazy_ptr:
+	.quad	__ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_10lock_errorEEEED1Ev
+	.constructor
+	.destructor
+	.align 1
+	.subsections_via_symbols

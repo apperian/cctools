@@ -79,7 +79,7 @@ install : $(TARGETS)
 	install -d $(DESTDIR)/Developer/usr/libexec/gcc/darwin/x86_64
 	install -d $(DESTDIR)/Developer/usr/libexec/gcc/darwin/ppc
 	install -d $(DESTDIR)/Developer/usr/libexec/gcc/darwin/ppc64
-	install -m 0755 as $(DESTDIR)/Developer/usr/bin
+	install -m 0755 bin/as $(DESTDIR)/Developer/usr/bin
 	install -m 0755 $(ARCH_DIR)/i386/as $(DESTDIR)/Developer/usr/libexec/gcc/darwin/i386
 	install -m 0755 $(ARCH_DIR)/x86_64/as $(DESTDIR)/Developer/usr/libexec/gcc/darwin/x86_64
 	install -m 0755 $(ARCH_DIR)/ppc/as $(DESTDIR)/Developer/usr/libexec/gcc/darwin/ppc

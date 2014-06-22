@@ -1,4 +1,4 @@
-export CC=gcc
+C1;3406;0cexport CC=gcc
 export CFLAGS=-g3 -O0 -std=gnu99 -Wall -I../include -D_LARGEFILE64_SOURCE -DEMULATED_HOST_CPU_TYPE=CPU_TYPE_I386 -DEMULATED_HOST_CPU_SUBTYPE='CPU_SUBTYPE_INTEL(12, 1)'
 
 GIT_VERSION=$(shell if ( git tag 2>&1 ) > /dev/null; then git tag | tail -n 1; else echo unknown; fi)
@@ -18,7 +18,7 @@ libstuff/libstuff.a : force
 test : force
 	make -C test
 
-install : test
+install : 
 	make -C ar install
 	make -C as install
 	make -C misc install
