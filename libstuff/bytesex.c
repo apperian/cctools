@@ -2584,7 +2584,7 @@ enum byte_sex target_byte_sex)
 #endif
 
 	for(i = 0; i < nranlibs; i++){
-	    ranlibs[i].ran_un.ran_strx = SWAP_INT(ranlibs[i].ran_un.ran_strx);
+	    ranlibs[i].ran_strx = SWAP_INT(ranlibs[i].ran_strx);
 	    ranlibs[i].ran_off = SWAP_INT(ranlibs[i].ran_off);
 	}
 }

@@ -1128,14 +1128,14 @@ enum bool verbose)
 		    n = sprintf(buf, "?(%ld) ", (long int)ranlibs[i].ran_off);
 		    printf("%s%.*s", buf, 17 - n, "              ");
 		}
-		if(ranlibs[i].ran_un.ran_strx < str_size)
-		    printf("%s\n", strings + ranlibs[i].ran_un.ran_strx);
+		if(ranlibs[i].ran_strx < str_size)
+		    printf("%s\n", strings + ranlibs[i].ran_strx);
 		else
-		    printf("?(%ld)\n", (long int)ranlibs[i].ran_un.ran_strx);
+		    printf("?(%ld)\n", (long int)ranlibs[i].ran_strx);
 	    }
 	    else{
 		printf("%-14ld %ld\n", (long int)ranlibs[i].ran_off,
-			(long int)ranlibs[i].ran_un.ran_strx);
+			(long int)ranlibs[i].ran_strx);
 	    }
 	}
 

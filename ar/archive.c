@@ -173,8 +173,8 @@ opened:
 				badfmt();
 			ar_error(archive);
 		} else if (bcmp(buf, ARMAG, SARMAG)) {
-			unsigned long magic;
-			memcpy(&magic, buf, sizeof(unsigned long));
+			uint32_t magic;
+			memcpy(&magic, buf, sizeof(uint32_t));
 #ifdef __BIG_ENDIAN__
 			if(magic == FAT_MAGIC)
 #endif /* __BIG_ENDIAN__ */
@@ -287,7 +287,7 @@ put_arobj(cfp, sb)
 	CF *cfp;
 	struct stat *sb;
 {
-	unsigned int lname;
+	uint32_t lname;
 	char *name;
 	struct ar_hdr *hdr;
 	off_t size;
@@ -320,11 +320,12 @@ put_arobj(cfp, sb)
 				      sb->st_mode, (long long int)sb->st_size, ARFMAG);
 			lname = 0;
 		} else if (lname > sizeof(hdr->ar_name) || strchr(name, ' '))
-			(void)sprintf(hb, HDR1, AR_EFMT1, (lname + 3) & ~3,
+			(void)sprintf(hb, HDR1, AR_EFMT1, 
+				      (lname + ((int32_t)3)) & ~((int32_t)3),
 			    (long int)sb->st_mtime,
 			    (unsigned int)(u_short)sb->st_uid,
 			    (unsigned int)(u_short)sb->st_gid,
-				     sb->st_mode, (long long int)sb->st_size + ((lname + 3) & ~3),
+				      sb->st_mode, (long long int)sb->st_size + ((lname + ((int32_t)3)) & ~((int32_t)3)),
 			    ARFMAG);
 		else {
 			lname = 0;

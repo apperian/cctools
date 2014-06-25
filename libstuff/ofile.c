@@ -76,7 +76,7 @@
 static enum bool otool_first_ofile_map = TRUE;
 #else /* !define(OTOOL) */
 
-#if (!defined(m68k) && !defined(__i386__) && !defined(__ppc__) && !defined(__arm__))
+#if 0
 #define ALIGNMENT_CHECKS_ARCHIVE_64_BIT
 static enum bool archive_64_bit_align_warning = FALSE;
 #endif /* (!defined(m68k) && !defined(__i386__) && !defined(__ppc__) && !defined(__arm__)) */
