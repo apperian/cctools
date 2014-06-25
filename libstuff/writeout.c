@@ -1156,7 +1156,7 @@ enum bool library_warnings)
 	for(i = 0; i < arch->nmembers; i++)
 	    arch->members[i].offset += SARMAG + arch->toc_size;
 	for(i = 0; i < arch->ntocs; i++){
-	    arch->toc_ranlibs[i].ran_un.ran_strx = 
+	    arch->toc_ranlibs[i].ran_strx = 
 		arch->toc_entries[i].symbol_name - arch->toc_strings;
 	    arch->toc_ranlibs[i].ran_off = 
 		arch->members[arch->toc_entries[i].member_index - 1].offset;

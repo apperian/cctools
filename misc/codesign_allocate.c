@@ -303,7 +303,7 @@ struct object *object)
     unsigned long i;
     cpu_type_t cputype;
     cpu_subtype_t cpusubtype;
-    uint32_t flags, linkedit_end;
+    uint32_t flags, linkedit_end=0;
 
 	/*
 	 * First set up all the pointers and sizes of the symbolic info.
