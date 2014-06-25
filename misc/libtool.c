@@ -27,7 +27,9 @@
  */
 #include <mach/mach.h>
 #include "stuff/openstep_mach.h"
+#define __USE_GNU 1
 #include <stdlib.h>
+#undef __USE_GNU
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -74,7 +76,7 @@ static enum byte_sex host_byte_sex = UNKNOWN_BYTE_SEX;
  * The time the table of contents' are set to and the time to base the
  * modification time of the output file to be set to.
  */
-static long toc_time = 0;
+static int32_t toc_time = 0;
 
 /*
  * The mode of the table of contents member (S_IFREG | (0666 & ~umask))
@@ -84,7 +86,7 @@ static u_short toc_mode = 0;
 /* flags set from the command line arguments */
 struct cmd_flags {
     char **files;	/* array of file name arguments */
-    unsigned long
+    uint32_t
 	nfiles;		/* number of file name arguments */
     char **filelist;	/* filelist argument the file name argument came from */
     enum bool
@@ -109,10 +111,10 @@ struct cmd_flags {
     char *seg_addr_table_filename;
 			/* seg_addr_table_filename if specified, or NULL */
     char **Ldirs;	/* array of -Ldir arguments */
-    unsigned long
+    uint32_t
 	nLdirs;		/* number of -Ldir arguments */
     char **ldflags;	/* other ld(1) flags to pass */
-    unsigned long
+    uint32_t
 	nldflags;	/* number of ld(1) flags for above */
     enum bool verbose;	/* print exec(2) commands run */
     struct arch_flag
@@ -136,7 +138,7 @@ struct cmd_flags {
 	search_paths_first;
     enum bool noflush;	/* don't use the output_flush routine to flush the
 			   static library output file by pages */
-    unsigned long debug;/* debug value to debug output_flush() routine */
+    uint32_t debug;/* debug value to debug output_flush() routine */
 };
 static struct cmd_flags cmd_flags = { 0 };
 
@@ -158,34 +160,34 @@ char *standard_dirs[] = {
  * structs hang off of 'archs'.
  */
 static struct arch *archs = NULL;
-static unsigned long narchs = 0;
+static uint32_t narchs = 0;
 
 struct arch {
     struct arch_flag arch_flag;	/* the identifing info of this architecture */
-    unsigned long size;		/* current working size and final size */
+    uint32_t size;		/* current working size and final size */
 
     /* the table of contents (toc) stuff for this architecture in the library */
-    unsigned long  toc_size;	/* total size of the toc including ar_hdr */
+    uint32_t  toc_size;	/* total size of the toc including ar_hdr */
     struct ar_hdr  toc_ar_hdr;	/* the archive header for this member */
     enum bool toc_long_name;    /* use the long name in the output */
     char *toc_name;		/* name of toc member */
-    unsigned long toc_name_size;/* size of name of toc member */
+    uint32_t toc_name_size;/* size of name of toc member */
     struct ranlib *toc_ranlibs;	/* ranlib structs */
-    unsigned long  toc_nranlibs;/* number of ranlib structs */
+    uint32_t  toc_nranlibs;/* number of ranlib structs */
     char	  *toc_strings;	/* strings of symbol names for ranlib structs */
-    unsigned long  toc_strsize;	/* number of bytes for the strings above */
+    uint32_t  toc_strsize;	/* number of bytes for the strings above */
 
     /* the members of this architecture in the library */
     struct member *members;	/* the members of the library for this arch */
-    unsigned long nmembers;	/* the number of the above members */
+    uint32_t nmembers;	/* the number of the above members */
 };
 
 struct member {
-    unsigned long offset;	    /* current working offset and final offset*/
+    uint32_t offset;	    /* current working offset and final offset*/
     struct ar_hdr ar_hdr;	    /* the archive header for this member */
     char null_byte;		    /* space to write '\0' for ar_hdr */
     char *object_addr;		    /* the address of the object file */
-    unsigned long object_size;	    /* the size of the object file */
+    uint32_t object_size;	    /* the size of the object file */
     enum byte_sex object_byte_sex;  /* the byte sex of the object file */
     struct mach_header *mh;	    /* the mach_header of 32-bit object files */
     struct mach_header_64 *mh64;    /* the mach_header of 64-bit object files */
@@ -200,14 +202,14 @@ struct member {
 
     /* the name of the member in the output */
     char         *member_name;	    /* the member name */
-    unsigned long member_name_size; /* the size of the member name */
+    uint32_t member_name_size; /* the size of the member name */
     enum bool output_long_name;	    /* use the extended format #1 for the
 				       member name in the output */
 
     /* info recorded from the input file this member came from */
     char	  *input_file_name;	/* the input file name */
     char	  *input_base_name;     /* the base name in the input file */
-    unsigned long  input_base_name_size;/* the size of the base name */
+    uint32_t  input_base_name_size;/* the size of the base name */
     struct ar_hdr *input_ar_hdr;
 };
 
@@ -237,9 +239,10 @@ static void create_dynamic_shared_library_cleanup(
 static void make_table_of_contents(
     struct arch *arch,
     char *output);
-static int ranlib_name_qsort(
+static int ranlib_name_qsort_r(
     const struct ranlib *ran1,
-    const struct ranlib *ran2);
+    const struct ranlib *ran2,
+    const char * toc_strings);
 static int ranlib_offset_qsort(
     const struct ranlib *ran1,
     const struct ranlib *ran2);
@@ -279,19 +282,19 @@ static void ld_trace(
  * with output_blocks.
  */
 static struct block {
-    unsigned long offset;	/* starting offset of this block */
-    unsigned long size;		/* size of this block */
-    unsigned long written_offset;/* first page offset after starting offset */
-    unsigned long written_size;	/* size of written area from written_offset */
+    uint32_t offset;	/* starting offset of this block */
+    uint32_t size;		/* size of this block */
+    uint32_t written_offset;/* first page offset after starting offset */
+    uint32_t written_size;	/* size of written area from written_offset */
     struct block *next; /* next block in the list */
 } *output_blocks;
 
 static void output_flush(
     char *library,
-    unsigned long library_size,
+    uint32_t library_size,
     int fd,
-    unsigned long offset,
-    unsigned long size);
+    uint32_t offset,
+    uint32_t size);
 static void final_output_flush(
     char *library,
     int fd);
@@ -301,9 +304,9 @@ static void print_block_list(void);
 static struct block *get_block(void);
 static void remove_block(
     struct block *block);
-static unsigned long stuff_trunc(
-    unsigned long v,
-    unsigned long r);
+static uint32_t stuff_trunc(
+    uint32_t v,
+    uint32_t r);
 
 /* apple_version is in vers.c which is created by the Makefile */
 extern char apple_version[];
@@ -317,7 +320,9 @@ char **envp)
     char *p, *endp, *filelist, *dirname, *addr;
     int fd, i;
     struct stat stat_buf;
-    unsigned long j, temp, nfiles, maxfiles;
+    uint32_t j;
+    unsigned long temp;
+    uint32_t nfiles, maxfiles;
     int oumask, numask;
     kern_return_t r;
     enum bool bad_flag_seen, Vflag;
@@ -1251,7 +1256,7 @@ void
 process(
 void)
 {
-    unsigned long i, j, k, previous_errors;
+    uint32_t i, j, k, previous_errors;
     struct ofile *ofiles;
     char *file_name;
     enum bool flag, ld_trace_archive_printed;
@@ -1549,7 +1554,7 @@ char *
 search_for_file(
 char *base_name)
 {
-    unsigned long i;
+    uint32_t i;
     char *file_name;
 
 	for(i = 0; i < cmd_flags.nLdirs ; i++){
@@ -1583,7 +1588,7 @@ char *
 search_paths_for_lname(
 const char *lname_argument)
 {
-    unsigned long i;
+    uint32_t i;
     char *file_name, *dir;
 
 	for(i = 0; i < cmd_flags.nLdirs ; i++){
@@ -1641,7 +1646,7 @@ void
 add_member(
 struct ofile *ofile)
 {
-    unsigned long i, j, size, ar_name_size;
+    uint32_t i, j, size, ar_name_size;
     struct arch *arch;
     struct member *member;
     struct stat stat_buf;
@@ -1865,7 +1870,7 @@ struct ofile *ofile)
 				sizeof(struct ar_hdr));
 		sprintf(ar_name_buf, "%s%-*lu", AR_EFMT1,
 			(int)(sizeof(member->ar_hdr.ar_name) -
-			      (sizeof(AR_EFMT1) - 1)), ar_name_size);
+			      (sizeof(AR_EFMT1) - 1)), (unsigned long)ar_name_size);
 		memcpy(member->ar_hdr.ar_name, ar_name_buf,
 		      sizeof(member->ar_hdr.ar_name));
 	    }
@@ -1945,7 +1950,7 @@ struct ofile *ofile)
 				    sizeof(struct ar_hdr));
 		    sprintf(ar_name_buf, "%s%-*lu", AR_EFMT1,
 			    (int)(sizeof(member->ar_hdr.ar_name) -
-				  (sizeof(AR_EFMT1) - 1)), ar_name_size);
+				  (sizeof(AR_EFMT1) - 1)), (unsigned long)ar_name_size);
 		    memcpy(member->ar_hdr.ar_name, ar_name_buf,
 			  sizeof(member->ar_hdr.ar_name));
 		}
@@ -1962,7 +1967,7 @@ struct ofile *ofile)
 		    member->output_long_name = TRUE;
 		    sprintf(ar_name_buf, "%s%-*lu", AR_EFMT1,
 			    (int)(sizeof(member->ar_hdr.ar_name) -
-				  (sizeof(AR_EFMT1) - 1)), ar_name_size);
+				  (sizeof(AR_EFMT1) - 1)), (unsigned long)ar_name_size);
 		    memcpy(member->ar_hdr.ar_name, ar_name_buf,
 			  sizeof(member->ar_hdr.ar_name));
 		}
@@ -2039,7 +2044,7 @@ void
 free_archs(
 void)
 {
-    unsigned long i;
+    uint32_t i;
 
 	for(i = 0 ; i < narchs; i++){
 	    /*
@@ -2070,7 +2075,7 @@ void
 create_library(
 char *output)
 {
-    unsigned long i, j, k, l, library_size, offset, pad, *time_offsets;
+    uint32_t i, j, k, l, library_size, offset, pad, *time_offsets;
     enum byte_sex target_byte_sex;
     char *library, *p, *flush_start;
     kern_return_t r;
@@ -2164,7 +2169,7 @@ char *output)
 	if((r = vm_allocate(mach_task_self(), (vm_address_t *)&library,
 			    library_size, TRUE)) != KERN_SUCCESS)
 	    mach_fatal(r, "can't vm_allocate() buffer for output file: %s of "
-		       "size %lu", output, library_size);
+		       "size %lu", output, (unsigned long)library_size);
 
 	/*
 	 * Create the output file.  The unlink() is done to handle the problem
@@ -2226,7 +2231,7 @@ char *output)
 	 * The time_offsets array records the offsets to the table of conternts
 	 * archive header's ar_date fields.
 	 */
-	time_offsets = allocate(narchs * sizeof(unsigned long));
+	time_offsets = allocate(narchs * sizeof(uint32_t));
 
 	/*
 	 * Now put each arch in the buffer.
@@ -2301,8 +2306,8 @@ char *output)
 	    l = arch->toc_nranlibs * sizeof(struct ranlib);
 	    if(target_byte_sex != host_byte_sex)
 		l = SWAP_LONG(l);
-	    memcpy(p, (char *)&l, sizeof(long));
-	    p += sizeof(long);
+	    memcpy(p, (char *)&l, sizeof(uint32_t));
+	    p += sizeof(uint32_t);
 
 	    if(target_byte_sex != host_byte_sex)
 		swap_ranlib(arch->toc_ranlibs, arch->toc_nranlibs,
@@ -2314,8 +2319,8 @@ char *output)
 	    l = arch->toc_strsize;
 	    if(target_byte_sex != host_byte_sex)
 		l = SWAP_LONG(l);
-	    memcpy(p, (char *)&l, sizeof(long));
-	    p += sizeof(long);
+	    memcpy(p, (char *)&l, sizeof(uint32_t));
+	    p += sizeof(uint32_t);
 
 	    memcpy(p, (char *)arch->toc_strings, arch->toc_strsize);
 	    p += arch->toc_strsize;
@@ -2476,12 +2481,12 @@ static
 void
 output_flush(
 char *library,
-unsigned long library_size,
+uint32_t library_size,
 int fd,
-unsigned long offset,
-unsigned long size)
+uint32_t offset,
+uint32_t size)
 { 
-    unsigned long write_offset, write_size, host_pagesize;
+    uint32_t write_offset, write_size, host_pagesize;
     struct block **p, *block, *before, *after;
     kern_return_t r;
 
@@ -2492,7 +2497,7 @@ unsigned long size)
 
 	if(offset + size > library_size)
 	    fatal("internal error: output_flush(offset = %lu, size = %lu) out "
-		  "of range for library_size = %lu", offset, size,library_size);
+		  "of range for library_size = %lu", (unsigned long)offset, (unsigned long)size,(unsigned long)library_size);
 
 #ifdef DEBUG
 	if(cmd_flags.debug & (1 << 2))
@@ -2536,7 +2541,7 @@ unsigned long size)
 	    if(before->offset + before->size > offset){
 		warning("internal error: output_flush(offset = %lu, size = %lu)"
 		      " overlaps with flushed block(offset = %lu, size = %lu)",
-		      offset, size, before->offset, before->size);
+			(unsigned long)offset, (unsigned long)size, (unsigned long)before->offset, (unsigned long)before->size);
 		printf("calling abort()\n");	
 		abort();
 	    }
@@ -2545,7 +2550,7 @@ unsigned long size)
 	    if(offset + size > after->offset){
 		warning("internal error: output_flush(offset = %lu, size = %lu)"
 		      " overlaps with flushed block(offset = %lu, size = %lu)",
-		      offset, size, after->offset, after->size);
+			(unsigned long)offset, (unsigned long)size, (unsigned long)after->offset, (unsigned long)after->size);
 		printf("calling abort()\n");	
 		abort();
 	    }
@@ -2706,7 +2711,7 @@ char *library,
 int fd)
 { 
     struct block *block;
-    unsigned long write_offset, write_size;
+    uint32_t write_offset, write_size;
     kern_return_t r;
 
 #ifdef DEBUG
@@ -2812,12 +2817,12 @@ struct block *block)
  * less than zero it returns zero.
  */
 static
-unsigned long
+uint32_t
 stuff_trunc(
-unsigned long v,
-unsigned long r)
+uint32_t v,
+uint32_t r)
 {
-	if(((long)v) < 0)
+	if(((int32_t)v) < 0)
 	    return(0);
 	return(v & ~(r - 1));
 }
@@ -2883,7 +2888,7 @@ void
 create_dynamic_shared_library(
 char *output)
 {
-    unsigned long i, j;
+    uint32_t i, j;
     char *p, *filelist;
     struct stat stat_buf;
     enum bool use_force_cpusubtype_ALL;
@@ -3069,7 +3074,7 @@ void
 create_dynamic_shared_library_cleanup(
 int sig)
 {
-    unsigned long i;
+    uint32_t i;
 
 	for(i = 0; i < narchs; i++){
 	    (void)unlink(makestr(cmd_flags.output, ".libtool.",
@@ -3089,7 +3094,7 @@ make_table_of_contents(
 struct arch *arch,
 char *output)
 {
-    unsigned long i, j, k, r, s, nsects, ncmds, n_strx;
+    uint32_t i, j, k, r, s, nsects, ncmds, n_strx;
     struct member *member;
     struct load_command *lc;
     struct segment_command *sg;
@@ -3193,7 +3198,7 @@ char *output)
 			if(n_strx > member->st->strsize){
 			    warn_member(arch, member, "malformed object "
 				"(symbol %lu n_strx field extends past the "
-				"end of the string table)", j);
+					"end of the string table)", (unsigned long)j);
 			    errors++;
 			    continue;
 			}
@@ -3201,14 +3206,14 @@ char *output)
 			    if(n_sect == NO_SECT){
 				warn_member(arch, member, "malformed object "
 				    "(symbol %lu must not have NO_SECT for its "
-				    "n_sect field given its type (N_SECT))", j);
+					    "n_sect field given its type (N_SECT))", (unsigned long)j);
 				errors++;
 				continue;
 			    }
 			    if(n_sect > nsects){
 				warn_member(arch, member, "malformed object "
 				    "(symbol %lu n_sect field greater than the "
-				    "number of sections in the file)", j);
+					    "number of sections in the file)", (unsigned long)j);
 				errors++;
 				continue;
 			    }
@@ -3296,8 +3301,9 @@ char *output)
 			if(is_toc_symbol == TRUE){
 			    strcpy(arch->toc_strings + s,
 				   strings + n_strx);
-			    arch->toc_ranlibs[r].ran_un.ran_name =
-							arch->toc_strings + s;
+			    /*			    arch->toc_ranlibs[r].ran_un.ran_name =
+						    arch->toc_strings + s; */
+			    arch->toc_ranlibs[r].ran_strx = s;
 			    arch->toc_ranlibs[r].ran_off = i + 1;
 			    r++;
 			    s += strlen(strings + n_strx) + 1;
@@ -3320,8 +3326,7 @@ char *output)
 		    if(lto_toc_symbol(member->lto, j, cmd_flags.c) == TRUE){
 			strcpy(arch->toc_strings + s,
 			       lto_symbol_name(member->lto, j));
-			arch->toc_ranlibs[r].ran_un.ran_name =
-						    arch->toc_strings + s;
+			arch->toc_ranlibs[r].ran_strx = s;
 			arch->toc_ranlibs[r].ran_off = i + 1;
 			r++;
 			s += strlen(lto_symbol_name(member->lto, j)) + 1;
@@ -3336,8 +3341,8 @@ char *output)
 	 * sort it and leave it sorted if no duplicates.
 	 */
 	if(cmd_flags.s == TRUE){
-	    qsort(arch->toc_ranlibs, arch->toc_nranlibs, sizeof(struct ranlib),
-		  (int (*)(const void *, const void *))ranlib_name_qsort);
+	    qsort_r(arch->toc_ranlibs, arch->toc_nranlibs, sizeof(struct ranlib),
+		    (int (*)(const void *, const void *, void*))ranlib_name_qsort_r, arch->toc_strings);
 	    sorted = check_sort_ranlibs(arch, output, FALSE);
 	    if(sorted == FALSE){
 		qsort(arch->toc_ranlibs, arch->toc_nranlibs,
@@ -3391,9 +3396,9 @@ char *output)
 	 *	the strings
 	 */
 	arch->toc_size = sizeof(struct ar_hdr) +
-			 sizeof(long) +
+			 sizeof(int32_t) +
 			 arch->toc_nranlibs * sizeof(struct ranlib) +
-			 sizeof(long) +
+			 sizeof(int32_t) +
 			 arch->toc_strsize;
 	/* add the size of the name is a long name is used */
 	if(arch->toc_long_name == TRUE)
@@ -3403,8 +3408,11 @@ char *output)
 	for(i = 0; i < arch->nmembers; i++)
 	    arch->members[i].offset += SARMAG + arch->toc_size;
 	for(i = 0; i < arch->toc_nranlibs; i++){
+#if 0
+	  /* shouldn't be necessary anymore */
 	    arch->toc_ranlibs[i].ran_un.ran_strx =
 		arch->toc_ranlibs[i].ran_un.ran_name - arch->toc_strings;
+#endif
 	    arch->toc_ranlibs[i].ran_off =
 		arch->members[arch->toc_ranlibs[i].ran_off - 1].offset;
 	}
@@ -3413,7 +3421,7 @@ char *output)
 	   (int)sizeof(arch->toc_ar_hdr.ar_name),
 	       ar_name,
 	   (int)sizeof(arch->toc_ar_hdr.ar_date),
-	       toc_time,
+		(long int)toc_time,
 	   (int)sizeof(arch->toc_ar_hdr.ar_uid),
 	       (unsigned short)getuid(),
 	   (int)sizeof(arch->toc_ar_hdr.ar_gid),
@@ -3431,15 +3439,16 @@ char *output)
 }
 
 /*
- * Function for qsort() for comparing ranlib structures by name.
+ * Function for qsort_r() for comparing ranlib structures by name.
  */
 static
 int
-ranlib_name_qsort(
+ranlib_name_qsort_r(
 const struct ranlib *ran1,
-const struct ranlib *ran2)
+const struct ranlib *ran2,
+const char * toc_strings )
 {
-	return(strcmp(ran1->ran_un.ran_name, ran2->ran_un.ran_name));
+return (strcmp(toc_strings + ran1->ran_strx, toc_strings + ran2->ran_strx));
 }
 
 /*
@@ -3531,7 +3540,7 @@ struct arch *arch,
 char *output,
 enum bool library_warnings)
 {
-    unsigned long i;
+    uint32_t i;
     enum bool multiple_defs;
     struct member *member;
 
@@ -3544,8 +3553,8 @@ enum bool library_warnings)
 	 */
 	multiple_defs = FALSE;
 	for(i = 0; i < arch->toc_nranlibs - 1; i++){
-	    if(strcmp(arch->toc_ranlibs[i].ran_un.ran_name,
-		      arch->toc_ranlibs[i+1].ran_un.ran_name) == 0){
+	    if(strcmp(arch->toc_strings+arch->toc_ranlibs[i].ran_strx,
+		      arch->toc_strings+arch->toc_ranlibs[i+1].ran_strx) == 0){
 		if(multiple_defs == FALSE){
 		    if(library_warnings == FALSE)
 			return(FALSE);
@@ -3561,14 +3570,14 @@ enum bool library_warnings)
 		if((int)(arch->toc_ranlibs[i].ran_off) > 0){
 		    member = arch->members + arch->toc_ranlibs[i].ran_off - 1;
 		    warn_member(arch, member, "defines symbol: %s",
-				arch->toc_ranlibs[i].ran_un.ran_name);
+				arch->toc_strings+arch->toc_ranlibs[i].ran_strx);
 		    arch->toc_ranlibs[i].ran_off =
 				-(arch->toc_ranlibs[i].ran_off);
 		}
 		if((int)(arch->toc_ranlibs[i+1].ran_off) > 0){
 		    member = arch->members + arch->toc_ranlibs[i+1].ran_off - 1;
 		    warn_member(arch, member, "defines symbol: %s",
-				arch->toc_ranlibs[i+1].ran_un.ran_name);
+				arch->toc_strings+arch->toc_ranlibs[i+1].ran_strx);
 		    arch->toc_ranlibs[i+1].ran_off =
 				-(arch->toc_ranlibs[i+1].ran_off);
 		}
@@ -3599,7 +3608,7 @@ void
 warn_duplicate_member_names(
 void)
 {
-    unsigned long i, j, len, len1, len2;
+    uint32_t i, j, len, len1, len2;
 
 	for(i = 0; i < narchs; i++){
 	    /* sort in order of ar_names */
@@ -3661,7 +3670,7 @@ member_name_qsort(
 const struct member *member1,
 const struct member *member2)
 {
-    unsigned long len, len1, len2;
+    uint32_t len, len1, len2;
 
 	len1 = member1->member_name_size;
 	len2 = member2->member_name_size;

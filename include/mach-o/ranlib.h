@@ -56,12 +56,15 @@
  * string table whose first byte is numbered 0.
  */
 struct	ranlib {
+#if 0
     union {
 	uint32_t	ran_strx;	/* string table index of */
-#ifndef ARCH64
+
 	char		*ran_name;	/* symbol defined by */
-#endif
     } ran_un;
+#else
+  uint32_t ran_strx;
+#endif
     uint32_t		ran_off;	/* library member at this offset */
 };
 #endif /* _MACH_O_RANLIB_H_ */
