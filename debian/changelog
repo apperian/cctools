@@ -1,3 +1,9 @@
+cctools (698.5-2) trusty; urgency=low
+
+  * New ubuntu release
+
+ -- Fabian Renn <fabian.renn@gmail.com>  Wed, 25 Jun 2014 20:42:56 +0100
+
 cctools (698.5-1) saucy; urgency=low
 
   * Follow upstream version 698.5
